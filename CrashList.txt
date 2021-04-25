@@ -1587,7 +1587,7 @@ Tipo: Crash
 Problema: Incompatibilidade com Project2DFX
 Solução: Desintale ou ele ou o Project2DFX, como sempre, confirme se corrigiu ou não avisando nos comentários.
 
-Erro: cleo.asi
+Erro: CLEO.asi
 Tipo: Crash
 Problema: Algum script cleo
 Solução: Olhe no seu scrlog.log, o crash deve estar lá, se não, envie-o explicando que você já olhou e não está etc.
