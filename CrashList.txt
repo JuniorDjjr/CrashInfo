@@ -824,12 +824,12 @@ Problema: Ao renderizar o texto das placas de transito (aquelas dizendo os nomes
 Solução: Problema com a textura das letras no particle.txd? você usou compressão nesta textura no particle.txd? Está usando .cs de aumentar a resolução daquelas placas? Alguma dessas coisas podem ter causado o problema e você deve com certeza checar o particle.txd que você está usando, não adicionando compressão ("comprimido") na textura roadsignfont, deixando Raster Raw.
 
 Erro: 0x004DD5A3
-Problema: Algo fez com que o driver de áudio não seja inicializado.
-Solução: Procure atualizar, reinstalar os drivers de áudio do seu PC, pode haver alguma má configuração, incompatibilidade de driver etc. É sempre bom ter SilentPatch instalado pois ele corrige algo sobre drivers também.
-Problema 2: Algum mod que exige ter a pasta Audio completa (não RIP), como o TTDISA.
-Solução 2: Clique aqui para baixar a pasta audio completa para GTA SA RIP
-Problema 3: Falta da pasta Audio
-Solução 3: Se você por exemplo deletar a pasta Audio do jogo, irá acontecer esse crash, mas também pode acontecer casos de conflitos, arquivos corrompidos etc.
+Problema 1: Falta da pasta "audio"
+Solução 1: O seu jogo está sem a pasta "audio", ou os arquivos estão em falta ou corrompidos.
+Problema 2: Algum mod que exige ter a pasta "audio" completa (não RIP).
+Solução 2: Baixe a pasta audio para o GTA SA RIP. Ou simplesmente faça o download do jogo completo.
+Problema 3: Algo fez com que o driver de áudio não seja inicializado.
+Solução 3: Procure atualizar e reinstalar os drivers de áudio do seu PC. SilentPatch também corrige algumas incompatibilidades com drivers de áudio.
 
 Erro: 0x004D3FBC
 Problema: Tentou usar uma animação de um IFP não carregado? IFP bugado e não pode ser carregado pelo jogo?
