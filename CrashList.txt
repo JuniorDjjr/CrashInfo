@@ -39,8 +39,8 @@ Erro: 0x0073B6C3
 Solução: Atualize a CLEO+, o crash foi corrigido.
 
 Erro: 0x00469FF7
-Problema: Provavelmente um mod CLEO precisa de algum ".cleo" que o seu jogo não tem instalado.
-Solução: Identifique e instale os plugins .cleo necessários, como CLEO+ ou NewOpcodes. Senão, é de fato algum erro de algum mod CLEO, tente SCRLog.
+Problema: Algum problema num script CLEO/SCM. Provavelmente um mod CLEO precisa de algum ".cleo" que o seu jogo não tem instalado.
+Solução: O mod SCRLog pode te ajudar a identificar qual script. Também verifique e instale os plugins .cleo necessários para seus scripts, como CLEO+ ou NewOpcodes.
 
 Erro: 0x0043EA2F
 Problema: O jogo não encontrou uma entrada/saída para um interior.
