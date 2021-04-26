@@ -7,377 +7,301 @@ Problema: (motivo dele)
 Solução: (alguma possibilidade de solucionar, pode faltar coisas ou estarem erradas, ajude contribuindo)
 
 Erro: 0x004C66CA
-Tipo: Crash
 Problema: Limite de tobj (timed objects) (objetos controlados por tempo, definidos em .ide).
 Solução: Instale Open Limit Adjuster, ou aumente o limite de "timed objects" no fastman92 limit adjuster.
 
 Erro: 0x005380C3
-Tipo: Crash
 Problema: Algum problema no carregamento de modelos e IDs num .ide/.ipl.
 Solução: Identifique, o fastman92 limit adjuster pode dizer inclusive qual ID, mas basicamente é algum .ide/.ipl com objeto inexistente ou duplicado.
 
 Erro: 0x0156680C
-Tipo: Crash
 Problema: Algum mod CLEO mal feito que trabalhou com um veículo inexistente.
 Solução: Use SCRLog para saber qual.
 
 Erro: 0x0040F663
-Tipo: Crash
 Problema: Algo relacionado à modelo de colisão — arquivos .col ou conteúdo dele, algum conflito, falta ou algo assim, normalmente mods de mapa.
 Solução: Identifique qual mod, se vem ou não um arquivo .col, contate o autor ou procure entender o problema mais a fundo.
 
 Erro: 0x00604376
-Tipo: Crash
 Problema: Algo relacionado à decision maker, provavelmente algum valor de decision maker inválido causado por algum mod CLEO.
 Solução: Procure identificar procurando por mods CLEO que trabalham com decision maker (criador de decisão). Isto é um conceito técnico, portanto se você é leigo precisará de um pouco de sorte, ou ajuda.
 
 Erro: 0x006D389B
-Tipo: Crash
 Problema: Algo relacionado com instalação de peças tuning em algum carro. Aparentemente é causado por um problema do modloader ao atualizar os mods instalados durante o jogo e instalar novas rodas tuning.
 Solução: Se o problema realmente for do modloader, o próprio modloader precisa corrigir numa nova versão (relatado na 0.3.7). Procure outras formas de evitar isso mas, desativar a atualização automática de mods no menu do modloader é uma boa. Se não for o caso, provavelmente um problema no modelo ou instalação de uma roda tuning.
 
 Erro: 0x00567187
-Tipo: Crash
 Problema: Algo relacionado com modelos de colisão, como arquivos .col ou mesmo o modelo de colisão de veículos. O modelo de colisão pode estar errado, faltando, atingiu limites, alguma coisa... Provável relação com 417AAA?
 
 Erro: 0x00417AAA
-Tipo: Crash
 Problema: Algo relacionado com modelos de colisão, como arquivos .col ou mesmo o modelo de colisão de veículos. O modelo de colisão pode estar errado, faltando, atingiu limites, alguma coisa... Provável relação com 567187?
 
 Erro: 0x0073B6C3
-Tipo: Crash
 Solução: Atualize a CLEO+, o crash foi corrigido.
 
 Erro: 0x00469FF7
-Tipo: Crash
 Problema: Provavelmente um mod CLEO precisa de algum ".cleo" que o seu jogo não tem instalado.
 Solução: Identifique e instale os plugins .cleo necessários, como CLEO+ ou NewOpcodes. Senão, é de fato algum erro de algum mod CLEO, tente SCRLog.
 
 Erro: 0x0043EA2F
-Tipo: Crash (ao abrir o jogo?)
 Problema: O jogo não encontrou uma entrada/saída para um interior.
 Solução: Já foi relatado ao salvar o jogo dentro de um interior do Enterable Hidden Interiors, e desinstalar o mod, assim o jogo não tem mais o interior e saída na qual foi salvo e causa este crash.
 
 Erro: 0x0043EA2F
-Tipo: Crash
 Problema: Ao limpar uma lista. Pode ser causado por muitos motivos diferentes, outros endereços no "backtrace" podem ajudar.
 Solução: Já foi relatado ao instalar um arquivo .ipl em formato de texto substituindo um binário (com nome "_stream"), o que é errado.
 
 Erro: 0x005D95CE
-Tipo: Crash (ao fechar o jogo?)
 Problema: Relacionado ao limpar a lista de materiais com efeitos, normalmente veículos, mas pode não ser causado necessariamente por mods de veículos, é um problema estranho.
 Solução: MixSets corrige todos os crashes ao fechar o jogo.
 
 Erro: 0x00406036
-Tipo: Crash
 Problema: Aparentemente algum limite de arquivos .ipl, ou limite do conteúdo total de todos os .ipls.
 Solução: Remova alguns mods .ipl que você tenha instalado, ou, se realmente for este o problema (tenha funcionando sem algum .ipl), use fastman92 limit adjuster para aumentar o limite de arquivos .ipl, ou faça fusão deles manualmente copiando o conteúdo de um para o outro, assim diminuindo o número de arquivos .ipl do seu jogo. Não há muito mistério, só tome cuidado com as seções (por exemplo todas as linhas de objetos precisam estar entre o "inst" até "end").
 
 Erro: 0x00749B7B
-Tipo: Crash
 Problema: Tentando criar um modelo que não existe. (peds? .asi?)
 Solução: Havia este problema no VehFuncs, corrigido a partir da v2.0.8. Outros mods que criam modelos, provavelmente qualquer tipo de modelo, podem causar isto, e provavelmente só .asi, ou o próprio jogo tentou criar um modelo nativo do jogo que por algum motivo não existe mais.
 
 Erro: 0x0068FB5C
-Tipo: Crash
 Problema: Relacionado com tarefas da inteligência artificial do jogo. O que especifica são os endereços embaixo do backtrace. Se há um "0x00681AAF" no backtrace é relacionado com patrulha da polícia, já foi relatado no GTA Brasil, provavelmente algum mod terceiro que o GTA Brasil usa, sobre AI e policiais.
 
 Erro: 0x0083D55B
-Tipo: Crash
 Problema: Relacionado com configurações de cores de veículos. Provavelmente há 2 mods que alteram o funcionamento ou limite de cores de veículos (carcols) causando conflito, ou outra coisa relacionada com os IDs das cores.
 
 Erro: 0x0074E2BA
-Tipo: Crash
 Problema: Relacionado com algum material de algum modelo, como um carro com materiais bugados.
 Solução: Já foi solucionado simplesmente identificando o carro, (re)importando no ZModeler e simplesmente exportando devolta. Provavelmente o ZModeler tinha exportado o carro com materiais errados e ao importar de volta os corrigiu.
 
 Erro: 0x0070FB39
-Tipo: Crash
 Problema: Não conseguiu encontrar o modelo de sombra de algum veículo.
 Solução: Identifique qual o veículo, contate o autor, ou corrija verificando se o modelo de sombra realmente está presente no dff e se está corretamente em funcionamento. Desativar as sombras stencil (aquelas modeladas, não low) não causará crash, mas não é uma real correção.
 
 Erro: 0x0046A220
-Tipo: Crash
 Problema: Relacionado com o processamento dos scripts do jogo.
 Solução: Pode ser algo relacionado com scripts CLEO, tente identificar algum mod CLEO que você tenha instalado e causou problema, mas estranhamente também foi encontrado como conflito de algum mod (não sei qual) com o SkyGfx.
 
 Erro: 0x00474BEF
-Tipo: Crash
 Problema: Algum mod cleo tentou pegar o pedtype de um ped não existente.
 Solução: Como explicado aqui, neste caso você deve usar o scrlog para saber qual script cleo causador do erro, e informe ao autor para que ele corrija. Um dos mods que causa isso é a versão antiga do GTA V XXX Service, corrigida, se você usa, atualize-o.
 
 Erro: 0x005FB2AA
-Tipo: Crash
 Problema: Um problema ao resetar os grupos, provavelmente um limite de grupos do jogo.
 Solução: Já foi relatado ao usar o mod Recruit More Members, já corrigido, simplesmente baixe a nova versão do mod. Se não é o seu caso, é outro mod (normalmente cleo) que trabalha com grupos e gangues.
 
 Erro: 0x00568642
-Tipo: Crash
 Problema: Algo relacionado com algum veículo ou objeto. Já foi relatado numa versão antiga do Project Props, onde um modelo de cerca causava crash ao chegar no local.
 Problema: Se você usa Project Props, atualize-o baixando a nova versão, pois este problema já foi corrigido. Se você não usa, procure qual mod causou isto e informe.
 
 Erro: 0x007FDE84
-Tipo: Crash
 Problema: Algo relacionado com textura de algum modelo. Pode ser .dff (na qual há material pedindo tal textura, assim havendo algum problema de solicitação), ou .txd (txd corrompido ou algo assim, provavelmente menos provável).
 
 Erro: 0x006B78DC
-Tipo: Crash após um tempo jogando
 Problema: O jogo não leu as configurações de handling especial de motos ou bicicletas. É uma linha de handling.cfg que determina o empinar etc. Pode ser que seja causado por adicionar uma moto ou bicicleta sem substituir e esqueceu de adicionar as linhas especiais.
 Solução: Tente identificar a moto ou bicicleta com o problema, principalmente se é adicionada sem substituir (que deve ser o motivo do problema), se for adicionada, verifique com mais atenção o tutorial para configurar o arquivo .ini do fastman92 limit adjuster e a instalação das linhas de handling. Se não é adicionada, ainda pode ser algum problema sobre isso, como a falta de alguma linha no handling, linha com nome errado etc.
 
 Erro: 0x00418733
-Tipo: Crash após um tempo jogando
 Sobre: Não conseguiu ler informações no modelo de colisão carregado de um veículo, ou objeto etc.
 Problema: Isto acontecia como conflito ao usar ModLoader + SilentPatch + IndieVehicles + Advanced Aiming.
 Solução: Atualize o seu IndieVehicles.asi, o problema já foi corrigido. Caso acontecer de novo, avise lá, enfiando o log do modloader.
 
 Erro: 0x00657475
-Tipo: Crash
 Sobre: Tem relação com tarefas de pedestres, pode ser algo sobre limites, algum cleo que trabalhe com pedestres ou algo do tipo. Há mais informações aqui, se você encontrar a solução ou mais informações, seria interessante dizer lá.
 
 Erro: 0x004C444A
-Tipo: Crash
 Sobre: Com o VehFuncs instalado, caso este crash acontecer, o mod dará informações sobre qual modelo de veículo causou isto.
 Sobre: Ao deletar um modelo, muito provavelmente um veículo, mas também pode ser pedestre, arma, e em casos muito raros, objeto. Caso tiver um "0x004089DD" embaixo do backtrace, realmente, foi durante o descarregamento de um modelo.
 Problema: Pode ter sido causado por algum model mal feito, mal adaptado, mal modelado, deve ser algo interno do modelo.
 Solução: Identifique qual, recomendo que teste primeiramente veículos e este mod pode ajudar. Desinstale e contate o autor. Lembrando também que pode ser mais de um modelo.
 
 Erro: 0x005334F0
-Tipo: Crash
 Sobre: Pode ser causado por diversos motivos. O endereço na segunda linha do "Backtrace" irá ajudar a entender qual o exato motivo.
 Problema 1: Caso tiver um "0x005279B6" na segunda linha do Backtrace, foi causado por algum mod relacionado à câmera do carro.
 
 Erro: 0x0061006F
-Tipo: Crash
 Sobre: Carregamento de pedestre aleatório na tal zona do mapa
 Problema 1: Relacionado com configurações de pedgrp.dat ou algum modelo de pedestre bugado.
 Solução 1: Identifique e desinstale tais mods. Sabendo o básico do funcionamento do pedgrp.dat você consegue determinar qual linha ou qual modelo de pedestre que tentou carregar baseado no local que você estava na hora do crash.
 
 Erro: 0x0072837D
-Tipo: Crash
 Problema: Renderização de uma sprite 2D. Provavelmente ela não existia.
 Solução: Um dos casos para isto acontecer é por exemplo usar o mod de mais ícones no radar sem o fastman92 limit adjuster instalado ou propriamente configurado. Pode ser outro caso semelhante.
 
 Erro: 0x005FD56F
-Tipo: Crash
 Problema: Relacionado com o modelo de colisão (ou simplesmente o próprio modelo ou instalação) de um pedestres de gangue.
 Solução: Procure identificar algum mod que altere os modelos das gangues e desinstale, contate o autor etc.
 
 Erro: 0x005B6A70
-Tipo: Crash
 Problema: Ocorreu durante o carregamento do carcols.dat, ao ler as cores de uma linha dele.
 Solução: Identifique qual veículo, qual linha etc, e procure identificar o problema ou simplesmente deletá-la. Também foi reportado corrigir deletando o gta_sa.set mas não parece fazer sentido.
 
 Erro: 0x00681A94
-Tipo: Crash
 Problema: Limite de tarefas da inteligência artificial de algum pedestre.
 Solução: Se não está usando Open Limit Adjuster, use, se já está usando, é algum mod cleo mal feito que faz algo com pessoas (ou raramente até com o CJ mesmo).
 
 Erro: 0x005B6784
-Tipo: Crash
 Problema: Relacionado com peças tuning inválidas; uma má configuração do carmods do tal carro.
 Solução: Identifique o carro e tente corrigir a linha de configuração de carmods dele removendo as peças incompatíveis com ele.
 Problema 2: Uma linha de carmods configurada com um carro inexistente.
 Solução 2: Identifique a linha, corrija; apague-a.
 
 Erro: 0x004F1610, 0x004EED28
-Tipo: Crash
 Sobre: É comum acontecer em um "crash duplo" no modloader.log, assim aparecendo dois crash dumps ao mesmo tempo. Você deve usar o crash que aparece em cima e ignore COMPLETAMENTE este, o correto é o que apareceu em cima deste. Neste caso este seria considerado um crash "falso". Não se sabe o que começou a causar isto nas pessoas. Se não apareceu dois, bem, este tem alguma relação com o áudio do jogo.
 
 Erro: 0x005A3FA6
-Tipo: Crash
 Problema: Relacionado com objetos procedurais (configurados pelo procobj.dat)
 Solução: Identifique qual mod, ou qual objeto. Desinstale-o, ou desinstale qualquer procobj.dat que você tenha instalado.
 
 Erro: 0x0074E36D
-Tipo: Crash
 Problema: Relacionado com algum material de algum modelo, provavelmente um veículo, e provavelmente foi salvo de maneira incorreta pelo ZModeler ao deixar a opção "auto detect lights" marcada na hora da exportação.
 Solução: Identifique qual modelo, desinstale, informe ao autor etc. Já foi corrigido simplesmente ressalvando o veículo no ZModeler desmarcando a opção "auto detect lights" na hora de exportar.
 
 Erro: 0x004AA8CB
-Tipo: Crash (ao tentar abrir o jogo)
 Problema: Você está sem a pasta 'audio'. Ou algum arquivo importante dentro dela.
 Solução: Verifique a pasta audio e seus arquivos.
 
 Erro: 0x005A5C98
-Tipo: Crash
 Problema: Relacionado com roupas, mais especificamente na textura de uma, provavelmente um .txd não existe. Isto pode acontecer ao instalar algum mod de player ou roupas e tentar iniciar o jogo salvo com uma roupa não compatível.
 Solução: Identifique qual .txd, e se mod de roupas ou player for o seu caso, inicie um novo jogo e veja se funciona. Recomendo que desinstale o mod, troque as roupas do seu jogo salvo pelas originais do início (ou deixe-o pelado), salve o jogo de novo e reinstale o mod, deverá funcionar.
 
 Erro: 0x004AA614
-Tipo: Crash
 Problema: Alguma má configuração no effects.fxp.
 Solução: Identifique o problema ou desinstale algum effects.fxp que esteja instalado etc.
 
 Erro: 0x006E3D9C
-Tipo: Crash (a qualquer momento, alguma ação de animação ou ao tentar entrar em um veículo)
 Sobre: Com o VehFuncs instalado, caso este crash acontecer, o mod dará informações sobre qual modelo de veículo causou isto.
 Problema: Grupo de animação incorreto, possivelmente alguma linha do vehicles.ide está errada, seja faltando ou mal configurada. Por exemplo, o número do grupo de animação na linha de handling.cfg (o último número da linha) precisa se adequar ao nome do grupo de animação (ifp) na linha do vehicles.ide. Em caso de dúvidas, simplesmente use os valores que o próprio jogo usa nos carros originais, assim não há como dar errado.
 Solução: Além do que foi falado logo acima, em geral cheque seus carros e suas respectivas linhas do vehicles.ide, cheque se está tudo certo, em geral, manualmente ou nos .txts com as linhas deles instalados no Mod Loader, lembrando também que caso ter um vehicles.ide dentro do Modloader, todos os .txts com linhas do Vehicles não carregarão como dito no tutorial do Mod Loader. Se mesmo sem as tais linhas instaladas (ou "mesmo corretamente instaladas") ainda crasha, tente desinstalar os carros do seu jogo, você pode usar o Test Car Load para testá-los e encontrar o com problema.
 
 Erro: 0x004EFE69
-Tipo: Crash
 Problema: Problema ao inicializar um som. Possivelmente algum som que você modificou está com problema ou incompatibilidade.
 Solução: Isso já foi relatado ao usar os sons que vieram na arma G36C. Desinstale estes sons, ou outros sons que você tenha baixado, tentando descobrir qual deu isso.
 
 Erro: 0x00412144
-Tipo: Crash
 Problema: Alguma coisa relacionada com modelo de colisão (arquivos .col).
 Solução: Tente descobrir qual mod edita ou adiciona arquivos .col e desinstalar. Ou tentar identificar o problema e tentar corrigir o .col do mod (pode ser relacionado com spheres ou boxes (esferas ou caixas do collision).
 
 Erro: 0x007F05E4
-Tipo: Crash
 Problema: Algum modelo, possivelmente um veículo mal modelado.
 Solução: Já foi solucionado após desinstalar o tal veículo. Era uma moto da polícia da ROCAM lowpoly. Pode acontecer com outros veículos, o problema é conseguir identificar qual.
 
 Erro: 0x006F763F
-Tipo: Crash
 Problema: Criação de um trem.
 Solução: Já foi solucionado após desinstalar o mod Trens Mais Longos. Também solucionou para você? Avise.
 
 Erro: 0x00436686
-Tipo: Crash
 Problema: Relacionado com paths (caminhos de carros).
 Solução: Remova mods que tenham alguma relação com paths, como mods que adicionam novos paths (novos caminhos). Há uma probabilidade de ser causado pelo mod Traffic & Travel (versão extendida), se foi o seu caso e solucionou ou não, (tendo certeza) Avise!
 
 Erro: 0x007C91CC
-Tipo: Crash
 Problema: Relacionado com o processamento do DirectX numa skin (como um ped ou possivelmente o próprio player)
 Solução 1: Desinstale o mod Normal Mapping by DK
 Solução 2: Caso não resolver com a solução acima, então identifique o tal mod de skin que você tenha instalado e desinstale.
 
 Erro: 0x006E00C4 (no Backtrace no fim do log?)
-Tipo: Crash
 Problema: Relacionado com a posição do engate de um veículo.
 Solução: Pode ser que seja relacionado com alguma coisa do tipo, assim como modelo de veículo de engate (como um trator, caminhão etc). Mesmo que estranhamente tenha sido relatado com os arquivos countryCML.ide/.ipl do mod de fazenda (na qual não parece fazer sentido).
 
 Erro: 0x00454CC7
-Tipo: Crash (ao tentar dar Load Game após já ter carregado um?)
 Solução: Deixe "-1" ou coloque um ;  na função "PickupsDrawDist" do MixSets (caso você o use).
 
 Erro: 0x00756B89
-Tipo: Crash
 Problema: Possivelmente algum veículo mal modelado.
 
 Erro: 0x005DA63A
-Tipo: Crash
 Problema: Relacionado com "pipeline" de veículos, algum mod que mude o funcionamento dos gráficos dos carros, como SkyGfx (mas não foi relatado ao usá-lo, aparentemente).
 
 Erro: 0x005A57EF
-Tipo: Crash
 Problema: Duas texturas de resoluções diferentes no player que precisam uma das outras. Por exemplo se a textura do torso do CJ é 512x512, a textura de camisa e tatuagem também precisa ser 512x512 etc.
 Solução: Identifique o mod, pode ser que algum mod de player ou roupas está mal feito, ou incompatibilidade caso você tenha instalado outra roupa, ou caso você esteja criando a roupa, agora você já sabe como resolver.
 
 Erro: 0x00441DB0
-Tipo: Crash
 Problema: Algo tentou pegar a rotação de algo e não conseguiu, provavelmente algum script cleo.
 Solução: Estranhamente já foi relatado com os seguintes veículos do 90s AVP: AT400, DFT30, Rustler, Shamal, Cropdust. Não foi informado qual versão, provavelmente do pack "Reborn 2". Também relatado aqui.
 
 Erro: 0x004AA2F4
-Tipo: Crash
 Problema: Inicialização de um efeito especial (fx / particle), como se tivesse inicializado um efeito que na verdade não pôde antes ser criado.
 Solução: Pode ter sido algum mod de efeito especial que você tenha instalado. Identifique; desinstale; nos avise. Já foi relatado com o IMFX, provavelmente má instalação de algum efeito (ou falta dele), como do headshot, onde você tem a opção de simplesmente abrir o imfx.dat e desativar os efeitos até encontrar. Foi reportado numa versão antiga do IMFX.
 
 Erro: 0x0156A2A7
-Tipo: Crash
 Problema: Bateu o limite de scripts (CRunningScripts) (não os .cs).
 Solução: Use fastman92 limit adjuster. Procure por "Running scripts" dentro do .ini, remova o "#" no início da linha e aumente o número para uns 200... ou 300..... "Running scripts = 200".
 
 Erro: 0x0040AB3B
-Tipo: Crash
 Problema: Linha(s) do data\pedgrp.dat vazia(s) ou nome de algum pedestre estar errado etc.
 Solução: Verifique seu arquivo, faça backup, desinstale algum que tenha no Modloader etc.
 
 Erro: 0x007F3825
-Tipo: Crash
 Problema: Descarregamento de uma textura. Foi relatado após ter instalado/desinstalado algum veículo sem sair do jogo usando ModLoader (muito possivelmente qualquer mod que inclui textura?)
 Solução: O ModLoader tem certos problemas com este tipo de instalação atualmente mesmo. O melhor é evitar instalar assim.
 
 Erro: 0x004D0C14
-Tipo: Crash
 Problema: Relacionado com animações (.ifp). Relatado ao selecionar "Refresh modifications" no menu do ModLoader.
 Solução: Tentar identificar qual .ifp dentro do ModLoader foi o causador?
 
 Erro: 0x0040AB3B
-Tipo: Crash
 Problema: Linha(s) do data\pedgrp.dat vazia(s) ou nome de algum pedestre estar errado etc.
 Solução: Verifique seu arquivo, faça backup, desinstale algum que tenha no Modloader etc.
 
 Erro: 0x004CEC60
-Tipo: Crash
 Problema: Carregamento de um arquivo .IFP inexistente ou com nome interno errado.
 Solução: Verifique a instalação dos seus mods que usam .IFP, e o nome interno do arquivo IFP (usando algum editor de IFP, como o GTA Anim Manager do Ryosuke839). O nome interno do IFP aparece na parte de cima do programa quando abre o IFP, e o nome tem que ser o mesmo nome do arquivo.
 Problema 2: Não encontrado uma animação necessária no .IFP
 Solução 2: Algum mod que precisou de alguma animação (geralmente .asi, não cleo) não a encontrou no .IFP. Um exemplo é você utilizar o mod Correr com armas pesadas com um ped.ifp incompatível.
 
 Erro: 0x007360ED
-Tipo: Crash
 Problema: Relacionado com armas/tiros. Já foi relatado durante um tiroteio na mansão do Madd Dogg. Possivelmente causado pelo mod Bullet do Ryosuke (versão 2010, não se sabe da 2009) — pois era o único mod relacionado com tiros no momento.
 
 Erro: 0x00533606
-Tipo: Crash
 Problema: Relacionado à limite de mapa
 Solução: Use Open Limit Adjuster
 
 Erro: 0x007FDE21
-Tipo: Crash
 Problema: Relacionado com texturas de algum modelo, seja qual for. O .txd pode estar com problemas.
 Solução: Tente descobrir qual modelo que fez causar o erro, e abrir ele no MagicTXD, possivelmente pode aparecer mensagens de erro, tente re-salvar, re-criar o .txd, re-colocar as compressões etc para ver se corrige.
 
 Erro: 0x00533D6E
-Tipo: Crash
 Problema: Criação de algum modelo. Pode mudar o tipo de modelo baseado no que há no "backtrace" no fim do log.
 Solução: Já foi relatado ao usar GTA III HD Vehicles Tri-Pack, onde ocorre em Ocean Docks e provavelmente é causado por algum barco do mod, mas pode ser também outro veículo.
 
 Erro: 0x00538103
-Tipo: Crash
 Problema: Algum limite de objetos.
 Solução: Use Open Limit Adjuster.
 
 Erro: 0x007C51A8
-Tipo: Crash
 Problema: Algum pedestre bugado.
 Solução: Tente identificar qual modelo de pedestre, Skin Selector pode te ajudar nisso.
 
 Erro: 0x00720089
-Tipo: Crash
 Sobre: Renderização do mundo.
-Tipo: Crash ao tentar abrir o jogo
 Problema: O mod "24H Timecycle" está instalado sem que o arquivo "timecyc_24h.dat" esteja presente na pasta "data".
 Solução 1: Desinstale o mod "24H Timecycle" ou instale o "timecyc_24h.dat" na pasta "data".
 
 Erro: 0x004C7D61
-Tipo: Crash
 Sobre: É relacionado com algum corrompimento de memória de node/frame de algum veículo, no entanto difícil dizer exatamente o quê, pode ser algum algum veículo que você tenha instalado que tenha alguma peça causando corrompimento.
 
 Erro: 0x00571B73
-Tipo: Crash
 Problema: Há mais de 400 motivos diferentes... Não será fácil descobrir o motivo tendo somente este endereço. Mas saiba que pode ser relacionado com entidades, coisas físicas, como objetos, pessoas, carros. Pode variar muito, mas em geral pode ser que o jogo tentou fazer algo com algo que não existe mais. É possível que um mod CLEO inclusive.
 
 Erro: 0x004C7DAD
-Tipo: Crash
 Sobre: Com o VehFuncs instalado, o crash é automaticamente corrigido e haverá informações do problema (como qual carro causou isto) no VehFuncs.log.
 Problema: Em geral o jogo não conseguiu encontrar a roda de algum veículo dentro do modelo dele. Pode ser causado por algum problema estranho interno do jogo, ou realmente ser um problema de modelagem de um carro etc.
 
 Erro: 0x006DADBA 0x006A6010
-Tipo: Crash
 Problema: Algum script CLEO ou missão tentou pegar a rotação de um veículo não mais existente. Isto é o mais provável, mas estranhamente já foi relatado por ser algum modelo bugado. Já foi relatado numa missão enquanto usando Improved SA Default Cars, missões usando helicóptero/avião pode causar este crash nele (e em outros?). Pode causar em qualquer veículo que você tenha baixado, caso você não use Improved SA Default Cars.
 Solução: Provavelmente é só um erro de algum script CLEO ou missão, ou realmente algum veículo foi apagado do jogo sem querer por outro mod. Caso você use o ISDC, tente descobrir quais modelos deram este problema. Também pode ser causado por outros veículos que você tenha baixado na qual estão com modelos bugados, basta descobrir qual, no caso do ISDC, foi relatado no Leviathan e durante a Marco's Bistro (na qual pode ter sido causado pelo Shamal)
 
 Erro: 0x*
 Sobre: Criação da textura de placa do veículo (presente no vehicle.txd, mas também alterada pelo Improved Vehicle Features).
 Backtrace: 0x006FDF15
-Tipo: Crash ao abrir o jogo
 Problema: Erro do mod Improved Vehicle Features, aparentemente presente somente na versão v2.1.1.
 Solução 1: Tente utilizar uma versão antiga, como v2.0.2, ou reinstalar o mod. Se você está no futuro e lançou alguma versão mais recente do que v2.1.1, tente usá-la.
 
 Erro: 0x0044F1C2
-Tipo: Crash
 Problema: Paths, possivelmente os arquivos "nodes*.dat" dentro do gta3.img.
 Solução: Verifique-os, faça backup, remova mods que edite eles etc.
 
 Erro: 0x0053388E ou 0x0070FF4D
-Tipo: Crash depois de um tempo jogando, mapa começando a sumir e/ou artefatos na tela até que dá erro? E possivelmente o erro também veio com esta janela.
 Problema: Possivelmente o jogo necessitou de mais memória RAM do que o permitido.
 Solução 1: Use o Largeadress para aumentar o reconhecimento de memória RAM do jogo. Esta é a melhor e já confirmada solução.
 Solução 2: Diminua o uso de memória (Stream Memory) por algum mod como Mix Sets, abaixe caso estiver alto, uns 1024 MB pode corrigir.
@@ -385,121 +309,98 @@ Solução 3: Diminua as suas configurações do Project2DFX, evite aumentar a di
 Sobre: Também não deixe de usar o SilentPatch para corrigir os artefatos que aparecem piscando pelo mapa ao chegar no alto uso de RAM.
 
 Erro: 0x00757D6E
-Tipo: Crash
 Problema: Problema de algum modelo. Já foi relatado durante a seleção de peças do Tuning Mod, assim causado pela tal peça...
 
 Erro: 0x00493E50
-Tipo: Crash
 Problema: Searchlights. Já foi relatado ao usar mods .asi de limite de searchlights, tais como SAsearchlightlimitadjuster.asi.
 Solução: Se você usa este .asi, deixe de usar. Use o Open Limit Adjuster na qual tem a mesma função e ninguém tem problemas com ele, enquanto estes .asi de searchlights várias pessoas já relataram problemas.
 
 Erro: 0x00493E50
-Tipo: Crash
 Problema: Searchlights. Já foi relatado ao usar mods .asi de limite de searchlights, tais como SAsearchlightlimitadjuster.asi.
 Solução: Se você usa este .asi, deixe de usar. Use o Open Limit Adjuster na qual tem a mesma função e ninguém tem problemas com ele, enquanto estes .asi de searchlights várias pessoas já relataram problemas.
 
 Erro: 0x007C4781
-Tipo: Crash ao fechar o jogo?
 Problema: Algum veículo bugado, ou algo relacionado com as animações do jogo.
 Solução: Tente descobrir qual veículo que deu o problema. O crash só acontecerá caso o tal carro bugado ser carregado no jogo, daí ao fechar o jogo irá dar este crash, portanto tenha isso em mente ao tentar descobrir qual dos veículos causou este crash. Ou pode ser qualquer coisa estranha sobre as animações. Muito provavelmente simplesmente instalar o MixSets (função SkipShutdown) nunca mais aparecerá a mensagem de erro ao fechar o jogo, o que é pode ser uma solução.
 
 Erro: 0x006BCAFE
-Tipo: Crash
 Problema: Faltando a linha de handling especial do tipo de veículo.
 Solução: Em veículos como motos, aviões etc há uma segunda linha de handling que é necessária para funcionar. Você pode ver a tal linha no fim do arquivo handling.cfg. Verifique se todas as linhas necessárias estão instaladas para o veículo funcionar.
 
 Erro: 0x007C4781
-Tipo: Crash
 Problema: Processamento de um modelo de skin. Já foi relatado ao abrir paraquedas com modelo editado (como 90s AWP) tendo o jogo com alto uso de memória RAM.
 Solução: Isso foi solucionado ao usar o Largeaddress
 
 Erro: 0x00564192 (no Backtrace no fim do log?). Ou 0x00801D58 0x005D9802 0x005D97E6 0x00811A2A 0x006FA915 0x006129E1 0x007F3851 0x00552A53
-Tipo: Crash ao fechar o jogo?
 Problema: Project2DFX 4.0 (0x00564192) ou 3.2 (resto dos endereços acima). Pode ser que ele seja corrigido no futuro, mas foi relatado na função TimedObjectsDrawDistance dele.
 Solução: Desative (colocando um "0.0") a função TimedObjectsDrawDistance dentro do SALodLights.ini. Ou só ignore não fechando o jogo pelo menu.
 0x006129E1 no "Backtrace": É relacionado com adicionar população no mapa, portanto pode ter algo a ver com isto, com adicionar NPCs (algum mod que controla isto? popcycle.dat? aumento do número de NPCs? algum mod que troca o modelo deles? aparentemente não foi possível criar um NPC).
 0x007C4806 no "Backtrace": É sobre descarregamento de hierarquia de animação, pode não ter a ver com animação mas com skins de pedestres. Não dá para saber exatamente o que houve, mas já foi relatado com o mod Fix Male01, se resolver para você, nos confirme.
 
 Erro: 0x007C4781
-Tipo: Crash logo ao terminar a barra de loading e ir iniciar o jogo?
 Problema: Tal problema foi relatado ao carregar um save na qual tenha sido salvo num exterior (como no casino four dragons) e esteja usando o mod HD Roadsignfont.
 Solução: Não use o mod ou não use save game no exterior. Por exemplo desinstale o mod, abra o save, salve-o num interior e pode voltar a usar o HD Roadsignfont.
 Tipo 2: Crash em outro momento e sem usar o tal mod citado acima?
 Problema 2: Este crash é relacionado com criação de "materiais" (basicamente texturas de modelos). Assim pode ter relação com mods de modelo.
 
 Erro: 0x00745393, 0x0074533E
-Tipo: Crash (ao tirar uma foto)
 Problema: Foi relatado ao usar o mod HiDef Camera. Após uns 30 minutos jogando? Usando mods que usam muita memória RAM como packs de texturas, carros etc?
 Solução: Deixe de usar, evite tal coisa, ou use o mod Largeaddress (testado e corrigido).
 
 Erro: 0x00650075
-Tipo: Crash (ao subir numa moto?)
 Problema: Foi relatado ao usar o mod Fixed Wayfarer.
 Solução: Por algum motivo o problema só aconteceu com algumas pessoas, portanto, se você usa este mod, simplesmente desinstale-o. Se você não usa, então pode ser outro mod de .ifp/animações relacionado com motos.
 
 Erro: 0x004A981E
-Tipo: Crash
 Problema: Foi relatado ao usar o mod Remastered Effects, e/ou IMFX, e/ou Combat FX.
 Sobre: Por favor dê informações se versões atuais o crash continua, ou caso você consiga reproduzir o crash com o mínimo possível para afirmar certamente qual é o exato modo que este crash aconteça (por exemplo se acontece só caso IMFX estiver instalado, algo do tipo) para nos dar informações afim de tentar entender como que o crash acontece e corrigir. Se você não usa estes mods, bem, saiba que é relacionado com o descarregamento de efeitos especiais, portanto, pode ser algum mod do gênero.
 Solução 1: Já foi dito que remover o "Explosion_satchel" da pasta Effects e desativar "explosions" no imfx.dat corrigiu este crash, confirmem.
 
 Erro: 0x004C672A
-Tipo: Crash
 Problema: Limite de modelos de armas.
 Solução: Leia o tutorial de como adicionar novas armas, principalmente a parte "Weapon Models" onde você tem que aumentar o limite de armas. Geralmente as pessoas não prestam atenção onde diz sobre usar Open Limit Adjuster junto com esta função. Ou seja, caso você use Open Limit Adjuster você não precisa ativar a função Weapon Models do Fastman92 Limit Adjuster, senão dará este crash.
 
 Erro: 0x0074EC24
-Tipo: Crash
 Problema: Worldpipe.
 Solução: SkyGfx edita ele, portanto possivelmente foi causado por ele, e no .ini há a opção de desativar o Worldpipe, assim como também foi explicado no leiame. Se você não usa SkyGfx, pode então ser outro mod gráfico como enb series ou até mesmo de texturas.
 
 Erro: 0x00812152
-Tipo: Crash
 Problema: Materiais de algum modelo de veículo. Uma peça para veículo com material mal configurado provavelmente. Provavelmente precisa aumentar o limite de materiais especiais dos veículos? MixSets tem configuração para isto e já aumenta por padrão, "CarMatPipeDataPool". Estranhamente parece que já foi solucionado ao alterar o vehiclePipe do SkyGfx de "Xbox" para outro, como "Env".
 
 Erro: 0x00801D58, 0x005D97E6, 0x005D9802. 0x00811A2A
-Tipo: Crash
 Problema: Aparentemente relacionado ao Project2DFX.
 Solução: Envido pelo Luiz Felip: Se quiser continuar usando o Project2DFX, vai ter que ir para dentro de algum interior (principalmente casa) para sair do jogo ou evitar sair do jogo no local de onde teve o tal problema
 (testado várias vezes e aparentemente solucionado)
 Clique aqui para informações mais detalhadas.
 
 Erro: 0x00533620
-Tipo: Crash (em Blueberry Acres?)
 Problema: Algum modelo bugado.
 Solução: Já foi solucionado ao atualizar o mod "Vertex Color Fix". Não sabemos se foi causado pelo mesmo postado na MixMods (aqui), se o daqui está atualizado etc. Se você teve este problema e tem o baixado daqui, avise e tente procurar por outra versão atualizada. Mas se o seu não foi baixado aqui, baixe o Vertex Color Fix daqui que aparentemente ele está atualizado.
 
 Erro: 0x005B8E6A
-Tipo: Crash
 Problema: Erro de Stream Memory, algum mod que edita o stream memory do jogo pode ter colocado algum valor incorreto.
 Solução: Isso pode ter sido causado por algum erro do Open Limit Adjuster, assim você pode desativar ou até mesmo apagar a linha MemoryAvailable do limit_adjuster_gta3vcsa.ini. Também possivelmente você colocou algum número incorreto no Mix Sets.ini na função StreamMemoryMB
 
 Erro: 0x0040ACD8
-Tipo: Crash (ao ir pra rua? indo para algum local do mapa?)
 Problema: Cargrp.dat errado.
 Solução: Enviado e solucionado pelo Luiz Felipe: Faça backup do arquivo, ou verifique se as linhas se estão corretas ou se não estão vazias, possivelmente o erro pode acontecer ao chegar em um certo local, por exemplo, se der o crash quando estiver chegando na região de uma praia ou estiver saindo da casa que fica na Praia de Santa Maria é que aparentemente o erro vem da linha: "POPCYCLE_GROUP_BEACHFOLK"
 
 Erro: 0x00554751
-Tipo: Crash (em algum local do mapa?)
 Problema: Algum modelo bugado. Foi ao mostrar alguma construção grande, ou seja, algum modelo grande como casas, lojas, prédios no local onde você estava. Já foi relatado em Verdant Bluffs.
 Solução: Tente descobrir, pode ser qualquer coisa relacionada a isso, tente voltar pro mesmo local onde o crash ocorreu para ter certeza, ou andar por aquele local. Pode ser causado por mods gráficos como skygfx e enbseries assim como modelos bugados, possivelmente até texturas, qualquer coisa relacionada ao mostrar um objeto grande no mapa...
 
 Erro: 0x004C4BD2
-Tipo: Crash
 Problema: Algum modelo bugado. Pode ser a falta da colisão ou outra coisa relacionada com ela e o funcionamento do modelo. Segundo Luiz Felipe, este problema acontece quando por exemplo renomeia o .dff e .txd de algum carro para o nome de algum pedestre. Portanto, este crash pode acontecer por coisas deste tipo, modelos com mal funcionamento, incorretos.
 Solução: Verifique seus modelos, pode ser qualquer tipo de modelo. Caso aleatoriamente durante o jogo pode ser principalmente carros ou peds; caso em alguma parte do mapa, é o modelo do mapa que está com colisão com problemas.
 
 Erro: 0x0058742D
-Tipo: Crash
 Problema: Renderização do hud. Já foi relatado ao usar um mod cleo chamado "Radar Zoom Fix".
 Solução: Caso você o use, desinstale este mod, aparentemente é totalmente problema do mod em si.
 
 Erro: 0x004946A4
-Tipo: Crash
 Problema: Problema de algum modelo. Já foi relatado ao usar o Skybox do GTA V.
 
 Erro: 0x004C48D6
-Tipo: Crash
 Problema 1: Peça de damage no .dff de algum carro.
 Problema 2: Se foi numa peça do Tuning Mod, é erro de modelagem. Na hierarquia da peça no ZModeler deve ter somente uma mesh, portanto, dê attach em tudo, e deixe o nome com algum nome único (não use coisas como "chassis" no nome dentro do .dff)
 Solução 1/2: Dê attach em tudo. Se ainda há problema, troque o nome da mesh por algum outro exclusivo.
@@ -507,60 +408,49 @@ Problema 3: Crash em LV? INSANITY Vegetation.
 Solução 3: Até o momento (no Update 1.0) este crash está acontecendo. Espere corrigir ou atualize o seu mod para a última versão.
 
 Erro: 0x004CAD9D
-Tipo: Crash
 Problema 1: Caso ter "0x00733619" no "Backtrace" (no fim do log): Problema com algum modelo/textura de algum pedestre, ou mod que mexa com pedestres.
 Solução 1: Identifique e remova.
 Sobre: Se não tem isso no Backtrace, o problema pode ser outro, envie o log dizendo.
 
 Erro: 0x0059BE3E
-Tipo: Crash
 Sobre: Com o VehFuncs instalado, caso este crash acontecer, o mod dará informações sobre qual modelo de veículo causou isto.
 Problema: Modelagem de algum veículo, mais provável moto, avião ou pedestre (levemente possível ser modelagem de qualquer outro modelo). Isso já foi relatado ao instalar um Hydra bugado, ao olhar a câmera nele dava este crash.
 Solução: Foi ao olhar num veículo? Identifique qual o tal veículo bugado e desinstale. Test Car Load pode ajudar nisso.
 
 Erro: 0x0F9491BB, 0xAA94F20A, 0x91C9E7BF, 0x6449A5FF
-Tipo: Crash (depois de ir no menu Advanced trocar a resolução?)
 Problema: Relação com o crash abaixo?
 
 Erro: 0x00718604
-Tipo: Crash (depois de ir no menu Advanced trocar a resolução?)
 Problema: Foi relatado ser problema no 90s AVP Reborn. Assim como também pode ser algum outro pack de veículos. Isto parece ser um erro causado por modelo de sombra ("shadow") muito HD (com muitos polys) no .dff.
 Solução: No caso do 90s AVP, foi causado pelo Super GT, ou seja, instale um outro Super GT no lugar dele. (repetindo: O problema não pode ser necessariamente deste pack mas sim qualquer pack, ou veículo que você tem no seu jogo.). Você pode usar o mod Test Car Load para tentar descobrir o carro. Basta deixar os carros passando devagar e a cada carro que é carregado você tenta ir no menu Advanced trocar a resolução, quando crashar, você saberá qual carro deu o problema). Veja se o problema com o tal veículo é o modelo de sombra muito HD, que causa corrompimento da memória devido ao ultrapassar os limites do jogo.
 
 Erro: 0x007EC9DA
-Tipo: Crash
 Problema: ped.ifp faltando.
 Solução: Dê uma olhada na sua pasta "anim", o ped.ifp está lá?
 
 Erro: 0x004AA3A1
-Tipo: Crash
 Problema 1: Efeitos especiais (arquivos .fxp). Um efeito não pôde ser removido da memória por algum erro.
 Solução 1: Desinstale seus efeitos trocados
 Problema 2: Se você não tem efeitos especiais trocados, pode ser problema do modelo em si que usa algum efeito, como jetpack trocado.
 Solução 2: Desinstalar o modelo que você estava usando na hora do crash na qual usa o tal efeito citado acima. Possivelmente só aconteceria no caso do modelo do jetpack...
 
 Erro: 0x0F9416FC
-Tipo: Crash (e as vezes freeze?)
 Problema: Erro do Save Game relacionado ao local onde foi salvo
 Solução: Enviado pelo Luiz Felipe: Troque de Save Game e evite salvar novamente neste mesmo local (geralmente não salvo pelos locais originais do jogo e sim através de mods). Você também pode usar programas editores de save game para trocar o local onde foi salvo e assim corrigirá o seu save.
 
 Erro: 0x006080BC
-Tipo: Crash
 Problema: Algum problema com alguma animação do ped.ifp
 Solução: Desinstale qualquer novo ped.ifp instalado ou se quiser pode tentar misturar arquivos .ifp tentando solucionar sem perder animações
 
 Erro: 0x6AC579A0 (em "Backtrace" no fim do log terá 0x00507A6F)
-Tipo: Crash
 Problema: Alguma coisa relacionada aos sons, seja drivers de som do seu PC ou packs de sons.
 Solução: Se você tem pack de sons, desinstale-o, se não pode tentar outros tipos de coisas relacionadas aos sons do jogo, como atualizar seus drivers de som
 
 Erro: 0xE8AC1250 (em "Backtrace" no fim do log terá vários "unknown" e um shell32.dll)
-Tipo: Crash (depois de alguns segundos de jogo?)
 Problema: Algum tipo de incompatibilidade do vehlightsfix.asi
 Solução: Corrigido ao aumentar a prioridade dele no modloader.ini, ou seja, coloque ele numa pasta e deixe esta pasta numa prioridade grande, como "100". Clique aqui para saber como.
 
 Erro: 0x00406034, 0x00406035, 0x00406038
-Tipo: Crash
 Problema: Limites de arquivos .ipl?
 Solução: O Fastman92 Limit Adjuster tem função para aumentar o limite de IPL, mas há o aviso de que isso causa bugs. Recomendo você tentar misturar os arquivos IPL, pegando por exemplo 2 IPLs pequenos, pegando os objetos de um e colocando no outro. Só não exagere pois também há limite de objetos dentro de um IPL, mas o limite é grande.
 A estrutura de um .ipl é basicamente assim:
@@ -569,77 +459,63 @@ inst
 end
 
 Erro: 0x006F3EF5
-Tipo: Crash
 Problema: Limite de carros estacionados. Os chamados "parked car generator".
 Solução 1: Tente instalar o Fastman92 Limit Adjuster, abra o .ini e em "#Car generators = 500" remova o "#" (para ativar a função), e aumente o número para uns 550, 600 ou até mais (caso você tiver fetiche por carros estacionados).
 Solução 2: Ou simplesmente diminua os carros estacionados, possivelmente você ou mods adicionaram muitos carros estacionados pelo mapa, ainda mais mods cleo mal feitos que a cada vez que salva o jogo ele cria um novo carro, assim vira uma pilha de carros estacionados no seu save game, mas no new game ou outro save irá funcionar, assim você pode tirar tais mods, e se não resolver, terá de deixar o seu save game pra trás e usar outro como este.
 Solução 3: Abra o .ini do seu Open Limit Adjuster e em "Vehicles" diminua o valor caso acima de 200, deixe entre 110 e 200. Já foi solucionado em 130.
 
 Erro: 0x004C59CB
-Tipo: Crash
 Problema: Algum problema ao tentar pegar o modelo da memória.
 Solução: Já foi relatado ao usar o mod "Paraquedas sempre nas costas". Desinstale-o.
 
 Erro: 0x00746929
-Tipo: Crash
 Problema: Há dois GTA SA abertos ao mesmo tempo.
 Solução: Vá no Gerenciador de Tarefas do Windows, procure pelo processo do jogo e feche todos, em seguida tente abrir de novo.
 
 Erro: 0x007F05C0
-Tipo: Crash
 Problema: Algum carro mal modelado. Há pequena possibilidade de qualquer outro modelo como peds e objetos, mas é geralmente carros.
 Solução: Descubra qual carro (ou outro modelo) e desinstale-o do seu jogo.
 
 Erro: 0x00679FA8
-Tipo: Crash
 Problema: Adicionar textura de sangue. Foi relatado ao usar versões antigas do Enhanced Classic Graphics e IMFX.
 Solução: Baixe o ECG ou IMFX que esse crash foi corrigido
 
 Erro: 0x004C686D ou 0x004C6637
-Tipo: Crash
 Problema: Limite de "modelos atômicos" (atomic models), possivelmente conflito de limit adjusters, como usar Fastman92 Limit Adjuster com Open Limit Adjuster. Ou atingiu o limite e precisa ser aumentado.
 Solução: Em caso de conflito, tente colocar um "#" no início da linha "AtomicModels" dentro do .ini do OLA (limit_adjuster_gta3vcsa.ini). Caso você não use nenhum limit adjuster, instale um (como o OLA) que o problema deverá ser corrigido.
 Possivelmente em seguida você terá que seguir também a solução do crash abaixo:
 
 Erro: 0x004C675A
-Tipo: Crash
-Problema: Limite de "modelos de aglomeração" (clump models), possivelmente conflito de limit adjusters, como usar Fastman92 Limit Adjuster com Open Limit Adjuster. 
+Problema: Limite de "modelos de aglomeração" (clump models), possivelmente conflito de limit adjusters, como usar Fastman92 Limit Adjuster com Open Limit Adjuster.
 Solução: Tente colocar um "#" no início da linha "ClumpModels" dentro do .ini do OLA (limit_adjuster_gta3vcsa.ini)
 
 Erro: 0x007F39F0
-Tipo: Crash
 Problema: Algo relacionado com encontrar texturas no .txd, o .txd provavelmente não pôde ser carregado por estar bugado.
 Solução: Já foi relatado no mod Freerunning Story 2.25, você pode procurar qual .txd especificamente causou isto e tentar corrigir ressalvando com Magic.TXD ou desinstalando ele.
 
 Erro: 0x0070BDAC
-Tipo: Crash
 Problema: Textura da sombra low do carro no particle.txd
 Solução: Verifique o seu particle.txd, pode ter algum problema com a textura "shad_car" ou qualquer outra coisa que não deixou essa sombra funcionar corretamente.
 
 Erro: 0x00804F51
-Tipo: Crash
 Problema: Relacionado com carregamento/descarregamento de um modelo. Já foi relatado ao usar 2 skin.img instalados juntos no GTA (mod Skin Selector, que inclusive já foi atualizado sem necessitar do .img)
 Solução: Se foi Skin Selector, verifique o que foi dito acima, ou caso você fez coisa parecida (como instalar 2 .img iguais etc, um erro que acontece geralmente para quem usa Mod Loader e instala errado ou duas vezes sem querer)
 
 Erro: 0x0074C8C0
-Tipo: Crash
 Problema: Relacionado com roupas do player. Já foi relatado por exemplo no óculos eyecat (olho de gato) do Amazing Player Female ao tentar fazer uma (ou algumas) missões.
 Solução: Identifique e não use tal peça de roupa em tal missão (ou mesmo em outros casos).
 
 Erro: 0x004F1464
-Tipo: Crash 
 Problema: Problema com os áudios do GTA SA da Steam.
 Solução: Baixe e instale a pasta áudio. Não foi relatado qual arquivo exatamente, mas se puder, todos, ou tente baixar pelo menos das rádios. Também disseram para apagar os seguintes arquivos da pasta "steams" (mesmo que eu achei estranho): ADVERTS, CH, CO, CR, DS, HC, MH, MR, NJ, RE, NJ TK
 
 Erro: 0x005D5CA2
-Tipo: Crash no carregamento (metade da barrinha)
 Problema 1: (ImVehFt) Relacionado ao carregamento da função de sujeira nos veículos.
 Solução 1: Possivelmente: Deletar o gta_sa.set na pasta do seu GTA e/ou na pasta Documents/GTA San Andreas User Files, se não, reveja se o endereço completo da pasta de texturas do ImVehFt está com menos de 200 caracteres etc
 Problema 2: (você não está usando ImVehFt) Relacionado ao carregamento da função de sujeira nos veículos.
 Solução 2: Possivelmente você adicionou compressão ("comprimido") na textura de sujeira do veículo (ou até mesmo outras texturas) dentro do models\generic\vehicle.txd, um erro comum que as pessoas fazem por exemplo ao aplicar mipmapping em todas as texturas de modo automático. Não faça isso, tais texturas não podem conter "comprimido".
 
 Erro: 0x015632B0
-Tipo: Crash no carregamento
 Problema: Bateu o limite de arquivos COL
 Solução 1: Faça os arquivos COL carregarem pelo Mod Loader usando uma linha de carregamento.
 Coloque o .col numa pasta dentro do Modloader (por exemplo "Modloader\alguma pasta\test.col"), crie um .txt nesta mesma pasta e dentro do .txt coloque: "COLFILE 0 Modloader\alguma pasta\test.col", faça isso com todos os seus arquivos .col (podem ser tudo no mesmo .txt). Se você não entendeu, tente ler a mesma coisa explicada em outra forma no tutorial do Mod Loader na sessão "Instalando arquivos COL".
@@ -647,62 +523,50 @@ Solução 2: Use fastman92 limit adjuster para aumentar o limite de COL em FILE_
 Solução 3: Simplesmente junte vários arquivos .col num só. Com o Coll Editor é possível simplesmente abrir um e arrastar outros para juntar eles num só, e assim diminuir a quantidade de arquivos .col do seu jogo. Note que é possível ser necessário aumentar outros limites relacionados com coll, mas são simples e normalmente Open Limit Adjuster resolve eles.
 
 Erro: 0x49646550 (no "Backtrace" no fim do log vai ter "0x005A3FDE")
-Tipo: Crash
 Solução 1: Isso já foi solucionado ao remover o Enterable Hidden Interiors.
 Solução 2: Isso já foi solucionado ao usar o Crack 1.0 US Compact.
 Sobre: Este crash pode variar muito, pode ser causado por muitas coisas diferentes.
 
 Erro: 0xE9F712A0 (no "Backtrace" no fim do log vai ter "0x00440973")
-Tipo: Crash
 Problema: Renderização da lanterna do carro.
 Solução: Já foi solucionado ao desinstalar o vehlightsfix.asi. Possivelmente deve ter sido alguma incompatibilidade com outro mod.
 
 Erro: 0x6F746163 (no "Backtrace" no fim do log vai ter "0x00440973")
-Tipo: Crash (depois de salvar o jogo?)
 Problema: Recarregar o mapa do local. Foi relatado depois de salvar o jogo.
 Solução: Já foi solucionado ao salvar o jogo em outro local.
 
 Erro: 0x1BF1AFF3, 0x03C03981, 0x03A53981, 0x03BD3576 (no "Backtrace" no fim do log vai ter "0x0040ED2B" ou "0x00618ED6")
-Tipo: Crash
 Problema: Tentar carregar modelo de alguma pessoa ou carro dependente a área em que você está. Isso já foi relatado ao usar o Cop Bikers Overhaul e possivelmente foi má instalação do modelo, seja dff/txd ou o próprio .ide do mod. Se você não usa este mod, mesma coisa, pode ser a falta do dff/txd ou .ide mal configurado assim faltando um pedestre e (raramente) veículo, geralmente o crash acontece na falta de um pedestre mesmo.
 Solução: Enviado pelo Luiz Felipe: Para corrigir este crash do Cop Bikers Overhaul, simplesmente NÃO salve o jogo fora de casa, entre dentro do jogo sem este mod ativado, salve dentro de alguma casa e instale o mod normalmente de novo. Se ainda crashar, tente em outra casa.
 
 Erro: (no "Backtrace" no fim do log vai ter "0x006E2BB7")
-Tipo: Crash
 Solução: Isso já foi solucionado ao usar o Crack 1.0 US Compact.
 
 Erro: (no "Backtrace" no fim do log vai ter "0x007FE8E7" e "SilentPatch.asi")
-Tipo: Crash (no SAMP?)
 Problema: Incompatibilidade da versão antiga do SilentPatch com o mod Outfit (armas pelo corpo)
 Solução: Atualize o seu SilentPatch, o problema já foi corrigido nas novas versões.
 
 Erro: 0x005D532A
-Tipo: Crash
 Problema: Inicialização dos scripts do jogo. Já foi relatado ao tentar iniciar o SAMP.
 Solução: No SAMP, foi solucionado de um modo, tente: Rodar em modo de administrador, seja SAMP quanto no GTA off; Possivelmente o problema também estava no save game, assim como mods de efeito da água ("water effect") e cops overhaul.
 
 Erro: 0x004874EA
-Tipo: Crash
 Problema: Algum mod cleo. Olhe no seu SCRLog.log (instale-o caso não tenha ainda e tente reproduzir de novo)
 Solução: Segundo AquaVXI, isso já foi solucionado inclusive desinstalando os arquivos smoke.dff/.txd e smokev.dff/.txd do Unofficial Patch.
 
 Erro: 0x00411160
-Tipo: Crash
 Problema: Foi durante a adição de coll (.col) do jogo. Possivelmente alguma incompatibilidade entre mods? Alguma coisa errada com os .col.
 Solução: Já foi relatado ao usar: "PS2 Map + Fixes" + "Vertex Color Fix + 2DFX Effects" + "Farming Mod" (tudo junto) e neste caso a solução foi fazer os .col do mod da fazenda ser carregado por linha de carregamento, como mostra a seção "Instalando arquivos COL". O seu problema pode ser semelhante, ou seja, alguma incompatibilidade, e pode ser que corrija fazendo os .COL serem carregados desta maneira, ou então desinstalando tais mods de .col para não causar tal incompatibilidade.
 
 Erro: 0x004C9239
-Tipo: Crash
 Problema: Algum problema com a linha de handling. Não instalada? Configurada errada? Bateu ou falta configurar limite? Qualquer coisa do tipo. Mais especificamente as flags do modelo.
 Solução: Verifique ao todo, esse crash foi relatado ao tentar adicionar um carro sem substituir.
 
 Erro: 0x0064F8C3
-Tipo: Crash
 Problema: Algum arquivo .ifp (de anims) está bugado; faltando anims; mal convertido etc.
 Solução: Identifique qual .ifp está causando isso e remova. Se foi logo ao iniciar o jogo, provavelmente foi algum ped.ifp que você tenha instalado.
 
 Erro: 0x004C9691
-Tipo: Crash
 Problema 1: Algum conflito com limites? Está usando Fastman92 Limit Adjuster com várias configurações editadas e Open Limit Adjuster junto?
 Solução 1: Tente desativar (colocar um "#" no início da linha) o "AtomicModels" dentro do .ini do Open Limit Adjuster. Ou se você for paciente, tentar descobrir qual configuração deu esse problema no Fastman92 Limit Adjuster.
 Problema 2: Foi algum carro que você instalou ou está modelando/editando?
@@ -711,7 +575,6 @@ Problema 3: SRT3 / RoSA Project (ou quem sabe qualquer outro mod de textura, ou 
 Solução 3: Leia o crash 0x00732924 ou 0x00749B7B abaixo:
 
 Erro: 0x004C9691 0x00732924 0x00749B7B
-Tipo: Crash enquanto jogando num local do mapa
 Problema: SRT3 / RoSA Project (ou quem sabe qualquer outro mod de textura, ou qualquer coisa que usa .txd). Aparentemente causado por usar texturas não potência de 2 no .txd. Como ensinado no tutorial do Magic.TXD aqui no blog, é necessário que a resolução das texturas tenha número potência de 2, como 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096 etc.
 Solução: Caso o crash foi no hospital de SF, baixe o fix encontrado aqui na MixMods na postagem do SRT e/ou RoSA Project. Se não foi neste local, nos informe, se você não usa tais mods então o problema não é este, mas ainda pode ser causado por outro mod que modifica .txd, e é corrigível recriando o .txd (caso você identificar qual .txd deu o problema aí) — exportando tudo com txd workshop e recriando o .txd com magic txd. A solução também pode ser simplesmente trocar a resolução das texturas para potência de 2, que além de corrigir tal crash, corrige outros bugs visuais e melhora o processamento da placa de vídeo.
 Problema 2: No caso do 0x00749B7B, pegar os modelos dentro de um modelo. Pode acontecer por muitos motivos, como algum script tentando criar uma pessoa na qual o modelo ainda não foi carregado.
@@ -724,29 +587,24 @@ Problema 5: Já foi relatado ao usar o mod "town_adjuster.asi", que é do Cops B
 Solução 5: Reinstale o mod, verifique se os .dff e .txd dos policiais estão realmente sendo carregados, ou simplesmente apague o "town_adjuster.asi".
 
 Erro: 0x006A4523
-Tipo: Crash (durante o Tuning Mod?)
 Problema: Ao fechar a porta de um carro, possivelmente inexistente.
-Solução: Se foi durante o Tuning Mod, saiba que na v1.5 ou mais nova foi corrigido. Se não estava usando o Tuning Mod, o Scrlog.log poderá dizer o problema (ou não), é muito possível que foi algum mod cleo que controla as portas do carros. 
+Solução: Se foi durante o Tuning Mod, saiba que na v1.5 ou mais nova foi corrigido. Se não estava usando o Tuning Mod, o Scrlog.log poderá dizer o problema (ou não), é muito possível que foi algum mod cleo que controla as portas do carros.
 
 Erro: 0x0045C7D4
-Tipo: Crash (ao ativar o modo de replay?)
 Problema: Já foi relatado isso ao usar SkyGfx e tentar ativar o replay.
 Solução: Não ative, ou se você sem querer aperta a tecla de ativar o replay, pode usar MixSets ativando o "DisaReplays"
 
 Erro: 0x00469FBC
-Tipo: Crash (ao carregar um save game depois de salvá-lo?)
 Problema: Inicialização dos scripts do jogo
 Solução: Apague a pasta "cleo\cleo_saves"
 Sobre: É recomendado não salvar o jogo tendo muitos mods cleos instalados (ou até mesmo outros mods, como mapas). Mais informações sobre cuidar da "saúde" do seu save game AQUI.
 
 Erro: 0x00822527
-Tipo: Crash
 Problema: shopping.dat com erros.
 Solução: Volte o backup do shopping.dat, remova esse arquivo do Mod Loader ou substitua pelo original na pasta Data.
 
 Erro: 0x004C8F24
-Tipo: Crash
-Problema 1: Este crash foi relatado ao usar o Stream Memory Fix 2.0, onde é um mod extremamente antigo e fora de uso. 
+Problema 1: Este crash foi relatado ao usar o Stream Memory Fix 2.0, onde é um mod extremamente antigo e fora de uso.
 Solução 1: Pare de usar ele e use o MixSets e/ou Open Limit Adjuster.
 Problema 2: Algum problema de limite de carros.
 Solução 2: Já foi solucionado ao instalar Open Limit Adjuster.
@@ -754,282 +612,226 @@ Problema 3: Relacionado ao modelo de algum carro.
 Solução 3: Procure e remova o carro (se puder, avise ao criador do mesmo). Test Car Load ajudará a encontrar o carro bugado.
 
 Erro: 0x00532B82
-Tipo: Crash
 Problema: Aparentemente falta de colisão (.col) em um modelo
 Solução: Verifique a instalação dos mods que você tem que usam .col, pode estar faltando .col ou com o .col errado (faltando o modelo da colisão lá dentro do .col)
 
 Erro: 0x00486726
-Tipo: Crash
 Problema: Aparentemente bateu o limite de modelos a serem carregados ao mesmo tempo por algum script cleo.
 Solução: Terá que remover alguns mods cleos que criam coisas como pessoas etc. Isso geralmente acontece ao iniciar o jogo quando se tem muitos mods cleos mal feitos (mods que carregam os modelos logo ao iniciar o jogo, o que é um grande erro)
 
 Erro: 0x004CE15C
-Tipo: Crash
 Problema: Erro ao carregar as animações do pedestre. Possivelmente o "data\peds.ide" está mal configurado.
 Solução: Corrija a linha errada no peds.ide, assim corrigindo a animação colocada no tal pedestre. Se não souber como fazer isso peça para o autor do mod. Se você mesmo editou, reveja melhor o que você fez ou volte o backup.
 
 Erro: 0x004CE15C
-Tipo: Crash
 Problema: Erro ao carregar as animações do pedestre. Possivelmente o "data\peds.ide" está mal configurado.
 Solução: Corrija a linha errada no peds.ide, assim corrigindo a animação colocada no tal pedestre. Se não souber como fazer isso peça para o autor do mod. Se você mesmo editou, reveja melhor o que você fez ou volte o backup.
 
 Erro: 0x0057FAAD
-Tipo: Crash
 Problema: Possivelmente causado pelo Widescreen Fix...
 
 Erro: 0xC000007B
-Tipo: Crash
 Problema: Falta de alguma .dll, runtimes etc
-Solução: Verifique a pasta raiz do seu GTA SA, se falta alguma .dll lá, uma boa dica é copiar todas as .dll da pasta de um GTA SA de backup e colar no GTA com problema, mas SEM SUBSTITUIR para assim só colar as que faltam. 
+Solução: Verifique a pasta raiz do seu GTA SA, se falta alguma .dll lá, uma boa dica é copiar todas as .dll da pasta de um GTA SA de backup e colar no GTA com problema, mas SEM SUBSTITUIR para assim só colar as que faltam.
 Solução 2: Clique aqui para baixar as .dll e runtimes que possivelmente estão faltando em seu PC.
 
 Erro: 0x0054F3B3, 0x0054F3B6
-Tipo: Crash
 Problema: Provavelmente algum mod de mapa (como que adiciona objetos), algum mod de objeto de mapa, ou algum outro problema estranho...
 
 Erro: 0x006FD525
-Tipo: Crash
 Problema: Vehicle.txd, mais especificamente, das texturas das placas do carro. Também possivel ser relacionado ao ImVehFt, texturas das placas na pasta ImVehFt\Plates.
 Solução: Backup ou instale outro mod que substitui o Vehicle.txd ou reinstalar o ImVehFt, há algum problema relacionado ao carregamento destas texturas.
 
 Erro: 0x0046504E
-Tipo: Crash
 Problema: Relacionado à algum objeto, criar, pegá-lo enquanto ele não existe mais, fazer alguma coisa com ele. Possivelmente causado por algum script cleo mal feito ou mal instalado etc
 
 Erro: 0x0059F8B4
-Tipo: Crash
 Problema: Falha ao carregar a colisão do .dff. O arquivo .col possivelmente não está instalado ou o nome dentro do arquivo .COL está diferente do nome do .dff relacionado à ele, ou então simplesmente não há o nome do .dff do modelo dentro do .COL
 Solução: Verifique se há arquivo .COL para o .dff devidamente instalado e funcionando no jogo, assim como vendo no modloader.log procurando se o .COL foi carregado etc. Ou verifique o seu arquivo .COL para ver se está tudo em ordens.
 
 Erro: 0x00734E5A
-Tipo: Crash
 Problema: TXD faltando ou incompleto ou bugado ou algum mod tentou carregar alguma textura ou algum modelo que não existe.
 
 Erro: 0x007F0875
-Tipo: Crash
 Problema: Algum carro mal modelado.
 Solução: Procure e remova o carro (se puder, avise ao criador do mesmo). Test Car Load ajudará a encontrar o carro bugado.
 
 Erro: 0x006A65F6
-Tipo: Crash
 Problema: Relacionado ao processar a suspensão de um carro, problema na colisão dele.
 Solução: Procure qual carro está com este problema e remova-o, avise o criador.
 
 Erro: 0x0070BDAC
-Tipo: Crash (depois de instalar SkyGfx?)
 Solução: Desative o HQ Shadows no .ini
 
 Erro: 0x0156CD5C
-Tipo: Crash
 Problema: Relacionado ao script tentar "pegar" alguma pessoa. Se o crash não foi durante uma guerra de gangues, é 100% de certeza que foi ocasionado por algum mod cleo.
 Solução 1: Se o SCRLog está vazio ou terminando em WAIT, então você deverá encontrar qual cleo que deu o problema manualmente. Possivelmente é algum conflito ou realmente mod mal feito, ainda se sabe pouco sobre isso.
 Solução 2: Já foi solucionado ao aumentar o número em Vehicles no limit_adjuster_gta3vcsa.ini. Deixe no mínimo 110.
 Solução 3: Já foi solucionado ao desinstalar o mod ManualDriveBy Remake.
 
 Erro: 0x00811A2A
-Tipo: Crash (ao fechar o jogo?)
 Problema: Algum material de reflexo de algum veículo.
 Solução: Tente identificar qual veículo., basicamente esse tipo de erro é: Se o carro bugado carregar, quando fechar o jogo (ou usar load game?) irá crashar, seguindo isso vc pode tentar descobrir qual foi o veículo com bug. Lembrando que só de entrar no jogo e ir pra rua já irá carregar vários carros referente ao local. A função SkipShutdown do MixSets remove a mensagem deste erro.
 
 Erro: 0x007C94E7
-Tipo: Crash
 Problema: Algum modelo bugado ou mod gráfico que mexe com os modelos. Modelos de pessoas/pedestres.
 Solução: Já foi solucionado ao remover o Normal Map do DK22Pac enquanto usava Insanity Peds e Insanity Weapons Items. Lembrando que usar estes mods sem o mod de Normal Map do DK funcionará sim, só não terá o efeito do Normal Map. O mesmo crash já ocorreu mesmo em outros mods que utilizam Normal Map, mesmo sem ter SkyGfx instalado.
 
 Erro: 0x006E18F6
-Tipo: Crash
 Problema: Textura da luz da lanterna do carro. Foi relatado ao instalar o ImVehFt 2.0.2
 Solução: Tente verificar se ele está instalado corretamente, tente não usar Mod Loader para instalá-lo, instale-o manualmente.
 
 Erro: 0x004082B1
-Tipo: Crash (ao recrutar um membro?)
-Problema: Relacionado à uma pessoa falar com o CJ. Este crash foi relatado ao usar o mod gangfriends.cs, mas há também outras possibilidades, se você não usou, avise.
-Solução: Se você usa, retire o mod, ou tente descobrir se algum outro mod está dando incompatibilidade com este, pois aparentemente só algumas pessoas tiveram este problema.
+Problema: Handle/referência inválida de uma pessoa do script.
+Solução: SCRLog pode te ajudar a descobrir exatamente qual script foi o causador do problema.
 
 Erro: 0x007C9119
-Tipo: Crash
 Problema: Relacionado à algum problema com o funcionamento de uma skin. Já foi relatado ao usar o mod Skin Selector ou o mod de paraquedas sempre nas costas junto com o Normal Mapping do Ryosuke839.
 Solução: Se você usa o Normal Map do Ryosuke, desinstale-o.
 
 Erro: 0x005A3280
-Tipo: Crash
 Problema: Carregamento de objetos no arquivo object.dat
 Solução: Identifique o mod e desinstale, ou se você tem 2 ou mais arquivos "object.dat" no ModLoader, pegue as alterações de um e coloque no outro. Este site pode ser útil. Há vários mods que usam arquivos object.dat, como Overdose Effects e alguns mods de mapa como INSANITY Construction Site by Ezekiel.
 
 Erro: 0x006F7524
-Tipo: Crash
 Problema: Iniciar os trilhos do trem, possivelmente problema com os arquivos "tracks*.dat" da pasta data\paths
 
 Erro: 0x007FFF12
-Tipo: Crash
 Problema: Pegar o formato da imagem (normalmente mods que carregam imagens .png, .bmp etc). Este crash foi relatado ao tentar usar ImVehFt no Windows 10
 Solução: Foi já solucionado ao reinstalar a pasta do mod, mas o problema continuava voltando.
 Problema 2: Semelhante ao caso acima, a tal imagem (.png, .bmp etc) não pôde ser carregada por algum motivo, incluindo a falta dela.
 Solução 2: Identifique e verifique se mods que usam imagens estão corretamente instalados, por exemplo o Hud do GTA V.
 
 Erro: 0x006D867A
-Tipo: Crash
 Problema: Velocidade do vento. Possivelmente algum mod que controle o vento do jogo? Como mods que editam a chuva ou o próprio Wind Mod criado por mim (caso configurar mal o .ini pode causar este crash, acredito eu).
 
 Erro: 0x005725BF
-Tipo: Crash
 Problema: Pegar a distância entre duas zonas (áreas do jogo, como bairros)
 Solução: Você mudou algum arquivo que controle alguma coisa das zonas? como arquivos .zon ou algum outro?
 
 Erro: 0x42480000, 0x42480007,  0x42480008, 0x42480012 (no "Backtrace" no fim do log terá 0x0056328C, senão, envie para nós)
-Tipo: Crash
 Problema 1: Caso tenha algum "0x0040E92F" no "Backtrace" foi causado por algum objeto no local. Se você não usa mods de ipl, modelos de mapa etc mas usa algum GTA não baixado da MixMods, envie o log explicando sobre.
 Problema 2: Foi relatado e solucionado ao atualizar o Ginput (mesmo que não faça muito sentido).
 
 Erro: 0x004946A4
-Tipo: Crash
 Problema: Relatado ao usar o Skybox do GTA V
 Solução: Remova-o,  muito mal feito
 
 Erro: 0x00757D6E
-Tipo: Crash
 Problema: Possivelmente alguma modelagem de alguma coisa (como um veículo) ou mods gráficos (como enb series). Já foi relatado selecionando uma peça no Tuning Mod, assim o problema é naquela tal peça.
 
 Erro: 0x007F5D85
-Tipo: Crash
 Problema: Possivelmente alguma modelagem de alguma coisa (como um veículo).
 
 Erro: 0x00611D99
-Tipo: Crash
 Problema: Frequência de aparecimento de algum veículo
 Solução: É um número na linha do vehicles.ide do tal veículo, clique aqui para ver qual número, algum dos seus carros deve estar com esse número configurado errado, verifique
 
 Erro: 0x00416C0B
-Tipo: Crash
 Problema: Problema de colisão (modelo de colisão, coll) de alguma coisa.
 
 Erro: 0x004AB7E7
-Tipo: Crash
 Problema: Possivelmente algum mod que mexa com pedestres/pessoas ou limite de pessoas no jogo.
 Solução: Pode tentar remover uns mods cleos que controlem pessoas ou usar o Open Limit Adjuster.
 
 Erro: 0x00731C93
-Tipo: Crash
 Problema: Limite de arquivos .TXD
 Solução: Baixe e instale o Fastman92 Limit Adjuster; Abra o fastman92limitAdjuster_GTASA.ini; Em "FILE_TYPE_TXD" remova o "#" do início da linha e aumente o valor. Pode aumentar bastante, uns 500 ou 1000 a mais.
 
 Erro: 0x0E0748C5 ou 0x0E3E9AD1 ou 0x0FE75A1F (no "Backtrace" no fim do log vai ter 0x006A7770)
-Tipo: Crash
 Problema: Relatado ao usar o mod de não explodir o carro enquanto capotado (criado pelo LINK/2012) (este mod também é incluído no MixSets)
 Solução: Remova o mod, no caso do MixSets, desative a função "VehFlpDontBurn" dentro do Mix Sets.ini
 Solução 2: Usar NoDEP.asi, possivelmente não ajudará, mas se ajudar avise!
 
 Erro: 0x08265E39, 0x0E2656F3 (no "Backtrace" no fim do log vai ter 0x006ADB85)
-Tipo: Crash
 Problema: Relatado ao usar o mod de engatar marcha ré junto com o MixSets, pois o MixSets já tem este mod incluído (BrakeReverseFix dentro do .ini).
 Solução: Apague o mod e deixe só o MixSets
 
 Erro: 0x00553927
-Tipo: Crash
 Problema: Ao mostrar os LOD (modelo de baixa resolução que aparece longe da tela). Este problema já foi relatado ao usar um mod de lombadas.
 Solução: Verifique seus mods que mudam ou adicionam modelos etc, como árvores ou qualquer outra coisa que mexe com os LODs do jogo ou adiciona novos modelos que não tenham log. Como digo antes, se você tem algum mod de lombadas, apague-o, ele é mal feito e causa esse crash.
 
 Erro: 0x006CAC47
-Tipo: Crash
 Problema: Já foi relatado ao usar Enhanced Functions com carros adicionados sem substituir.
 Solução: Pare de usar o Enhanced Functions, é um mod obsoleto, foi substituído pelo VehFuncs.
 
 Erro: 0x004AA134
-Tipo: Crash
 Problema: Relacionado à partículas (efeitos especiais)
 Solução: Tente remover seus mods de efeitos especiais. Esse problema já foi relatado ao usar um mod de xenon (não o xenon em cleo pois ele é só um cleo e não muda os efeitos do seu jogo)
 
 Erro: 0x004F02D3
-Tipo: Crash
 Problema: Relacionado à reproduzir um som. Já foi relatado no SAMP ao atirar perto de alguém
 Solução: Se você não mudou os sons do seu jogo, pode ser qualquer outro problema relacionado à isso, incluindo drivers de áudio do seu PC
 
 Erro: 0x004C53A6
-Tipo: Crash
 Sobre: Normalmente causado por algum veículo ter o nome do node (basicamente, o nome da peça) com nome longo demais (o limite é 23 caracteres, sendo 25 ou mais causa problemas graves no seu jogo). Com o VehFuncs instalado, este crash é corrigido automaticamente. A informação ainda continua no .log caso você queira saber qual é o veículo causador do problema. Sem o VehFuncs, tendo ou não este crash, o problema que leva a este crash também leva à outros bugs e crashes do jogo. Mais informações aqui.
 
 Erro: 0x00571A10, 0x00571A00
 Sobre: Isto pode ser causado por centenas de motivos diferentes.
 Backtrace: 0x00490B77
-Tipo: Crash durante o jogo
 Problema: Algum mod aplicou tarefas demais aos peds/NPCs do jogo, assim batendo o limite.
 Solução 1: Identifique e remova este mod cleo. Você pode usar o SCRLog para isso, mas basicamente é algum mod que controla NPCs. Avise ao autor do mod para que ele corrija.
 Solução 2: Aumente o limite de tarefas.
 
 Erro: 0x909090C3
-Tipo: Crash
 Problema: Este crash pode acontecer devido há vários motivos. Ele já foi relatado como possivelmente o mod de sons Overhaul (alguém mais pra confirmar isso?).
 
 Erro: 0x00536BE0
-Tipo: Crash (ao sair da loja na missão do Ryder?)
 Problema 1: Relacionado ao pegar o centro da massa de um modelo. Este crash é famoso por acontecer depois de sair da loja na missão do Ryder. Não se sabe exatamente o motivo ainda.
 Solução 1: Este crash já foi solucionado depois de remover os seguintes mods (avise caso mais outro): Fogo do escapamento do GTA V para GTA SA, FreeFall_IV_mod_beta2, Car Wheelie (empinar carro), Steering (Active Dashboard), Car Health Bar (mostrar barra com danos do carro), Max Velo 999, Arrumar carro instantaneamente, Nitro ilimitado.
 Problema 2: Limite de veículos criados.
 Solução 2: Use Open Limit Adjuster e aumente o "Vehicles = 110" , uns 150 ou 200 está ótimo já. Se você teve o crash por exemplo em mod de atirar carros, pode aumentar bastante para você poder atirar muitos carros no jogo.
 
 Erro: 0x005A5A47
-Tipo: Crash
 Problema: Relacionado a texturas (do player.img?). Este crash já foi relatado ao usar mipmaps em texturas do player.img (roupas etc do CJ)
 Solução: Retire as tais edições, se você não fez nada disso, tente informar/descobrir o que você fez para dar também este problema
 
 Erro: 0x00650311
-Tipo: Crash enquanto jogando
 Problema: Relacionado à criação de um motorista de um carro aleatório (da rua)
 Solução: ?... eu mesmo tive este crash e ainda não descobri nada, se você teve também ajude contribuindo
 
 Erro: 0x0040F64C
-Tipo: Crash quando um veículo explode
 Problema: Possivelmente seus mods de efeitos especiais (effects.fxp)
 Solução: Desinstale-o. Você também pode tentar usar os gráficos do jogo no Low que pode também corrigir o problema.
 
 Erro: 0x004F0E1C
-Tipo: Crash
 Problema: Alguma coisa relacionada aos sons.
 Solução: Está usando pack de som? Tente desinstalá-lo para ver se resolve.
 
 Erro: 0x0070AA31
-Tipo: Crash
 Problema: Alguma coisa relacionada às sombras do jogo.
-Solução: Se estiver usando shadows extender, pode tentar desinstalá-lo. 
+Solução: Se estiver usando shadows extender, pode tentar desinstalá-lo.
 
 Erro: 0x007F5A3A
-Tipo: Crash
 Problema 1: Caso ter "0x006A2C29" no "Backtrace" no fim do log: Má modelagem de algum veículo.
 Solução 1: Tente descobrir qual veículo e desinstale-o.
 
 Erro: 0x006A65EF
-Tipo: Crash
 Problema: Algum veículo sem colisão
 Solução: Verifique seus veículos, se não saber qual é, teste para ver se estão funcionando e parar procurar qual está com problema ou desinstale manualmente, ou todos, algum deles estão com .dff com erros. Isso deve ajudar a encontrar.
 
 Erro: 0x0072837D
-Tipo: Crash
 Problema: Relacionado à sprites na tela (qualquer coisa adicionada no hud, imagens, textos)
 Solução: Tente descobrir qual mod e deletá-lo, seja qualquer mod que adicionou tais coisas na tela durante o crash. Este crash foi relatado com a possível causa: "Hud de Aviação", confirma?
 
 Erro: 0x00405CB6
-Tipo: Crash no fim da barrinha
 Problema: Falta de um IPL
 Solução: Verifique se falta algum IPL para ser carregado, seja original do jogo ou algum instalado. Geralmente os arquivos gta.dat ou em algum leiame vem com linhas de carregamento de IPL dentro, assim, reinstale os tais mods ou apague-os totalmente.
 
 Erro: 0x00801D58
-Tipo: Crash ao fechar o jogo.
 Problema: Geralmente alguns mods asi fazem dar este erro mesmo, não sei por que e quais.
 
 Erro: 0x004C678E
-Tipo: Crash no carregamento
 Problema 1: Bateu o limite de modelos de veículos.
 Solução 1: Este crash já foi relatado pelo limite de veículos e foi solucionado ao usar algum Limit Adjuster, verificando também se o Limit Adjuster realmente está em funcionamento (necessitam de algum visual c++, como o Fastman92 Limit Adjuster)
 Problema 2: Algum modelo de veículo ausente, vehicle.ide incorreto, limite de linhas acima do necessário (geralmente causado pelo fastman92 limit adjuster mal configurado).
 Solução 2: Verifique se seu vehicle.ide está correto, não só ele, mas incluindo linhas de veículos instalados pelo Mod Loader. Verifique também se você está com todos os veículos instalados no seu GTA de modo correto e/ou tente desinstalar carros antes instalados. Caso use fastman92 limit adjuster, se a configuração "Vehicle Models" está bem configurada. Lembrando que caso você use Open Limit Adjuster você deve colocar um "#" no início dessa linha no .ini do fastman92 limit adjuster, já que o Open Limit Adjuster configura ela automaticamente para você.
 
 Erro: 0x006FEC20 ou 0x0D3C1FA0 (0x006FECF5)
-Tipo: Crash
 Problema: Ao renderizar o texto das placas de transito (aquelas dizendo os nomes das cidades etc, roadsigntext).
 Solução: Problema com a textura das letras no particle.txd? você usou compressão nesta textura no particle.txd? Está usando .cs de aumentar a resolução daquelas placas? Alguma dessas coisas podem ter causado o problema e você deve com certeza checar o particle.txd que você está usando, não adicionando compressão ("comprimido") na textura roadsignfont, deixando Raster Raw.
 
 Erro: 0x004DD5A3
-Tipo: Crash ao iniciar o jogo
 Problema: Algo fez com que o driver de áudio não seja inicializado.
 Solução: Procure atualizar, reinstalar os drivers de áudio do seu PC, pode haver alguma má configuração, incompatibilidade de driver etc. É sempre bom ter SilentPatch instalado pois ele corrige algo sobre drivers também.
 Problema 2: Algum mod que exige ter a pasta Audio completa (não RIP), como o TTDISA.
@@ -1038,20 +840,16 @@ Problema 3: Falta da pasta Audio
 Solução 3: Se você por exemplo deletar a pasta Audio do jogo, irá acontecer esse crash, mas também pode acontecer casos de conflitos, arquivos corrompidos etc.
 
 Erro: 0x004D3FBC
-Tipo: Crash
 Problema: Tentou usar uma animação de um IFP não carregado? IFP bugado e não pode ser carregado pelo jogo?
 
 Erro: 0x0065ED19
-Tipo: Crash
 Solução: Este crash já foi solucionado ao limpar a pasta do Mod Loader, removendo arquivos não necessários. Mas acredito que isso não tenha sentido e não foi realmente por causa disso
 
 Erro: 0x0048C3A9
-Tipo: Crash
 Problema: Erro ao tentar carregar um IFP. Muito possivelmente o IFP não está instalado no seu GTA.
 Solução: Verifique a instalação dos IFP. No SCRLog.log deverá ter o nome do script na qual pediu o IFP
 
 Erro: 0x0057A065
-Tipo: Crash ao abrir o menu "Advanced" (das configurações avançadas de display)
 Problema 1: Já foi relatado ao usar carro bugado. Relatado com o mod 90s AVP por causa do Bandito, onde depois de spawnar ele e ir pra este menu, dará o crash.
 Solução 1: Troque o carro por outro na qual não tem este bug.
 Problema 2: Por algum motivo não foi possível identificar o modo de vídeo.
@@ -1059,121 +857,98 @@ Solução 2: Isso já foi relatado e simplesmente parou de dar o erro, por si s�
 Sobre: Caso você use 90s AVP Reborn, leia também o crash 718604
 
 Erro: 0x006BF73B
-Tipo: Crash
 Problema: Relacionado ao modelo de colisão de alguma moto, no entanto isto pode ser causado por outros fatores, como limites sendo batidos.
 
 Erro: 0x006999EF
-Tipo: Crash enquanto jogando
 Problema: Relacionado à objetos (desde como postes, hidrantes até portas e outros objetos controlados por script), aparentemente algum problema ao processar a lista destes objetos. A ver com Save Game? Objeto bugado?
 
 Erro: 0x004C4576
-Tipo: Crash
 Problema 1: Ao tentar carregar as peças tuning do carmods.dat. Este crash também já foi relatado ao tentar recarregar os carros in-game pelo modloader.
 Solução 1: Verifique as suas peças e/ou o carmods.dat, pode ser que você deletou algum modelo de peça tuning acidentalmente, má configuração de alguma linha de algum carro etc.
 Problema 2: O arquivo data/gta.dat está ausente.
 Solução 2: Verifique se ele está lá.
 
 Erro: 0x0071A190
-Tipo: Crash
 Problema: Fonte (letras) da tradução.
 Solução: Já foi solucionado ao usar outra tradução brasileira. Acredito que baixar a tradução da gamevicio deva resolver.
 
 Erro: 0x006F32C0
-Tipo: Crash ao entrar no jogo
 Problema: Foi relatado ao tentar adicionar um carro estacionado com um modelo de um carro adicionado (ou seja, não nativo do jogo, um carro instalado sem substituir).
 Solução: Para poder estacionar carros adicionados no jogo sem substituir, é necessário abrir o .ini do Fastman92 Limit Adjuster, procurar pela linha "#Accept any ID for car generator = 0" remover o # e colocar = 1.
 
 Erro: 0x005A5781
-Tipo: Crash ao entrar no jogo
 Problema: Relacionado com cópia de texturas. Aparentemente há uma textura com compressão, e o GTA não suportou compressão nela. Este crash já foi relatado ao colocar compressão na textura "vehiclegrunge256" do vehicle.txd sem ter o ImVehFt instalado.
 Solução: Tente descobrir em qual .txd está com este crash, desinstale-o ou abre ele com o TXD Workshop, clique duas vezes na tal textura marcada com "Compressed" (pode haver várias, ou todas) e desabilite o "Compressed" dela, salve o TXD e tente novamente (se solucionar etc, relate ao autor).
 
 Erro: 0x00537D12
-Tipo: Crash no carregamento
 Problema: Bateu o limite de modelos dentro de um arquivo COL
 Solução: Use Open Limit Adjuster
 
 Erro: 0x00632D15
-Tipo: Crash
 Problema: Relacionado à colocar uma sequência de animação num ator
 Solução 1: Algum script cleo? veja no SCRLog.log
 Solução 2: Possivelmente algum outro mod (geralmente cleo) removeu a tal pessoa e assim o jogo crashou ao tentar adicionar animação em alguém inexistente. Tente descobrir manualmente qual mod fez isso, já que nesses casos o SCRLog.log não deve ajudar.
 
 Erro: 0x00668269
-Tipo: Crash
 Problema: Relacionado à fazer alguém andar e parar em algum lugar
 Solução 1: Algum script cleo? veja no SCRLog.log
 Solução 2: Possivelmente algum outro mod (geralmente cleo) removeu a tal pessoa e assim o jogo crashou ao tentar adicionar animação em alguém inexistente. Tente descobrir manualmente qual mod fez isso, já que nesses casos o SCRLog.log não deve ajudar.
 
 Erro: 0x006EB670
-Tipo: Crash
 Problema: Problema ao tentar iniciar a água do jogo, possivelmente problema na textura "waterwake" do "models\particle.txd"
 Solução: Cheque esta textura, ou então outras texturas relacionadas a água
 
 Erro: 0x006B4220
-Tipo: Crash
 Problema: Processar a morte de uma pessoa. Esse tipo de crash é comum e difícil entender o motivo disso, se você já conseguiu solucionar tal coisa, avise. É complicado pois geralmente ocorre aleatoriamente, assim fica difícil saber se corrigiu ou não. Mas acredito que possa ter haver com algum mod cleo mal feito que controle pessoas.
 
 Erro: 0x007F0C41
-Tipo: Crash
 Problema: Relacionado com algum modelo de veículo (ou em certo caso, construção da roupa do CJ)
 Solução: Já foi relatado como incompatibilidade de SkyGfx com outro mod. Veja se é o seu caso e identifique o mod e atualize o SkyGfx para a nova versão. Mas provavelmente é algum problema estranho sobre modelos, normalmente veículos.
 
 Erro: 0x004D68BA
-Tipo: Crash
 Problema 1: É relacionado com o processamento de animações. Caso tiver 0x006BB8B0 no Backtrace no final do log, então é relacionado com animação de uma moto.
 Solução 1: Já foi relatado ao correr MUITO rápido, quem sabe a velocidade fez dar erro. Pode ser também qualquer outra coisa relacionada às animações de uma moto.
 
 Erro: 0x49646550 ou 0x42480000 (mas o que importa é que no backtrace no fim do log terá 0x004091E2 ou 0x005641D2)
-Tipo: Crash
 Problema: Após ter dar load no jogo após carregar o primeiro ou o CJ morrer ou então ao fechar o jogo? E você antes instalou/desinstalou algum mod de mapa in-game pelo ModLoader?
 Solução: Até o momento o ModLoader tem alguns problemas de instalação dentro do jogo mesmo. O crash já foi relatado ao instalar/desinstalar os mods Postes de luz do GTA IV, Novos postes em HD e deve ter outros do mesmo tipo.
 
 Erro: 0x00544BC8 ou 0x00542721, também possivelmente 0x00542830
-Tipo: Crash (depois de criar muitos veículos no jogo?)
 Problema: Limite de veículo na pool, ou de entidades físicas (onde inclui veículos entre outras coisas físicas)
 Solução: Baixar e instalar o Open Limit Adjuster, se já tiver instalado e continuar os erros, ir no .ini do OLA, se caso a função "EntryInfoNode" estiver desabilitada, ative ela removendo o "#" e deixe "unlimited"
 Solução 2:  (Luiz Felipe) Caso já esteja usando o Open Limit Adjuster e este crash acontece ao usar o cheat de explodir todos os veículos (CPKTNWT), ir no .ini do OLA, procurar pela função "EntryInfoNode" remova o "= unlimited" e coloque "= 750" (ou mais). Caso esteja usando mods de mapas que adicione modelos ou coisas do tipo, deixe "= 1500" para garantir.
 
 Erro: 0x0059FE47
-Tipo: Crash
 Problema: Na pré-renderização de um objeto, depois de adicionar o tamanho nele, não sei se foi por causa do tamanho, mas o GTA tem um crash original onde faz o jogo crashar caso mover a câmera contra um objeto de tamanho editado por script. Este crash já foi relatado ao morrer com o mod de Armas no Chão.
 Solução: Procure saber onde ocorre o crash, possivelmente o tal objeto está preso no mapa do jogo, sendo assim, em new game ou outro save game não terá o crash, o problema está preso no seu save game (leia mais aqui). Se não, algum script deve ter criado algum objeto lá que fez dar este crash, procure saber qual script.
 
 Erro: 0x0072F4DE
-Tipo: Crash (jogando?)
 Problema: Relacionado com alocação de memória. Este crash já foi relatado por um carro bugado.
 Solução: Se for mesmo o problema com um carro, retire-o e contate o criador sobre esse problema.
 
 Erro: 0x0040890A
-Tipo: Crash
 Problema: Relacionado com carregamento de uma textura dentro de um TXD. Aparentemente o TXD está errado, ou bugado, ou ausente. (pode ter mais motivos ainda)
 Solução: Verifique os TXD se estão instalados, se está certo etc etc
 
 Erro: 0x004C663B
-Tipo: Crash
 Problema: Bateu o limite de objetos do jogo. É um crash que acontece ao instalar muitos objetos novos ou muitas peças do Tuning Mod.
 Solução: Use Open Limit Adjuster
 
 Erro: 0x0040FB80
-Tipo: Crash
 Problema: Relacionado a colisões (coll), possivelmente bateu algum o limite de colisões do jogo, ou outro problema sobre .col.
 Solução 1: Usar Open Limit Adjuster?
 Solução 2: Já foi solucionado devido a alguma má configuração do fastman92 limit adjuster.
 Solução 3: Se você está tentando iniciar o SAMP, provavelmente o samp.exe está com modo de compatibilidade diferente do gta_sa.exe, ou outro motivo que fez o SAMP não conseguir abrir o gta_sa.exe (má configuração, já há algum gta_sa.exe no Gerenciador de tarefas, algum programa impedindo a inicialização (você pode tentar reiniciar o PC) etc).
 
 Erro: 0x004C67BB
-Tipo: Crash
 Problema: Limite de modelos de pedestres no peds.ide
 Solução: Use Open Limit Adjuster
 
 Erro: 0x006D1080
-Tipo: Crash
 Problema: Falha ao pegar o handling de um veículo, muito possivelmente o veículo sumiu do jogo e algum mod mal feito acabou tentando pegar o handling de um carro inexistente
 Solução: Possivelmente foi um cleo e possivelmente não irá gerar SCRLog.log para você saber qual cleo... você terá que procurar qual script fez dar este erro manualmente, infelizmente. Se foi algum mod da MixMods, avise.
 
 Erro: 0x005B6B2F
-Tipo: Crash
 Problema 1: Dois IDs iguais sendo usados no data/vehicles.ide
 Solução 1: Verifique o seu vehicles.ide ou linhas dele, deve ter linha duplicada ou ID já usado etc, coisas do tipo. Pode ser até mesmo uma linha com modelo mal configurado, ausente etc.
 Problema 2: Erro no carcols.dat, número de variações de cores, possivelmente algum carro está com mais do que 16 cores na linha de carcols dele ou o vehicles.ide está mal configurado.
@@ -1181,7 +956,6 @@ Solução 2: Apague o número de variações das cores do carro para deixar meno
 O problema também pode ser por causa do vehicles.ide mal configurado, reveja os modelos e IDs se estão todos corretos etc
 
 Erro: 0x00563289
-Tipo: Crash
 Sobre: Com o VehFuncs instalado, caso este crash acontecer, o mod dará informações sobre qual modelo de veículo causou isto. No entanto este crash em específico normalmente não é sobre carros.
 Problema1: Erro ao remover um objeto do mapa, possivelmente um objeto preso no save game
 Solução1: Tente ver se em outro save game ou em new game não crasha naquele local, se não crashou, então você deve ter salvado o jogo com algum mod de script que adiciona um objeto no mapa. Clique aqui para baixar um mod que te possibilitará de corrigir esse crash, basta procurar pelo tal objeto bugador no local e deletá-lo. Ou clique aqui para baixar um novo save game e ver umas dicas.
@@ -1191,37 +965,30 @@ Problema3: Algum mod necessário (relacionado com objetos?) está faltando no se
 Solução3: Recoloque o mod que você desinstalou, possivelmente o jogo necessita dele.
 
 Erro: 0x004A2CF3
-Tipo: Crash
 Problema: Relacionado a efeitos especiais, provavelmente você tem um efeito (.fxp ou .fxs) instalado mas está usando um "effectsPC.txd" não compatível, sem alguma textura lá.
 Solução: Verifique os seus arquivos .fxp e effectsPC.txd no modloader, pode ser conflito.
 
 Erro: 0x007F120E
-Tipo: Crash
 Problema: Frame não encontrado. Pode ser causado por uns 40 motivos como modelo bugado ou script controlando alguma coisa de algum carro. Isto também acontece na versão 4.0.5 ou mais antiga do MixSets ao explodir muitos carros, já foi corrigido nas novas versões.
 Solução: Caso você use MixSets 4.0.5 ou mais antigo, atualize-o pois este crash foi corrigido. Já foi relatado ao tentar tentar tunar um carro despreparado pro tuning. Possivelmente o crash também pode acontecer ao chegar perto de alguma garagem com algum carro com peças tuning não suportadas lá dentro. Verifique seus mods e modelos. No caso de crash por causa de algum tuning em algum carro que não tem suporte, simplesmente não tune ou tente configurar a linha de carmods.dat dele corretamente pois pelo visto as linhas estão incorretas. Também foi relatado ao usar o mod de remover para-brisas, em motos, na qual não tinha para-brisa (assim como pode ser qualquer outro tipo de mod que remova peças de veículos)
 
 Erro: 0x004D41C5
-Tipo: Crash (ao tentar entrar num veículo?)
 Problema: Problema na animação de entrar num veículo, pode ter sido você ou alguém na rua (caso o crash foi durante o jogo sem você entrar num)
 Solução: Tente descobrir qual veículo (caso não saiba) e verificar as linhas de vehicle.ide e/ou .ifp (caso você editou um .ifp, pode ser que falte alguma animação nele). Este crash já inclusive foi relatado ao usar o avião F-14, mas aparentemente por um problema do avião em si, onde você precisa entrar nele pelo lado correto senão dá este crash aqui.
 
 Erro: 0x007F3737
-Tipo: Crash
 Problema: Carregando as texturas de um TXD (algum TXD com problema?)
 Solução: Verifique seus TXD
 
 Erro: 0x006F785F
-Tipo: Crash
 Problema: Criação de um trem. Já foi relatado ao usar vários mods de scripts relacionados à trens ao mesmo tempo.
 Solução: Desinstale alguns mods cleos de trens, evite usar vários mods de scripts para trens ao mesmo tempo. Pode ser que outros mods do tipo também causem tais problemas, como eu disse, criação de um trem, se algum mexe com criações de trens, pode ser algum conflito.
 
 Erro: 0x004F1464
-Tipo: Crash em alguma situação onde carrega uma música, como rádio ou dentro de um interior
 Problema: Relacionado ao carregamento de alguma música (divisão por 0)
 Solução: Retirar músicas caso você adicionou alguma? Má edição do GTA SA RIP? O jogo veio bugado? Se você tem crashes em missões mesmo sem mods, pode ser o seu GTA que está bugado, precisa baixar outro (baixe o GTA SA daqui). No caso do GTA da Steam, foi relatado ao fazer um mau downgrade (sem usar a ferramenta de downgrade).
 
 Erro: 0x007F39FB
-Tipo: Crash
 Problema 1: Você está com um arquivo .img aberto.
 Solução 1: Feche-o.
 Problema 2: Carregamento de uma textura (dentro do TXD).  Aparentemente um bug original do ModLoader ao ter um hud.txd instalado nele. Pode acontecer ao iniciar o jogo, e na próxima vez funciona.
@@ -1232,112 +999,91 @@ Solução 4: Identifique o tal mod CLEO, note que o arquivo .txd pode até exist
 Sobre: Pode ser qualquer coisa relacionada com "carregar uma textura a partir de um arquivo .txd", portanto pode ser causado por centenas de diferentes motivos, só que de uma coisa é certa: Tem algum .txd errado aí, possivelmente bugado ou faltando alguma textura importante, coisas do tipo.
 
 Erro: 0x00745AA5
-Tipo: Crash
 Problema: Descarregamento dos modos de vídeo. Este crash tem relação com o mesmo problema do 57A065, ou seja, leia aquele crash que ele pode solucionar.
 
 Erro: 0x005FD54D
-Tipo: Crash (geralmente durante o gameplay, a qualquer momento)
 Problema: Criação de um pedestre.
 Solução: Procure qual das skins de pedestres está com problema e retire-a. Se quiser contate o criador dela. Estranhamente já foi solucionado por ser incompatibilidade com Trees Remove + Left 4 Theft.
 
 Erro: 0x0074A4C0 ou 0x0074A4C4
-Tipo: Crash (no Tuning Mod?)
 Problema: Removendo uma entidade 3D, muito possivelmente crash do Tuning Mod na seleção da peça depois de instalar uma peça erradamente ou que está bugada
 Solução: Se foi uma peça, retire-a, contate o criador dela ou verifique a instalação da mesma. Você dizer qual foi a peça aqui nos comentários também deve ajudar
 
 Erro: 0x004D464E
-Tipo: Crash
 Problema: Problema de animação em algum animgroup, seja armas ou estilos de andar.
 Solução: Pode ter sido causado por editar o weapon.dat trocando o arquivo .ifp da arma, mas não trocar também no default.ide (que é o arquivo onde a arma e seu .ifp é carregado). Assim como pode ter sido causado por um script que tentou botar a arma em alguém, mas a arma não estava carregada, e assim dará este crash. O mesmo erro pode ser causado por um animgroup mal configurado na parte do ifp (animgrp.dat). O melhor é identificar qual mod está dando isso (seguindo os detalhes que acabei de dizer) e contatar o autor deste mod para corrigi-lo fazendo com que o arquivo .ifp necessário esteja carregado para a tal arma (ou a arma em si esteja carregada na memória do jogo).
 Problema 2: Uma nova linha de weapon.dat sem ter fastman92 limit adjuster instalado e configurado.
 Solução 2: Se este for seu caso, identifique, procure se você tem alguma linha de arma instalada (seja o weapon.dat ou arquivos .txt contendo linhas dele), remova ou instale o fastman92 limit adjuster, configure-o corretamente etc.
 
 Erro: 0x0080D5EF
-Tipo: Crash (depois de explodir muitos carros?)
 Problema: Transformando um ponto 3D
 Solução: Pode ou não ser motivos de modelos dos carros ou sistemas de explosões de algum mod (geralmente asi). Tente iniciar o jogo em modo de administrador e com compatibilidade do Windows XP SP3 (isso já resolveu o problema de uma pessoa)
 
 Erro: 0x00405CA4
-Tipo: Crash no carregamento
 Problema: Erro com IPLs binários. ID errado.
 Solução: Corrija ou remova (caso novos) seus IPLs binários (dentro de .img ou Modloader)
 
 Erro: 0x0053C1F5 ou 0x0053E986
-Tipo: Crash
 Problema: Falta do NewOpcodes.cleo? Algum mod pede ele e você não tem?
 Sobre: Tente baixá-lo e instalá-lo na sua pasta cleo.
 
 Erro: 0x007F18CF
-Tipo: Crash
 Problema: Relacionado a uma matrix, possivelmente um modelo.
 No Backtrace na parte debaixo, se tiver um 0x004AAFCC, 0x0053C1F5 e/ou 0x0053E986 é relacionado com partículas/efeitos especiais (também há outras possibilidades de ser). Senão, ou ter 0x0080981D, pode ser simplesmente sobre um modelo 3D. No caso do 0x008095FA também pode ser algum modelo, mas foi relatado ao tentar deletar um objeto (no teste, uma árvore) utilizando o opcode 09A2, isto é, pode ser um CLEO que tentou apagar um objeto do jogo, mas isto também pode acontecer raramente num mod asi.
 Solução: Já foi relatado devido à algum carro mal feito, bastou identificar e desinstalar o carro, o Vehicles Test pode ajudar.
 
 Erro: 0x004F0E67
-Tipo: Crash
 Problema: Possivelmente problema do som do seu PC, DirectPlay, ou está usando mod de sons do Mobile.
 Solução: Leia o Erro: DSOUND.dll (ctrl+f)
 
 Erro: 0x004AA4C8
-Tipo: Crash
 Problema: Efeito especial (effects.fxp) não encontrado ou faltando.
 Solução: Cheque o seu effects.fxp, possivelmente você trocou por algum na qual falta algum efeito ou está usando algum mod que usa um efeito na qual está em falta dentro do seu effects.fxp.
 
 Erro: 0x00705D48
-Tipo: Crash
 Problema: Relacionado com o processamento das sombras dinâmicas.
 Solução: Desinstale algum mod que mexa com elas, ou desative-as com MixSets ou SkyGfx, ou simplesmente deixando o jogo na configuração Low.
 
 Erro: 0x00826360
-Tipo: Crash
 Problema: Ao tentar ler algum texto, o texto não existia. Pode ser por diversos motivos.
 Solução: Arquivo timecyc.dat inválido, acontece porque há algum erro (por exemplo alguma linha faltando) no seu timecyc.dat ou você está usando o mod Timecycle 24H com algum timecyc.dat instalado no modloader (simplesmente desinstale o timecyc.dat do modloader).
 
 Erro: 0x008214E4
-Tipo: Crash
 Problema: Erro ao tentar carregar alguma linha de handling. Possivelmente o seu handling.cfg está errado ou quaisquer linhas de handling instaladas no seu jogo podem estar com algum problema na qual fez elas não serem lidas.
 Solução: Verifique as linhas, desinstale-as para ver se corrige ou quaisquer coisas.
 
 Erro: 0x007F0BF7
-Tipo: Crash
 Problema: Frame não encontrou o child, geralmente ocorre ao tentar instalar uma peça tuning num veículo na qual não a suporta.
 Solução: Caso o carro foi baixado, verifique a instalação da linha do carmods.dat ou evite tuná-lo. Caso o crash foi perto de uma garagem de alguma casa, quer dizer que o carro antes salvo lá tem peças na qual o seu atual carro (substituído) não suporta, volte seu jogo ao estado anterior (com o mesmo modelo de carro na qual foi salvo na garagem) ou edite seu save game para retirar os carros dela, ou evite passar perto desta garagem.
 
 Erro: 0x004082C0
-Tipo: Crash ao carregar um save game
 Problema: Possivelmente o save game não é compativel com o seu .exe ou main.scm
 Solução: Caso o save não foi feito para o Crack 1.0 US, recomendo baixar outro save. Tente também clicar aqui e baixar o main.scm original.
 
 Erro: 0x004C720C
-Tipo: Crash (ao ir pra rua ou depois de um tempo jogando?)
 Problema: Isso já foi relatado com o Tuning Mod v2.
 Solução: Caso você use Tuning Mod v2, saiba que o problema já foi corrigido na versão v2.1. Você também pode baixar novamente o IndieVehHandlings.cs atualizado com a correção.
 
 Erro: 0x004C705A 0x004C7170
-Tipo: Crash (depois de carregar um carro no Tuning Mod v2?)
-Problema: Isso já foi relatado com o Tuning Mod v2, geralmente logo ao 
+Problema: Isso já foi relatado com o Tuning Mod v2, geralmente logo ao
 Solução: Caso você use Tuning Mod v2, saiba que o problema já foi corrigido na versão v2.1. Você também pode baixar novamente o IndieVehHandlings.cs atualizado com a correção.
 
 Erro: 0x005381A5
-Tipo: Crash
 Problema 1: IPL incorreto ou modelo bugado (crash ao tentar carregar uma estância de um IPL). Por relatos, isso também tem a ver com mods e jogo salvo
 Solução 1: Cheque os IPLs ou modelos. Caso o problema for no save, tente usar o Deletar Objetos
 Problema 2: Já foi relatado ao usar o Open Limit Adjuster não configurado para o Project2dfx.
 Solução 2: No caso, o Project2dfx vem com um Open Limit Adjuster configurado propriamente para ele, você precisa usá-lo, remova outro Open Limit Adjuster do seu GTA (caso tenha dois) e deixe o próprio do Project 2DFX.
 
 Erro: 0x00465CC8
-Tipo: Crash
 Problema 1: Um script tentou adicionar uma tarefa em algum ator inexistente.
 Solução 1: Possivelmente um script cleo, tente identificá-lo. SCRLog.log pode ajudar nisso.
 Problema 2: Usou Skin Selector enquanto usava DYOM.
 Solução 2: Não use.
 
 Erro: 0x00553F71
-Tipo: Crash
 Problema: Relacionado a renderização do mapa.
 
 Erro: 0x00534134
-Tipo: Crash no carregamento do jogo
 Problema 1: O mesmo ID sendo carregado em modelos diferentes, muito comum em instalar diferentes mods de mapa com autores que não se importam com compatibilidades. Se você teve esse crash depois de instalar uma peça no Tuning Mod, foi por que duas peças (ou mais algum outro mod diferente) estão usando o mesmo ID, informe ao autor e/ou siga este tutorial para corrigir a incompatibilidade.
 Solução 1: Reveja seus novos arquivos IDE, algum pode estar usando o mesmo ID do outro. Na maioria dos mods (não scripts) você pode simplesmente abrir e trocar o ID por algum outro livre (clique aqui para ver a lista ou use este tutorial para corrigir a incompatibilidade).
 Problema 2: COL impróprio (ou faltando)
@@ -1353,44 +1099,32 @@ Problema: TXD (ou outro recurso (exceto DFF)?) não está presente no IMG.
 Solução: Adicione o TXD no IMG ou remova o IDE/IPL do objeto relacionado.
 
 Erro: 0x005B51F7
-Tipo: Crash
 Problema: Relacionado a IPL e suas conexões entre objetos normais e LODs. Algum IDE está faltando. Possivelmente as linhas de carregamento não estão instaladas ou o arquivo .IDE está mal escrito, ou o link entre o objeto comum e LOD está errado.
 Solução: Corrija o gta.dat ou verifique se o gta.dat ou a linha de carregamento está presente dentro do Mod Loader. Verifique também se o arquivo .IDE relacionado a tal .IPL está corretamente configurado com os objetos necessários para o .IPL dentro da seção "objs...end".
 
 Erro: 0x005BA12B
-Tipo: Crash
 Problema: Quebrou o limite de estâncias IPL (1000) - Máximo de linhas na seção "inst" dentro de algum arquivo IPL.
 Solução: Aumente o limite de estâncias IPL com algum Limit Adjuster ou tente dividir um IPL em outros.
 
 Erro: 0x005DC425
-Tipo: Crash
 Problema: Material de colisão incorreto (ID de material impróprio).
 Solução: Corrija o ID do material dentro do arquivo COL.
 
 Erro: 0x006E9248
-Tipo: Crash ao olhar para a água
 Problema: Relacionado a água (water.dat incorreto?) (na renderização da água). Divisão por 0.
 Solução: Corrija o water.dat.
 
 Erro: 0x006F5702
-Tipo: Crash
 Problema: Muitos objetos? Algum limite desconhecido.
 
 Erro: 0x007ECABB
-Tipo: Crash enquanto um TXD com textura está carregando.
 Stack: 0x4CDCDE > Erro
 Problema: Formato de textura corrompido (problema com texturas de baixa resolução). Isso pode ser causado pela ferramenta WTD2TXD.
 Solução: Corrija o TXD. Cheque se as texturas de baixa resolução estão marcadas com compressão (compressed, DXT).
 
 Erro: 0x00000000
-Tipo: Crash
-Problema 1: Algum script cleo
-Solução 1: Use o SCRLog.log para descobrir qual
-Problema 2: Caso SCRLog.log estiver vazio, possivelmente foi má instalação da livrara cleo.
-Solução 2: Baixe e instale corretamente.
-Problema 3: No Modloader.log, no fim do arquivo há um "Backtrace", embaixo dele na primeira(?) ou segunda(?) linha pode ter algum arquivo .dll, possivelmente o problema deve ser nesta .dll
-Solução 3: Procure pela .dll nesta página
-
+Problema: Algum script CLEO/SCM.
+Solução: Use o SCRLog.log para descobrir qual
 
 
 
@@ -1402,7 +1136,6 @@ SCRLOG
 Por comandos:
 
 Último comando: [0001] WAIT
-Tipo: Crash
 Problema: O problema é você. Leia melhor a a página do SCRLOG, já foi falando sobre o [0001].
 
 Último comando: (Algum Bitwise): [0B10] ou [0B11] ou [0B12] ou [0B13] ou [0B14] ou [0B15] ou [0B16] | (Algum .ini): [0AF0] ou [0AF1] ou [0AF2] ou [0AF3] ou [0AF4] ou [0AF5] | (Algum arquivo): [0B00] ou [0B01] ou [0B02] ou [0B03] ou [0B04] ou [0B05]
@@ -1427,8 +1160,8 @@ Solução: Algum modelo que o tal mod cleo usa está faltando ou bugado no seu G
 Problema: Aparentemente problema do Mod Shell
 Solução: Caso foi na missão Learning To Fly, instale o fix que vem junto com o download do Mod Shell aqui na MixMods (atualmente ele já vem com o fix junto). Se não foi na missão, possivelmente foi algum mod cleo que controla/adiciona armas em algum veículo, assim só corrigindo manualmente o cleo ou deletando ele.
 
-Último comando: [0AA5] [0AA6] [0AA7] [0AA8] 
-Problema: Alguma função foi chamada incorretamente pelo mod. 
+Último comando: [0AA5] [0AA6] [0AA7] [0AA8]
+Problema: Alguma função foi chamada incorretamente pelo mod.
 Solução: É altamente possível que o motivo foi os argumentos passados para a função e você tem que contratar o autor. Se você for experiente e o autor, veja no modloader.log o endereço, assim como os últimos (primeiros da lista) endereços no Backtrace, lendo o .exe naqueles endereços para tentar entender qual dos argumentos teve o problema. O valor do "Access violation reading location" também é muito importante, pois mostra literalmente qual valor foi lido, assim você pode saber por exemplo se você passou algum argumento nulo.
 
 Último comando: [0AAA]
@@ -1495,7 +1228,6 @@ Mod: Pode ser vários, provavelmente o Attach Vehicles. Houve um crash nele mas 
 Outros
 
 Erro: modloader.asi
-Tipo: Crash
 Problema 1: Em casos extremos onde você instala um arquivo qualquer no modloader e já causa vários crashes, inclusive no modloader.asi só de abrir o jogo, provavelmente todo o seu modloader entrou em confusão e parou de funcionar.
 Solução 1: Assim, tente reinstalar o modloader e apagar todo o cachê dele na pasta AppData de seu usuário, isto é, no meu caso seria "C:\Users\JuniorDjjr\AppData\Local\modloader", entre lá e apague tudo e tente novamente. Caso dificuldades em encontrar a sua pasta AppData, pesquise no Google.
 Sobre 1: Caso crash depois de alguns minutos jogando: Geralmente este problema é causado não pelo Mod Loader, e sim pelo ImVehFt. O erro também não é do Mod Loader e sim de como foi criado o ImVehFt, tente desinstala-lo ou usar a versão 2.0.8 do IVF para ver se resolve, se não resolver ou você não usa IVF então o problema realmente é outro...
@@ -1503,18 +1235,15 @@ Sobre 2: Também você pode estar com o Mod Loader errado, mal configurado etc, 
 Sobre 3: Envie o modloader.log para ver, pelos .dll mostrados no final dos códigos do crash dá pra ter também uma noção de qual tipo de arquivo que o modloader deu erro ao tentar carregar. Isso se tiver as .dll.... Portanto, envie, mas não há promessa de que irá solucionar, crash no modloader pode ser vários e vários motivos que são difíceis de saber exatamente o porquê...
 
 Erro: std.stream.dll ou STDSTR~1.DLL
-Tipo: Crash
 Sobre: Pode ser algum script que tentou carregar um modelo inexistente, por exemplo algum script que usa modelo de um animal e cria usando cleo, se o modelo do animal não for instalado irá dar crash nesta dll. Este crash também pode ser facilmente encontrado ao usar o Skin Selector com má instalação das skins, como ao instalar skins com nomes muito grandes (avisado no Leiame para usar nomes com no máximo 7 letras). Não só skins, enfim, este crash é ocasionado por modelos em geral e também não somente scripts, também pode ser ocasionado por mods de mapa faltando os arquivos .dff .txd e .col etc, geralmente a falta destes arquivos em algum mod causa o crash nesta dll.
 
 Erro: V_HUD_by_DK22Pac.asi
-Tipo: Crash
 Problema 1: Iniciar o jogo?
 Solução 1: Verifique a instalação, reinstale o mod, verifique a resolução do jogo etc, pode tentar até remover a pasta GTA San Andreas User Files dos Documentos.
 Problema 2: Ao selecionar o menu de roupas do Skin Selector?
 Solução 2: ...Possivelmente os mods são realmente incompatíveis...
 
 Erro: imvehft.asi
-Tipo: Crash
 Problema 1: Crasha aleatoriamente durante o jogo? Depois de jogar alguns minutos?
 Solução 1: Tente instalar a versão antiga (no fim deste post).
 Problema 2: Crash ao iniciar?
@@ -1523,7 +1252,6 @@ Problema 3: Crash no Windows 10?
 Solução 3: Tente iniciar o GTA em modo de compatibilidade do Windows 7 ou Windows 98, além de modo de administrador. Avise se solucionou!
 
 Erro: std.bank.dll
-Tipo: Crash
 Problema 1: Algum som. Esta DLL é do Mod Loader, mas não necessariamente pode ser problema do Mod Loader.
 Solução 1: Se você editou os sons do seu jogo, seja lá qual for o modo, faça backup, e como sempre, se não ajudar, mova a pasta do GTA para os Documents e tente de novo.
 Problema 2: Possivelmente problema do som do seu PC, DirectPlay.
@@ -1555,7 +1283,6 @@ Tipo: Alguma mensagem de erro relacionada a ele, ou ele está faltando em seu GT
 Solução: Baixe o bass.dll clicando aqui, instale a x86 (32 bits). Recomendo baixar até se não tiver o problema, pois alguns mods que usam sons ou o .dll do SAMP podem ter problemas etc.
 
 Erro: quartz.dll
-Tipo: Crash
 Problema 1: Incompatibilidade com novas versões do Windows.
 Solução 1: Ative o modo de compatibilidade do Windows XP (Service Pack 2) nas propriedades do .exe do jogo.
 Problema 2: Relacionado ao Pluguin LAV Video
@@ -1564,36 +1291,30 @@ Problema 3: Já foi relatado ao instalar mods na pasta raiz do Mod Loader ao inv
 Solução 3: Não instale arquivos de mods deixando em "GTA San Andreas/modloader/", sempre instale os arquivos em "GTA San Andreas/modloader/alguma pasta". Há mais informações logo na postagem de download do Modloader.
 
 Erro: colormod.asi
-Tipo: Crash
 Problema: Já foi relatado como incompatibilidade com Project2DFX. Mesmo que não faça muito sentido e até eu mesmo usei muito os dois juntos e nunca vi problema, mas você pode tentar desinstalar algum dos dois pra ver se corrige. Foi relatado crash logo ao iniciar o jogo com os dois juntos. Assim como também pode ser incompatibilidade com algum outro mod, ou até mesmo má instalação do Color Mod.
 
 Erro: igdumd32.dll
-Tipo: Crash
 Problema: Esta .dll é da Intel Graphics (sua placa de vídeo) ...? Atualizar drivers? retirar mods gráficos (na qual usam .asi ou .dll) ...?
 
 Erro: DSOUND.dll
-Tipo: Crash ou erro ao abrir
 Problema: DirectPlay
 Solução 1: Usar SilentPatch
 Solução 2: (enviado pelo Luiz Felipe): Instale o DirectPlay, indo no Painel de controle>Programas e recursos>Ativar ou desativar recursos do Windows(na esquerda da janela)>vá em componentes herdados e marque a caixa DirectPlay>instale e reinicie o computador (testado no Windows 8.1 e solucionado).
 
 Erro: normalmap.asi ou NORMAL~1.ASI
-Tipo: Crash
 Problema 1: Placa de vídeo não suporta? Se sua placa de vídeo for muito antiga, possivelmente é este o problema.
 Problema 2: Instalação errada? Evite Mod Loader para instalar mods do Ryosuke como este aqui.
 
 Erro: colormod.asi
-Tipo: Crash
 Problema: Incompatibilidade com Project2DFX
 Solução: Desintale ou ele ou o Project2DFX, como sempre, confirme se corrigiu ou não avisando nos comentários.
 
 Erro: CLEO.asi
-Tipo: Crash
 Problema: Algum script cleo
 Solução: Olhe no seu scrlog.log, o crash deve estar lá, se não, envie-o explicando que você já olhou e não está etc.
 Você não está com o scrlog.log instalado? Da próxima vez tenha ele! Leia como instalar e usar SCRLog para descobrir qual mod cleo deu o problema. (por favor, não envie o modloader.log neste caso)
 
-Erro: msvcr100.dll msvcp100.dll msvcr110.dll msvcp110.dll msvcr120.dll msvcp120.dll msvcr100d.dll msvcp100d.dll msvcr110d.dll msvcp110d.dll msvcr120d.dll msvcp120d.dll d3dx9_26.dll d3dx9_43.dll d3dx9_40.dll 
+Erro: msvcr100.dll msvcp100.dll msvcr110.dll msvcp110.dll msvcr120.dll msvcp120.dll msvcr100d.dll msvcp100d.dll msvcr110d.dll msvcp110d.dll msvcr120d.dll msvcp120d.dll d3dx9_26.dll d3dx9_43.dll d3dx9_40.dll
 Tipo: Pediu a DLL ou algum problema com ela.
 Solução: Clique aqui para ir ao post com o download de todas elas.
 
@@ -1601,14 +1322,12 @@ Erro: STREAM~1.ASI
 Sobre: Stream Memory Fix? Se você usa isso seu GTA está desatualizado. Como eu sempre digo, evite montar seu GTA em outros sites fora da MixMods, o Stream Memory Fix é coisa lá de 2007, atualmente ele é substituível por outras coisas muito melhores como MixSets e Open Limit Adjuster. Clique aqui para a postagem de como montar um bom GTA.
 
 Erro: d3d9.dll
-Tipo: Crash
 Problema 1: Como você já deve saber, é a .dll usada para várias coisas, principalmente enb series, então tudo define em para O QUE você usou ela (onde 99% das pessoas usam ela como enb series ou já veio na instalação do jogo). Pode ser que seu PC não suporte a enb series ou outro mod gráfico que use essa dll, mas também há mods que são feitos usando esta dll, mods super antigos lá do lançamento do GTA SA na qual acabaram usando esta .dll para criar o mod, coisa totalmente obsoleta agora, deixe de usar tais mods. Caso você não use enb series ou outros mods desta dll, deve ser corrigível atualizando seu DirectX Runtime, e logo em seguida, caso tenha esta dll instalada no seu jogo, deletá-la (ou não).
 Problema 2: Caso crashou numa missão, estranhamente pode dar o crash nesta dll e a solução enviada pelo Luiz Felipe diz que simplesmente você tem que pular a cutscene apertando Enter. Pode ser causado por alguma legenda bugada ou outro texto na tela, geralmente por traduções ou mods, neste caso, é melhor contatar o criador e/ou desativar as legendas ou pular a cutscene se possível. A tradução da Gamevicio tem este crash, a nossa tradução pt-br não.
 Problema 3: Caso crash no menu Advanced dos gráficos do jogo e você esteja usando 90s AVP Reborn, foi causado pelo Super GT dele e a solução é simplesmente trocar este carro. Do mesmo modo que você pode não estar usando o 90s AVP mas estar com este mesmo carro, ou outro carro com o mesmo problema, ou seja, caso crash nesta dll neste menu, pode ser algum carro instalado no seu GTA.
 Problema 4: Durante alguma explosão? Usando algum mod como Remastered Effects? Caso tiver algum 0x007FDE14 e/ou 0x007FE7DC e/ou 0x004A140A no "Backtrace" no fim do log, pode ser que seja causado pelo IgnoreWater do MixSets (ou até mesmo FreezeHour). Assim, se tiver ativado, configure estas funções para -1 no MixSets.
 
 Erro: ntdll.dll
-Tipo: Crash
 Problema: Leitura de algum arquivo qualquer.
 Antes de tudo, se ocorreu o crash ao abrir o jogo, simplesmente tente abrir ele mais uma ou duas vezes que deve funcionar. É estranho e eu ainda não sei o motivo, eu também queria saber como corrigir. Mas este mesmo erro pode ser causado por outras coisas:
 Solução 1: Na linha de cima do endereço do crash terá o último arquivo lido, por exemplo: "Loading default object types "data\maps\veh_mods\veh_mods.ide"", neste exemplo, possivelmente crashou ao tentar ler o arquivo veh_mods.ide, verifique-o. Caso o último arquivo ser um .txd, muito possivelmente não foi problema nele. Também muitas vezes não pode ter nada a ver, como por exemplo, se você entrar numa loja irá aparecer que o "shopping.dat" foi carregado por último, mas nem por isso quer dizer que o crash foi neste arquivo também, então desconfie, não tenha certeza, mas mesmo assim tente verificá-los, principalmente se o crash foi ao tentar abrir o jogo.
@@ -1638,7 +1357,7 @@ Sobre: Tentando usar o instalador mas ele já identifica que o jogo está instal
 Solução: Abra o menu iniciar, digite regedit e abra o regedit.exe. Vá em HKEY_LOCAL_MACHINE -> SOFTWARE, lá terá uma "pasta" Rockstar Games, e dentro GTA San Andreas com uma "chave" dentro dela. Delete a chave ou a própria pasta "GTA San Andreas".
 Se não encontrou, procure dentro da HKEY_CURRENT_USER.
 
-Erro: Mensagem "Runtime Error!" "This application has requested the Runtime to terminate it in 
+Erro: Mensagem "Runtime Error!" "This application has requested the Runtime to terminate it in
 an unusual way."
 Sobre: Pode ser causado por algum erro em algum mod .asi. O "modloader.log" ou outro crash dump pode dar uma dica de qual foi o mod (mesmo que não 100% correto).
 Durante o gameplay: Além de .asi, pode ter sido causado por alto uso de memória caso você tenha configurado o jogo para usar 2 GB de stream memory sem usar largeaddress.
