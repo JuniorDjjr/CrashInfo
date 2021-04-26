@@ -1,5 +1,4 @@
-Crashes
-
+26/04/21 (DD/MM/YY)
 
 Erro: 0x00
 Tipo: (se é crash, quando acontece etc)
@@ -1225,6 +1224,10 @@ Mod: Pode ser vários, provavelmente o Attach Vehicles. Houve um crash nele mas 
 
 Outros
 
+Erro: CLEO.asi
+Problema: Algum script CLEO/SCM.
+Solução: O mod SCRLog pode te dizer exatamente qual foi o script causador do problema.
+
 Erro: modloader.asi
 Problema 1: Em casos extremos onde você instala um arquivo qualquer no modloader e já causa vários crashes, inclusive no modloader.asi só de abrir o jogo, provavelmente todo o seu modloader entrou em confusão e parou de funcionar.
 Solução 1: Assim, tente reinstalar o modloader e apagar todo o cachê dele na pasta AppData de seu usuário, isto é, no meu caso seria "C:\Users\JuniorDjjr\AppData\Local\modloader", entre lá e apague tudo e tente novamente. Caso dificuldades em encontrar a sua pasta AppData, pesquise no Google.
@@ -1306,11 +1309,6 @@ Problema 2: Instalação errada? Evite Mod Loader para instalar mods do Ryosuke 
 Erro: colormod.asi
 Problema: Incompatibilidade com Project2DFX
 Solução: Desintale ou ele ou o Project2DFX, como sempre, confirme se corrigiu ou não avisando nos comentários.
-
-Erro: CLEO.asi
-Problema: Algum script cleo
-Solução: Olhe no seu scrlog.log, o crash deve estar lá, se não, envie-o explicando que você já olhou e não está etc.
-Você não está com o scrlog.log instalado? Da próxima vez tenha ele! Leia como instalar e usar SCRLog para descobrir qual mod cleo deu o problema. (por favor, não envie o modloader.log neste caso)
 
 Erro: msvcr100.dll msvcp100.dll msvcr110.dll msvcp110.dll msvcr120.dll msvcp120.dll msvcr100d.dll msvcp100d.dll msvcr110d.dll msvcp110d.dll msvcr120d.dll msvcp120d.dll d3dx9_26.dll d3dx9_43.dll d3dx9_40.dll
 Tipo: Pediu a DLL ou algum problema com ela.
