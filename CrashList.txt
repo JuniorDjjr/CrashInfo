@@ -774,13 +774,11 @@ Solução 1: Identifique e remova este mod cleo. Você pode usar o SCRLog para i
 Solução 2: Aumente o limite de tarefas.
 
 Erro: 0x909090C3
-Problema: Este crash pode acontecer devido há vários motivos. Ele já foi relatado como possivelmente o mod de sons Overhaul (alguém mais pra confirmar isso?).
+Problema: Este crash pode acontecer devido há vários motivos, mas normalmente é causado por um conflito entre 2 mods que utilizaram patch de memória do sistema do jogo.
 
 Erro: 0x00536BE0
-Problema 1: Relacionado ao pegar o centro da massa de um modelo. Este crash é famoso por acontecer depois de sair da loja na missão do Ryder. Não se sabe exatamente o motivo ainda.
-Solução 1: Este crash já foi solucionado depois de remover os seguintes mods (avise caso mais outro): Fogo do escapamento do GTA V para GTA SA, FreeFall_IV_mod_beta2, Car Wheelie (empinar carro), Steering (Active Dashboard), Car Health Bar (mostrar barra com danos do carro), Max Velo 999, Arrumar carro instantaneamente, Nitro ilimitado.
-Problema 2: Limite de veículos criados.
-Solução 2: Use Open Limit Adjuster e aumente o "Vehicles = 110" , uns 150 ou 200 está ótimo já. Se você teve o crash por exemplo em mod de atirar carros, pode aumentar bastante para você poder atirar muitos carros no jogo.
+Problema: Handle/referência inválida para um veículo de script CLEO/SCM.
+Solução: Use SCRLog para descobrir exatamente qual script foi o causador do problema, e avise ao autor.
 
 Erro: 0x005A5A47
 Problema: Relacionado a texturas (do player.img?). Este crash já foi relatado ao usar mipmaps em texturas do player.img (roupas etc do CJ)
