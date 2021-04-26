@@ -1,10 +1,5 @@
 26/04/21 (DD/MM/YY)
 
-Erro: 0x00
-Tipo: (se é crash, quando acontece etc)
-Problema: (motivo dele)
-Solução: (alguma possibilidade de solucionar, pode faltar coisas ou estarem erradas, ajude contribuindo)
-
 Erro: 0x004C66CA
 Problema: Limite de tobj (timed objects) (objetos controlados por tempo, definidos em .ide).
 Solução: Instale Open Limit Adjuster, ou aumente o limite de "timed objects" no fastman92 limit adjuster.
