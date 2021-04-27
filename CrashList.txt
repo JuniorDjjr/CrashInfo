@@ -1,4 +1,8 @@
-26/04/21 (DD/MM/YY)
+27/04/21 (DD/MM/YY)
+
+Erro: 0x006133DB
+Problema: Algum problema com pedgrp.dat/cargrp.dat.
+Solução: Verifique o seu data/pedgrp.dat ou cargrp.dat se carregou corretamente, se há algum errado no ModLoader etc.
 
 Erro: 0x004C66CA
 Problema: Limite de tobj (timed objects) (objetos controlados por tempo, definidos em .ide).
