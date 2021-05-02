@@ -1,4 +1,8 @@
-27/04/21 (DD/MM/YY)
+02/05/21 (DD/MM/YY)
+
+Erro: 0x007F06BD
+Problema: Algum problema ao apagar alguma entidade, seja um objeto, carro etc.
+Solução: Um dos casos é um script CLEO que usa o comando CREATE_OBJECT_NO_SAVE do CLEO+ para criar um objeto, mas apaga com REMOVE_OBJECT_ELEGANTLY que atualmente não é compatível. Use DELETE_OBJECT. Se não foi causado por um script, pode ser um problema num modelo de algum objeto ou algo assim.
 
 Erro: 0x006133DB
 Problema: Algum problema com pedgrp.dat/cargrp.dat.
