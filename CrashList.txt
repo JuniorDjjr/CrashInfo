@@ -1105,6 +1105,8 @@ Solução: Aumente o limite de estâncias IPL com algum Limit Adjuster ou tente 
 Erro: 0x005DC425
 Problema: Material de colisão incorreto (ID de material impróprio).
 Solução: Corrija o ID do material dentro do arquivo COL.
+Problema 2: Estranhamente, um problema relacionado com timecycle (timecyc.dat).
+Solução 2: Havia acontecido na versão "lite" do Real Linear Graphics, já foi corrigido. Estranhamente a solução foi abaixar o valor de intensidade da linha de 7 da noite do clima de neblina de San Fierro, sendo que o crash era em Los Santos, não se sabe ao certo como isso aconteceu.
 
 Erro: 0x006E9248
 Problema: Relacionado a água (water.dat incorreto?) (na renderização da água). Divisão por 0.
