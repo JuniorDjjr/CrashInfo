@@ -927,8 +927,8 @@ Problema: Relacionado com alocação de memória. Este crash já foi relatado po
 Solução: Se for mesmo o problema com um carro, retire-o e contate o criador sobre esse problema.
 
 Erro: 0x0040890A
-Problema: Relacionado com carregamento de uma textura dentro de um TXD. Aparentemente o TXD está errado, ou bugado, ou ausente. (pode ter mais motivos ainda)
-Solução: Verifique os TXD se estão instalados, se está certo etc etc
+Problema: Algum mod CLEO tentou carregar um modelo existente.
+Solução: O mod SCRLog pode te informar exatamente qual script causou o problema. Vertifique-se de que o tal mod esteja corretamente e completamente instalado.
 
 Erro: 0x004C663B
 Problema: Bateu o limite de objetos do jogo. É um crash que acontece ao instalar muitos objetos novos ou muitas peças do Tuning Mod.
