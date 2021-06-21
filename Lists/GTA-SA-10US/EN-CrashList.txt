@@ -927,8 +927,8 @@ Problem: Related to memory allocation. This crash has already been reported by a
 Solution: If it's really the problem with a car, take it out and contact the breeder about the problem.
 
 Error: 0x0040890A
-Problem: Related to loading a texture into a TXD. Apparently the TXD is wrong, or buggy, or missing. (may have even more reasons)
-Solution: Check the TXDs if they are installed, if it is right etc etc.
+Problem: Some CLEO mod tried to load an existing template.
+Solution: The SCRLog mod can tell you exactly which script caused the problem. Make sure the mod is correctly and completely installed.
 
 Error: 0x004C663B
 Problem: Hit the game's object limit. It's a crash that happens when installing too many new objects or too many Tuning Mod pieces.
