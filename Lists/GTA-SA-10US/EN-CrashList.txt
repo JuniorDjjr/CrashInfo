@@ -1,4 +1,8 @@
-21/06/21 (DD/MM/YY)
+22/06/21 (DD/MM/YY)
+
+Error: 0x0156DA35, 0x00470A65
+Problem: Original game issue where the LOD connection of an object via script is not removed after the object is deleted, and remains in the saved game.
+Solution: CLEO+ (v1.0.8 or newer) fixes the issue by both preventing and fixing saved games corrupted due to the issue.
 
 Error: 0x007F06BD
 Problem: Some problem when deleting some entity, be it an object, car etc.
@@ -54,7 +58,7 @@ Problem: When clearing a list. It can be caused by many different reasons, other
 Solution: It has been reported installing an .ipl file in text format replacing a binary (named "_stream"), which is wrong.
 
 Error: 0x005D95CE
-Issue: Related to clearing material list with effects, usually vehicles, but may not necessarily be caused by vehicle mods, this is a strange issue.
+Problem: Related to clearing material list with effects, usually vehicles, but may not necessarily be caused by vehicle mods, this is a strange issue.
 Solution: MixSets fix all crashes when closing the game.
 
 Error: 0x00406036
@@ -340,7 +344,7 @@ Solution: Disable (by placing a "0.0") the TimedObjectsDrawDistance function ins
 0x007C4806 in "Backtrace": It's about downloading animation hierarchy, it may not be about animation but pedestrian skins. It is not possible to know exactly what happened, but it has already been reported with the mod Fix Male01, if it works for you, confirm us.
 
 Error: 0x007C4781
-Issue: Such issue has been reported when loading a save which has been saved outdoors (such as four dragons casino) and is using the HD Roadsignfont mod.
+Problem: Such issue has been reported when loading a save which has been saved outdoors (such as four dragons casino) and is using the HD Roadsignfont mod.
 Solution: Don't use the mod or save game abroad. For example, uninstall the mod, open the save, save it inside and you can use HD Roadsignfont again.
 Type 2: Crash at another time and without using the mod mentioned above?
 Problem 2: This crash is related to the creation of "materials" (basically model textures). So it can be related to model mods.
@@ -545,7 +549,7 @@ Error: (in the "Backtrace" at the end of the log will have "0x006E2BB7")
 Solution: This is already fixed when using Crack 1.0 US Compact.
 
 Error: (in the "Backtrace" at the end of the log there will be "0x007FE8E7" and "SilentPatch.asi")
-Issue: Incompatibility of old version of SilentPatch with Outfit mod (weapons by body)
+Problem: Incompatibility of old version of SilentPatch with Outfit mod (weapons by body)
 Solution: Update your SilentPatch, the problem has already been fixed in new versions.
 
 Error: 0x005D532A
@@ -593,7 +597,7 @@ Problem: When closing a car door, possibly non-existent.
 Solution: If it was during Tuning Mod, be aware that in v1.5 or newer it has been fixed. If you weren't using the Tuning Mod, Scrlog.log will be able to tell you the problem (or not), it's very possible that it was some cleo mod that controls the car doors.
 
 Error: 0x0045C7D4
-Issue: This has been reported when using SkyGfx and trying to enable replay.
+Problem: This has been reported when using SkyGfx and trying to enable replay.
 Solution: Do not activate, or if you accidentally press the key to activate replay, you can use MixSets by activating "DisaReplays"
 
 Error: 0x00469FBC
@@ -754,7 +758,7 @@ Problem: When showing the LOD (low resolution model that appears far from the sc
 Solution: Check your mods that change or add models etc, like trees or anything else that messes with the game's LODs or adds new models that don't have logs. As I say before, if you have any spine mods, delete it, it is poorly done and causes this crash.
 
 Error: 0x006CAC47
-Issue: Has been reported using Enhanced Functions with cars added without replacing.
+Problem: Has been reported using Enhanced Functions with cars added without replacing.
 Solution: Stop using Enhanced Functions, it's an obsolete mod, replaced by VehFuncs.
 
 Error: 0x004AA134
@@ -873,7 +877,7 @@ Problem: Source (letters) of the translation.
 Solution: Has already been fixed when using another Brazilian translation. I believe that downloading the gamevicio translation should solve it.
 
 Error: 0x006F32C0
-Issue: It has been reported when trying to add a parked car with a model of a car added (ie not native to the game, a car installed without replacing).
+Problem: It has been reported when trying to add a parked car with a model of a car added (ie not native to the game, a car installed without replacing).
 Solution: To be able to park added cars in the game without replacing, it is necessary to open the Fastman92 Limit Adjuster .ini, look for the line "#Accept any ID for car generator = 0" remove the # and put = 1.
 
 Error: 0x005A5781
@@ -935,7 +939,7 @@ Problem: Hit the game's object limit. It's a crash that happens when installing 
 Solution: Use Open Limit Adjuster
 
 Error: 0x0040FB80
-Issue: Collision related (coll), possibly hitting the game's collision limit, or other issue about .col.
+Problem: Collision related (coll), possibly hitting the game's collision limit, or other issue about .col.
 Solution 1: Use Open Limit Adjuster?
 Solution 2: It has already been fixed due to some bad configuration of fastman92 limit adjuster.
 Solution 3: If you are trying to start SAMP, probably samp.exe has a different compatibility mode than gta_sa.exe, or some other reason why SAMP cannot open gta_sa.exe (bad configuration, there is already some gta_sa. exe in Task Manager, some program preventing startup (you can try restarting the PC) etc).
