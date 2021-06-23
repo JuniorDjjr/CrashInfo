@@ -1,4 +1,8 @@
-21/06/21 (DD/MM/YY)
+22/06/21 (DD/MM/YY)
+
+Erro: 0x0156DA35, 0x00470A65
+Problema: Problema original do jogo onde a conexão de LOD de um objeto por script não é removida após o objeto ser deletado, e continua no jogo salvo.
+Solução: CLEO+ (v1.0.8 ou mais nova) corrige o problema, tanto evitando, quanto corrigindo jogos salvos corrompidos devido ao problema.
 
 Erro: 0x007F06BD
 Problema: Algum problema ao apagar alguma entidade, seja um objeto, carro etc.
