@@ -1,4 +1,4 @@
-22/06/21 (DD/MM/YY)
+24/06/21 (DD/MM/YY)
 
 Erro: 0x0156DA35, 0x00470A65
 Problema: Problema original do jogo onde a conexão de LOD de um objeto por script não é removida após o objeto ser deletado, e continua no jogo salvo.
@@ -223,7 +223,8 @@ Solução: Identifique o mod, pode ser que algum mod de player ou roupas está m
 
 Erro: 0x00441DB0
 Problema: Algo tentou pegar a rotação de algo e não conseguiu, provavelmente algum script cleo.
-Solução: Estranhamente já foi relatado com os seguintes veículos do 90s AVP: AT400, DFT30, Rustler, Shamal, Cropdust. Não foi informado qual versão, provavelmente do pack "Reborn 2". Também relatado aqui.
+Solução 1: Se foi um mod CLEO, o SCRLog pode te dizer exatamente qual script e qual parte do script causou o problema. Provavelmente algum outro mod CLEO apagou um objeto importante do jogo. Se aconteceu isso na missão Los Desperados (script "riot2"), eu criei um fix: https://sharemods.com/l0qzomu976ht/fix_riot2_object_door_crash.7z.html
+Solução 2: Estranhamente já foi relatado com alguns mods de veículos, mas não se sabe o motivo exato. O mod Vehicles Test pode te ajudar a identificar se foi isso.
 
 Erro: 0x004AA2F4
 Problema: Inicialização de um efeito especial (fx / particle), como se tivesse inicializado um efeito que na verdade não pôde antes ser criado.
