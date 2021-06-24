@@ -1,4 +1,4 @@
-22/06/21 (DD/MM/YY)
+24/06/21 (DD/MM/YY)
 
 Error: 0x0156DA35, 0x00470A65
 Problem: Original game issue where the LOD connection of an object via script is not removed after the object is deleted, and remains in the saved game.
@@ -222,8 +222,9 @@ Problem: Two textures of different resolutions in player that need each other. F
 Solution: Identify the mod, it could be that some player mod or costume is poorly made, or incompatibility if you have installed another costume, or if you are creating the costume, now you know how to solve it.
 
 Error: 0x00441DB0
-Problem: Something tried to catch the rotation of something and couldn't, probably some cleo script.
-Solution: Strangely it has been reported with the following 90s AVP vehicles: AT400, DFT30, Rustler, Shamal, Cropdust. It wasn't informed which version, probably from the "Reborn 2" pack. Also reported here.
+Problem: Something tried to catch the rotation of something and couldn't, probably some CLEO script.
+Solution 1: If it was a CLEO mod, SCRLog can tell you exactly which script and which part of the script caused the problem. Probably some other CLEO mod deleted an important game object. If this happened in the Los Desperados mission ("riot2" script), I created a fix: https://sharemods.com/l0qzomu976ht/fix_riot2_object_door_crash.7z.html
+Solution 2: Strangely it has been reported with some vehicle mods, but the exact reason is not known. The Vehicles Test mod can help you identify if that was it.
 
 Error: 0x004AA2F4
 Problem: Initialization of a special effect (fx / particle), as if you had initialized an effect that could not actually be created before.
