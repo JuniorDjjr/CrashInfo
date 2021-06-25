@@ -1,4 +1,4 @@
-24/06/21 (DD/MM/YY)
+25/06/21 (DD/MM/YY)
 
 Error: 0x0156DA35, 0x00470A65
 Problem: Original game issue where the LOD connection of an object via script is not removed after the object is deleted, and remains in the saved game.
