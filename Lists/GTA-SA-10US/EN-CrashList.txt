@@ -1,4 +1,4 @@
-25/06/21 (DD/MM/YY)
+03/07/21 (DD/MM/YY)
 
 Error: 0x0156DA35, 0x00470A65
 Problem: Original game issue where the LOD connection of an object via script is not removed after the object is deleted, and remains in the saved game.
@@ -1112,8 +1112,8 @@ Problem: Broken IPL resort limit (1000) - Maximum lines in "inst" section inside
 Solution: Increase the IPL resort limit with some Limit Adjuster or try to split one IPL into others.
 
 Error: 0x005DC425
-Problem: Incorrect collision material (Inappropriate material ID).
-Solution: Correct the material ID within the COL file.
+Problem 1: Incorrect collision material (Inappropriate material ID).
+Solution 1: Fix the material ID within the COL file. A tip is, after you identify exactly which model and which .col file is causing the problem, open the .col in Coll Editor, select the model with the problem, or that you think has the problem, go to Edit Mode, in Face, and Select All to select all, and see in "Material" the number that appears. If you just created the .col then everything will probably be "0", which is the default, but if you have any invalid IDs, it will be with another bug number and so will not show any numbers there. Changing the Material to 0 with all faces selected will change everything to 0, including the bug face, and fix the problem. This is probably caused by Coll Editor merging different .col files, probably some Coll Editor bug.
 Problem 2: Strangely, a timecycle related issue (timecyc.dat).
 Solution 2: It happened in the "lite" version of Real Linear Graphics, it has already been fixed. Strangely, the solution was to lower the intensity value of the 7 pm line of the San Fierro fog climate, as the crash was in Los Santos, it is not known for sure how this happened.
 
