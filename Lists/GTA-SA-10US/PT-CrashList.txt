@@ -1,4 +1,4 @@
-25/06/21 (DD/MM/YY)
+03/07/21 (DD/MM/YY)
 
 Erro: 0x0156DA35, 0x00470A65
 Problema: Problema original do jogo onde a conexão de LOD de um objeto por script não é removida após o objeto ser deletado, e continua no jogo salvo.
@@ -1112,8 +1112,8 @@ Problema: Quebrou o limite de estâncias IPL (1000) - Máximo de linhas na seç�
 Solução: Aumente o limite de estâncias IPL com algum Limit Adjuster ou tente dividir um IPL em outros.
 
 Erro: 0x005DC425
-Problema: Material de colisão incorreto (ID de material impróprio).
-Solução: Corrija o ID do material dentro do arquivo COL.
+Problema 1: Material de colisão incorreto (ID de material impróprio).
+Solução 1: Corrija o ID do material dentro do arquivo COL. Uma dica é, após você identificar exatamente qual é o modelo e qual é o arquivo .col causando o problema, abra o .col no Coll Editor, selecione o modelo com o problema, ou que você acha que tem o problema, vá no Edit Mode, em Face, e Select All para selecionar todas, e veja no "Material" o número que aparece. Se você acabou de criar o .col, provavelmente tudo será "0", que é o padrão, mas se tem algum ID inválido, estará com outro número bugado e assim não mostrará número algum lá. Alterar o Material para 0 com todas as faces selecionadas alterará tudo para 0, inclusive a face com bug, e corrigirá o problema. Provavelmente isso é causado pelo fusão que o Coll Editor faz de diferentes arquivos .col, provavelmente algum bug do Coll Editor.
 Problema 2: Estranhamente, um problema relacionado com timecycle (timecyc.dat).
 Solução 2: Havia acontecido na versão "lite" do Real Linear Graphics, já foi corrigido. Estranhamente a solução foi abaixar o valor de intensidade da linha de 7 da noite do clima de neblina de San Fierro, sendo que o crash era em Los Santos, não se sabe ao certo como isso aconteceu.
 
