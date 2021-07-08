@@ -1,4 +1,4 @@
-03/07/21 (DD/MM/YY)
+07/07/21 (DD/MM/YY)
 
 Erro: 0x0156DA35, 0x00470A65
 Problema: Problema original do jogo onde a conexão de LOD de um objeto por script não é removida após o objeto ser deletado, e continua no jogo salvo.
@@ -784,8 +784,8 @@ Erro: 0x909090C3
 Problema: Este crash pode acontecer devido há vários motivos, mas normalmente é causado por um conflito entre 2 mods que utilizaram patch de memória do sistema do jogo.
 
 Erro: 0x00536BE0
-Problema: Handle/referência inválida para um veículo de script CLEO/SCM.
-Solução: Use SCRLog para descobrir exatamente qual script foi o causador do problema, e avise ao autor.
+Problema: Pegar a distância de centro da massa de um modelo.
+Solução: Caso tenha sido durante a criação de um carro, muito provavelmente é limite de veículos. Você pode aumentar o limite em "Vehicles" no arquivo .ini do Open Limit Adjuster. Por padrão é "Vehicles = 110", experimente aumentar para uns "Vehicles = 500". Se foi durante um gameplay normal, provavelmente algum mod CLEO mal feito está quebrando o limite de veículos criados no seu jogo, identifique e remove.
 
 Erro: 0x005A5A47
 Problema: Relacionado a texturas (do player.img?). Este crash já foi relatado ao usar mipmaps em texturas do player.img (roupas etc do CJ)
