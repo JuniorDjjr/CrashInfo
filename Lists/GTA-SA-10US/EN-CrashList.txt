@@ -1,4 +1,4 @@
-07/07/21 (DD/MM/YY)
+08/07/21 (DD/MM/YY)
 
 Error: 0x0156DA35, 0x00470A65
 Problem: Original game issue where the LOD connection of an object via script is not removed after the object is deleted, and remains in the saved game.
@@ -67,7 +67,8 @@ Solution: Remove some .ipl mods you have installed, or, if that is really the pr
 
 Error: 0x00749B7B
 Problem: Trying to create a model that does not exist. (peds? .asi?)
-Solution: There was this issue in VehFuncs, fixed as of v2.0.8. Other mods that create templates, probably any kind of template, can cause this, and probably just .asi, or the game itself tried to create a native game template that for some reason no longer exists.
+Solution 1: Check the installation of mods that need models, such as map objects. It has been reported trying to install a non-existent LOD .dff into an .ide.
+Solution 2: There was this issue in VehFuncs, fixed as of v2.0.8. Other mods that create models, probably any kind of template, can cause this, and probably just .asi, or the game itself tried to create a native game template that for some reason no longer exists.
 
 Error: 0x0068FB5C
 Problem: Related to the game's artificial intelligence tasks. What you specify are the addresses under the backtrace. If there is a "0x00681AAF" in the backtrace that is related to police patrol, it has already been reported in GTA Brasil, probably some third party mod that GTA Brasil uses, about AI and police.
