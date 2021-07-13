@@ -1,4 +1,8 @@
-08/07/21 (DD/MM/YY)
+13/07/21 (DD/MM/YY)
+
+Erro: 0x00691238
+Problema: Não foi possível fazer uma pessoa realizar uma animação facial.
+Solução: Muito provavelmente foi causado por algum script mal feito que tentou fazer a animação facial numa pessoa que não existe mais. SCRLog pode te ajudar neste caso. Senão foi algum problema mais profundo, mas relacionado à isso.
 
 Erro: 0x0156DA35, 0x00470A65
 Problema: Problema original do jogo onde a conexão de LOD de um objeto por script não é removida após o objeto ser deletado, e continua no jogo salvo.
