@@ -1,4 +1,4 @@
-13/07/21 (DD/MM/YY)
+17/07/21 (DD/MM/YY)
 
 Error: 0x00691238
 Problem: Unable to get a person to perform a facial animation.
@@ -24,9 +24,11 @@ Error: 0x005380C3
 Problem: Some problem loading templates and IDs into .ide/.ipl.
 Solution: Identify, fastman92 limit adjuster can even tell which ID, but basically it's some .ide/.ipl with missing or duplicate object.
 
-Error: 0x0156680C
-Problem: Some poorly made CLEO mod that worked with a non-existent vehicle.
-Solution: Use SCRLog to find out which one.
+Error: 0x0156680C, 0x015667F0
+Problem 1: Some bad script that worked with a non-existent vehicle.
+Solution 1: Use SCRLog to find out which one.
+Problem 2: main.scm/script.img incompatible with save game.
+Solution 2: Use the correct and compatible files for the given game save, for example in full conversion mods etc.
 
 Error: 0x0040F663
 Problem: Something related to the collision model — .col files or its contents, some conflict, missing or something like that, usually map mods.
