@@ -1,4 +1,4 @@
-13/07/21 (DD/MM/YY)
+17/07/21 (DD/MM/YY)
 
 Erro: 0x00691238
 Problema: Não foi possível fazer uma pessoa realizar uma animação facial.
@@ -24,9 +24,11 @@ Erro: 0x005380C3
 Problema: Algum problema no carregamento de modelos e IDs num .ide/.ipl.
 Solução: Identifique, o fastman92 limit adjuster pode dizer inclusive qual ID, mas basicamente é algum .ide/.ipl com objeto inexistente ou duplicado.
 
-Erro: 0x0156680C
-Problema: Algum mod CLEO mal feito que trabalhou com um veículo inexistente.
-Solução: Use SCRLog para saber qual.
+Erro: 0x0156680C, 0x015667F0
+Problema 1: Algum script mal feito que trabalhou com um veículo inexistente.
+Solução 1: Use SCRLog para saber qual.
+Problema 2: main.scm/script.img incompatíveis com o jogo salvo.
+Solução 2: Use os arquivos corretos e compatíveis para o determinado jogo salvo, por exemplo em mods de conversão total etc.
 
 Erro: 0x0040F663
 Problema: Algo relacionado à modelo de colisão — arquivos .col ou conteúdo dele, algum conflito, falta ou algo assim, normalmente mods de mapa.
