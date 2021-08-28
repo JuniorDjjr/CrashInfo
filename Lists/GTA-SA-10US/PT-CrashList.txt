@@ -1,4 +1,8 @@
-17/07/21 (DD/MM/YY)
+28/08/21 (DD/MM/YY)
+
+Erro: 0x00513347
+Problema: O player não existe mais.
+Solução: Por algum motivo ele foi apagado ou algum problema mais profundo e estranho que causou este problema mais grave.
 
 Erro: 0x00691238
 Problema: Não foi possível fazer uma pessoa realizar uma animação facial.
