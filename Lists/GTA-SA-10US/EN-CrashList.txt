@@ -1,4 +1,8 @@
-17/07/21 (DD/MM/YY)
+28/08/21 (DD/MM/YY)
+
+Error: 0x00513347
+Problem: The player no longer exists.
+Solution: For some reason it was deleted or some deeper and weirder issue that caused this more serious problem.
 
 Error: 0x00691238
 Problem: Unable to get a person to perform a facial animation.
