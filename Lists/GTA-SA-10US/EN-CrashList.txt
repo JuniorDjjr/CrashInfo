@@ -1,4 +1,8 @@
-28/08/21 (DD/MM/YY)
+11/09/21 (DD/MM/YY)
+
+Error: 0x006FF35B
+Problem: Something related to map objects that have (or should or shouldn't have) street sign text information.
+Solution: Identify, it may be some map mod that changes .dff, if you identify which one, and it's in MixMods, let us know so we can fix it.
 
 Error: 0x00513347
 Problem: The player no longer exists.
