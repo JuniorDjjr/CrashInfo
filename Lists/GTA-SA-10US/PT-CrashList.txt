@@ -1,4 +1,8 @@
-28/08/21 (DD/MM/YY)
+11/09/21 (DD/MM/YY)
+
+Erro: 0x006FF35B
+Problema: Algo relacionado com objetos de mapa que tenham (ou deviam ou não ter) informações de texto de placa de rua.
+Solução: Identifique, pode ser algum mod de mapa que altere .dff, caso identificar qual, e estiver na MixMods, nos avise para corrigirmos.
 
 Erro: 0x00513347
 Problema: O player não existe mais.
