@@ -961,7 +961,7 @@ Solution 2: It has already been fixed due to some bad configuration of fastman92
 Solution 3: If you are trying to start SAMP, probably samp.exe has a different compatibility mode than gta_sa.exe, or some other reason why SAMP cannot open gta_sa.exe (bad configuration, there is already some gta_sa. exe in Task Manager, some program preventing startup (you can try restarting the PC) etc).
 
 Error: 0x004C67BB
-Problem: Limit of pedestrian models in peds.ide
+Problem: Limit of pedestrian models in .ide
 Solution: Use Open Limit Adjuster
 
 Error: 0x006D1080
