@@ -1,4 +1,8 @@
-11/09/21 (DD/MM/YY)
+16/09/21 (DD/MM/YY)
+
+Erro: 0x0053368B
+Problema: Limite de PtrNode Doubles.
+Solução: Use Open Limit Adjuster.
 
 Erro: 0x006FF35B
 Problema: Algo relacionado com objetos de mapa que tenham (ou deviam ou não ter) informações de texto de placa de rua.
@@ -287,7 +291,7 @@ Problema: Criação de algum modelo. Pode mudar o tipo de modelo baseado no que 
 Solução: Já foi relatado ao usar GTA III HD Vehicles Tri-Pack, onde ocorre em Ocean Docks e provavelmente é causado por algum barco do mod, mas pode ser também outro veículo.
 
 Erro: 0x00538103
-Problema: Algum limite de objetos.
+Problema: Limite de Dummies (Dummy) para IPL.
 Solução: Use Open Limit Adjuster.
 
 Erro: 0x007C51A8
