@@ -1,8 +1,8 @@
-11/09/21 (DD/MM/YY)
+16/09/21 (DD/MM/YY)
 
-Error: 0x006FF35B
-Problem: Something related to map objects that have (or should or shouldn't have) street sign text information.
-Solution: Identify, it may be some map mod that changes .dff, if you identify which one, and it's in MixMods, let us know so we can fix it.
+Error: 0x0053368B
+Problem: Limit of PtrNode Doubles.
+Solution: Use Open Limit Adjuster.
 
 Error: 0x00513347
 Problem: The player no longer exists.
@@ -287,7 +287,7 @@ Problem: Creating some model. You can change the template type based on what is 
 Solution: It has been reported using GTA III HD Vehicles Tri-Pack, where it occurs in Ocean Docks and is probably caused by some boat in the mod, but it could also be another vehicle.
 
 Error: 0x00538103
-Problem: Some object limit.
+Problem: Dummies (Dummy) limit for IPL.
 Solution: Use Open Limit Adjuster.
 
 Error: 0x007C51A8
