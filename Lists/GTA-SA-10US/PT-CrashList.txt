@@ -2,7 +2,7 @@
 
 Erro: 0x00405CBC
 Problema: Não foi encontrado o objeto LOD num arquivo .ipl.
-Solução: Provavelmente causado por um arquivo .ipl mal configurado, ou mistura errada entre diferentes mods que substituem arquivos .ipl de texto e binários ("stream"), algum objeto do .ipl não existe etc. Identifique a causa e remova tal mod ou tente corrigir.
+Solução: Provavelmente causado por um arquivo .ipl mal configurado, ou mistura errada entre diferentes mods que substituem os mesmos arquivos .ipl de texto e binários ("stream"), algum objeto do .ipl não existe etc. Identifique a causa e remova tal mod ou tente corrigir. O último arquivo lido no modloader.log pode indicar qual arquivo .ipl é.
 
 Erro: 0x0053368B
 Problema: Limite de PtrNode Doubles.
