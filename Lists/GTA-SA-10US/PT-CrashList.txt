@@ -1311,6 +1311,7 @@ Solução 2: Leia o Erro: DSOUND.dll (ctrl+f)
 Tipo 3: Crash ao instalar um mod de gramas com SkyGfx instalado
 Problema 3: Incompatibilidade de modelos de grama.
 Solução 3: Desative o "ps2grassFiles" do SkyGfx1.ini (e outros .ini dele)
+Problema 4: Algum problema com ReShade (d3d9.dll/dxgi.dll).
 
 Erro: bass.dll
 Tipo: Alguma mensagem de erro relacionada a ele, ou ele está faltando em seu GTA depois da desinstalação do SAMP.
