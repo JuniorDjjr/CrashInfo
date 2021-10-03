@@ -10,7 +10,7 @@ Solution: Use Open Limit Adjuster.
 
 Error: 0x006FF35B
 Problem: Something related to map objects that have (or should or shouldn't have) street sign text information.
-Solution: It started to be common recently, at the moment apparently it is caused by the Pre-lighting Fixes Pack, if confirmed, we will try to fix it and an update will be released. If you have information about the problem, please help us by notifying us.
+Solution: It started to be common recently, at the moment apparently it is caused by the Pre-lighting Fixes Pack or LOD Vegetation, if confirmed, we will try to fix it and an update will be released. If you have information about the problem, please help us by notifying us.
 
 Error: 0x00513347
 Problem: The player no longer exists.
