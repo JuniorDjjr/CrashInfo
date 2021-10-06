@@ -4,6 +4,10 @@ Erro: 0x00405CBC
 Problema: Não foi encontrado o objeto LOD num arquivo .ipl.
 Solução: Provavelmente causado por um arquivo .ipl mal configurado, ou mistura errada entre diferentes mods que substituem os mesmos arquivos .ipl de texto e binários ("stream"), algum objeto do .ipl não existe etc. Identifique a causa e remova tal mod ou tente corrigir. O último arquivo lido no modloader.log pode indicar qual arquivo .ipl é.
 
+Erro: 0x0040AE92
+Problema: Problema ao carregar o modelo de um carro do cargrp.dat.
+Solução: O problema pode ser um carro mal configurado no cargrp.dat ou de fato o carro está com problemas para ser carregado e criado. Identifique-o, o mod Vehicles Test pode ajudar.
+
 Erro: 0x0040D349
 Problema: Relacionado com streaming de .txd.
 Solução: Já foi solucionado aumentando o streaming memory (StreamMemory no MixSets).
