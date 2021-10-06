@@ -1,8 +1,12 @@
-03/10/21 (DD/MM/YY)
+05/10/21 (DD/MM/YY)
 
 Error: 0x00405CBC
 Problem: Not found LOD object in .ipl file.
 Solution: Probably caused by a misconfigured .ipl file, or wrong mix between different mods that replaces same text and binary .ipl files ("stream"), some .ipl object doesn't exist etc. Identify the cause and remove such mod or try to fix it. The last file read from modloader.log can indicate which .ipl file it is.
+
+Error: 0x0040D349
+Problem: Related to .txd streaming.
+Solution: It has already been solved by increasing the streaming memory (StreamMemory in MixSets).
 
 Error: 0x0053368B
 Problem: Limit of PtrNode Doubles.
