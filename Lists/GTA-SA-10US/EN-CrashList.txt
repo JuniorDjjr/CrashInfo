@@ -18,7 +18,7 @@ Solution: Use Open Limit Adjuster.
 
 Error: 0x006FF35B
 Problem: Something related to map objects that have road sign text.
-Solution: It was already caused by LOD Vegetation along with "LoadAllBinaryIPLs = 1" from Project2DFX. This does not happen when using "LoadBinaryIPLs = 1" in Load Whole Map, or "binaryipl.cs", both of which do the same thing. Probably some problem with the Project2DFX function. If you have more information, let us know.
+Solution: It has already been caused by LOD Vegetation together with "LoadAllBinaryIPLs = 1" from Project2DFX or the same in Load Whole Map, or "binaryipl.cs". If you have more information, let us know.
 
 Error: 0x00513347
 Problem: The player no longer exists.
