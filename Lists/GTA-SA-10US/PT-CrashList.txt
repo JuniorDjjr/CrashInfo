@@ -1,4 +1,4 @@
-05/10/21 (DD/MM/YY)
+07/10/21 (DD/MM/YY)
 
 Erro: 0x00405CBC
 Problema: Não foi encontrado o objeto LOD num arquivo .ipl.
@@ -17,8 +17,8 @@ Problema: Limite de PtrNode Doubles.
 Solução: Use Open Limit Adjuster.
 
 Erro: 0x006FF35B
-Problema: Algo relacionado com objetos de mapa que tenham (ou deviam ou não ter) informações de texto de placa de rua.
-Solução: Começou a ser comum recentemente, no momento aparentemente é causado pelo Pre-lighting Fixes Pack or LOD Vegetation, caso confirmado, iremos tentar corrigir e será lançado uma atualização. Se você tem informações do problema, nos ajude avisando.
+Problema: Algo relacionado com objetos de mapa que tenham de texto de placa de rua.
+Solução: Já foi causado pelo LOD Vegetation junto com "LoadAllBinaryIPLs = 1" do Project2DFX. Isto não acontece ao usar "LoadBinaryIPLs = 1" no Load Whole Map, ou o "binaryipl.cs", sendo que ambos fazem a mesma coisa. Provavelmente algum problema da função do Project2DFX. Se você tiver mais informações, nos avise.
 
 Erro: 0x00513347
 Problema: O player não existe mais.
