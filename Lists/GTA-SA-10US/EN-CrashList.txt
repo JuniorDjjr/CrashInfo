@@ -1,4 +1,4 @@
-05/10/21 (DD/MM/YY)
+07/10/21 (DD/MM/YY)
 
 Error: 0x00405CBC
 Problem: Not found LOD object in .ipl file.
@@ -17,8 +17,8 @@ Problem: Limit of PtrNode Doubles.
 Solution: Use Open Limit Adjuster.
 
 Error: 0x006FF35B
-Problem: Something related to map objects that have (or should or shouldn't have) street sign text information.
-Solution: It started to be common recently, at the moment apparently it is caused by the Pre-lighting Fixes Pack or LOD Vegetation, if confirmed, we will try to fix it and an update will be released. If you have information about the problem, please help us by notifying us.
+Problem: Something related to map objects that have road sign text.
+Solution: It was already caused by LOD Vegetation along with "LoadAllBinaryIPLs = 1" from Project2DFX. This does not happen when using "LoadBinaryIPLs = 1" in Load Whole Map, or "binaryipl.cs", both of which do the same thing. Probably some problem with the Project2DFX function. If you have more information, let us know.
 
 Error: 0x00513347
 Problem: The player no longer exists.
