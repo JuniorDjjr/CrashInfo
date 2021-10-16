@@ -1,4 +1,8 @@
-07/10/21 (DD/MM/YY)
+16/10/21 (DD/MM/YY)
+
+Error: 0x004E516F, 0x00693D75
+Problem: Related to pedestrian task.
+Solution: It has been reported to use binaryipl.cs (a CLEO mod that loads all of the game's streaming .ipl files). Simply remove it, use the same option in Project2DFX or Load Whole Map. Never use binaryipl.cs.
 
 Error: 0x00405CBC
 Problem: Not found LOD object in .ipl file.
