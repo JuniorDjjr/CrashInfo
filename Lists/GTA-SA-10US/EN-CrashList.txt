@@ -49,7 +49,7 @@ Problem: Tobj limit (timed objects) (time-controlled objects, defined in .ide).
 Solution: Install Open Limit Adjuster, or increase the "timed objects" limit in fastman92 limit adjuster.
 
 Error: 0x005380C3
-Problem: Some problem loading templates and IDs into .ide/.ipl.
+Problem: Some problem loading models and IDs into .ide/.ipl.
 Solution: Identify, fastman92 limit adjuster can even tell which ID, but basically it's some .ide/.ipl with missing or duplicate object.
 
 Error: 0x0156680C, 0x015667F0
@@ -100,9 +100,9 @@ Problem: Apparently some limit on .ipl files, or limit on the total content of a
 Solution: Remove some .ipl mods you have installed, or, if that is really the problem (it has been working without any .ipl), use fastman92 limit adjuster to increase the .ipl file limit, or merge them manually by copying the contents from one to the other, thus decreasing the number of .ipl files in your game. There's not much mystery, just be careful with the sections (eg all object lines need to be between "inst" to "end").
 
 Error: 0x00749B7B
-Problem: Trying to create a model that does not exist. (peds? .asi?)
-Solution 1: Check the installation of mods that need models, such as map objects. It has been reported trying to install a non-existent LOD .dff into an .ide.
-Solution 2: There was this issue in VehFuncs, fixed as of v2.0.8. Other mods that create models, probably any kind of template, can cause this, and probably just .asi, or the game itself tried to create a native game template that for some reason no longer exists.
+Problem: Trying to create a model that does not exist, or .txd does not exist.
+Solution 1: Check the installation of mods that need models, such as map objects. It has been reported trying to install a non-existent .dff or .txd into an .ide.
+Solution 2: There was this issue in VehFuncs, fixed as of v2.0.8. Other mods that create models, probably any kind of model, can cause this, and probably just .asi, or the game itself tried to create a native game model that for some reason no longer exists.
 
 Error: 0x0068FB5C
 Problem: Related to the game's artificial intelligence tasks. What you specify are the addresses under the backtrace. If there is a "0x00681AAF" in the backtrace that is related to police patrol, it has already been reported in GTA Brasil, probably some third party mod that GTA Brasil uses, about AI and police.
@@ -300,10 +300,10 @@ Solution: Use Open Limit Adjuster
 
 Error: 0x007FDE21
 Problem: Related to textures of some model, whatever. The .txd may be having problems.
-Solution: Try to find out which template caused the error, and open it in MagicTXD, possibly error messages might appear, try re-save, re-create .txd, re-place compressions etc to see if it fixes.
+Solution: Try to find out which model caused the error, and open it in MagicTXD, possibly error messages might appear, try re-save, re-create .txd, re-place compressions etc to see if it fixes.
 
 Error: 0x00533D6E
-Problem: Creating some model. You can change the template type based on what is in the "backtrace" at the end of the log.
+Problem: Creating some model. You can change the model type based on what is in the "backtrace" at the end of the log.
 Solution: It has been reported using GTA III HD Vehicles Tri-Pack, where it occurs in Ocean Docks and is probably caused by some boat in the mod, but it could also be another vehicle.
 
 Error: 0x00538103
@@ -370,7 +370,7 @@ Problem: Missing vehicle type special handling line.
 Solution: In vehicles such as motorcycles, airplanes etc. there is a second line of handling that is necessary to function. You can see this line at the end of the handling.cfg file. Check that all necessary lines are installed for the vehicle to function.
 
 Error: 0x007C4781
-Problem: Processing a skin template. It has already been reported when opening parachutes with an edited model (like 90s AWP) having the game with high RAM usage.
+Problem: Processing a skin model. It has already been reported when opening parachutes with an edited model (like 90s AWP) having the game with high RAM usage.
 Solution: This has been fixed when using Largeaddress
 
 Error: 0x00564192 (in Backtrace at end of log?). Or 0x00801D58 0x005D9802 0x005D97E6 0x00811A2A 0x006FA915 0x006129E1 0x007F3851 0x00552A53
@@ -688,7 +688,7 @@ Error: 0x0046504E
 Problem: Related to some object, create, get it while it no longer exists, do something with it. Possibly caused by some badly done or poorly installed cleo script etc.
 
 Error: 0x0059F8B4
-Problem: Failed to load collision from .dff. The .col file is possibly not installed or the name inside the .COL file is different from the name of the .dff related to it, or there is simply no template .dff name inside the .COL
+Problem: Failed to load collision from .dff. The .col file is possibly not installed or the name inside the .COL file is different from the name of the .dff related to it, or there is simply no model .dff name inside the .COL
 Solution: Check if there is a .COL file for the .dff properly installed and working in the game, as well as looking in modloader.log looking for if the .COL was loaded etc. Or check your .COL file to see if everything is in order.
 
 Error: 0x00734E5A
@@ -752,7 +752,7 @@ Problem: Catch the distance between two zones (game areas such as neighborhoods)
 Solution: Did you change any files that control anything about the zones? like .zon files or some other?
 
 Error: 0x42480000, 0x42480007, 0x42480008, 0x42480012 (in the "Backtrace" at the end of the log you will have 0x0056328C, otherwise, send it to us)
-Problem 1: If there is any "0x0040E92F" in the "Backtrace" it was caused by some object in place. If you don't use ipl mods, map templates etc but use some undownloaded GTA from MixMods, send the log explaining about it.
+Problem 1: If there is any "0x0040E92F" in the "Backtrace" it was caused by some object in place. If you don't use ipl mods, map models etc but use some undownloaded GTA from MixMods, send the log explaining about it.
 Issue 2: It was reported and fixed when updating Ginput (even though it doesn't make much sense).
 
 Error: 0x004946A4
@@ -967,7 +967,7 @@ Problem: Related to memory allocation. This crash has already been reported by a
 Solution: If it's really the problem with a car, take it out and contact the breeder about the problem.
 
 Error: 0x0040890A
-Problem: Some CLEO mod tried to load an existing template.
+Problem: Some CLEO mod tried to load an existing model.
 Solution: The SCRLog mod can tell you exactly which script caused the problem. Make sure the mod is correctly and completely installed.
 
 Error: 0x004C663B
@@ -1110,7 +1110,7 @@ Solution: If you use Tuning Mod v2, know that the problem has already been fixed
 
 Error: 0x005381A5
 Problem 1: Incorrect IPL or buggy model (crash when trying to load a stanza from an IPL). By reports, this also has to do with mods and saved game
-Solution 1: Check the IPLs or templates. If the problem is no save, try using Delete Objects
+Solution 1: Check the IPLs or models. If the problem is no save, try using Delete Objects
 Issue 2: It has been reported using Open Limit Adjuster not configured for Project2dfx.
 Solution 2: In case, Project2dfx comes with an Open Limit Adjuster properly configured for it, you need to use it, remove another Open Limit Adjuster from your GTA (if you have two) and leave Project 2DFX's own.
 
@@ -1195,7 +1195,7 @@ Problem: Apparently you don't have the ClipboardCommands.cleo file in the cleo o
 Solution: Download and install it using this link (if you are using Tuning Mod, know that this file already comes in the download, check the mod installation.)
 
 Last command: [038B]
-Problem: Loading a template
+Problem: Loading a model
 Solution: Some model that mod cleo uses is missing or buggy in your GTA. Inside scrlog.log, above the last command you will possibly see a "REQUEST_MODEL" with a number in front, the number in front is the model ID (be it car, pedestrian or object). Check the problem, especially installing the mod.
 
 Last command: [0541]
