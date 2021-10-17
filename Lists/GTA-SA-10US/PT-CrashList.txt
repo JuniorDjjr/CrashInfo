@@ -100,7 +100,7 @@ Problema: Aparentemente algum limite de arquivos .ipl, ou limite do conteúdo to
 Solução: Remova alguns mods .ipl que você tenha instalado, ou, se realmente for este o problema (tenha funcionando sem algum .ipl), use fastman92 limit adjuster para aumentar o limite de arquivos .ipl, ou faça fusão deles manualmente copiando o conteúdo de um para o outro, assim diminuindo o número de arquivos .ipl do seu jogo. Não há muito mistério, só tome cuidado com as seções (por exemplo todas as linhas de objetos precisam estar entre o "inst" até "end").
 
 Erro: 0x00749B7B
-Problema: Tentando criar um modelo que não existe, ou o .txd não existe.
+Problema: Tentando criar um modelo que não existe, ou o .txd não existe. Ou nome de arquivo longo demais.
 Solução 1: Verifique a instalação de mods que necessitam de modelos, como objetos de mapa. Já foi relatado ao tentar instalar um .dff ou .txd inexistente num .ide.
 Solução 2: Havia este problema no VehFuncs, corrigido a partir da v2.0.8. Outros mods que criam modelos, provavelmente qualquer tipo de modelo, podem causar isto, e provavelmente só .asi, ou o próprio jogo tentou criar um modelo nativo do jogo que por algum motivo não existe mais.
 
