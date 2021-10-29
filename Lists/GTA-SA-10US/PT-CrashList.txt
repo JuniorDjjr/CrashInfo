@@ -1,4 +1,8 @@
-16/10/21 (DD/MM/YY)
+29/10/21 (DD/MM/YY)
+
+Erro: 0x005A329E
+Problema: Relacionado com objetos procedurais pra superfícies.
+Solução: Já foi causado por incompatibilidade entre arquivos object.dat, object.dat errado ou uma má fusão de mais de um object.dat no ModLoader. Identifique e remova o object.dat incorreto, ou tente misturá-los manualmente com alguma ferramenta de difference checker.
 
 Erro: 0x004E516F, 0x00693D75
 Problema: Relacionado com a tarefa de pedestres.
