@@ -1,5 +1,9 @@
 29/10/21 (DD/MM/YY)
 
+Erro: 0x004A9F54
+Problema: Falta um efeito especial ou algum PRIM dentro do efeito. Algo removido do arquivo .fxp, ou um .fxs removido do Effects Loader, que é necessário pelo jogo.
+Solução: Identifique, recoloque os efeitos necessários ou faça backup dos efeiotos, se por exemplo foi durante uma explosão pode ser que seja o efeito de explosão, ou fumaça etc. Se tiver "fxsfuncs.asi" no Backtrace no final do log, provavelmente é um efeito configurado no FxsFuncs.ini.
+
 Erro: 0x005A329E
 Problema: Relacionado com objetos procedurais pra superfícies.
 Solução: Já foi causado por incompatibilidade entre arquivos object.dat, object.dat errado ou uma má fusão de mais de um object.dat no ModLoader. Identifique e remova o object.dat incorreto, ou tente misturá-los manualmente com alguma ferramenta de difference checker.
