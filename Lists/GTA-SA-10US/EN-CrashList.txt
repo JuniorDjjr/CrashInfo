@@ -1,8 +1,8 @@
 29/10/21 (DD/MM/YY)
 
 Error: 0x004A9F54
-Problem: Falta um efeito especial. Algo removido do arquivo .fxp, ou um .fxs removido do Effects Loader, que é necessário pelo jogo.
-Solution: Identifique e recoloque os efeitos necessários, se por exemplo foi durante uma explosão pode ser que seja o efeito de explosão, ou fumaça etc. Se tiver "fxsfuncs.asi" no Backtrace no final do log, provavelmente é a falta de um efeito configurado no FxsFuncs.ini.
+Problem: Missing a special effect or some PRIM within the effect. Something removed from the .fxp file, or a .fxs removed from Effects Loader, which is needed by the game.
+Solution: Identify, replace the necessary effects or backup the effects, if for example it was during an explosion it could be the explosion effect, or smoke etc. If you have "fxsfuncs.asi" in the Backtrace at the end of the log, it's probably an effect configured in FxsFuncs.ini.
 
 Error: 0x005A329E
 Problem: Related to procedural objects for surfaces.
