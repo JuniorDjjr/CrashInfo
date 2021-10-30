@@ -1,4 +1,4 @@
-29/10/21 (DD/MM/YY)
+30/10/21 (DD/MM/YY)
 
 Erro: 0x004A9F54
 Problema: Falta um efeito especial ou algum PRIM dentro do efeito. Algo removido do arquivo .fxp, ou um .fxs removido do Effects Loader, que é necessário pelo jogo.
@@ -8,9 +8,9 @@ Erro: 0x005A329E
 Problema: Relacionado com objetos procedurais pra superfícies.
 Solução: Já foi causado por incompatibilidade entre arquivos object.dat, object.dat errado ou uma má fusão de mais de um object.dat no ModLoader. Identifique e remova o object.dat incorreto, ou tente misturá-los manualmente com alguma ferramenta de difference checker.
 
-Erro: 0x004E516F, 0x00693D75
+Erro: 0x004E516F, 0x00693D75, 0x6F6C6C46
 Problema: Relacionado com a tarefa de pedestres.
-Solução: Já foi relatado por usar binaryipl.cs (um mod CLEO que carrega todos os arquivos .ipl de streaming do jogo). Simplesmente remova-o, use a mesma opção no Project2DFX ou Load Whole Map. Nunca use o binaryipl.cs.
+Solução: Já foi relatado por usar binaryipl.cs (um mod CLEO que carrega todos os arquivos .ipl de streaming do jogo). Nunca use o binaryipl.cs.
 
 Erro: 0x00405CBC
 Problema: Não foi encontrado o objeto LOD num arquivo .ipl.
