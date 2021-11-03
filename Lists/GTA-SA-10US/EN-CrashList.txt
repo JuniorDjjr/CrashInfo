@@ -863,7 +863,7 @@ Problem: Related to on-screen sprites (anything added to the hud, images, texts)
 Solution: Try to figure out which mod and delete it, be it any mod that added such things to the screen during the crash. This crash was reported with the possible cause: "Aviation Hud", confirm?
 
 Error: 0x00405CB6
-Problem: Lack of an IPL
+Problem: Lack of an IPL file or bad written IPL.
 Solution: Check if there is any IPL missing to be loaded, either original from the game or one installed. Usually gta.dat files or in some readme come with IPL load lines inside, so reinstall such mods or delete them entirely.
 
 Error: 0x00801D58
