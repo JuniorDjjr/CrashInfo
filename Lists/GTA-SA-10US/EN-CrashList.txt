@@ -1,4 +1,4 @@
-30/10/21 (DD/MM/YY)
+08/11/21 (DD/MM/YY)
 
 Error: 0x004A9F54
 Problem: Missing a special effect or some PRIM within the effect. Something removed from the .fxp file, or a .fxs removed from Effects Loader, which is needed by the game.
@@ -1369,7 +1369,10 @@ Type: Asked for the DLL or some problem with it.
 Solution: Click here to go to the post with the download of all of them.
 
 Error: STREAM~1.ASI
-About: Stream Memory Fix? If you use this your GTA is out of date. As I always say, avoid mounting your GTA on other sites outside of MixMods, the Stream Memory Fix is ​​something from 2007, nowadays it is replaceable by other things much better like MixSets and Open Limit Adjuster. Click here for the post on how to put together a good GTA.
+About: Check ImprovedMove post: https://www.mixmods.com.br/2019/10/Improved-Move.html
+
+Error: STREAM~1.ASI
+About: Stream Memory Fix? If you use this your GTA is out of date. As I always say, avoid mounting your GTA on other sites outside of MixMods, the Stream Memory Fix is something from 2007, nowadays it is replaceable by other things much better like MixSets and Open Limit Adjuster. Click here for the post on how to put together a good GTA.
 
 Error: d3d9.dll
 Problem 1: As you may already know, it's the .dll used for a lot of things, especially enb series, so everything sets it to WHAT you used it (where 99% of people use it as enb series or it already came in game installation ). It may be that your PC doesn't support enb series or another graphical mod that uses this dll, but there are also mods that are made using this dll, super old mods from the GTA SA release where they ended up using this .dll to create the mod , completely obsolete now, stop using such mods. If you don't use enb series or other mods of this dll, it should be correctable by updating your DirectX Runtime, and then, if you have this dll installed in your game, delete it (or not).
