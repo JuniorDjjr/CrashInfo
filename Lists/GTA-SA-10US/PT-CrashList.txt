@@ -1,4 +1,4 @@
-30/10/21 (DD/MM/YY)
+08/11/21 (DD/MM/YY)
 
 Erro: 0x004A9F54
 Problema: Falta um efeito especial ou algum PRIM dentro do efeito. Algo removido do arquivo .fxp, ou um .fxs removido do Effects Loader, que é necessário pelo jogo.
@@ -1367,6 +1367,9 @@ Solução: Desintale ou ele ou o Project2DFX.
 Erro: msvcr100.dll msvcp100.dll msvcr110.dll msvcp110.dll msvcr120.dll msvcp120.dll msvcr100d.dll msvcp100d.dll msvcr110d.dll msvcp110d.dll msvcr120d.dll msvcp120d.dll d3dx9_26.dll d3dx9_43.dll d3dx9_40.dll
 Tipo: Pediu a DLL ou algum problema com ela.
 Solução: Clique aqui para ir ao post com o download de todas elas.
+
+Erro: ImprovedMove.asi
+Sobre: Veja no post do ImprovedMove: https://www.mixmods.com.br/2019/10/Improved-Move.html
 
 Erro: STREAM~1.ASI
 Sobre: Stream Memory Fix? Se você usa isso seu GTA está desatualizado. Como eu sempre digo, evite montar seu GTA em outros sites fora da MixMods, o Stream Memory Fix é coisa lá de 2007, atualmente ele é substituível por outras coisas muito melhores como MixSets e Open Limit Adjuster. Clique aqui para a postagem de como montar um bom GTA.
