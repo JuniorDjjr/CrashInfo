@@ -1,4 +1,12 @@
-08/11/21 (DD/MM/YY)
+22/11/21 (DD/MM/YY)
+
+Error: 0x00824844
+Problem: Maybe related to rendering.
+Solution: If there is "Direct3DCreate9Ex" right under the "0x00824844" in the "Backtrace" at the end of the log, it is probably caused by some model or graphic mod.
+
+Error: 0x005DA66F
+Problem: Rendering something from the game.
+Solution: If there is "0x005D9F00" (CCustomCarEnvMapPipeline) right under the "0x005DA66F" in the "Backtrace" at the end of the log, it is probably caused by some vehicle mod. You can find out which one using the mod "Vehicles Test". Otherwise, it's something else related to game rendering, model mods, graphics...
 
 Error: 0x004A9F54
 Problem: Missing a special effect or some PRIM within the effect. Something removed from the .fxp file, or a .fxs removed from Effects Loader, which is needed by the game.
