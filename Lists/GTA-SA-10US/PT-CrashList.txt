@@ -1287,7 +1287,11 @@ Outros
 
 Erro: CLEO.asi
 Problema: Algum script CLEO/SCM.
-Solução: O mod SCRLog pode te dizer exatamente qual foi o script causador do problema.
+Solução: O mod SCRLog pode te dizer exatamente qual foi o script causador do problema e contate o autor.
+
+Erro: CLEO+.cleo
+Problema: Algum script CLEO/SCM que use CLEO+.
+Solução: O mod SCRLog pode te dizer exatamente qual foi o script causador do problema e contate o autor.
 
 Erro: modloader.asi
 Problema 1: Em casos extremos onde você instala um arquivo qualquer no modloader e já causa vários crashes, inclusive no modloader.asi só de abrir o jogo, provavelmente todo o seu modloader entrou em confusão e parou de funcionar.
