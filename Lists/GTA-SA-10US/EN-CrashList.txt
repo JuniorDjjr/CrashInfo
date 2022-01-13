@@ -1,4 +1,4 @@
-22/11/21 (DD/MM/YY)
+13/01/22 (DD/MM/YY)
 
 Error: 0x00824844
 Problem: Maybe related to rendering.
@@ -1287,7 +1287,11 @@ Others
 
 Error: CLEO.asi
 Problem: Some CLEO/SCM script.
-Solution: The SCRLog mod can tell you exactly which script caused the problem.
+Solution: The SCRLog mod can tell you exactly which script caused the problem and contact the author.
+
+Error: CLEO+.cleo
+Problem: Algum script CLEO/SCM que use CLEO+.
+Solution: The SCRLog mod can tell you exactly which script caused the problem and contact the author.
 
 Error: modloader.asi
 Problem 1: In extreme cases where you install any file in modloader and it already causes several crashes, including in modloader.asi just by opening the game, probably all your modloader got into a mess and stopped working.
