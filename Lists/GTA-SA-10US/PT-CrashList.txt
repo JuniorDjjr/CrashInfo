@@ -1,4 +1,4 @@
-13/01/22 (DD/MM/YY)
+15/01/22 (DD/MM/YY)
 
 Erro: 0x00824844
 Problema: Talvez relacionado com renderização.
@@ -929,8 +929,9 @@ Problema: Fonte (letras) da tradução.
 Solução: Já foi solucionado ao usar outra tradução brasileira. Acredito que baixar a tradução da gamevicio deva resolver.
 
 Erro: 0x006F32C0
-Problema: Foi relatado ao tentar adicionar um carro estacionado com um modelo de um carro adicionado (ou seja, não nativo do jogo, um carro instalado sem substituir).
-Solução: Para poder estacionar carros adicionados no jogo sem substituir, é necessário abrir o .ini do Fastman92 Limit Adjuster, procurar pela linha "#Accept any ID for car generator = 0" remover o # e colocar = 1.
+Problema: Foi relatado ao tentar adicionar um carro estacionado com um modelo de um carro adicionado (ou seja, não nativo do jogo, um carro instalado sem substituir). Ou algum limite ou corrompimento relacionado com carros estacionados.
+Solução 1: Para poder estacionar carros adicionados no jogo sem substituir, é necessário abrir o .ini do Fastman92 Limit Adjuster, procurar pela linha "#Accept any ID for car generator = 0" remover o # e colocar = 1.
+Solução 2: Use o mod RepairGTA para corrigir carros duplicados e incorretos no seu jogo.
 
 Erro: 0x005A5781
 Problema: Relacionado com cópia de texturas. Aparentemente há uma textura com compressão, e o GTA não suportou compressão nela. Este crash já foi relatado ao colocar compressão na textura "vehiclegrunge256" do vehicle.txd sem ter o ImVehFt instalado.
