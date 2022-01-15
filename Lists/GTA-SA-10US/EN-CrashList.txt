@@ -1,4 +1,4 @@
-13/01/22 (DD/MM/YY)
+15/01/22 (DD/MM/YY)
 
 Error: 0x00824844
 Problem: Maybe related to rendering.
@@ -929,8 +929,9 @@ Problem: Source (letters) of the translation.
 Solution: Has already been fixed when using another Brazilian translation. I believe that downloading the gamevicio translation should solve it.
 
 Error: 0x006F32C0
-Problem: It has been reported when trying to add a parked car with a model of a car added (ie not native to the game, a car installed without replacing).
-Solution: To be able to park added cars in the game without replacing, it is necessary to open the Fastman92 Limit Adjuster .ini, look for the line "#Accept any ID for car generator = 0" remove the # and put = 1.
+Problem: Reported when trying to add a parked car with a model of a car added (i.e. non-native to the game, a car installed without replacing). Or some limit or corruption related to parked cars.
+Solution 1: To be able to park cars added in the game without replacing, it is necessary to open the Fastman92 Limit Adjuster .ini, search for the line "#Accept any ID for car generator = 0" remove the # and put = 1.
+Solution 2: Use RepairGTA mod to fix duplicate and incorrect cars in your game.
 
 Error: 0x005A5781
 Problem: Related to copying textures. Apparently there is a texture with compression, and GTA didn't support compression on it. This crash has been reported when compressing the "vehiclegrunge256" texture of vehicle.txd without having ImVehFt installed.
