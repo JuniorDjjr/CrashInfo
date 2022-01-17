@@ -1,8 +1,12 @@
-15/01/22 (DD/MM/YY)
+17/01/22 (DD/MM/YY)
 
 Error: 0x00824844
 Problem: Maybe related to rendering.
 Solution: If there is "Direct3DCreate9Ex" right under the "0x00824844" in the "Backtrace" at the end of the log, it is probably caused by some model or graphic mod.
+
+Error: 0x0041471F
+Problem: Attempt to return collision between 2 points, a pointer was not sent to CColPoint.
+Solution: This could be caused by some ASI or CLEO mod. Update the CJ Look Interest mod if you have it, it caused this problem when having NewOpcodes.cleo installed.
 
 Error: 0x005DA66F
 Problem: Rendering something from the game.
