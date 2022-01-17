@@ -1,8 +1,12 @@
-15/01/22 (DD/MM/YY)
+17/01/22 (DD/MM/YY)
 
 Erro: 0x00824844
 Problema: Talvez relacionado com renderização.
 Solução: Se houver "Direct3DCreate9Ex" logo abaixo de "0x00824844" no "Backtrace" no final do log, provavelmente é causado por algum mod de modelo ou gráficos.
+
+Erro: 0x0041471F
+Problema: Tentativa de pegar colisão entre 2 pontos, não foi enviado um ponteiro para o CColPoint.
+Solução: Isto pode ser causado por algum mod ASI ou CLEO. Atualize o mod CJ Look Interest se você tem ele, ele causava este problema ao ter NewOpcodes.cleo instalado.
 
 Erro: 0x005DA66F
 Problema: Renderização de algo do jogo.
