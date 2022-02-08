@@ -1,4 +1,8 @@
-17/01/22 (DD/MM/YY)
+08/02/22 (DD/MM/YY)
+
+Erro: 0x006E0968
+Problema: Problema com a identificação de ligar a sirene.
+Solução: Foi reportado ao usar GPS Mod + Framerate Vigilante, e já corrigido, baixe a nova versão do GPS Line Mod (na MixMods) para corrigir.
 
 Erro: 0x00824844
 Problema: Talvez relacionado com renderização.
