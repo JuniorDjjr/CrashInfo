@@ -1,4 +1,8 @@
-17/01/22 (DD/MM/YY)
+08/02/22 (DD/MM/YY)
+
+Error: 0x006E0968
+Problem: Related to siren turn on identification.
+Solution: It was reported when using GPS Mod + Framerate Vigilante, and already fixed, download the new version of GPS Line Mod (from MixMods) to fix it.
 
 Error: 0x00824844
 Problem: Maybe related to rendering.
