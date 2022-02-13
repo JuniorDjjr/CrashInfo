@@ -1,4 +1,4 @@
-08/02/22 (DD/MM/YY)
+13/02/22 (DD/MM/YY)
 
 Erro: 0x006E0968
 Problema: Problema com a identificação de ligar a sirene.
@@ -1251,12 +1251,12 @@ Solução: Caso isto tenha acontecido no mod Attach Vehicles (pode ser outro), a
 Por scripts:
 
 script noname
-Mod: Nenhum (sério)
-Sobre: Foi erro do main.scm (script original do GTA), se você está usando main.scm normal (com missões do jogo etc), pode acontecer crashes por exemplo na academia, foi erro da Rockstar (? ou incompatibilidade com outro mod?). Detalhe que SilentPatch corrige uns erros destes. Também pode ser alguns casos raros de mods, onde no caso você não terá como identificá-lo.
+Mod: Nenhum
+Sobre: Foi erro do main.scm (script original do GTA), se você está usando main.scm normal (com missões do jogo etc), pode acontecer crashes por exemplo na academia, foi erro da Rockstar (? ou incompatibilidade com outro mod?), ou então o seu jogo salvo não é compatível com esse main.scm / script.img. Detalhe que SilentPatch corrige uns erros destes. Também pode ser alguns casos raros de mods, onde no caso você não terá como identificá-lo.
 
 script nebo
 Mod: Skybox
-Sobre: Ele geralmente tem um crash maldito, script mal feito, não recomendo usar, infelizmente.
+Sobre: Ele geralmente tem um crash maldito, script mal feito, não recomendo usar, use Real Skybox.
 
 script newsvan
 Mod: Steering (Active Dashboard)
@@ -1291,6 +1291,12 @@ Mod: Ligar/desligar o motor. Já foi removido da MixMods, remova do seu GTA, ele
 
 script attach
 Mod: Pode ser vários, provavelmente o Attach Vehicles. Houve um crash nele mas já foi corrigido.
+
+script attach
+Mod: Pode ser vários, provavelmente o Attach Vehicles. Houve um crash nele mas já foi corrigido.
+
+script ehi ene
+Mod: Enterable Hidden Interiors, só baixe de novo, foi corrigido.
 
 Outros
 
