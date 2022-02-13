@@ -1,4 +1,4 @@
-08/02/22 (DD/MM/YY)
+13/02/22 (DD/MM/YY)
 
 Error: 0x006E0968
 Problem: Related to siren turn on identification.
@@ -683,7 +683,7 @@ Solution: Check the installation of the mods you have that use .col, it may be m
 
 Error: 0x00486726
 Problem: Apparently hit the limit of models to be loaded at the same time by some cleo script.
-Solution: You will need to remove some core mods that create things like people, etc. This usually happens when starting the game when you have a lot of poorly made cleos mods (mods that load the models right when starting the game, which is a big mistake)
+Solution: You will need to remove some CLEO mods that create things like people, etc. This usually happens when starting the game when you have a lot of poorly made cleos mods (mods that load the models right when starting the game, which is a big mistake)
 
 Error: 0x004CE15C
 Problem: Error loading pedestrian animations. Possibly the "data\peds.ide" is misconfigured.
@@ -1047,7 +1047,7 @@ Solution: Check your TXD
 
 Error: 0x006F785F
 Problem: Creating a train. It has been reported using multiple train-related script mods at the same time.
-Solution: Uninstall some core train mods, avoid using multiple train script mods at the same time. It may be that other mods of the type also cause such problems, as I said, creating a train, if someone messes with train creations, it could be a conflict.
+Solution: Uninstall some CLEO train mods, avoid using multiple train script mods at the same time. It may be that other mods of the type also cause such problems, as I said, creating a train, if someone messes with train creations, it could be a conflict.
 
 Error: 0x004F1464
 Problem: Related to loading some music (division by 0)
@@ -1250,47 +1250,50 @@ Solution: If this happened in the Attach Vehicles mod (may be another), update i
 
 By scripts:
 
-noname script
-Mod: None (seriously)
-About: It was main.scm error (original GTA script), if you are using normal main.scm (with game missions etc), crashes can happen for example in the gym, was it Rockstar error (? or incompatibility with another mod ?). Note that SilentPatch fixes some of these errors. It can also be some rare cases of mods, in which case you won't be able to identify it.
+script name
+Mod: None
+About: It was a main.scm error (original GTA script), if you are using normal main.scm (with game missions etc), crashes can happen for example at the gym, it was a Rockstar error (? or incompatibility with another mod ?), or else your save game is not compatible with that main.scm/script.img. Detail that SilentPatch corrects some of these errors. It could also be some rare cases of mods, in which case you won't be able to identify it.
 
-nebo script
+script nebo
 Mod: Skybox
-About: It usually has a damn crash, bad script, I don't recommend using it, unfortunately.
+About: It usually has a damn crash, bad script, I don't recommend using it, use Real Skybox.
 
-newsvan script
+script newsvan
 Mod: Steering (Active Dashboard)
 About: If you die in the car, it is because you have an old version of Steering. Download the latest version of Steering from MixMods.
 
-suspend script
+script suspens
 Mod: Air Suspension v1
 About: Usually the mod crashes with the last command: "[81F3]", it was my own mistake from the time I was a noob... to avoid this crash, just always turn off the air suspension when getting out of the car.
 
-tuning script
+script tuning
 Mod: Tuning Mod, or possibly another mod named "Tuning"
 About: Was it really the Tuning Mod? Please send us the SCRLog here in the comments by putting it on pastebin.com and sending us the link we will try to fix.
 
-Horn An script
+script Horn An
 Mod: Horn Anim (horn animation)
 About: It has already been fixed. Download again.
 
-mydak script
+script mydak
 Mod: Don't hit women v2
 About: This mod was crashed in the last command [051A] and was actually incompatible with another cleo mod.
 
-Djjr Ca script
+script Djjr Ca
 Mod: Djjr Car Spawner
 About: Trying to spawn train/boat? This will be fixed in Djjr Car Spawner v1.1. For now to fix it just leave "PutOnVehicle = 1".
 
-intro2 script
-Mod: None, actually it was in the script for the second mission of the game where it is usually caused by incompatibilities with core mods.
+script intro2
+Mod: Actually it was in the script for the second mission of the game where it is usually caused by incompatibilities with CLEO mods.
 About: Read "Problem 1" of crash "0x00536BE0" (ctrl+f and look for it up there in the list)
 
-nanava script
+script nanava
 Mod: Start / stop the engine. It has already been removed from MixMods, remove it from your GTA, it really is poorly done.
 
 script attach
 Mod: It could be several, probably Attach Vehicles. It crashed but has now been fixed.
+
+script ehi ene
+Mod: Enterable Hidden Interiors, just download it again it is fixed.
 
 Others
 
