@@ -1,4 +1,4 @@
-13/02/22 (DD/MM/YY)
+19/02/22 (DD/MM/YY)
 
 Error: 0x006E0968
 Problem: Related to siren turn on identification.
@@ -933,8 +933,8 @@ Problem 2: The data/gta.dat file is missing.
 Solution 2: Make sure it's there.
 
 Error: 0x0071A190
-Problem: Source (letters) of the translation.
-Solution: Has already been fixed when using another Brazilian translation. I believe that downloading the gamevicio translation should solve it.
+Problem: Font (letters), probably some fonts.dat or corrupted letters from some mod (.fxt) or translation (.gxt).
+Solution: It has already been solved by uninstalling the translation, but it does not always happen, try to identify the cause, exactly which text, if it is a conflict, etc.
 
 Error: 0x006F32C0
 Problem: Reported when trying to add a parked car with a model of a car added (i.e. non-native to the game, a car installed without replacing). Or some limit or corruption related to parked cars.
