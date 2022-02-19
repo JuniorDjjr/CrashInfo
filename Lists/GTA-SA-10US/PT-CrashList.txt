@@ -1,4 +1,4 @@
-13/02/22 (DD/MM/YY)
+19/02/22 (DD/MM/YY)
 
 Erro: 0x006E0968
 Problema: Problema com a identificação de ligar a sirene.
@@ -933,8 +933,8 @@ Problema 2: O arquivo data/gta.dat está ausente.
 Solução 2: Verifique se ele está lá.
 
 Erro: 0x0071A190
-Problema: Fonte (letras) da tradução.
-Solução: Já foi solucionado ao usar outra tradução brasileira. Acredito que baixar a tradução da gamevicio deva resolver.
+Problema: Fonte (letras), provavelmente algum fonts.dat ou letras corrompidas de algum mod (.fxt) ou tradução (.gxt).
+Solução: Já foi solucionado ao desinstalar a tradução, mas nem sempre acontece, procure tentar identificar a causa, exatamente qual texto, se é algum conflito etc.
 
 Erro: 0x006F32C0
 Problema: Foi relatado ao tentar adicionar um carro estacionado com um modelo de um carro adicionado (ou seja, não nativo do jogo, um carro instalado sem substituir). Ou algum limite ou corrompimento relacionado com carros estacionados.
