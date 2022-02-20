@@ -1,4 +1,8 @@
-19/02/22 (DD/MM/YY)
+20/02/22 (DD/MM/YY)
+
+Error: 0x007480DB
+Problem: Related to playing the intro video (movies folder).
+Solution: Some problem with the files in the movies folder, or other problem related to your PC or game not being able to play. A workaround is to use Improved Fastloader to skip videos.
 
 Error: 0x006E0968
 Problem: Related to siren turn on identification.
