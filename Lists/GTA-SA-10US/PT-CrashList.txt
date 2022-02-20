@@ -1,4 +1,8 @@
-19/02/22 (DD/MM/YY)
+20/02/22 (DD/MM/YY)
+
+Erro: 0x007480DB
+Problema: Relacionado com tocar o vídeo de introdução (pasta movies).
+Solução: Algum problema com os arquivos da pasta movies, ou outro problema relacionado com seu PC ou jogo não conseguir tocar. Uma solução alternativa é usar Improved Fastloader para pular os vídeos.
 
 Erro: 0x006E0968
 Problema: Problema com a identificação de ligar a sirene.
