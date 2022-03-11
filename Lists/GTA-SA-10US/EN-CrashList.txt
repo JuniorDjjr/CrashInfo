@@ -1,4 +1,8 @@
-20/02/22 (DD/MM/YY)
+11/03/22 (DD/MM/YY)
+
+Error: 0x004C4BB0
+Problem: Related to unloading a model.
+Solution: The "Backtrace" at the end of the log may have some indication, for example "0x0073A3A4 _ZN7CWeapon8ShutdownEv" indicates that it is related to a weapon (weapon.dat conflict?). It could be a problem with model settings (object, car, ped etc), .txd files etc.
 
 Error: 0x007480DB
 Problem: Related to playing the intro video (movies folder).
