@@ -1,4 +1,8 @@
-20/02/22 (DD/MM/YY)
+11/03/22 (DD/MM/YY)
+
+Erro: 0x004C4BB0
+Problema: Relacionado ao descarregar um modelo.
+Solução: No "Backtrace" no final do log pode ter alguma indicação, por exemplo "0x0073A3A4 _ZN7CWeapon8ShutdownEv" indica que tem relação com arma (conflito de weapon.dat?). Pode ser algum problema de configurações de modelos (objeto, carro, ped etc), arquivos .txd etc.
 
 Erro: 0x007480DB
 Problema: Relacionado com tocar o vídeo de introdução (pasta movies).
