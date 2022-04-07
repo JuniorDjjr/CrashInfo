@@ -1,4 +1,4 @@
-11/03/22 (DD/MM/YY)
+07/04/22 (DD/MM/YY)
 
 Erro: 0x004C4BB0
 Problema: Relacionado ao descarregar um modelo.
@@ -42,7 +42,7 @@ Solução: Provavelmente causado por um arquivo .ipl mal configurado, ou mistura
 
 Erro: 0x0040AE92
 Problema: Problema ao carregar o modelo de um carro do cargrp.dat.
-Solução: O problema pode ser um carro mal configurado no cargrp.dat ou de fato o carro está com problemas para ser carregado e criado. Identifique-o, o mod Vehicles Test pode ajudar.
+Solução: O problema pode ser um carro mal configurado no cargrp.dat ou de fato o carro está com problemas para ser carregado e criado. Identifique-o, o mod Vehicles Test pode ajudar. Também relatado ao aumentar o limite de cargrp no fastman92 limit adjuster.
 
 Erro: 0x0040D349
 Problema: Relacionado com streaming de .txd.
