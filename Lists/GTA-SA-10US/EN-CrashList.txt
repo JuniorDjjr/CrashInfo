@@ -42,7 +42,7 @@ Solution: Probably caused by a misconfigured .ipl file, or wrong mix between dif
 
 Error: 0x0040AE92
 Problem: Problem loading a car model from cargrp.dat.
-Solution: The problem could be a misconfigured car in cargrp.dat or in fact the car is having problems loading and creating. Identify it, the Vehicles Test mod can help. Also reported when increasing cargrp limit in fastman92 limit adjuster.
+Solution: The problem could be a misconfigured car in cargrp.dat or in fact the car is having problems loading and creating. Identify it, the Vehicles Test mod can help. Also reported when increasing cargrp limit in fastman92 limit adjuster with MinLoadedGangVeh in MixSets.
 
 Error: 0x0040D349
 Problem: Related to .txd streaming.
