@@ -922,7 +922,7 @@ Problema: Erro ao tentar carregar um IFP. Muito possivelmente o IFP não está i
 Solução: Verifique a instalação dos IFP. No SCRLog.log deverá ter o nome do script na qual pediu o IFP
 
 Erro: 0x0057A065
-Problema 1: Já foi relatado ao usar carro bugado. Relatado com o mod 90s AVP por causa do Bandito, onde depois de spawnar ele e ir pra este menu, dará o crash.
+Problema 1: Já foi relatado ao usar carro bugado. Relatado com o mod 90s AVP por causa do Bandito, onde depois de spawnar ele e ir pro menu display (configurações avançadas de vídeo), dará o crash.
 Solução 1: Troque o carro por outro na qual não tem este bug.
 Problema 2: Por algum motivo não foi possível identificar o modo de vídeo.
 Solução 2: Isso já foi relatado e simplesmente parou de dar o erro, por si só, ou algum mod asi que impossibilitou. Você também pode tentar deletar o gta_sa.set no "Documents/GTA San Andreas User Files".
