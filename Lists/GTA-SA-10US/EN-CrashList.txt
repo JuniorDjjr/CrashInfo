@@ -922,7 +922,7 @@ Problem: Error trying to load an IFP. Quite possibly the IFP is not installed on
 Solution: Check the installation of the IFPs. In SCRLog.log it should have the name of the script in which you requested the IFP
 
 Error: 0x0057A065
-Problem 1: It has already been reported when using buggy car. Reported with mod 90s AVP because of Bandito, where after spawning him and going to this menu, it will crash.
+Problem 1: It has already been reported when using buggy car. Reported with mod 90s AVP because of Bandito, where after spawning him and going to display menu, it will crash.
 Solution 1: Replace the car with one which does not have this bug.
 Problem 2: For some reason it was not possible to identify the video mode.
 Solution 2: This has already been reported and simply stopped giving the error, by itself, or some mod that made it impossible. You can also try deleting gta_sa.set in "Documents/GTA San Andreas User Files".
