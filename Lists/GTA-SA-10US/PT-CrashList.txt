@@ -1,4 +1,4 @@
-07/04/22 (DD/MM/YY)
+19/04/22 (DD/MM/YY)
 
 Erro: 0x004C4BB0
 Problema: Relacionado ao descarregar um modelo.
@@ -1072,7 +1072,10 @@ Solução 4: Identifique o tal mod CLEO, note que o arquivo .txd pode até exist
 Sobre: Pode ser qualquer coisa relacionada com "carregar uma textura a partir de um arquivo .txd", portanto pode ser causado por centenas de diferentes motivos, só que de uma coisa é certa: Tem algum .txd errado aí, possivelmente bugado ou faltando alguma textura importante, coisas do tipo.
 
 Erro: 0x00745AA5
-Problema: Descarregamento dos modos de vídeo. Este crash tem relação com o mesmo problema do 57A065, ou seja, leia aquele crash que ele pode solucionar.
+Problema 1: Já foi relatado ao usar carro bugado. Relatado com o mod 90s AVP por causa do Bandito, onde depois de spawnar ele e ir pro menu display (configurações avançadas de vídeo), dará o crash.
+Solução 1: Troque o carro por outro na qual não tem este bug.
+Problema 2: Por algum motivo não foi possível identificar o modo de vídeo.
+Solução 2: Isso já foi relatado e simplesmente parou de dar o erro, por si só, ou algum mod asi que impossibilitou. Você também pode tentar deletar o gta_sa.set no "Documents/GTA San Andreas User Files".
 
 Erro: 0x005FD54D
 Problema: Criação de um pedestre.
