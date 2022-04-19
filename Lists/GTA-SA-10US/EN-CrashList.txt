@@ -1,4 +1,4 @@
-07/04/22 (DD/MM/YY)
+19/04/22 (DD/MM/YY)
 
 Error: 0x004C4BB0
 Problem: Related to unloading a model.
@@ -1072,7 +1072,10 @@ Solution 4: Identify the mod CLEO, note that the .txd file may even exist (if th
 About: It could be anything related to "loading a texture from a .txd file", so it could be caused by hundreds of different reasons, but one thing is certain: There's some .txd wrong there, possibly buggy or missing some important texture, things like that.
 
 Error: 0x00745AA5
-Problem: Downloading video modes. This crash is related to the same problem as 57A065, that is, read that crash that it can solve.
+Problem 1: It has already been reported when using buggy car. Reported with mod 90s AVP because of Bandito, where after spawning him and going to display menu, it will crash.
+Solution 1: Replace the car with one which does not have this bug.
+Problem 2: For some reason it was not possible to identify the video mode.
+Solution 2: This has already been reported and simply stopped giving the error, by itself, or some mod that made it impossible. You can also try deleting gta_sa.set in "Documents/GTA San Andreas User Files".
 
 Error: 0x005FD54D
 Problem: Creating a pedestrian.
