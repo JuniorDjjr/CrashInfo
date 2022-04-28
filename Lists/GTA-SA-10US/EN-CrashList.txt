@@ -1,4 +1,4 @@
-19/04/22 (DD/MM/YY)
+28/04/22 (DD/MM/YY)
 
 Error: 0x004C4BB0
 Problem: Related to unloading a model.
@@ -996,8 +996,7 @@ Problem: In pre-rendering an object, after adding the size to it, I don't know i
 Solution: Find out where the crash occurs, possibly the object is stuck on the game's map, so in a new game or other save game it won't crash, the problem is stuck in your save game (read more here). If not, some script must have created an object there that made this crash, find out which script.
 
 Error: 0x0072F4DE
-Problem: Related to memory allocation. This crash has already been reported by a buggy car.
-Solution: If it's really the problem with a car, take it out and contact the breeder about the problem.
+Problem: Related to memory allocation. This crash has already been reported by a buggy car, but it's a very generic problem, may be a lot of different cases, the backtrace can tell more information. Contact someone experienced.
 
 Error: 0x0040890A
 Problem: Some CLEO mod tried to load an existing model.
