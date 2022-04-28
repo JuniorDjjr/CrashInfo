@@ -1,4 +1,4 @@
-19/04/22 (DD/MM/YY)
+28/04/22 (DD/MM/YY)
 
 Erro: 0x004C4BB0
 Problema: Relacionado ao descarregar um modelo.
@@ -996,8 +996,7 @@ Problema: Na pré-renderização de um objeto, depois de adicionar o tamanho nel
 Solução: Procure saber onde ocorre o crash, possivelmente o tal objeto está preso no mapa do jogo, sendo assim, em new game ou outro save game não terá o crash, o problema está preso no seu save game (leia mais aqui). Se não, algum script deve ter criado algum objeto lá que fez dar este crash, procure saber qual script.
 
 Erro: 0x0072F4DE
-Problema: Relacionado com alocação de memória. Este crash já foi relatado por um carro bugado.
-Solução: Se for mesmo o problema com um carro, retire-o e contate o criador sobre esse problema.
+Problema: Relacionado à alocação de memória. Este crash já foi reportado por um carro bugado, mas é um problema bem genérico, pode ser vários casos diferentes, o backtrace pode dar mais informações. Entre em contato com alguém experiente.
 
 Erro: 0x0040890A
 Problema: Algum mod CLEO tentou carregar um modelo existente.
