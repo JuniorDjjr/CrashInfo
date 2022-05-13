@@ -1,8 +1,51 @@
-28/04/22 (DD/MM/YY)
+13/05/22 (DD/MM/YY)
+
+Erro: 0x005C09F6
+Problema: Algum mod de efeito mal configurado (não pôde ler a seção PRIM). Arquivos .fxp ou .fxs.
+Solução: Identifique qual mod, qual efeito, tente corrigir, contate o autor etc.
+
+Erro: 0x00537F0D
+Problema: Não foi possível carregar o bounding box de um modelo de um arquivo .col.
+Solução: Identifique qual arquivo .col, de algum mod, está causando isto, provavelmente está mal editado, mal criado etc.
+
+Erro: 0x006D3B64
+Problema: Algum mod CLEO engatando um veículo/reboque que não existe mais.
+Solução: SCRLog pode ajudar a identificar, provavelmente.
+
+Erro: 0x009654DA
+Problema: Algo relacionado com o pedgrp, ao tentar carregar algum novo modelo de ped para gangues.
+Solução: Algo sobre limite de pedgrp e modelos de gangues? Algum modelo inválido?
+
+Erro: 0x00B4C2DD
+Problema: Algo relacionado com os efeitos especiais internos nos arquivos .dff (2dfx).
+Solução: Algum .dff mal editado, mal feito, ou provavelmente é relacionado com limites de 2dfx, algo sobre isso.
+
+Erro: 0x004C4C7E
+Problema: Erro ao ler um modelo de mapa que tenha algum efeito especial embutido no .dff.
+Solução: Provavelmente algum .dff desses está com algum problema, mal feito, mal editado etc.
+
+Erro: 0x00409436
+Problema: A câmera do jogo deixou de existir e assim causou problema ao tentar carregar novos modelos pro mapa.
+
+Erro: 0x0040B659
+Problema: Ao tentar iniciar o carregamento de um novo modelo de veículou o pessoa.
+Solução: Alguma má configuração de cargrp ou pedgrp? Algum modelo mal configurado e não funcional?
+
+Erro: 0x00554EE6
+Problema: Ao tentar ler a informação de que um modelo de mapa é controlado para aparecer em determinada hora do dia.
+Solução: Algum objeto "tobj" (controlado por tempo) mal configurado, mas possivelmente acontece mesmo com objetos não controlados.
+
+Erro: 0x0040AE08
+Problema: O jogo tentou carregar um modelo que não existe ou não pôde ser identificado, relacionado com a zona em que você está.
+Solução: Problema com cargrp? pedgrp? Algo mal configurado?
 
 Erro: 0x004C4BB0
 Problema: Relacionado ao descarregar um modelo.
 Solução: No "Backtrace" no final do log pode ter alguma indicação, por exemplo "0x0073A3A4 _ZN7CWeapon8ShutdownEv" indica que tem relação com arma (conflito de weapon.dat?). Pode ser algum problema de configurações de modelos (objeto, carro, ped etc), arquivos .txd etc.
+
+Erro: 0x00611C24
+Problema: Pegar modelo de carro no cargrp.dat.
+Solução: Incompatibilidade entre a opção de limite de modelos de carros carregados no MixSets, e o limite de cargrp do fastman92 limit adjuster. Desative um ou espere correções.
 
 Erro: 0x007480DB
 Problema: Relacionado com tocar o vídeo de introdução (pasta movies).
