@@ -1,8 +1,51 @@
-28/04/22 (DD/MM/YY)
+13/05/22 (DD/MM/YY)
+
+Error: 0x005C09F6
+Problem: Some misconfigured effect mod (couldn't read the PRIM section). .fxp or .fxs files.
+Solution: Identify which mod, which effect, try to fix it, contact the author, etc.
+
+Error: 0x00537F0D
+Problem: Unable to load a model's bounding box from a .col file.
+Solution: Identify which .col file, from some mod, is causing this, it's probably badly edited, poorly created, etc.
+
+Error: 0x006D3B64
+Problem: Some CLEO mod hitching a vehicle/trailer that no longer exists.
+Solution: SCRLog can help identify, probably.
+
+Error: 0x009654DA
+Problem: Something related to pedgrp, when trying to load some new ped model for gangs.
+Solution: Something about pedgrp limit and gang models? Any invalid models?
+
+Error: 0x00B4C2DD
+Problem: Something related to the built-in special effects in .dff files (2dfx).
+Solution: Some badly edited, poorly made .dff, or is probably related to 2dfx limits, something about that.
+
+Error: 0x004C4C7E
+Problem: Error reading a map template that has some special effect built into the .dff.
+Solution: Probably one of these .dff files has a problem, badly made, badly edited, etc.
+
+Error: 0x00409436
+Problem: The in-game camera no longer exists and thus caused a problem when trying to load new models to the map.
+
+Error: 0x0040B659
+Problem: When trying to start loading a new vehicle model, the person.
+Solution: Any bad cargrp or pedgrp configuration? Some misconfigured and non-functional model?
+
+Error: 0x00554EE6
+Problem: When trying to read information that a map model is controlled to appear at a certain time of day.
+Solution: Some misconfigured "tobj" (time-controlled) object, but possibly even with uncontrolled objects.
+
+Error: 0x0040AE08
+Problem: The game tried to load a model that didn't exist or wasn't identified, related to the zone you are.
+Solution: Problem with cargrp? pedgrp? Something bad configured?
 
 Error: 0x004C4BB0
 Problem: Related to unloading a model.
 Solution: The "Backtrace" at the end of the log may have some indication, for example "0x0073A3A4 _ZN7CWeapon8ShutdownEv" indicates that it is related to a weapon (weapon.dat conflict?). It could be a problem with model settings (object, car, ped etc), .txd files etc.
+
+Error: 0x00611C24
+Problem: Get car model from cargrp.dat.
+Solution: Incompatibility between the limit option of car models loaded in MixSets, and the cargrp limit of the fastman92 limit adjuster. Turn one off or wait for fixes.
 
 Error: 0x007480DB
 Problem: Related to playing the intro video (movies folder).
