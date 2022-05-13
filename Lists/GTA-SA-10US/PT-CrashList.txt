@@ -1,5 +1,9 @@
 13/05/22 (DD/MM/YY)
 
+Erro: 0x01564BC8
+Problema: Limite de pickups ou algum mod tentou trabalhar com um pickup que não existe ou valor inválido.
+Solução: Identifique qual mod, SCRLog pode te ajudar, remova e contate o autor, ou aumente o limite caso for o caso.
+
 Erro: 0x005C09F6
 Problema: Algum mod de efeito mal configurado (não pôde ler a seção PRIM). Arquivos .fxp ou .fxs.
 Solução: Identifique qual mod, qual efeito, tente corrigir, contate o autor etc.
