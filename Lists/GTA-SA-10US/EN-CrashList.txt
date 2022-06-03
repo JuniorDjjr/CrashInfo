@@ -1,4 +1,8 @@
-13/05/22 (DD/MM/YY)
+03/06/22 (DD/MM/YY)
+
+Error: 0x004AA393
+Problem: Related to stop playing a special effect (such as smoke, fire, explosion, etc).
+Solution: Identify which mod, if it's an effects mod, the backtrace at the end of the log can help if it's an asi mod, scrlog can help if it's a CLEO mod etc.
 
 Error: 0x01564BC8
 Problem: Limit of pickups or some mod tried to work with a pickup that doesn't exist or invalid value.
