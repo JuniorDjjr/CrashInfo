@@ -1,4 +1,8 @@
-13/05/22 (DD/MM/YY)
+03/06/22 (DD/MM/YY)
+
+Erro: 0x004AA393
+Problema: Relacionado do parar de executar um efeito especial (como fumaça, fogo, explosão etc).
+Solução: Identifique qual mod, se trata de algum mod sobre efeitos, o backtrace no final do log pode ajudar se for algum mod asi, scrlog pode ajudar se for algum mod CLEO etc.
 
 Erro: 0x01564BC8
 Problema: Limite de pickups ou algum mod tentou trabalhar com um pickup que não existe ou valor inválido.
