@@ -1,4 +1,4 @@
-03/06/22 (DD/MM/YY)
+07/06/22 (DD/MM/YY)
 
 Erro: 0x004AA393
 Problema: Relacionado do parar de executar um efeito especial (como fumaça, fogo, explosão etc).
@@ -1411,15 +1411,17 @@ Solução: Baixe e instale o Visual C++ 2013 Redistributable
 
 Erro: KERNELBASE.dll
 Tipo 1: Crash
+Sobre: É uma dll geral do Windows, portanto pode ser causado por muitos problemas diferentes e genéricos, como alocação de memória. O "backtrace" no final do log diz melhor a origem do problema, contate alguém experiente.
 Problema 1: Já foi relatado ao usar o pack de peds em hd
-Solução 1: (enviado pelo Luiz Felipe) Caso esteja usando o mod "Load Whole Map" com o "Pack de Peds em HD", ir no .ini (do Load Whole Map) e na função "LoadPeds" caso tiver em "1" colocar "0", pois aparentemente algum(s) pedestre(s) desse pack está com problema e ao carregar ele(s) da erro. Caso o problema persistir assim dando erro enquanto jogando, pode ser exatamente pelo fato de algum modelo estar bugado e assim é bom procurar por qual deles ou remover todo o pack.
+Solução 1: Identifique e remova o pedestre bugado.
 Tipo 2: Crash ao tentar abrir o jogo junto com "Runtime Error!".
-Problema 2: Possivelmente problema do som do seu PC, DirectPlay. Também pode ser problema do cachê do ModLoader. Vá na pasta "C:\Users\JuniorDjjr\AppData\Local\modloader" onde "JuniorDjjr" é o seu nome de usuário, e delete todo o conteúdo. Da próxima vez seu jogo demorará um pouco para abrir, mas funcionará.
+Problema 2: Possivelmente problema do som do seu PC, DirectPlay. Também pode ser problema do cachê do ModLoader. Vá na pasta "C:\Users\(USER)\AppData\Local\modloader" onde "(USER)" é o seu nome de usuário, e delete todo o conteúdo. Da próxima vez seu jogo demorará um pouco para abrir, mas funcionará.
 Solução 2: Leia o Erro: DSOUND.dll (ctrl+f)
 Tipo 3: Crash ao instalar um mod de gramas com SkyGfx instalado
 Problema 3: Incompatibilidade de modelos de grama.
 Solução 3: Desative o "ps2grassFiles" do SkyGfx1.ini (e outros .ini dele)
-Problema 4: Algum problema com ReShade (d3d9.dll/dxgi.dll).
+Problema 4: Limite de CLEO_CALL/SCM_FUNC de algum mod CLEO.
+Solução 4: Caso for o caso, o SCRLog dirá exatamente isso, e qual script foi. Caso lhe aconteça, contate o autor para corrigir, o CLEO_CALL provavelmente está sendo chamado sem retornar.
 
 Erro: bass.dll
 Tipo: Alguma mensagem de erro relacionada a ele, ou ele está faltando em seu GTA depois da desinstalação do SAMP.
