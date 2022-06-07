@@ -1,4 +1,4 @@
-03/06/22 (DD/MM/YY)
+07/06/22 (DD/MM/YY)
 
 Error: 0x004AA393
 Problem: Related to stop playing a special effect (such as smoke, fire, explosion, etc).
@@ -1408,15 +1408,17 @@ Solution: Download and install Visual C++ 2013 Redistributable
 
 Error: KERNELBASE.dll
 Type 1: Crash
-Problem 1: It has already been reported when using ped pack in hd
-Solution 1: (sent by Luiz Felipe) If you are using the mod "Load Whole Map" with the "Peds Pack in HD", go to .ini (from Load Whole Map) and to the "LoadPeds" function if you have "1" " put "0", because apparently some pedestrian(s) of this pack is having a problem and when loading it(s) it gives an error. If the problem persists giving error while playing, it may be exactly because some model is buggy and so it's good to look for which one or remove the entire pack.
+About: It is a general Windows dll so it can be caused by many different and generic issues like memory allocation. The "backtrace" at the end of the log better tells the source of the problem, contact someone experienced.
+Problem 1: Already reported when using peds pack in hd
+Solution 1: Identify and remove the buggy pedestrian.
 Type 2: Crash when trying to open the game along with "Runtime Error!".
-Problem 2: Possibly your PC's sound problem, DirectPlay. It could also be a ModLoader cache problem. Go to the folder "C:\Users\JuniorDjjr\AppData\Local\modloader" where "JuniorDjjr" is your username, and delete all content. Next time your game will take a while to open, but it will work.
+Problem 2: Possibly your PC sound problem, DirectPlay. It could also be a problem with the ModLoader cache. Go to the folder "C:\Users\(USER)\AppData\Local\modloader" where "(USER)" is your username, and delete all content. Next time your game will take a while to open, but it will work.
 Solution 2: Read Error: DSOUND.dll (ctrl+f)
-Type 3: Crash when installing a gram mod with SkyGfx installed
-Problem 3: Incompatibility of Grass Models.
-Solution 3: Disable "ps2grassFiles" from SkyGfx1.ini (and other .ini of it)
-Problem 4: Some problem related to ReShade (d3d9.dll/dxgi.dll).
+Type 3: Crash when installing a grams mod with SkyGfx installed
+Issue 3: Grass models mismatch.
+Solution 3: Disable "ps2grassFiles" from SkyGfx1.ini (and other .ini from it)
+Problem 4: CLEO_CALL/SCM_FUNC limit of some CLEO mod.
+Solution 4: If so, the SCRLog will say exactly that, and which script it was. If it happens to you, contact the author to fix it, CLEO_CALL is probably being called without returning.
 
 Error: bass.dll
 Type: Any error message related to it, or it is missing from your GTA after uninstalling SAMP.
