@@ -1,4 +1,4 @@
-07/06/22 (DD/MM/YY)
+11/06/22 (DD/MM/YY)
 
 Error: 0x004AA393
 Problem: Related to stop playing a special effect (such as smoke, fire, explosion, etc).
@@ -1419,6 +1419,8 @@ Issue 3: Grass models mismatch.
 Solution 3: Disable "ps2grassFiles" from SkyGfx1.ini (and other .ini from it)
 Problem 4: CLEO_CALL/SCM_FUNC limit of some CLEO mod.
 Solution 4: If so, the SCRLog will say exactly that, and which script it was. If it happens to you, contact the author to fix it, CLEO_CALL is probably being called without returning.
+Problem 5: Misconfigured .ini file (wrong letters or characters in an option of an .ini file).
+Solution 5: Identify and fix it, it has happened for example when using "FFFFFF" instead of "0xFFFFFF" in MixSets.
 
 Error: bass.dll
 Type: Any error message related to it, or it is missing from your GTA after uninstalling SAMP.
