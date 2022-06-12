@@ -1,4 +1,4 @@
-07/06/22 (DD/MM/YY)
+11/06/22 (DD/MM/YY)
 
 Erro: 0x004AA393
 Problema: Relacionado do parar de executar um efeito especial (como fumaça, fogo, explosão etc).
@@ -1422,6 +1422,8 @@ Problema 3: Incompatibilidade de modelos de grama.
 Solução 3: Desative o "ps2grassFiles" do SkyGfx1.ini (e outros .ini dele)
 Problema 4: Limite de CLEO_CALL/SCM_FUNC de algum mod CLEO.
 Solução 4: Caso for o caso, o SCRLog dirá exatamente isso, e qual script foi. Caso lhe aconteça, contate o autor para corrigir, o CLEO_CALL provavelmente está sendo chamado sem retornar.
+Problema 5: Arquivo .ini mal configurado (letras ou caracteres incorretos numa opção de um arquivo .ini).
+Solução 5: Identifique e corrija, já aconteceu por exemplo ao usar "FFFFFF" em vez de "0xFFFFFF" no MixSets.
 
 Erro: bass.dll
 Tipo: Alguma mensagem de erro relacionada a ele, ou ele está faltando em seu GTA depois da desinstalação do SAMP.
