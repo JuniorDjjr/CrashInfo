@@ -1,4 +1,8 @@
-11/06/22 (DD/MM/YY)
+19/06/22 (DD/MM/YY)
+
+Erro: 0x004C705A
+Problema: Relacionado com montar o modelo de colisão de um corpo de uma pessoa (normalmente usado quando existe um tiro e precisa determinar se acertou um membro de uma pessoa).
+Solução: Identifique e remova, contate o autor etc de algum mod de skin, pode ter algo de errado no .dff do modelo.
 
 Erro: 0x004AA393
 Problema: Relacionado do parar de executar um efeito especial (como fumaça, fogo, explosão etc).
@@ -1092,7 +1096,7 @@ Problema: Relacionado a efeitos especiais, provavelmente você tem um efeito (.f
 Solução: Verifique os seus arquivos .fxp e effectsPC.txd no modloader, pode ser conflito.
 
 Erro: 0x007F120E
-Problema: Frame não encontrado. Pode ser causado por uns 40 motivos como modelo bugado ou script controlando alguma coisa de algum carro. Isto também acontece na versão 4.0.5 ou mais antiga do MixSets ao explodir muitos carros, já foi corrigido nas novas versões.
+Problema: Frame não encontrado. Pode ser causado por uns 40 motivos como modelo bugado ou script controlando alguma coisa muito provavelmente de algum carro (mas ainda pode ser arma ou pessoa). Isto também acontece na versão 4.0.5 ou mais antiga do MixSets ao explodir muitos carros, já foi corrigido nas novas versões. Caso tenha "0x005670AB" no Backtrace logo abaixo, é causado por soltar alguma peça de algum carro.
 Solução: Caso você use MixSets 4.0.5 ou mais antigo, atualize-o pois este crash foi corrigido. Já foi relatado ao tentar tentar tunar um carro despreparado pro tuning. Possivelmente o crash também pode acontecer ao chegar perto de alguma garagem com algum carro com peças tuning não suportadas lá dentro. Verifique seus mods e modelos. No caso de crash por causa de algum tuning em algum carro que não tem suporte, simplesmente não tune ou tente configurar a linha de carmods.dat dele corretamente pois pelo visto as linhas estão incorretas. Também foi relatado ao usar o mod de remover para-brisas, em motos, na qual não tinha para-brisa (assim como pode ser qualquer outro tipo de mod que remova peças de veículos)
 
 Erro: 0x004D41C5
@@ -1190,7 +1194,7 @@ Erro: 0x004C720C
 Problema: Isso já foi relatado com o Tuning Mod v2.
 Solução: Caso você use Tuning Mod v2, saiba que o problema já foi corrigido na versão v2.1. Você também pode baixar novamente o IndieVehHandlings.cs atualizado com a correção.
 
-Erro: 0x004C705A 0x004C7170
+Erro: 0x004C7170
 Problema: Isso já foi relatado com o Tuning Mod v2, geralmente logo ao
 Solução: Caso você use Tuning Mod v2, saiba que o problema já foi corrigido na versão v2.1. Você também pode baixar novamente o IndieVehHandlings.cs atualizado com a correção.
 
