@@ -1,4 +1,8 @@
-11/06/22 (DD/MM/YY)
+19/06/22 (DD/MM/YY)
+
+Error: 0x004C705A
+Problem: Related to building the collision model of a person's body (usually used when there is a shot and you need to determine if it hit a person's limb).
+Solution: Identify and remove, contact the author etc of some skin mod, there may be something wrong in the .dff of the model.
 
 Error: 0x004AA393
 Problem: Related to stop playing a special effect (such as smoke, fire, explosion, etc).
@@ -1092,8 +1096,8 @@ Problem: Related to special effects, you probably have an effect (.fxp or .fxs) 
 Solution: Check your .fxp and effectsPC.txd files in modloader, it might be conflict.
 
 Error: 0x007F120E
-Problem: Frame not found. It can be caused by 40 reasons such as a buggy model or a script controlling something from a car. This also happens in MixSets version 4.0.5 or older when blowing up lots of cars, it has already been fixed in new versions.
-Solution: If you use MixSets 4.0.5 or older, please update it as this crash has been fixed. It has been reported trying to tune a car unprepared for tuning. Possibly the crash can also happen when arriving near a garage with a car with unsupported tuning parts inside. Check your mods and models. In case of a crash due to some tuning in a car that doesn't have support, simply don't tune or try to configure the line of carmods.dat of it correctly because apparently the lines are incorrect. It was also reported using the windshield remove mod, on motorcycles, which had no windshield (as it can be any other mod that removes vehicle parts)
+Problem: Frame not found. It can be caused by about 40 reasons like buggy model or script controlling something most likely from a car (but it could still be a weapon or a person). This also happens in MixSets version 4.0.5 or older when blowing up too many cars, it has been fixed in the new versions. If you have "0x005670AB" in the Backtrace just below, it is caused by dropping a part from a car.
+Solution: If you use MixSets 4.0.5 or older, update it as this crash has been fixed. It has already been reported when trying to tune a car unprepared for tuning. Possibly the crash can also happen when approaching a garage with a car with unsupported tuning parts inside. Check your mods and models. In case of a crash due to some tuning in a car that doesn't have support, simply don't tune or try to configure his carmods.dat line correctly because apparently the lines are incorrect. It has also been reported when using the Windshield Removal mod, on motorcycles, which did not have a windshield (as can any other type of mod that removes vehicle parts)
 
 Error: 0x004D41C5
 Problem: Problem with the animation of getting into a vehicle, it could have been you or someone on the street (if the crash was during the game without you getting into one)
@@ -1190,7 +1194,7 @@ Error: 0x004C720C
 Problem: This has already been reported with Tuning Mod v2.
 Solution: If you use Tuning Mod v2, know that the problem has already been fixed in v2.1. You can also re-download the updated IndieVehHandlings.cs with the fix.
 
-Error: 0x004C705A 0x004C7170
+Error: 0x004C7170
 Problem: This has been reported with Tuning Mod v2, usually right after
 Solution: If you use Tuning Mod v2, know that the problem has already been fixed in v2.1. You can also re-download the updated IndieVehHandlings.cs with the fix.
 
