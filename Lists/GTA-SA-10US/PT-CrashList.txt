@@ -1,4 +1,8 @@
-19/06/22 (DD/MM/YY)
+24/06/22 (DD/MM/YY)
+
+Erro: 0x0156173D
+Problema: Limite de ColModels (modelos de colisão dentro dos arquivos .col ou .dff de veículos).
+Solução: Aumente o limite instalando Open Limit Adjuster ou configurando no fastman92 limit adjuster.
 
 Erro: 0x004C705A
 Problema: Relacionado com montar o modelo de colisão de um corpo de uma pessoa (normalmente usado quando existe um tiro e precisa determinar se acertou um membro de uma pessoa).
