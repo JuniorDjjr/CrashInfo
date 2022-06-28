@@ -1,4 +1,8 @@
-24/06/22 (DD/MM/YY)
+28/06/22 (DD/MM/YY)
+
+Erro: 0x004C53D4
+Problema: Pegar uma peça/dummy de um veículo. Provavelmente relacionado com peças tuning?
+Solução: Identifique se é algum problema com algum mod de carro ou script, se houver 0x00469FF7 no backtrace é algum mod CLEO e SCRLog pode ajudar.
 
 Erro: 0x0156173D
 Problema: Limite de ColModels (modelos de colisão dentro dos arquivos .col ou .dff de veículos).
