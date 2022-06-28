@@ -1,5 +1,9 @@
 24/06/22 (DD/MM/YY)
 
+Error: 0x004C53D4
+Problem: Getting a part/dummy from a vehicle. Probably related to tuning parts?
+Solution: Identify if it is a problem with some car mod or script, if there is 0x00469FF7 in the backtrace it is some CLEO mod and SCRLog can help.
+
 Error: 0x0156173D
 Problem: Limit of ColModels (collision models inside vehicle .col or .dff files).
 Solution: Increase the limit by installing Open Limit Adjuster or configuring the fastman92 limit adjuster.
