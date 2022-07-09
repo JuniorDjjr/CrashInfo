@@ -1,4 +1,4 @@
-24/06/22 (DD/MM/YY)
+09/07/22 (DD/MM/YY)
 
 Error: 0x004C53D4
 Problem: Getting a part/dummy from a vehicle. Probably related to tuning parts?
@@ -749,8 +749,8 @@ Problem 3: Related to a car model.
 Solution 3: Find and remove the car (if you can, notify the creator of the car). Test Car Load will help find the buggy car.
 
 Error: 0x00532B82
-Problem: Apparently lack of collision (.col) in a model
-Solution: Check the installation of the mods you have that use .col, it may be missing .col or with the wrong .col (missing the collision model inside the .col)
+Problem: Apparently missing collision (.col) in a template, or the template doesn't exist (not installed).
+Solution: Check the installation of the mods you have that use .col, it may be missing .col or with the wrong .col (missing the model of the collision inside the .col). It is also possible that there is a mod object saved in your save game and you have uninstalled the object, in which case you can use the "Delete Objects" mod and save.
 
 Error: 0x00486726
 Problem: Apparently hit the limit of models to be loaded at the same time by some cleo script.
