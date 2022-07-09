@@ -1,4 +1,4 @@
-28/06/22 (DD/MM/YY)
+09/07/22 (DD/MM/YY)
 
 Erro: 0x004C53D4
 Problema: Pegar uma peça/dummy de um veículo. Provavelmente relacionado com peças tuning?
@@ -749,8 +749,8 @@ Problema 3: Relacionado ao modelo de algum carro.
 Solução 3: Procure e remova o carro (se puder, avise ao criador do mesmo). Test Car Load ajudará a encontrar o carro bugado.
 
 Erro: 0x00532B82
-Problema: Aparentemente falta de colisão (.col) em um modelo
-Solução: Verifique a instalação dos mods que você tem que usam .col, pode estar faltando .col ou com o .col errado (faltando o modelo da colisão lá dentro do .col)
+Problema: Aparentemente falta de colisão (.col) em um modelo, ou o modelo não existe (não está instalado).
+Solução: Verifique a instalação dos mods que você tem que usam .col, pode estar faltando .col ou com o .col errado (faltando o modelo da colisão lá dentro do .col). Também é possível que há um objeto de mod salvo no seu jogo salvo e você desinstalou o objeto, neste caso você pode usar o mod "Delete Objects" e ressalvar.
 
 Erro: 0x00486726
 Problema: Aparentemente bateu o limite de modelos a serem carregados ao mesmo tempo por algum script cleo.
