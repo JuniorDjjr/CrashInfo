@@ -1,4 +1,8 @@
-09/07/22 (DD/MM/YY)
+28/07/22 (DD/MM/YY)
+
+Error: 0x00801C3B
+Problem: List allocation. It can be caused by many different reasons, "backtrace" might help something.
+Solution: It was already caused by the collision model of an airplane, changing the collider (or the vehicle model itself) solved it.
 
 Error: 0x004C53D4
 Problem: Getting a part/dummy from a vehicle. Probably related to tuning parts?
