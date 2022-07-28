@@ -1,4 +1,8 @@
-09/07/22 (DD/MM/YY)
+28/07/22 (DD/MM/YY)
+
+Erro: 0x00801C3B
+Problema: Alocação de lista. Pode ser causado por vários motivos diferentes, o "backtrace" pode ajudar em algo.
+Solução: Já foi causado pelo modelo de colisão de um avião, ao trocar o colisor (ou o modelo do veículos em si) solucionou.
 
 Erro: 0x004C53D4
 Problema: Pegar uma peça/dummy de um veículo. Provavelmente relacionado com peças tuning?
