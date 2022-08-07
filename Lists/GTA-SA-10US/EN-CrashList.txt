@@ -1,4 +1,8 @@
-28/07/22 (DD/MM/YY)
+07/08/22 (DD/MM/YY)
+
+Error: 0x004A8E3E
+Problem: Removing an item from a list. The "backtrace" at the end of the crash log can help to understand the type of the list. If it has "0x005A328B" just below it, it's related to procobj.dat mods.
+Solution: Possibly procobj.dat limit, or some other bug caused by procobj.dat mods. There are indications that it is procobj.dat file merge bug in modloader as well.
 
 Error: 0x00801C3B
 Problem: List allocation. It can be caused by many different reasons, "backtrace" might help something.
