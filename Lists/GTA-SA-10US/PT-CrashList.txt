@@ -1,4 +1,4 @@
-07/08/22 (DD/MM/YY)
+27/08/22 (DD/MM/YY)
 
 Erro: 0x004A8E3E
 Problema: Remoção de um item numa lista. O "backtrace" no final do crash log pode ajudar a entender o tipo da lista. Se tiver "0x005A328B" logo abaixo, é sobre mods de procobj.dat.
@@ -576,8 +576,8 @@ Solução: Dê uma olhada na sua pasta "anim", o ped.ifp está lá?
 Erro: 0x004AA3A1
 Problema 1: Efeitos especiais (arquivos .fxp). Um efeito não pôde ser removido da memória por algum erro.
 Solução 1: Desinstale seus efeitos trocados
-Problema 2: Se você não tem efeitos especiais trocados, pode ser problema do modelo em si que usa algum efeito, como jetpack trocado.
-Solução 2: Desinstalar o modelo que você estava usando na hora do crash na qual usa o tal efeito citado acima. Possivelmente só aconteceria no caso do modelo do jetpack...
+Problema 2: Se você não tem efeitos especiais trocados, pode ser problema do modelo em si que usa algum efeito, como jetpack trocado. Isto acontecia em versões antigas dos mods Proper Fixes e Missing Smokes Fix.
+Solução 2: Identifique e remova tal mod (.dff) que adiciona efeitos especiais. Caso use Proper Fixes ou Missing Smokes Fix, atualize-os.
 
 Erro: 0x0F9416FC
 Problema: Erro do Save Game relacionado ao local onde foi salvo
