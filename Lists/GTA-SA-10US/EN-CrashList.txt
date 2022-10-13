@@ -1,4 +1,8 @@
-29/08/22 (DD/MM/YY)
+13/10/22 (DD/MM/YY)
+
+Error: 0x015689A5
+Problem: Collision model too heavy or some other bug related to a .col.
+Solution: It has already been solved by optimizing the mesh of the collider model, making it lighter.
 
 Error: 0x004A8E3E
 Problem: Removing an item from a list. The "backtrace" at the end of the crash log can help to understand the type of the list. If it has "0x005A328B" just below it, it's related to procobj.dat mods.
