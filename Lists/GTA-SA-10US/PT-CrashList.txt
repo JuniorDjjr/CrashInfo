@@ -1,4 +1,8 @@
-29/08/22 (DD/MM/YY)
+13/10/22 (DD/MM/YY)
+
+Erro: 0x015689A5
+Problema: Modelo de colisão pesado demais ou algum outro bug relacionado com um .col.
+Solução: Já foi solucionado otimizando a mesh do modelo colisor, deixando-a mais leve.
 
 Erro: 0x004A8E3E
 Problema: Remoção de um item numa lista. O "backtrace" no final do crash log pode ajudar a entender o tipo da lista. Se tiver "0x005A328B" logo abaixo, é sobre mods de procobj.dat.
