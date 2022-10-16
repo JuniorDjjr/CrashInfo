@@ -1,4 +1,4 @@
-13/10/22 (DD/MM/YY)
+16/10/22 (DD/MM/YY)
 
 Erro: 0x015689A5
 Problema: Modelo de colisão pesado demais ou algum outro bug relacionado com um .col.
@@ -599,13 +599,10 @@ Erro: 0xE8AC1250 (em "Backtrace" no fim do log terá vários "unknown" e um shel
 Problema: Algum tipo de incompatibilidade do vehlightsfix.asi
 Solução: Corrigido ao aumentar a prioridade dele no modloader.ini, ou seja, coloque ele numa pasta e deixe esta pasta numa prioridade grande, como "100". Clique aqui para saber como.
 
-Erro: 0x00406034, 0x00406035, 0x00406038
-Problema: Limites de arquivos .ipl?
-Solução: O Fastman92 Limit Adjuster tem função para aumentar o limite de IPL, mas há o aviso de que isso causa bugs. Recomendo você tentar misturar os arquivos IPL, pegando por exemplo 2 IPLs pequenos, pegando os objetos de um e colocando no outro. Só não exagere pois também há limite de objetos dentro de um IPL, mas o limite é grande.
-A estrutura de um .ipl é basicamente assim:
-inst
-(todos os objetos aqui)
-end
+Erro: 0x00406034, 0x00406035, 0x00406038, 0x004F243E
+Problema: Limites de arquivos .ipl? Aparentemente só acontece com quantidade de .ipls usando a section "inst".
+Solução 1: O Fastman92 Limit Adjuster tem função para aumentar o limite de IPL em "FILE_TYPE_IPL".
+Solução 2: Tente misturar os arquivos IPL, por exemplo 2 IPLs pequenos, pegando os objetos de um e colocando no outro (as linhas entre a seção "inst" até o próximo "end"). Só não exagere pois também há limite de objetos dentro de um IPL, mas o limite é grande. Também tome cuidado caso o .ipl tenha objetos de LOD.
 
 Erro: 0x006F3EF5
 Problema: Limite de carros estacionados. Os chamados "parked car generator".
