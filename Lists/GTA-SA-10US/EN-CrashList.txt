@@ -1,4 +1,4 @@
-16/10/22 (DD/MM/YY)
+17/10/22 (DD/MM/YY)
 
 Error: 0x015689A5
 Problem: Collision model too heavy or some other bug related to a .col.
@@ -600,9 +600,10 @@ Problem: Some kind of incompatibility from vehlightsfix.asi
 Solution: Fixed increasing its priority in modloader.ini, ie put it in a folder and leave this folder at a high priority, like "100". Click here to learn how.
 
 Error: 0x00406034, 0x00406035, 0x00406038, 0x004F243E, 0x00405FDC
-Problem: Limits on .ipl files or its contents. Apparently it only happens with amount of .ipls using the "inst" section.
-Solution 1: Try fastman92 limit adjuster increasing "Entity index array" limit to about 100.
-Solution 2: Try mixing the IPL files, for example 2 small IPLs, taking the objects from one and putting them in the other (the lines between the "inst" section to the next "end"). Just do not exaggerate because there is also a limit of objects within an IPL, but the limit is large. Also be careful if the .ipl has LOD objects.
+Problem: Limits on .ipl files that contain objects in the "inst" section.
+Solution 1: Install Open Limit Adjuster (version 1.5.9 or newer) which will automatically increase the limits.
+Solution 2: Install fastman92 limit adjuster, increasing the "Entity index array" limit.
+Solution 3: Try mixing the IPL files, for example 2 small IPLs, taking the objects from one and putting them in the other (the lines between the "inst" section to the next "end"). Just do not exaggerate because there is also a limit of objects within an IPL, but the limit is large. Also be careful if the .ipl has LOD objects.
 
 Error: 0x006F3EF5
 Problem: Limit of parked cars. The so-called "parked car generator".
