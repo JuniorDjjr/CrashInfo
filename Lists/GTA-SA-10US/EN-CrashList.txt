@@ -600,8 +600,8 @@ Problem: Some kind of incompatibility from vehlightsfix.asi
 Solution: Fixed increasing its priority in modloader.ini, ie put it in a folder and leave this folder at a high priority, like "100". Click here to learn how.
 
 Error: 0x00406034, 0x00406035, 0x00406038, 0x004F243E, 0x00405FDC
-Problem: Limits on .ipl files? Apparently it only happens with amount of .ipls using the "inst" section.
-Solution 1: Fastman92 Limit Adjuster has a feature to increase IPL limit in "FILE_TYPE_IPL".
+Problem: Limits on .ipl files or its contents. Apparently it only happens with amount of .ipls using the "inst" section.
+Solution 1: Try fastman92 limit adjuster increasing "Entity index array" limit to about 100.
 Solution 2: Try mixing the IPL files, for example 2 small IPLs, taking the objects from one and putting them in the other (the lines between the "inst" section to the next "end"). Just do not exaggerate because there is also a limit of objects within an IPL, but the limit is large. Also be careful if the .ipl has LOD objects.
 
 Error: 0x006F3EF5
@@ -1216,10 +1216,8 @@ Problem: This has been reported with Tuning Mod v2, usually right after
 Solution: If you use Tuning Mod v2, know that the problem has already been fixed in v2.1. You can also re-download the updated IndieVehHandlings.cs with the fix.
 
 Error: 0x005381A5
-Problem 1: Incorrect IPL or buggy model (crash when trying to load a stanza from an IPL). By reports, this also has to do with mods and saved game
-Solution 1: Check the IPLs or models. If the problem is no save, try using Delete Objects
-Issue 2: It has been reported using Open Limit Adjuster not configured for Project2dfx.
-Solution 2: In case, Project2dfx comes with an Open Limit Adjuster properly configured for it, you need to use it, remove another Open Limit Adjuster from your GTA (if you have two) and leave Project 2DFX's own.
+Problem: Incorrect IPL or instance limit in .ipl such as "Buildings" limit. By reports, this also has to do with mods and saves.
+Solution: Increase the "Buildings" limit. fastman92 limit adjuster you need to do it manually, and by the Open Limit Adjuster it already comes with this limit increased, however, if you use Project2DFX, you need to increase it even more (in the Project2DFX download comes an Open Limit Adjuster .ini already configured for it ).
 
 Error: 0x00465CC8
 Problem 1: A script tried to add a task to some non-existent actor.
