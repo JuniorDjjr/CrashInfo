@@ -600,8 +600,8 @@ Problema: Algum tipo de incompatibilidade do vehlightsfix.asi
 Solução: Corrigido ao aumentar a prioridade dele no modloader.ini, ou seja, coloque ele numa pasta e deixe esta pasta numa prioridade grande, como "100". Clique aqui para saber como.
 
 Erro: 0x00406034, 0x00406035, 0x00406038, 0x004F243E, 0x00405FDC
-Problema: Limites de arquivos .ipl? Aparentemente só acontece com quantidade de .ipls usando a section "inst".
-Solução 1: O Fastman92 Limit Adjuster tem função para aumentar o limite de IPL em "FILE_TYPE_IPL".
+Problema: Limites de arquivos .ipl ou seus conteúdos. Aparentemente só acontece com quantidade de .ipls usando a section "inst".
+Solução 1: Tente fastman92 limit adjuster aumentando o limite "Entity index array" para uns 100.
 Solução 2: Tente misturar os arquivos IPL, por exemplo 2 IPLs pequenos, pegando os objetos de um e colocando no outro (as linhas entre a seção "inst" até o próximo "end"). Só não exagere pois também há limite de objetos dentro de um IPL, mas o limite é grande. Também tome cuidado caso o .ipl tenha objetos de LOD.
 
 Erro: 0x006F3EF5
@@ -1216,10 +1216,8 @@ Problema: Isso já foi relatado com o Tuning Mod v2, geralmente logo ao
 Solução: Caso você use Tuning Mod v2, saiba que o problema já foi corrigido na versão v2.1. Você também pode baixar novamente o IndieVehHandlings.cs atualizado com a correção.
 
 Erro: 0x005381A5
-Problema 1: IPL incorreto ou modelo bugado (crash ao tentar carregar uma estância de um IPL). Por relatos, isso também tem a ver com mods e jogo salvo
-Solução 1: Cheque os IPLs ou modelos. Caso o problema for no save, tente usar o Deletar Objetos
-Problema 2: Já foi relatado ao usar o Open Limit Adjuster não configurado para o Project2dfx.
-Solução 2: No caso, o Project2dfx vem com um Open Limit Adjuster configurado propriamente para ele, você precisa usá-lo, remova outro Open Limit Adjuster do seu GTA (caso tenha dois) e deixe o próprio do Project 2DFX.
+Problema: IPL incorreto ou limite de instâncias no .ipl, como o limite de "Buildings". Por relatos, isso também tem a ver com mods e jogo salvo.
+Solução: Aumente o limite "Buildings". fastman92 limit adjuster você precisa fazer manual, e pelo Open Limit Adjuster ele já vem com esse limite aumentado, no entanto, se você usa Project2DFX, precisa aumentar ainda mais (no download do Project2DFX vem um .ini do Open Limit Adjuster já configurado pra ele).
 
 Erro: 0x00465CC8
 Problema 1: Um script tentou adicionar uma tarefa em algum ator inexistente.
