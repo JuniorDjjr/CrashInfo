@@ -1,4 +1,4 @@
-17/10/22 (DD/MM/YY)
+24/10/22 (DD/MM/YY)
 
 Error: 0x015689A5
 Problem: Collision model too heavy or some other bug related to a .col.
@@ -1076,8 +1076,8 @@ Problem: Some CLEO mod tried to load an existing model.
 Solution: The SCRLog mod can tell you exactly which script caused the problem. Make sure the mod is correctly and completely installed.
 
 Error: 0x004C663B
-Problem: Hit the game's object limit. It's a crash that happens when installing too many new objects or too many Tuning Mod pieces.
-Solution: Use Open Limit Adjuster
+Problem: Hit the game object limit. It's a crash that happens when installing too many new objects or too many Tuning Mod parts.
+Solution: Use Open Limit Adjuster (it automatically increases through the atomic models limit) or fastman92 limit adjuster manually increasing the "IDE Objects Type 1" limit.
 
 Error: 0x0040FB80
 Problem: Collision related (coll), possibly hitting the game's collision limit, or other issue about .col.
