@@ -1,4 +1,4 @@
-17/10/22 (DD/MM/YY)
+24/10/22 (DD/MM/YY)
 
 Erro: 0x015689A5
 Problema: Modelo de colisão pesado demais ou algum outro bug relacionado com um .col.
@@ -1077,7 +1077,7 @@ Solução: O mod SCRLog pode te informar exatamente qual script causou o problem
 
 Erro: 0x004C663B
 Problema: Bateu o limite de objetos do jogo. É um crash que acontece ao instalar muitos objetos novos ou muitas peças do Tuning Mod.
-Solução: Use Open Limit Adjuster
+Solução: Use Open Limit Adjuster (ele aumenta automaticamente através do limite de atomic models) ou fastman92 limit adjuster aumentando manualmente o limite "IDE Objects Type 1".
 
 Erro: 0x0040FB80
 Problema: Relacionado a colisões (coll), possivelmente bateu algum o limite de colisões do jogo, ou outro problema sobre .col.
