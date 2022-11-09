@@ -1,4 +1,12 @@
-24/10/22 (DD/MM/YY)
+09/11/22 (DD/MM/YY)
+
+Error: 0x00733F2A
+Problem: Rendering an object with alpha (transparency).
+Solution: It has already been reported due to a bug in the material IDs of the .dff model, fixed by changing the IDs or simply importing and re-exporting with ZModeler.
+
+Error: 0x00733F2A
+Problem: Collision model too heavy or some other bug related to a .col.
+Solution: It has already been solved by optimizing the mesh of the collider model, making it lighter.
 
 Error: 0x015689A5
 Problem: Collision model too heavy or some other bug related to a .col.
