@@ -1,4 +1,8 @@
-24/10/22 (DD/MM/YY)
+09/11/22 (DD/MM/YY)
+
+Erro: 0x00733F2A
+Problema: Renderização de um objeto com alpha (transparência).
+Solução: Já foi relatado devido a um bug nos IDs dos materiais do modelo .dff, corrigido alterando os IDs ou simplesmente importando e reexportando com ZModeler.
 
 Erro: 0x015689A5
 Problema: Modelo de colisão pesado demais ou algum outro bug relacionado com um .col.
