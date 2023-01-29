@@ -1,4 +1,8 @@
-09/11/22 (DD/MM/YY)
+28/01/23 (DD/MM/YY)
+
+Erro: 0x004D40D0
+Problema: Aparentemente limite de arquivos .ifp ou algo relacionado à isto.
+Solução: Tente apagar arquivos .ifp não usados no ModLoader ou .img, remover uns mods que usam .ifp ou usar fastman92 limit adjuster para aumentar o limite de arquivos .ifp.
 
 Erro: 0x00733F2A
 Problema: Renderização de um objeto com alpha (transparência).
