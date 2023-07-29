@@ -1,4 +1,8 @@
-15/05/23 (DD/MM/YY)
+29/07/23 (DD/MM/YY)
+
+Erro: 0x007FACCE
+Problema: Não foi possível criar o pixel shader. Incompatibilidade com mods gráficos que alteram shaders ou outro problema relacionado.
+Solução: Identifique e remova os mods, por exemplo pode ser incompatibilidade com RenderHook e SkyGfx.
 
 Erro: 0x004D40D0
 Problema: Aparentemente limite de arquivos .ifp ou algo relacionado à isto.
