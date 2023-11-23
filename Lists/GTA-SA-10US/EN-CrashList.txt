@@ -270,7 +270,7 @@ Problem: This occurred as a conflict when using ModLoader + SilentPatch + IndieV
 Solution: Update your IndieVehicles.asi, the problem has already been fixed. If it happens again, let me know there, threading the modloader log.
 
 Error: 0x00657475
-About: It has to do with pedestrian tasks, it could be something about boundaries, some cleo who works with pedestrians or something like that. There is more information here, if you find the solution or more information, it would be interesting to say there.
+About: It has to do with pedestrian tasks, it could be something about limits, some cleo who works with pedestrians or something like that.
 
 Error: 0x004C444A
 About: With VehFuncs installed, in case this crash happens, the mod will give information about which vehicle model caused this.
