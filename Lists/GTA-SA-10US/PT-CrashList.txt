@@ -1,4 +1,4 @@
-01/01/23 (DD/MM/YY)
+01/01/24 (DD/MM/YY)
 
 Erro: 0x007FACCE
 Problema: Não foi possível criar o pixel shader. Incompatibilidade com mods gráficos que alteram shaders ou outro problema relacionado.
