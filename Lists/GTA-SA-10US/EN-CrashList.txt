@@ -1,4 +1,4 @@
-29/07/23 (DD/MM/YY)
+01/01/24 (DD/MM/YY)
 
 Error: 0x007FACCE
 Problem: Unable to create pixel shader. Incompatibility with graphics mods that change shaders or other related issue.
@@ -274,8 +274,8 @@ About: It has to do with pedestrian tasks, it could be something about limits, s
 
 Error: 0x004C444A
 About: With VehFuncs installed, in case this crash happens, the mod will give information about which vehicle model caused this.
-About: When deleting a model, most likely a vehicle, but it can also be a pedestrian, a weapon, and in very rare cases, an object. If you have a "0x004089DD" under the backtrace, it really was during a model download.
-Problem: It may have been caused by some model poorly made, poorly adapted, poorly modeled, it must be something internal to the model.
+About: When the game is removing a model, most likely a vehicle, but it can also be a pedestrian (maybe pedestrian created as vehicle), a weapon, and in very rare cases, an object. If you have a "0x004089DD" under the backtrace, it really was during a model unloading.
+Problem: It may have been caused by some CLEO mod wrongly creating a pedestrian as a car (SCRLog will tell you), or a vehicle model poorly made, poorly adapted, poorly modeled, it must be something internal to the model.
 Solution: Identify which one, I recommend testing vehicles first and this mod can help. Uninstall and contact the author. Also remembering that it can be more than one model.
 
 Error: 0x005334F0
@@ -930,11 +930,12 @@ Error: 0x004C53A6
 About: Usually caused by some vehicle having the node name (basically, the name of the part) with a name that is too long (the limit is 23 characters, 25 or more causes serious problems in your game). With VehFuncs installed, this crash is automatically corrected. The information still remains in the .log in case you want to know which vehicle is causing the problem. Without VehFuncs, with or without this crash, the problem that leads to this crash also leads to other bugs and crashes in the game. More info here.
 
 Error: 0x00571A10, 0x00571A00
-About: This can be caused by hundreds of different reasons.
+About: This can be caused by hundreds of different reasons. A common one is related to tasks in people, but it can also happen for completely different things.
 Backtrace: 0x00490B77
-Problem: Some mod applied too many tasks to the game's peds/NPCs, thus hitting the limit.
-Solution 1: Identify and remove this mod cleo. You can use SCRLog for that, but basically it's some mod that controls NPCs. Notify the mod author to fix it.
-Solution 2: Raise the task limit.
+Problem: Some mod applied too many tasks to the game's peds/NPCs, thus exceeding the limit.
+Solution 1: Identify and remove this cleo mod. You can use SCRLog for this, but basically it's some mod that controls NPCs. Let the mod author know so they can fix it.
+Solution 2: Increase the task limit. Open Limit Adjuster increases one of them, but for some reason at the moment it still doesn't resolve this specific error, as it could be another more specific limit, but still related to people performing a task, such as scripted animation.
+Solution 3: Many CLEO mods adding animations on people in the game. Urbanize does a lot of this, but is careful not to reach limits, but when combined with other mods, the limit can be reached, but it is unlikely as it needs around 100 people performing actions, such as animations, so this will rarely be the case.
 
 Error: 0x909090C3
 Problem: This crash can happen due to several reasons, but it is usually caused by a conflict between 2 mods that used the game's system memory patch.
