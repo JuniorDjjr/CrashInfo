@@ -113,7 +113,7 @@ Solução: Se houver "0x005D9F00" (CCustomCarEnvMapPipeline) logo embaixo do "0x
 
 Erro: 0x004A9F54
 Problema: Falta um efeito especial ou algum PRIM dentro do efeito. Algo removido do arquivo .fxp, ou um .fxs removido do Effects Loader, que é necessário pelo jogo.
-Solução: Identifique, recoloque os efeitos necessários ou faça backup dos efeiotos, se por exemplo foi durante uma explosão pode ser que seja o efeito de explosão, ou fumaça etc. Se tiver "fxsfuncs.asi" no Backtrace no final do log, provavelmente é um efeito configurado no FxsFuncs.ini.
+Solução: Identifique, recoloque os efeitos necessários ou faça backup dos efeiotos, se por exemplo foi durante uma explosão pode ser que seja o efeito de explosão, ou fumaça etc. Se tiver "fxsfuncs.asi" no Backtrace no final do log, provavelmente é um efeito configurado no FxsFuncs.ini ou FxsFuncs.ini mal configurado (por exemplo configurado para um pack de efeitos não mais instalado).
 
 Erro: 0x005A329E
 Problema: Relacionado com objetos procedurais pra superfícies.
