@@ -1,4 +1,4 @@
-01/01/24 (DD/MM/YY)
+27/02/24 (DD/MM/YY)
 
 Erro: 0x007FACCE
 Problema: Não foi possível criar o pixel shader. Incompatibilidade com mods gráficos que alteram shaders ou outro problema relacionado.
@@ -1522,6 +1522,8 @@ Solução 8: Pause o jogo antes de minimizar, ou se já tenha pausado, pode ser 
 Solução 9: Tente instalar Improved Fastloader.
 Solução 10: Falta o arquivo stream.ini na pasta do jogo.
 Solução 11: Não use caracteres especiais (nem pontuações etc) no nome da pasta do jogo ou em algum local do caminho. Também não use caminho longo demais. Já foi solucionado após remover caracteres [ e . do nome da pasta do jogo, mas não se sabe exatamente se era isto o problema, ou se o caminho era longo demais, ou se era algum bug do Windows etc.
+Solução 12: Se foi durante a rádio de usuário: Vá em "Documents\GTA San Andreas User Files\User Tracks" e verifique se há arquivos de música corrompidos ou qualquer outro arquivo que não seja o formato mp3. Também tente instalar o mais novo Windows Media Player pelo "Adicionar ou remover programas" ou site da Microsoft.
+Solução 13: Skin Selector aleatoriamente pode causar erro ao ler o arquivo .img ao abrir o jogo, basta abrir de novo que não causará o problema, ainda não se sabe ao certo o que faz causar isto.
 
 
 Outros problemas:
