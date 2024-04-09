@@ -1,4 +1,4 @@
-27/02/24 (DD/MM/YY)
+09/04/24 (DD/MM/YY)
 
 Error: 0x007FACCE
 Problem: Unable to create pixel shader. Incompatibility with graphics mods that change shaders or other related issue.
@@ -217,10 +217,6 @@ Solution: It has been reported installing an .ipl file in text format replacing 
 Error: 0x005D95CE
 Problem: Related to clearing material list with effects, usually vehicles, but may not necessarily be caused by vehicle mods, this is a strange issue.
 Solution: MixSets fix all crashes when closing the game.
-
-Error: 0x00406036
-Problem: Apparently some limit on .ipl files, or limit on the total content of all .ipls.
-Solution: Remove some .ipl mods you have installed, or, if that is really the problem (it has been working without any .ipl), use fastman92 limit adjuster to increase the .ipl file limit, or merge them manually by copying the contents from one to the other, thus decreasing the number of .ipl files in your game. There's not much mystery, just be careful with the sections (eg all object lines need to be between "inst" to "end").
 
 Error: 0x00749B7B
 Problem: Trying to create a model that does not exist, or .txd does not exist. Or file name too long.
@@ -615,7 +611,7 @@ Error: 0xE8AC1250 (in "Backtrace" at the end of the log you will have several "u
 Problem: Some kind of incompatibility from vehlightsfix.asi
 Solution: Fixed increasing its priority in modloader.ini, ie put it in a folder and leave this folder at a high priority, like "100". Click here to learn how.
 
-Error: 0x00406034, 0x00406035, 0x00406038, 0x004F243E, 0x00405FDC
+Error: 0x00406034, 0x00406035, 0x00406036, 0x00406037, 0x00406038, 0x004F243E, 0x00405FDC
 Problem: Limits on .ipl files that contain objects in the "inst" section.
 Solution 1: Install Open Limit Adjuster (version 1.5.9 or newer) which will automatically increase the limits.
 Solution 2: Install fastman92 limit adjuster, increasing the "Entity index array" limit.
