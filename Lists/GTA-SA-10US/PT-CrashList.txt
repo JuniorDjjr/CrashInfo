@@ -1,4 +1,4 @@
-27/02/24 (DD/MM/YY)
+09/04/24 (DD/MM/YY)
 
 Erro: 0x007FACCE
 Problema: Não foi possível criar o pixel shader. Incompatibilidade com mods gráficos que alteram shaders ou outro problema relacionado.
@@ -213,10 +213,6 @@ Solução: Já foi relatado ao instalar um arquivo .ipl em formato de texto subs
 Erro: 0x005D95CE
 Problema: Relacionado ao limpar a lista de materiais com efeitos, normalmente veículos, mas pode não ser causado necessariamente por mods de veículos, é um problema estranho.
 Solução: MixSets corrige todos os crashes ao fechar o jogo.
-
-Erro: 0x00406036
-Problema: Aparentemente algum limite de arquivos .ipl, ou limite do conteúdo total de todos os .ipls.
-Solução: Remova alguns mods .ipl que você tenha instalado, ou, se realmente for este o problema (tenha funcionando sem algum .ipl), use fastman92 limit adjuster para aumentar o limite de arquivos .ipl, ou faça fusão deles manualmente copiando o conteúdo de um para o outro, assim diminuindo o número de arquivos .ipl do seu jogo. Não há muito mistério, só tome cuidado com as seções (por exemplo todas as linhas de objetos precisam estar entre o "inst" até "end").
 
 Erro: 0x00749B7B
 Problema: Tentando criar um modelo que não existe, ou o .txd não existe. Ou nome de arquivo longo demais.
@@ -611,7 +607,7 @@ Erro: 0xE8AC1250 (em "Backtrace" no fim do log terá vários "unknown" e um shel
 Problema: Algum tipo de incompatibilidade do vehlightsfix.asi
 Solução: Corrigido ao aumentar a prioridade dele no modloader.ini, ou seja, coloque ele numa pasta e deixe esta pasta numa prioridade grande, como "100". Clique aqui para saber como.
 
-Erro: 0x00406034, 0x00406035, 0x00406038, 0x004F243E, 0x00405FDC
+Erro: 0x00406034, 0x00406035, 0x00406036, 0x00406037, 0x00406038, 0x004F243E, 0x00405FDC
 Problema: Limites de arquivos .ipl que contém objetos na section "inst".
 Solução 1: Instale Open Limit Adjuster (versão 1.5.9 ou mais nova) que aumentará os limites automaticamente.
 Solução 2: Instale fastman92 limit adjuster, aumentando o limite "Entity index array".
