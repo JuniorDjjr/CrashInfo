@@ -1,4 +1,12 @@
-09/04/24 (DD/MM/YY)
+26/05/24 (DD/MM/YY)
+
+Erro: 0x006E3D17
+Problema: Tarefa de uma pessoa entrando num veículo, mas o valor do banco para encontrar a porta é inválido. Provavelmente causado por algum mod CLEO com valor incorreto, ou causado por ordem errada dos parâmetros de banco e tempo no comando de script.
+Solução: Identifique o mod que causa isso, remova, avise ao autor etc.
+
+Erro: 0x00467654
+Problema: Algum mod CLEO tentou criar uma pessoa mas aparentemente bateu o limite de pessoas do jogo.
+Solução: Identifique qual, o mod SCRLog vai te dizer, mas muito provavelmente o seu jogo está criando pessoas demais. Instale Open Limit Adjuster, remova uns mods que criam muitas pessoas ou que esteja atingindo o limite de memória do jogo etc.
 
 Erro: 0x007FACCE
 Problema: Não foi possível criar o pixel shader. Incompatibilidade com mods gráficos que alteram shaders ou outro problema relacionado.
