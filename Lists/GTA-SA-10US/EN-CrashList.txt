@@ -1,4 +1,12 @@
-09/04/24 (DD/MM/YY)
+26/05/24 (DD/MM/YY)
+
+Error: 0x006E3D17
+Problem: Task of a person entering a vehicle, but the seat value to find the door is invalid. Probably caused by a CLEO mod with an incorrect value, or caused by the wrong order of the seat and time parameters in the script command.
+Solution: Identify the mod that causes this, remove it, notify the author, etc.
+
+Error: 0x00467654
+Problem: Some CLEO mod tried to create a person but apparently exceeded the game's people limit.
+Solution: Identify which one, the SCRLog mod will tell you, but most likely your game is creating too many people. Install Open Limit Adjuster, remove mods that create too many people or are reaching the game's memory limit, etc.
 
 Error: 0x007FACCE
 Problem: Unable to create pixel shader. Incompatibility with graphics mods that change shaders or other related issue.
