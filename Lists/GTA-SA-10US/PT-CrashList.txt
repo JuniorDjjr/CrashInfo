@@ -1,4 +1,8 @@
-26/05/24 (DD/MM/YY)
+16/06/24 (DD/MM/YY)
+
+Erro: 0x015691EE
+Problema: Limite de modelos de veículos com paintjob.
+Solução: Identifique e remova veículos que nativamente não têm paintjob mas um mod colocou, ou aumente o limite de paintjobs com fastman92 limit adjuster.
 
 Erro: 0x006E3D17
 Problema: Tarefa de uma pessoa entrando num veículo, mas o valor do banco para encontrar a porta é inválido. Provavelmente causado por algum mod CLEO com valor incorreto, ou causado por ordem errada dos parâmetros de banco e tempo no comando de script.
