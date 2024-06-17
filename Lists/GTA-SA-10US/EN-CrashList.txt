@@ -1,4 +1,8 @@
-26/05/24 (DD/MM/YY)
+16/06/24 (DD/MM/YY)
+
+Error: 0x015691EE
+Problem: Limit of vehicle models with paintjob.
+Solution: Identify and remove vehicles that natively don't have a paintjob but a mod added it, or increase the paintjob limit with fastman92 limit adjuster.
 
 Error: 0x006E3D17
 Problem: Task of a person entering a vehicle, but the seat value to find the door is invalid. Probably caused by a CLEO mod with an incorrect value, or caused by the wrong order of the seat and time parameters in the script command.
