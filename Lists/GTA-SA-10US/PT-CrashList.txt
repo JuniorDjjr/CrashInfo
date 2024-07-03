@@ -1,4 +1,4 @@
-16/06/24 (DD/MM/YY)
+03/07/24 (DD/MM/YY)
 
 Erro: 0x015691EE
 Problema: Limite de modelos de veículos com paintjob.
@@ -1112,7 +1112,7 @@ Solução: Use Open Limit Adjuster
 
 Erro: 0x006D1080
 Problema: Falha ao pegar o handling de um veículo, muito possivelmente o veículo sumiu do jogo e algum mod mal feito acabou tentando pegar o handling de um carro inexistente
-Solução: Possivelmente foi um cleo e possivelmente não irá gerar SCRLog.log para você saber qual cleo... você terá que procurar qual script fez dar este erro manualmente, infelizmente. Se foi algum mod da MixMods, avise.
+Solução: Se você usa o First Person Mod, desative a câmera em primeira pessoa antes da missão OG Loc. Possivelmente foi um cleo e possivelmente não irá gerar SCRLog.log para você saber qual cleo... você terá que procurar qual script fez dar este erro manualmente, infelizmente. Se foi algum mod da MixMods, avise.
 
 Erro: 0x005B6B2F
 Problema 1: Dois IDs iguais sendo usados no data/vehicles.ide
