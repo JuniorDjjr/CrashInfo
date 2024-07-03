@@ -1,4 +1,4 @@
-16/06/24 (DD/MM/YY)
+03/07/24 (DD/MM/YY)
 
 Error: 0x015691EE
 Problem: Limit of vehicle models with paintjob.
@@ -1116,7 +1116,7 @@ Solution: Use Open Limit Adjuster
 
 Error: 0x006D1080
 Problem: Failure to handle a vehicle, quite possibly the vehicle disappeared from the game and some bad mod ended up trying to handle a non-existent car
-Solution: Possibly it was a cleo and possibly won't generate SCRLog.log for you to know which cleo... you will have to look for which script manually gave this error, unfortunately. If it was a MixMods mod, let me know.
+Solution: If you use the First Person Mod, disable the first person camera before the OG Loc mission. Possibly it was a cleo and possibly won't generate SCRLog.log for you to know which cleo... you will have to look for which script manually gave this error, unfortunately. If it was a MixMods mod, let me know.
 
 Error: 0x005B6B2F
 Problem 1: Two identical IDs being used in data / vehicles.ide
