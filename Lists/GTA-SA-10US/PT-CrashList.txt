@@ -2,7 +2,7 @@
 
 Erro: 0x0040998A
 Problema: Limite relacionado com o streaming de uma herança de arquivos .txd com texturas HD que atingem algum limite do jogo ainda não exatamente entendido, carregado de maneira forçada.
-Solução: Foi notado com o novo RoSA Evolved junto com o novo Proper Fixes, pois ambos atingem o tal limite quando junta toda a herança de "txdp", no carregamento forçado que acontece num frame no Load Game do CJ na Grove causado pelo Improved Fastloader (se ignorar o loading automático do Save não dá o problema). A nova versão do RoSA Evolved será atualizada para que o limite não seja atingido e iremos atrás de entender e resolver esse limite do jogo.
+Solução: Foi notado com o novo RoSA Evolved junto com o novo Proper Fixes, pois ambos atingem o tal limite quando junta toda a herança de "txdp", no carregamento forçado (que acontece num frame no Load Game do CJ na Grove causado pelo Improved Fastloader, se ignorar o loading automático do Save não dá o problema, também pode depender do jogo salvo estar ou não salvo na Grove). A nova versão do RoSA Evolved será atualizada para que o limite não seja atingido e iremos atrás de entender e resolver esse limite do jogo.
 
 Erro: 0x015691EE
 Problema: Limite de modelos de veículos com paintjob.
