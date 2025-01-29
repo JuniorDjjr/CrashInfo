@@ -1,0 +1,5 @@
+31/12/24 (DD/MM/AA)
+
+Error: std.stream.dll o STDSTR~1.DLL
+Problema: Carga de archivo por Streaming.
+Solución 1: Si usas Open Limit Adjuster, puede haber un conflicto con algo, desactiva la línea "StreamingInfo" bajo "GTA3Limits" colocando un ";" o eliminando la línea.
