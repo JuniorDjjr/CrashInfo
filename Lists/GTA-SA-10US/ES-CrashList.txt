@@ -1,0 +1,1533 @@
+27/10/24 (DD/MM/AA)
+
+Error: 0x0040998A
+Problema: Límite relacionado con la transmisión de una herencia de archivos .txd con texturas HD que alcanzan algún límite del juego que aún no se comprende completamente, cargado de manera forzada.
+Solución: Se notó con el nuevo RoSA Evolved junto con los nuevos Proper Fixes, ya que ambos alcanzan dicho límite cuando todo el "txdp" se combina, en la carga forzada (que ocurre en un frame en Load Game donde CJ está en Grove causado por el Improved Fastloader, si ignoras la carga automática del guardado, el problema no ocurre, también puede depender de que el guardado no se cargue en Grove). La nueva versión de RoSA Evolved será actualizada para que no se alcance el límite y trataremos de entender y resolver este límite del juego.
+
+Error: 0x015691EE
+Problema: Límite de modelos de vehículos con pintura personalizada.
+Solución: Identificar y eliminar vehículos que no tienen pintura personalizada de forma nativa pero que un mod la agregó, o aumentar el límite de pintura personalizada con el ajustador de límites de fastman92.
+
+Error: 0x006E3D17
+Problema: Tarea de una persona entrando en un vehículo, pero el valor del asiento para encontrar la puerta es inválido. Probablemente causado por un mod CLEO con un valor incorrecto, o causado por el orden incorrecto de los parámetros de asiento y tiempo en el comando del script.
+Solución: Identificar el mod que causa esto, eliminarlo, notificar al autor, etc.
+
+Error: 0x00467654
+Problema: Algún mod CLEO intentó crear una persona pero aparentemente excedió el límite de personas del juego.
+Solución: Identificar cuál, el mod SCRLog te lo dirá, pero lo más probable es que tu juego esté creando demasiadas personas. Instalar Open Limit Adjuster, eliminar mods que crean demasiadas personas o están alcanzando el límite de memoria del juego, etc.
+
+Error: 0x007FACCE
+Problema: No se puede crear el sombreador de píxeles. Incompatibilidad con mods gráficos que cambian sombreadores u otro problema relacionado.
+Solución: Identificar y eliminar mods, por ejemplo, podría ser incompatibilidad con RenderHook y SkyGfx.
+
+Error: 0x004D40D0
+Problema: Aparentemente límite de archivos .ifp o algo relacionado con esto.
+Solución: Intentar eliminar archivos .ifp no utilizados en ModLoader o .img, eliminar algunos mods que usan .ifp o usar el ajustador de límites de fastman92 para aumentar el límite de archivos .ifp.
+
+Error: 0x00733F2A
+Problema: Renderizando un objeto con alfa (transparencia).
+Solución: Ya se ha informado debido a un error en los IDs de material del modelo .dff, solucionado cambiando los IDs o simplemente importando y reexportando con ZModeler.
+
+Error: 0x00733F2A
+Problema: Modelo de colisión demasiado pesado u otro error relacionado con un .col.
+Solución: Ya se ha solucionado optimizando la malla del modelo de colisión, haciéndolo más ligero.
+
+Error: 0x015689A5
+Problema: Modelo de colisión demasiado pesado u otro error relacionado con un .col.
+Solución: Ya se ha solucionado optimizando la malla del modelo de colisión, haciéndolo más ligero.
+
+Error: 0x004A8E3E
+Problema: Eliminando un elemento de una lista. El "backtrace" al final del registro de fallos puede ayudar a entender el tipo de lista. Si tiene "0x005A328B" justo debajo, está relacionado con mods de procobj.dat.
+Solución: Posiblemente límite de procobj.dat, u otro error causado por mods de procobj.dat. Hay indicios de que también es un error de fusión de archivos procobj.dat en modloader.
+
+Error: 0x00801C3B
+Problema: Asignación de lista. Puede ser causado por muchas razones diferentes, el "backtrace" podría ayudar en algo.
+Solución: Ya fue causado por el modelo de colisión de un avión, cambiar el colisionador (o el modelo del vehículo en sí) lo solucionó.
+
+Error: 0x004C53D4
+Problema: Obteniendo una parte/dummy de un vehículo. ¿Probablemente relacionado con partes de tuning?
+Solución: Identificar si es un problema con algún mod de coche o script, si hay 0x00469FF7 en el backtrace es algún mod CLEO y SCRLog puede ayudar.
+
+Error: 0x0156173D
+Problema: Límite de ColModels (modelos de colisión dentro de archivos .col o .dff de vehículos).
+Solución: Aumentar el límite instalando Open Limit Adjuster o configurando el ajustador de límites de fastman92.
+
+Error: 0x004C705A
+Problema: Relacionado con la construcción del modelo de colisión del cuerpo de una persona (usualmente usado cuando hay un disparo y necesitas determinar si golpeó una extremidad de una persona).
+Solución: Identificar y eliminar, contactar al autor, etc. de algún mod de skin, puede haber algo mal en el .dff del modelo.
+
+Error: 0x004AA393
+Problema: Relacionado con detener la reproducción de un efecto especial (como humo, fuego, explosión, etc).
+Solución: Identificar qué mod, si es un mod de efectos, el backtrace al final del registro puede ayudar si es un mod asi, scrlog puede ayudar si es un mod CLEO, etc.
+
+Error: 0x01564BC8
+Problema: Límite de pickups o algún mod intentó trabajar con un pickup que no existe o valor inválido.
+Solución: Identificar qué mod, SCRLog puede ayudarte, eliminarlo y contactar al autor, o aumentar el límite si es necesario.
+
+Error: 0x005C09F6
+Problema: Algún mod de efectos mal configurado (no pudo leer la sección PRIM). Archivos .fxp o .fxs.
+Solución: Identificar qué mod, qué efecto, intentar arreglarlo, contactar al autor, etc.
+
+Error: 0x00537F0D
+Problema: No se puede cargar la caja delimitadora de un modelo desde un archivo .col.
+Solución: Identificar qué archivo .col, de algún mod, está causando esto, probablemente mal editado, mal creado, etc.
+
+Error: 0x006D3B64
+Problema: Algún mod CLEO enganchando un vehículo/remolque que ya no existe.
+Solución: SCRLog puede ayudar a identificar, probablemente.
+
+Error: 0x009654DA
+Problema: Algo relacionado con pedgrp, al intentar cargar algún nuevo modelo de ped para pandillas.
+Solución: ¿Algo sobre el límite de pedgrp y modelos de pandillas? ¿Algún modelo inválido?
+
+Error: 0x00B4C2DD
+Problema: Algo relacionado con los efectos especiales integrados en archivos .dff (2dfx).
+Solución: Algún .dff mal editado, mal hecho, o probablemente relacionado con límites de 2dfx, algo sobre eso.
+
+Error: 0x004C4C7E
+Problema: Error al leer un modelo de mapa que tiene algún efecto especial integrado en el .dff.
+Solución: Probablemente uno de estos archivos .dff tiene un problema, mal hecho, mal editado, etc.
+
+Error: 0x00409436
+Problema: La cámara del juego ya no existe y por lo tanto causó un problema al intentar cargar nuevos modelos en el mapa.
+
+Error: 0x0040B659
+Problema: Al intentar comenzar a cargar un nuevo modelo de vehículo, la persona.
+Solución: ¿Alguna configuración de cargrp o pedgrp incorrecta? ¿Algún modelo mal configurado y no funcional?
+
+Error: 0x00554EE6
+Problema: Al intentar leer información de que un modelo de mapa está controlado para aparecer en un cierto momento del día.
+Solución: Algún objeto "tobj" (controlado por tiempo) mal configurado, pero posiblemente incluso con objetos no controlados.
+
+Error: 0x0040AE08
+Problema: El juego intentó cargar un modelo que no existía o no fue identificado, relacionado con la zona en la que estás.
+Solución: ¿Problema con cargrp? ¿pedgrp? ¿Algo mal configurado?
+
+Error: 0x004C4BB0
+Problema: Relacionado con descargar un modelo.
+Solución: El "Backtrace" al final del registro puede tener alguna indicación, por ejemplo "0x0073A3A4 _ZN7CWeapon8ShutdownEv" indica que está relacionado con un arma (¿conflicto de weapon.dat?). Podría ser un problema con la configuración del modelo (objeto, coche, ped, etc.), archivos .txd, etc.
+
+Error: 0x00611C24
+Problema: Obtener modelo de coche de cargrp.dat.
+Solución: Incompatibilidad entre la opción de límite de modelos de coches cargados en MixSets y el límite de cargrp del ajustador de límites de fastman92. Desactiva uno o espera a que se solucionen.
+
+Error: 0x007480DB
+Problema: Relacionado con reproducir el video de introducción (carpeta de películas).
+Solución: Algún problema con los archivos en la carpeta de películas, u otro problema relacionado con tu PC o el juego que no puede reproducir. Una solución alternativa es usar Improved Fastloader para omitir videos.
+
+Error: 0x006E0968
+Problema: Relacionado con la identificación de encendido de la sirena.
+Solución: Se informó al usar GPS Mod + Framerate Vigilante, y ya se solucionó, descarga la nueva versión de GPS Line Mod (de MixMods) para solucionarlo.
+
+Error: 0x00824844
+Problema: Tal vez relacionado con la renderización.
+Solución: Si hay "Direct3DCreate9Ex" justo debajo de "0x00824844" en el "Backtrace" al final del registro, probablemente sea causado por algún modelo o mod gráfico.
+
+Error: 0x0041471F
+Problema: Intento de devolver colisión entre 2 puntos, no se envió un puntero a CColPoint.
+Solución: Esto podría ser causado por algún mod ASI o CLEO. Actualiza el mod CJ Look Interest si lo tienes, causó este problema al tener NewOpcodes.cleo instalado.
+
+Error: 0x005DA66F
+Problema: Renderizando algo del juego.
+Solución: Si hay "0x005D9F00" (CCustomCarEnvMapPipeline) justo debajo de "0x005DA66F" en el "Backtrace" al final del registro, probablemente sea causado por algún mod de vehículo. Puedes averiguar cuál usando el mod "Vehicles Test". De lo contrario, es algo más relacionado con la renderización del juego, mods de modelos, gráficos...
+
+Error: 0x004A9F54
+Problema: Falta un efecto especial o algún PRIM dentro del efecto. Algo eliminado del archivo .fxp, o un .fxs eliminado de Effects Loader, que es necesario para el juego.
+Solución: Identificar, reemplazar los efectos necesarios o hacer una copia de seguridad de los efectos, si por ejemplo fue durante una explosión podría ser el efecto de explosión, o humo, etc. Si tienes "fxsfuncs.asi" en el Backtrace al final del registro, probablemente sea un efecto configurado en FxsFuncs.ini o FxsFuncs.ini mal configurado (por ejemplo, configurado para un paquete de efectos que ya no está instalado).
+
+Error: 0x005A329E
+Problema: Relacionado con objetos procedurales para superficies.
+Solución: Ya fue causado por incompatibilidad entre archivos object.dat, archivo object.dat incorrecto o una mala fusión de más de un object.dat en ModLoader. Identificar y eliminar el object.dat incorrecto, o intentar mezclarlos manualmente con alguna herramienta de verificación de diferencias.
+
+Error: 0x004E516F, 0x00693D75, 0x6F6C6C46
+Problema: Relacionado con la tarea de un peatón.
+Solución: Se ha informado de usar binaryipl.cs (un mod CLEO que carga todos los archivos .ipl de transmisión del juego). Nunca uses binaryipl.cs.
+
+Error: 0x00405CBC
+Problema: No se encontró objeto LOD en el archivo .ipl.
+Solución: Probablemente causado por un archivo .ipl mal configurado, o una mezcla incorrecta entre diferentes mods que reemplazan los mismos archivos .ipl de texto y binarios ("stream"), algún objeto .ipl no existe, etc. Identificar la causa y eliminar dicho mod o intentar solucionarlo. El último archivo leído de modloader.log puede indicar qué archivo .ipl es.
+
+Error: 0x0040AE92
+Problema: Problema al cargar un modelo de coche desde cargrp.dat.
+Solución: El problema podría ser una configuración incorrecta de coche en cargrp.dat o de hecho el coche tiene problemas para cargar y crear. Identificarlo, el mod Vehicles Test puede ayudar. También se informó al aumentar el límite de cargrp en el ajustador de límites de fastman92 con MinLoadedGangVeh en MixSets.
+
+Error: 0x0040D349
+Problema: Relacionado con la transmisión de .txd.
+Solución: Ya se ha solucionado aumentando la memoria de transmisión (StreamMemory en MixSets).
+
+Error: 0x0053368B
+Problema: Límite de PtrNode Doubles.
+Solución: Usar Open Limit Adjuster.
+
+Error: 0x006FF35B
+Problema: Algo relacionado con objetos de mapa que tienen texto de señal de tráfico.
+Solución: Ya fue causado por LOD Vegetation junto con "LoadAllBinaryIPLs = 1" de Project2DFX o lo mismo en Load Whole Map, o "binaryipl.cs". Si tienes más información, háznoslo saber.
+
+Error: 0x00513347
+Problema: El jugador ya no existe.
+Solución: Por alguna razón fue eliminado o algún problema más profundo y extraño que causó este problema más grave.
+
+Error: 0x00691238
+Problema: No se puede hacer que una persona realice una animación facial.
+Solución: Lo más probable es que haya sido causado por algún script mal hecho que intentó hacer una animación facial en una persona que ya no existe. SCRLog puede ayudarte en este caso. De lo contrario, fue algún problema más profundo, pero relacionado con esto.
+
+Error: 0x0156DA35, 0x00470A65
+Problema: Problema original del juego donde la conexión LOD de un objeto a través del script no se elimina después de que el objeto se elimina y permanece en el juego guardado.
+Solución: CLEO+ (v1.0.8 o más reciente) soluciona el problema tanto previniendo como arreglando juegos guardados corruptos debido al problema.
+
+Error: 0x007F06BD
+Problema: Algún problema al eliminar alguna entidad, ya sea un objeto, coche, etc.
+Solución: Uno de los casos es un script CLEO que usa el comando CLEO+ CREATE_OBJECT_NO_SAVE para crear un objeto, pero lo borra con REMOVE_OBJECT_ELEGANTLY que actualmente no es compatible. Usa DELETE_OBJECT. Si no fue causado por un script, podría ser un problema con un modelo de objeto o algo.
+
+Error: 0x006133DB
+Problema: Algún problema con pedgrp.dat/cargrp.dat.
+Solución: Verifica tu archivo data/pedgrp.dat o cargrp.dat si se cargó correctamente, si hay algo mal con ModLoader, etc.
+
+Error: 0x004C66CA
+Problema: Límite de tobj (objetos temporizados) (objetos controlados por tiempo, definidos en .ide).
+Solución: Instalar Open Limit Adjuster, o aumentar el límite de "objetos temporizados" en el ajustador de límites de fastman92.
+
+Error: 0x005380C3
+Problema: Algún problema al cargar modelos e IDs en .ide/.ipl.
+Solución: Identificar, el ajustador de límites de fastman92 incluso puede decir qué ID, pero básicamente es algún .ide/.ipl con objeto faltante o duplicado.
+
+Error: 0x0156680C, 0x015667F0
+Problema 1: Algún script mal hecho que trabajó con un vehículo inexistente.
+Solución 1: Usar SCRLog para averiguar cuál.
+Problema 2: main.scm/script.img incompatible con el juego guardado.
+Solución 2: Usar los archivos correctos y compatibles para el juego guardado dado, por ejemplo, en mods de conversión completa, etc.
+
+Error: 0x0040F663
+Problema: Algo relacionado con el modelo de colisión — archivos .col o su contenido, algún conflicto, falta o algo así, usualmente mods de mapa.
+Solución: Identificar qué mod, si contiene o no un archivo .col, contactar al autor o intentar entender el problema más a fondo.
+
+Error: 0x00604376
+Problema: Algo relacionado con el creador de decisiones, probablemente algún valor de creador de decisiones inválido causado por algún mod CLEO.
+Solución: Intentar identificar buscando mods CLEO que trabajen con el creador de decisiones. Este es un concepto técnico, por lo que si eres un profano necesitarás un poco de suerte o ayuda.
+
+Error: 0x006D389B
+Problema: Algo relacionado con la instalación de partes de tuning en un coche. Aparentemente esto es causado por un problema de modloader al actualizar mods instalados durante el juego e instalar nuevas ruedas de tuning.
+Solución: Si el problema es realmente con el modloader, el propio modloader necesita ser corregido en una nueva versión (informado en 0.3.7). Busca otras formas de evitar esto, pero desactivar la actualización automática de mods en el menú del modloader es algo bueno. Si no, probablemente un problema con el modelo o la instalación de una rueda de tuning.
+
+Error: 0x00567187
+Problema: Algo relacionado con modelos de colisión como archivos .col o incluso el modelo de colisión del vehículo. El modelo de colisión podría estar mal, faltante, alcanzar límites, algo... ¿Probable relación con 417AAA?
+
+Error: 0x00417AAA
+Problema: Algo relacionado con modelos de colisión como archivos .col o incluso el modelo de colisión del vehículo. El modelo de colisión puede estar mal, faltante, alcanzar límites, algo... ¿Probable relación con 567187?
+
+Error: 0x0073B6C3
+Solución: Actualizar CLEO+, el fallo ha sido solucionado.
+
+Error: 0x00469FF7
+Problema: Hay un problema con un script CLEO/SCM. Probablemente un mod CLEO necesita algún ".cleo" que tu juego no tiene instalado.
+Solución: El mod SCRLog puede ayudarte a identificar qué script. También verifica e instala los plugins .cleo necesarios para tus scripts, como CLEO+ o NewOpcodes.
+
+Error: 0x0043EA2F
+Problema: El juego no pudo encontrar una entrada/salida a un interior.
+Solución: Se ha informado al guardar el juego dentro de un interior de Enterable Hidden Interiors y desinstalar el mod, por lo que el juego ya no tiene el interior y la salida en la que se guardó y causa este fallo.
+
+Error: 0x0043EA2F
+Problema: Al borrar una lista. Puede ser causado por muchas razones diferentes, otras direcciones en el "backtrace" pueden ayudar.
+Solución: Se ha informado al instalar un archivo .ipl en formato de texto reemplazando uno binario (llamado "_stream"), lo cual es incorrecto.
+
+Error: 0x005D95CE
+Problema: Relacionado con borrar la lista de materiales con efectos, usualmente vehículos, pero no necesariamente causado por mods de vehículos, este es un problema extraño.
+Solución: MixSets soluciona todos los fallos al cerrar el juego.
+
+Error: 0x00749B7B
+Problema: Intentando crear un modelo que no existe, o .txd no existe. O nombre de archivo demasiado largo.
+Solución 1: Verificar la instalación de mods que necesitan modelos, como objetos de mapa. Se ha informado al intentar instalar un .dff o .txd inexistente en un .ide.
+Solución 2: Hubo este problema en VehFuncs, solucionado a partir de la versión v2.0.8. Otros mods que crean modelos, probablemente cualquier tipo de modelo, pueden causar esto, y probablemente solo .asi, o el propio juego intentó crear un modelo nativo del juego que por alguna razón ya no existe.
+
+Error: 0x0068FB5C
+Problema: Relacionado con las tareas de inteligencia artificial del juego. Lo que especificas son las direcciones bajo el backtrace. Si hay un "0x00681AAF" en el backtrace que está relacionado con la patrulla policial, ya se ha informado en GTA Brasil, probablemente algún mod de terceros que usa GTA Brasil, sobre IA y policía.
+
+Error: 0x0083D55B
+Problema: Relacionado con la configuración de colores de vehículos. Probablemente hay 2 mods que alteran el funcionamiento o el límite de colores de vehículos (carcols) causando conflicto, o algo más relacionado con los IDs de color.
+
+Error: 0x0074E2BA
+Problema: Relacionado con algún material de algún modelo, como un coche con materiales defectuosos.
+Solución: Ya se ha solucionado simplemente identificando el coche, (re) importándolo en ZModeler y simplemente exportándolo de nuevo. Probablemente ZModeler había exportado el coche con materiales incorrectos y al importarlo de nuevo los corrigió.
+
+Error: 0x0070FB39
+Problema: No se pudo encontrar el modelo de sombra de algún vehículo.
+Solución: Identificar el vehículo, contactar al autor, o corregirlo verificando si el modelo de sombra está realmente presente en el .dff y si está funcionando correctamente. Desactivar las sombras de plantilla (las modeladas, no bajas) no causará fallos, pero no es una solución real.
+
+Error: 0x0046A220
+Problema: Relacionado con el procesamiento del script del juego.
+Solución: Podría ser algo relacionado con scripts CLEO, intentar identificar algún mod CLEO que hayas instalado y causó un problema, pero extrañamente también se encontró conflicto con algún mod (no sé cuál) con SkyGfx.
+
+Error: 0x00474BEF
+Problema: Algún mod CLEO intentó obtener el tipo de peatón de un peatón inexistente.
+Solución: Como se explicó aquí, en este caso debes usar scrlog para averiguar qué script CLEO causó el error e informar al autor para que lo solucione. Uno de los mods que causa esto es la versión antigua de GTA V XXX Service, solucionado, si lo usas, actualízalo.
+
+Error: 0x005FB2AA
+Problema: Un problema al restablecer grupos, probablemente un límite de grupos del juego.
+Solución: Ya se ha informado al usar el mod Recruit More Members, ahora solucionado, simplemente descarga la nueva versión del mod. Si ese no es tu caso, es otro mod (usualmente CLEO) que trabaja con grupos y pandillas.
+
+Error: 0x00568642
+Problema: Algo relacionado con un vehículo u objeto. Se ha informado en una versión anterior de Project Props donde un modelo de cerca fallaba al llegar.
+Problema: Si usas Project Props, actualízalo descargando la nueva versión ya que este problema ya se ha solucionado. Si no lo usas, averigua qué mod causó esto e informa.
+
+Error: 0x007FDE84
+Problema: Algo relacionado con la textura de algún modelo. Podría ser .dff (donde hay material pidiendo tal textura, por lo que hay algún problema de solicitud), o .txd (txd corrupto o algo así, probablemente menos probable).
+
+Error: 0x006B78DC
+Problema: El juego no leyó la configuración de manejo especial para motocicletas o bicicletas. Es una línea de handling.cfg que determina el cram, etc. Podría ser causado por agregar una motocicleta o bicicleta sin reemplazar y olvidar agregar las líneas especiales.
+Solución: Intentar identificar la bicicleta o moto con el problema, especialmente si se agrega sin reemplazar (lo que debería ser la razón del problema), si se agrega, revisar más cuidadosamente el tutorial para configurar el archivo .ini del ajustador de límites de fastman92 y la instalación de las líneas de manejo. Si no se agrega, aún podría haber algún problema al respecto, como líneas faltantes en el manejo, línea con nombre incorrecto, etc.
+
+Error: 0x00418733
+Acerca de: No se pudo leer información sobre el modelo de colisión cargado desde un vehículo, u objeto, etc.
+Problema: Esto ocurrió como un conflicto al usar ModLoader + SilentPatch + IndieVehicles + Advanced Aiming.
+Solución: Actualiza tu IndieVehicles.asi, el problema ya se ha solucionado. Si vuelve a ocurrir, házmelo saber, revisando el registro del modloader.
+
+Error: 0x00657475
+Acerca de: Tiene que ver con las tareas de los peatones, podría ser algo sobre límites, algún CLEO que trabaja con peatones o algo así.
+
+Error: 0x004C444A
+Acerca de: Con VehFuncs instalado, en caso de que ocurra este fallo, el mod dará información sobre qué modelo de vehículo lo causó.
+Acerca de: Cuando el juego está eliminando un modelo, lo más probable es que sea un vehículo, pero también puede ser un peatón (tal vez un peatón creado como vehículo), un arma, y en casos muy raros, un objeto. Si tienes un "0x004089DD" debajo del backtrace, realmente fue durante una descarga de modelo.
+Problema: Puede haber sido causado por algún mod CLEO creando incorrectamente un peatón como un coche (SCRLog te lo dirá), o un modelo de vehículo mal hecho, mal adaptado, mal modelado, debe ser algo interno del modelo.
+Solución: Identificar cuál, recomiendo probar vehículos primero y este mod puede ayudar. Desinstalar y contactar al autor. También recordando que puede ser más de un modelo.
+
+Error: 0x005334F0
+Acerca de: Puede ser causado por varias razones. La dirección en la segunda línea de "Backtrace" te ayudará a entender la razón exacta.
+Problema 1: Si tienes un "0x005279B6" en la segunda línea de Backtrace, fue causado por algún mod relacionado con la cámara del coche.
+
+Error: 0x0061006F
+Acerca de: Cargando peatón aleatorio en tal zona del mapa
+Problema 1: Relacionado con la configuración de pedgrp.dat o algún modelo de peatón defectuoso.
+Solución 1: Identificar y desinstalar dichos mods. Conociendo lo básico de cómo funciona pedgrp.dat puedes determinar qué línea o qué modelo de peatón intentaste cargar basado en dónde estabas en el momento del fallo.
+
+Error: 0x0072837D
+Problema: Renderizando un sprite 2D. Probablemente no existía.
+Solución: Uno de los casos para que esto ocurra es, por ejemplo, usar el mod de más íconos en el radar sin el ajustador de límites de fastman92 instalado o configurado correctamente. Podría ser otro caso similar.
+
+Error: 0x005FD56F
+Problema: Relacionado con el modelo de colisión (o simplemente el modelo o la instalación en sí) de un peatón de pandilla.
+Solución: Intentar identificar un mod que cambie los modelos de pandillas y desinstalar, contactar al autor, etc.
+
+Error: 0x005B6A70
+Problema: Ocurrió al cargar carcols.dat, al leer los colores de una línea de este.
+Solución: Identificar qué vehículo, qué línea, etc., e intentar identificar el problema o simplemente eliminarlo. También se informó que se solucionó eliminando gta_sa.set, pero no parece tener sentido.
+
+Error: 0x00681A94
+Problema: Límite en algunas tareas de inteligencia artificial de un peatón.
+Solución: Si no estás usando Open Limit Adjuster, úsalo, si ya lo estás usando, es algún mod CLEO descuidado que hace algo con personas (o rara vez incluso con el propio CJ).
+
+Error: 0x005B6784
+Problema: Relacionado con partes de tuning inválidas; una configuración incorrecta de los carmods de dicho coche.
+Solución: Identificar el coche e intentar corregir su línea de configuración de carmods eliminando las partes que son incompatibles con él.
+Problema 2: Una línea de carmods configurada con un coche inexistente.
+Solución 2: Identificar la línea, corregirla; eliminarla.
+
+Error: 0x004F1610, 0x004EED28
+Acerca de: Es común que ocurra en un "doble fallo" en modloader.log, apareciendo así dos volcados de fallos al mismo tiempo. Debes usar el fallo que aparece en la parte superior y COMPLETAMENTE ignorar este, el correcto es el que apareció en la parte superior de este. En este caso, este se consideraría un fallo "falso". No se sabe qué comenzó a causar esto en las personas. Si no aparecieron dos, bueno, este tiene algo que ver con el audio del juego.
+
+Error: 0x005A3FA6
+Problema: Relacionado con objetos procedurales (configurados por procobj.dat)
+Solución: Identificar qué mod, o qué objeto. Desinstalarlo, o desinstalar cualquier procobj.dat que tengas instalado.
+
+Error: 0x0074E36D
+Problema: Relacionado con algún material de algún modelo, probablemente un vehículo, y probablemente fue guardado incorrectamente por ZModeler dejando la opción "auto detect lights" marcada al momento de exportar.
+Solución: Identificar qué modelo, desinstalar, informar al autor, etc. Ya se ha solucionado simplemente reservando el vehículo en ZModeler desmarcando la opción "auto detect lights" al exportar.
+
+Error: 0x004AA8CB
+Problema: Te falta la carpeta 'audio'. O algún archivo importante dentro de ella.
+Solución: Verificar la carpeta de audio y sus archivos.
+
+Error: 0x005A5C98
+Problema: Relacionado con la ropa, más específicamente en la textura de una, probablemente un .txd no existe. Esto puede ocurrir al instalar algún mod de jugador o ropa e intentar lanzar el juego guardado con una ropa no compatible.
+Solución: Identificar qué .txd, y si el mod de ropa o jugador es tu caso, comenzar un nuevo juego y ver si funciona. Recomiendo que desinstales el mod, cambies la ropa de tu juego guardado a las originales desde el principio (o lo dejes desnudo), guardes el juego nuevamente e instales el mod, debería funcionar.
+
+Error: 0x004AA614
+Problema: Alguna configuración incorrecta en effects.fxp.
+Solución: Identificar el problema o desinstalar cualquier effects.fxp que esté instalado, etc.
+
+Error: 0x006E3D9C
+Acerca de: Con VehFuncs instalado, en caso de que ocurra este fallo, el mod dará información sobre qué modelo de vehículo lo causó.
+Problema: Grupo de animación incorrecto, posiblemente alguna línea en vehicles.ide está mal, ya sea faltante o mal configurada. Por ejemplo, el número del grupo de animación en la línea de handling.cfg (el último número en la línea) necesita coincidir con el nombre del grupo de animación (ifp) en la línea de vehicles.ide. En caso de duda, simplemente usa los valores que el propio juego usa en los coches originales, así no puedes equivocarte.
+Solución: Además de lo dicho anteriormente, en general verifica tus coches y sus respectivas líneas de vehicles.ide, verifica si todo está bien, en general, manualmente o en los .txts con sus líneas instaladas en Mod Loader, también recordando que si tienes un vehicles.ide dentro de Modloader, todos los .txts con líneas de vehículos no se cargarán como se indica en el tutorial de Mod Loader. Si incluso sin tales líneas instaladas (o "incluso correctamente instaladas") aún falla, intenta desinstalar los coches en tu juego, puedes usar Test Car Load para probarlos y encontrar el problema.
+
+Error: 0x004EFE69
+Problema: Problema al inicializar un sonido. Posiblemente algún sonido que modificaste tiene un problema o incompatibilidad.
+Solución: Ya se ha informado al usar los sonidos que venían con el arma G36C. Desinstalar estos sonidos, u otros sonidos que hayas descargado, intentando averiguar cuál dio el problema.
+
+Error: 0x00412144
+Problema: Algo relacionado con el modelo de colisión (.col files).
+Solución: Intentar averiguar qué mod edita o agrega archivos .col y desinstalar. O intentar identificar el problema e intentar arreglar el mod .col (puede estar relacionado con esferas o cajas).
+
+Error: 0x007F05E4
+Problema: Algún modelo, posiblemente un vehículo mal modelado.
+Solución: Ya se ha solucionado después de desinstalar dicho vehículo. Era una motocicleta policial ROCAM lowpoly. Puede ocurrir con otros vehículos, el problema es poder identificar cuál.
+
+Error: 0x006F763F
+Problema: Creando un tren.
+Solución: Ya se ha solucionado después de desinstalar el mod Longer Trains. ¿También se solucionó para ti? Háznoslo saber.
+
+Error: 0x00436686
+Problema: Relacionado con caminos (caminos de coches).
+Solución: Eliminar mods que tengan alguna relación con caminos, como mods que agregan nuevos caminos (nuevos caminos). Hay una probabilidad de ser causado por el mod Traffic & Travel (versión extendida), si ese fue tu caso y funcionó o no, (para estar seguro) ¡Háznoslo saber!
+
+Error: 0x007C91CC
+Problema: Relacionado con la renderización de DirectX en una skin (como un peatón o posiblemente el propio jugador)
+Solución 1: Desinstalar el mod Normal Mapping de DK
+Solución 2: Si no se soluciona con la solución anterior, entonces identificar el mod de skin que has instalado y desinstalar.
+
+Error: 0x006E00C4 (¿en Backtrace al final del registro?)
+Problema: Relacionado con la posición de un enganche de vehículo.
+Solución: Puede estar relacionado con algo así, como un modelo de vehículo de enganche (como un tractor, camión, etc.). Aunque extrañamente se informó con los archivos countryCML.ide/.ipl del mod de granja (lo cual no parece tener sentido).
+
+Error: 0x00454CC7
+Solución: Dejar "-1" o poner un ; en la función "PickupsDrawDist" de MixSets (si lo usas).
+
+Error: 0x00756B89
+Problema: Posiblemente algún vehículo mal modelado.
+
+Error: 0x005DA63A
+Problema: Relacionado con el pipeline de vehículos, algún mod que cambia cómo funcionan los gráficos del coche, como SkyGfx (pero no se informó al usarlo, aparentemente).
+
+Error: 0x005A57EF
+Problema: Dos texturas de diferentes resoluciones en el jugador que se necesitan entre sí. Por ejemplo, si la textura del torso de CJ es 512x512, la textura de la camisa y el tatuaje también necesita ser 512x512, etc.
+Solución: Identificar el mod, podría ser que algún mod de jugador o ropa esté mal hecho, o incompatibilidad si has instalado otra ropa, o si estás creando la ropa, ahora sabes cómo solucionarlo.
+
+Error: 0x00441DB0
+Problema: Algo intentó capturar la rotación de algo y no pudo, probablemente algún script CLEO.
+Solución 1: Si fue un mod CLEO, SCRLog puede decirte exactamente qué script y qué parte del script causó el problema. Probablemente algún otro mod CLEO eliminó un objeto importante del juego. Si esto ocurrió en la misión Los Desperados ("riot2" script), creé una solución: https://sharemods.com/l0qzomu976ht/fix_riot2_object_door_crash.7z.html
+Solución 2: Extrañamente se ha informado con algunos mods de vehículos, pero no se conoce la razón exacta. El mod Vehicles Test puede ayudarte a identificar si fue eso.
+
+Error: 0x004AA2F4
+Problema: Inicialización de un efecto especial (fx/partícula), como si hubieras inicializado un efecto que no podría ser creado antes.
+Solución: Podría haber sido algún mod de efectos especiales que hayas instalado. Identificar; desinstalar; informarnos. Ya se ha informado con IMFX, probablemente mala instalación de algún efecto (o falta de este), como headshot, donde tienes la opción de simplemente abrir imfx.dat y desactivar los efectos hasta encontrarlo. Se informó en una versión antigua de IMFX.
+
+Error: 0x0156A2A7
+Problema: Alcanzó el límite de scripts (CRunningScripts) (no .cs).
+Solución: Usar el ajustador de límites de fastman92. Buscar "Running scripts" dentro del .ini, eliminar el "#" al principio de la línea y aumentar el número a como 200... o 300...... "Running scripts = 200".
+
+Error: 0x0040AB3B
+Problema: Línea(s) vacía(s) de data\pedgrp.dat o nombre de peatón incorrecto, etc.
+Solución: Verificar tu archivo, hacer una copia de seguridad, desinstalar uno que tengas en Modloader, etc.
+
+Error: 0x007F3825
+Problema: Descargando una textura. Se ha informado después de instalar/desinstalar algún vehículo sin salir del juego usando ModLoader (bastante posiblemente cualquier mod que incluya textura?)
+Solución: ModLoader tiene ciertos problemas con este tipo de instalación en estos días. Es mejor evitar instalar así.
+
+Error: 0x004D0C14
+Problema: Relacionado con animaciones (.ifp). Informado al seleccionar "Actualizar modificaciones" en el menú de ModLoader.
+Solución: Intentar identificar qué .ifp dentro de ModLoader fue la causa?
+
+Error: 0x0040AB3B
+Problema: Línea(s) vacía(s) de data\pedgrp.dat o nombre de peatón incorrecto, etc.
+Solución: Verificar tu archivo, hacer una copia de seguridad, desinstalar uno que tengas en Modloader, etc.
+
+Error: 0x004CEC60
+Problema: Cargando un archivo .IFP que no existe o tiene el nombre interno incorrecto.
+Solución: Verificar la instalación de tus mods que usan .IFP y el nombre interno del archivo IFP (usando algún editor de IFP, como el GTA Anim Manager de Ryosuke839). El nombre interno del IFP aparece en la parte superior del programa cuando abres el IFP, y el nombre debe ser el mismo que el nombre del archivo.
+Problema 2: No se puede encontrar una animación requerida en .IFP
+Solución 2: Algún mod que necesitaba alguna animación (usualmente .asi, no CLEO) no pudo encontrarla en .ifp. Un ejemplo es usar el mod Run with Heavy Weapons con un ped.ifp incompatible.
+
+Error: 0x007360ED
+Problema: Relacionado con armas/disparos. Se ha informado durante un tiroteo en la mansión de Madd Dogg. Posiblemente causado por el mod Bullet de Ryosuke (versión 2010, 2009 no se sabe) - ya que era el único mod relacionado con disparos en ese momento.
+
+Error: 0x00533606
+Problema: Relacionado con el límite del mapa
+Solución: Usar Open Limit Adjuster
+
+Error: 0x007FDE21
+Problema: Relacionado con texturas de algún modelo, lo que sea. El .txd puede estar teniendo problemas.
+Solución: Intentar averiguar qué modelo causó el error y abrirlo en MagicTXD, posiblemente aparezcan mensajes de error, intentar guardar de nuevo, recrear .txd, reemplazar compresiones, etc. para ver si se soluciona.
+
+Error: 0x00533D6E
+Problema: Creando algún modelo. Puedes cambiar el tipo de modelo basado en lo que está en el "backtrace" al final del registro.
+Solución: Se ha informado al usar GTA III HD Vehicles Tri-Pack, donde ocurre en Ocean Docks y probablemente sea causado por algún barco en el mod, pero también podría ser otro vehículo.
+
+Error: 0x00538103
+Problema: Límite de Dummies (Dummy) para IPL.
+Solución: Usar Open Limit Adjuster.
+
+Error: 0x007C51A8
+Problema: Algún peatón defectuoso.
+Solución: Intentar identificar qué modelo de peatón, Skin Selector puede ayudarte con eso.
+
+Error: 0x00720089
+Acerca de: Renderización del mundo.
+Problema: El mod "24H Timecycle" está instalado sin que el archivo "timecyc_24h.dat" esté presente en la carpeta "data".
+Solución 1: Desinstalar el mod "24H Timecycle" o instalar "timecyc_24h.dat" en la carpeta "data".
+
+Error: 0x004C7D61
+Acerca de: Está relacionado con alguna corrupción de memoria de nodo/marco de vehículo, sin embargo, es difícil decir exactamente qué, puede ser algún vehículo que hayas instalado que tenga alguna parte causando corrupción.
+
+Error: 0x00571B73
+Problema: Hay más de 400 razones diferentes... No será fácil encontrar la razón solo con esta dirección. Pero sabe que puede estar relacionado con entidades, cosas físicas, como objetos, personas, coches. Puede variar mucho, pero en general podría ser que el juego intentó hacer algo con algo que ya no existe. Es posible para un mod CLEO incluido.
+
+Error: 0x004C7DAD
+Acerca de: Con VehFuncs instalado, el fallo se corrige automáticamente y habrá información sobre el problema (como qué coche lo causó) en el VehFuncs.log.
+Problema: En general, el juego no pudo encontrar la rueda de algún vehículo dentro de su modelo. Podría ser causado por algún problema interno extraño en el juego, o podría ser realmente un problema con la modelación de un coche, etc.
+
+Error: 0x006DADBA 0x006A6010
+Problema: Algún script CLEO o misión intentó tomar las RPM de un vehículo que ya no existe. Esto es lo más probable, pero extrañamente se ha informado que es algún modelo defectuoso. Se ha informado en una misión mientras se usaba Improved SA Default Cars, misiones que usan helicóptero/avión pueden fallar (¿y otros?). Puede causar en cualquier vehículo que hayas descargado si no usas Improved SA Default Cars.
+Solución: Probablemente sea solo un error de algún script CLEO o misión, o realmente algún vehículo fue eliminado accidentalmente del juego por otro mod. Si usas ISDC, intenta averiguar qué modelos dieron este problema. También puede ser causado por otros vehículos que hayas descargado que tengan modelos defectuosos, solo averigua cuál, en el caso de ISDC, se informó en Leviathan y durante Marco's Bistro (que puede haber sido causado por Shamal)
+
+Error: 0x*
+Acerca de: Creación de textura de placa de vehículo (presente en vehicle.txd, pero también cambiada por Improved Vehicle Features).
+Backtrace: 0x006FDF15
+Problema: Error del mod Improved Vehicle Features, aparentemente solo presente en la versión v2.1.1.
+Solución 1: Intenta usar una versión antigua, como v2.0.2, o reinstalar el mod. Si estás en el futuro y has lanzado una versión más nueva que v2.1.1, intenta usarla.
+
+Error: 0x0044F1C2
+Problema: Caminos, posiblemente los archivos "nodes*.dat" dentro de gta3.img.
+Solución: Verificarlos, hacer una copia de seguridad, eliminar mods que los editen, etc.
+
+Error: 0x0053388E o 0x0070FF4D
+Problema: Posiblemente el juego requirió más memoria RAM de la permitida.
+Solución 1: Usar Largeadress para aumentar el reconocimiento de RAM del juego. Esta es la mejor y confirmada solución.
+Solución 2: Disminuir el uso de memoria (Stream Memory) por algún mod como Mix Sets, bajarlo si está alto, un 1024 MB puede solucionar.
+Solución 3: Disminuir la configuración de Project2DFX, evitar aumentar la distancia de visualización de modelos de alta calidad (si lo has aumentado), ya que también puedes disminuir la distancia de visión del juego en él y esto también puede corregir.
+Acerca de: También asegúrate de usar SilentPatch para corregir los artefactos que aparecen parpadeando en el mapa al alcanzar un alto uso de RAM.
+
+Error: 0x00757D6E
+Problema: Problema con algún modelo. Se ha informado al seleccionar una parte en Tuning Mod, por lo tanto, causado por dicha parte...
+
+Error: 0x00493E50
+Problema: Reflectores. Se ha informado al usar mods de límite de reflectores .asi, como SAsearchlightlimitadjuster.asi.
+Solución: Si usas este .asi, deja de usarlo. Usa el Open Limit Adjuster en el que tiene la misma función y nadie tiene problemas con él, mientras que estos reflectores .asi varias personas ya han informado problemas.
+
+Error: 0x00493E50
+Problema: Reflectores. Se ha informado al usar mods de límite de reflectores .asi, como SAsearchlightlimitadjuster.asi.
+Solución: Si usas este .asi, deja de usarlo. Usa el Open Limit Adjuster en el que tiene la misma función y nadie tiene problemas con él, mientras que estos reflectores .asi varias personas ya han informado problemas.
+
+Error: 0x007C4781
+Problema: Algún vehículo defectuoso, o algo relacionado con las animaciones del juego.
+Solución: Intentar averiguar qué vehículo dio el problema. El fallo solo ocurrirá si ese coche defectuoso se carga en el juego, luego cerrar el juego dará este fallo, así que ten esto en cuenta al intentar averiguar cuál de los vehículos causó este fallo. O podría ser algo extraño sobre las animaciones. Lo más probable es que simplemente instalar MixSets (función SkipShutdown) nunca más mostrará el mensaje de error al cerrar el juego, lo que puede ser una solución.
+
+Error: 0x006BCAFE
+Problema: Falta la línea de manejo especial del tipo de vehículo.
+Solución: En vehículos como motocicletas, aviones, etc. hay una segunda línea de manejo que es necesaria para funcionar. Puedes ver esta línea al final del archivo handling.cfg. Verifica que todas las líneas necesarias estén instaladas para que el vehículo funcione.
+
+Error: 0x007C4781
+Problema: Procesando un modelo de skin. Se ha informado al abrir paracaídas con un modelo editado (como 90s AWP) teniendo el juego con alto uso de RAM.
+Solución: Esto se ha solucionado al usar Largeaddress
+
+Error: 0x00564192 (¿en Backtrace al final del registro?). O 0x00801D58 0x005D9802 0x005D97E6 0x00811A2A 0x006FA915 0x006129E1 0x007F3851 0x00552A53
+Problema: Project2DFX 4.0 (0x00564192) o 3.2 (resto de direcciones anteriores). Puede ser corregido en el futuro, pero se informó en su función TimedObjectsDrawDistance.
+Solución: Desactivar (poniendo un "0.0") la función TimedObjectsDrawDistance dentro de SALodLights.ini. O simplemente ignorarlo al no cerrar el juego a través del menú.
+0x006129E1 en "Backtrace": Está relacionado con agregar población al mapa, por lo que podría tener algo que ver con eso, con agregar NPCs (¿algún mod que maneje esto? ¿popcycle.dat? ¿aumento del número de NPCs? ¿algún mod que cambie su modelo? aparentemente no fue posible crear un NPC).
+0x007C4806 en "Backtrace": Se trata de descargar la jerarquía de animación, puede no ser sobre animación sino sobre skins de peatones. No es posible saber exactamente qué pasó, pero se ha informado con el mod Fix Male01, si funciona para ti, confírmanos.
+
+Error: 0x007C4781
+Problema: Este problema se ha informado al cargar un guardado que se ha guardado en exteriores (como el casino de los cuatro dragones) y está usando el mod HD Roadsignfont.
+Solución: No uses el mod o guarda el juego en el extranjero. Por ejemplo, desinstala el mod, abre el guardado, guárdalo dentro y puedes usar HD Roadsignfont nuevamente.
+Tipo 2: ¿Fallo en otro momento y sin usar el mod mencionado anteriormente?
+Problema 2: Este fallo está relacionado con la creación de "materiales" (básicamente texturas de modelos). Por lo tanto, puede estar relacionado con mods de modelos.
+
+Error: 0x00745393, 0x0074533E
+Problema: Se ha informado al usar el mod HiDef Camera. ¿Después de unos 30 minutos jugando? ¿Usando mods que usan mucha RAM como paquetes de texturas, coches, etc.?
+Solución: Deja de usarlo, evítalo, o usa el mod Largeaddress (probado y solucionado).
+
+Error: 0x00650075
+Problema: Se ha informado al usar el mod Fixed Wayfarer.
+Solución: Por alguna razón, el problema solo ocurrió a algunas personas, así que si usas este mod, simplemente desinstálalo. Si no lo usas, entonces podría ser otro mod de .ifp/animación relacionado con motocicletas.
+
+Error: 0x004A981E
+Problema: Se ha informado al usar el mod Remastered Effects, y/o IMFX, y/o Combat FX.
+Acerca de: Por favor, proporciona información si las versiones actuales el fallo continúa, o si puedes reproducir el fallo con lo mínimo posible para decir con certeza exactamente cuál es la forma exacta en que ocurre este fallo (por ejemplo, si ocurre solo si IMFX está instalado, algo así) para proporcionarnos información con el fin de intentar entender cómo ocurre el fallo y solucionarlo. Si no usas estos mods, bueno, ten en cuenta que está relacionado con la descarga de efectos especiales, por lo que podría ser algún mod así.
+Solución 1: Ya se ha dicho que eliminar "Explosion_satchel" de la carpeta de Efectos y desactivar "explosions" en imfx.dat solucionó este fallo, por favor confirma.
+
+Error: 0x004C672A
+Problema: Límite de modelos de armas.
+Solución: Leer el tutorial sobre cómo agregar nuevas armas, especialmente la parte de "Modelos de Armas" donde debes aumentar el límite de armas. Por lo general, las personas no prestan atención a donde dice sobre usar Open Limit Adjuster junto con esta función. Es decir, si usas Open Limit Adjuster no necesitas activar la función de Modelos de Armas del ajustador de límites de Fastman92, de lo contrario fallará.
+
+Error: 0x0074EC24
+Problema: Worldpipe.
+Solución: SkyGfx lo edita, por lo que posiblemente fue causado por él, y en el .ini hay una opción para desactivar Worldpipe, como también se explicó en el readme. Si no usas SkyGfx, entonces podría ser otro mod gráfico como enb series o incluso texturas.
+
+Error: 0x00812152
+Problema: Materiales de algún modelo de vehículo. Probablemente una parte del vehículo con material mal configurado. ¿Probablemente necesitas aumentar el límite de materiales especiales del vehículo? MixSets tiene configuración para esto y ya aumenta por defecto, "CarMatPipeDataPool". Extrañamente parece que ya se ha solucionado al cambiar el vehiclePipe de SkyGfx de "Xbox" a otro, como "Env".
+
+Error: 0x00801D58, 0x005D97E6, 0x005D9802. 0x00811A2A
+Problema: Aparentemente relacionado con Project2DFX.
+Solución: Enviado por Luiz Felip: Si deseas seguir usando Project2DFX, tendrás que entrar en algún lugar (principalmente en casa) para salir del juego o evitar salir del juego donde tuviste el problema
+(probado varias veces y aparentemente solucionado)
+Haz clic aquí para obtener información más detallada.
+
+Error: 0x00533620
+Problema: Algún modelo defectuoso.
+Solución: Ya se ha solucionado al actualizar el mod "Vertex Color Fix". No sabemos si fue causado por el mismo publicado en MixMods (aquí), si el de aquí está actualizado, etc. Si tuviste este problema y lo descargaste de aquí, háznoslo saber e intenta buscar otra versión actualizada. Pero si el tuyo no fue descargado aquí, descarga Vertex Color Fix de aquí ya que aparentemente está actualizado.
+
+Error: 0x005B8E6A
+Problema: Error de memoria de transmisión, algún mod que edita la memoria de transmisión del juego puede haber ingresado algún valor incorrecto.
+Solución: Esto podría ser causado por un error en el Open Limit Adjuster, por lo que puedes desactivar o incluso eliminar la línea MemoryAvailable del archivo limit_adjuster_gta3vcsa.ini. También posiblemente pusiste algún número incorrecto en Mix Sets.ini en la función StreamMemoryMB
+
+Error: 0x0040ACD8
+Problema: Cargrp.dat incorrecto.
+Solución: Enviado y solucionado por Luiz Felipe: Haz una copia de seguridad del archivo, o verifica si las líneas son correctas o si no están vacías, posiblemente el error puede ocurrir al llegar a un lugar determinado, por ejemplo, si falla al llegar a la región de una playa o al salir de la casa en Praia de Santa Maria, aparentemente el error proviene de la línea: "POPCYCLE_GROUP_BEACHFOLK"
+
+Error: 0x00554751
+Problema: Algún modelo defectuoso. Mostraba alguna construcción grande, es decir, algún modelo grande como casas, tiendas, edificios en el lugar donde estabas. Se ha informado en Verdant Bluffs.
+Solución: Intentar averiguar, podría ser cualquier cosa relacionada con eso, intentar volver al mismo lugar donde ocurrió el fallo para estar seguro, o caminar por ese lugar. Puede ser causado por mods gráficos como skygfx y enbseries, así como modelos defectuosos, posiblemente incluso texturas, cualquier cosa relacionada con mostrar un objeto grande en el mapa...
+
+Error: 0x004C4BD2
+Problema: Algún modelo defectuoso. Podría ser la falta de colisión o algo más relacionado con esto y el funcionamiento del modelo. Según Luiz Felipe, este problema ocurre cuando, por ejemplo, renombra el .dff y .txd de un coche al nombre de un peatón. Por lo tanto, este fallo puede ocurrir debido a cosas como esta, modelos mal funcionados, incorrectos.
+Solución: Verificar tus modelos, puede ser cualquier tipo de modelo. Caso aleatorio durante el juego puede ser principalmente coches o peatones; caso en cualquier parte del mapa, es el modelo del mapa que tiene colisión con problemas.
+
+Error: 0x0058742D
+Problema: Renderizando el hud. Se ha informado al usar un mod CLEO llamado "Radar Zoom Fix".
+Solución: Si lo usas, desinstala este mod, aparentemente es totalmente el problema del mod en sí.
+
+Error: 0x004946A4
+Problema: Problema con algún modelo. Ya se ha informado al usar Skybox de GTA V.
+
+Error: 0x004C48D6
+Problema 1: Pedir daño en el .dff de algún coche.
+Problema 2: Si fue en una pieza de Tuning Mod, es un error de modelado. La jerarquía de la pieza en ZModeler solo debe tener una malla, por lo que adjunta todo y deja el nombre con algún nombre único (no uses cosas como "chassis" en el nombre dentro del .dff)
+Solución 1/2: Adjuntar todo. Si aún hay un problema, cambia el nombre de la malla a algo único.
+Problema 3: ¿Fallo en LV? INSANITY Vegetation.
+Solución 3: Hasta ahora (en la Actualización 1.0) este fallo está ocurriendo. Espera a que se solucione o actualiza tu mod a la última versión.
+
+Error: 0x004CAD9D
+Problema 1: Si tienes "0x00733619" en el "Backtrace" (al final del registro): Problema con algún modelo/textura de algún peatón, o mod que interfiere con peatones.
+Solución 1: Etiquetar y eliminar.
+Acerca de: Si no lo tienes en Backtrace, el problema puede ser otro, envía el registro diciendo.
+
+Error: 0x0059BE3E
+Acerca de: Con VehFuncs instalado, en caso de que ocurra este fallo, el mod dará información sobre qué modelo de vehículo lo causó.
+Problema: Modelado de algún vehículo, lo más probable es motocicleta, avión o peatón (ligeramente posible que sea modelado de cualquier otro modelo). Esto ya se ha informado al instalar un Hydra defectuoso, al mirar la cámara en él dio este fallo.
+Solución: ¿Fue al mirar un vehículo? Identificar qué vehículo es defectuoso y desinstalar. Test Car Load puede ayudar con eso.
+
+Error: 0x0F9491BB, 0xAA94F20A, 0x91C9E7BF, 0x6449A5FF
+Problema: ¿Relación con el fallo a continuación?
+
+Error: 0x00718604
+Problema: Problema informado en 90s AVP Reborn. Así como puede ser algún otro paquete de vehículos. Esto parece ser un error causado por un modelo de sombra muy HD (con muchos polígonos) en .dff.
+Solución: En el caso de 90s AVP, fue causado por el Super GT, es decir, instala otro Super GT en su lugar. (nuevamente: El problema no necesariamente puede ser este paquete, sino cualquier paquete, o vehículo que tengas en tu juego). Puedes usar el mod Test Car Load para intentar encontrar el coche. Simplemente deja que los coches pasen lentamente y cada coche que se cargue intenta ir al menú Avanzado para cambiar la resolución, cuando falle, sabrás qué coche dio el problema). Verifica si el problema con dicho vehículo es el modelo de sombra muy HD, que causa corrupción de memoria debido a superar los límites del juego.
+
+Error: 0x007EC9DA
+Problema: ped.ifp faltante.
+Solución: Echa un vistazo a tu carpeta "anim", ¿está ped.ifp allí?
+
+Error: 0x004AA3A1
+Problema 1: Efectos especiales (.fxp files). No se pudo eliminar un efecto de la memoria debido a un error.
+Solución 1: Desinstalar tus efectos cambiados
+Problema 2: Si no tienes efectos especiales cambiados, puede ser un problema con el propio modelo que usa algún efecto, como un jetpack cambiado o algún objeto de mapa usando 2dfx.
+Solución 2: Identificar y eliminar dicho mod (.dff) que agrega efectos especiales. Si usas Proper Fixes o Missing Smokes Fix, verifica si hay actualizaciones.
+
+Error: 0x0F9416FC
+Problema: Error de juego guardado relacionado con la ubicación de guardado
+Solución: Enviado por Luiz Felipe: Cambiar el juego guardado y evitar guardar nuevamente en esta misma ubicación (usualmente no guardado por las ubicaciones originales del juego, sino a través de mods). También puedes usar programas de edición de juegos guardados para cambiar la ubicación donde se guardó y esto corregirá tu guardado.
+
+Error: 0x006080BC
+Problema: Algún problema con alguna animación de ped.ifp
+Solución: Desinstalar cualquier ped.ifp nuevo instalado o si deseas puedes intentar mezclar archivos .ifp intentando solucionar sin perder animaciones
+
+Error: 0x6AC579A0 (en "Backtrace" al final del registro tendrá 0x00507A6F)
+Problema: Algo relacionado con sonidos, ya sea los controladores de sonido de tu PC o paquetes de sonido.
+Solución: Si tienes un paquete de sonido, desinstálalo, si no puedes intentar otras cosas relacionadas con los sonidos del juego, como actualizar tus controladores de sonido
+
+Error: 0xE8AC1250 (en "Backtrace" al final del registro tendrás varios "unknown" y un shell32.dll)
+Problema: Algún tipo de incompatibilidad de vehlightsfix.asi
+Solución: Solucionado aumentando su prioridad en modloader.ini, es decir, ponlo en una carpeta y deja esta carpeta en una alta prioridad, como "100". Haz clic aquí para aprender cómo.
+
+Error: 0x00406034, 0x00406035, 0x00406036, 0x00406037, 0x00406038, 0x004F243E, 0x00405FDC
+Problema: Límites en archivos .ipl que contienen objetos en la sección "inst".
+Solución 1: Instalar Open Limit Adjuster (versión 1.5.9 o más reciente) que aumentará automáticamente los límites.
+Solución 2: Instalar el ajustador de límites de fastman92, aumentando el límite de "Entity index array".
+Solución 3: Intentar mezclar los archivos IPL, por ejemplo, 2 IPL pequeños, tomando los objetos de uno y poniéndolos en el otro (las líneas entre la sección "inst" hasta el siguiente "end"). Solo no exageres porque también hay un límite de objetos dentro de un IPL, pero el límite es grande. También ten cuidado si el .ipl tiene objetos LOD.
+
+Error: 0x006F3EF5
+Problema: Límite de coches estacionados. El llamado "generador de coches estacionados".
+Solución 1: Intentar instalar el ajustador de límites de Fastman92, abrir el .ini y en "#Car generators = 500" eliminar el # (para activar la función) y aumentar el número a alrededor de 550, 600 o incluso más (si tienes un fetiche por coches estacionados).
+Solución 2: O simplemente disminuir los coches estacionados, posiblemente tú o los mods han agregado demasiados coches estacionados en el mapa, incluso más mods CLEO mal hechos que cada vez que guardas el juego crea un coche nuevo, por lo que se convierte en una pila de coches estacionados en tu juego guardado, pero en el nuevo juego u otro guardado funcionará, por lo que puedes eliminar dichos mods, y si no, tendrás que dejar tu juego guardado atrás y usar otro así.
+Solución 3: Abrir el .ini de tu Open Limit Adjuster y en "Vehicles" disminuir el valor en caso de estar por encima de 200, dejar entre 110 y 200. Ya se ha solucionado en 130.
+
+Error: 0x004C59CB
+Problema: Hay un problema al intentar obtener el modelo de la memoria.
+Solución: Se ha informado al usar el mod "Parachute always on the back". Desinstalarlo.
+
+Error: 0x00746929
+Problema: Hay dos GTA SA abiertos al mismo tiempo.
+Solución: Ir al Administrador de Tareas de Windows, buscar el proceso del juego y cerrar todos, luego intentar abrirlo nuevamente.
+
+Error: 0x007F05C0
+Problema: Algún coche mal modelado. Hay poca posibilidad de cualquier otro modelo como peatones y objetos, pero usualmente son coches.
+Solución: Averiguar qué coche (u otro modelo) y desinstalarlo de tu juego.
+
+Error: 0x00679FA8
+Problema: Agregar textura de sangre. Se ha informado al usar versiones antiguas de Enhanced Classic Graphics e IMFX.
+Solución: Descargar ECG o IMFX que este fallo ya se ha solucionado
+
+Error: 0x004C686D o 0x004C6637
+Problema: Límite de "modelos atómicos", posiblemente conflicto de ajustadores de límites, como usar el ajustador de límites de Fastman92 con Open Limit Adjuster. O se ha alcanzado el límite y necesita ser aumentado.
+Solución: En caso de conflicto, intenta poner un "#" al principio de la línea "AtomicModels" dentro del .ini de OLA (limit_adjuster_gta3vcsa.ini). Si no usas ningún ajustador de límites, instala uno (como OLA) y el problema debería solucionarse.
+Posiblemente entonces también tendrás que seguir la solución del fallo a continuación:
+
+Error: 0x004C675A
+Problema: Límite de "modelos de grupo", posiblemente conflicto de ajustadores de límites, como usar el ajustador de límites de Fastman92 con Open Limit Adjuster.
+Solución: Intenta poner un "#" al principio de la línea "ClumpModels" dentro del .ini de OLA (limit_adjuster_gta3vcsa.ini)
+
+Error: 0x007F39F0
+Problema: Algo relacionado con encontrar texturas en .txd, .txd probablemente no pudo ser cargado porque estaba defectuoso.
+Solución: Ya se ha informado en el mod Freerunning Story 2.25, puedes buscar qué .txd específicamente causó esto e intentar solucionarlo guardando con Magic.TXD o desinstalándolo.
+
+Error: 0x0070BDAC
+Problema: Textura de sombra de coche baja en particle.txd
+Solución: Verificar tu particle.txd, podría haber un problema con la textura "shad_car" o cualquier otra cosa que no permitió que esta sombra funcionara correctamente.
+
+Error: 0x00804F51
+Problema: Relacionado con cargar/descargar un modelo. Se ha informado al usar 2 skin.img instalados juntos en GTA (mod Skin Selector, que incluso se ha actualizado sin necesidad del .img)
+Solución: Si fue Skin Selector, verifica lo dicho anteriormente, o si hiciste algo similar (como instalar 2 .img idénticos, etc., un error que usualmente ocurre a quienes usan Mod Loader e instalan mal o dos veces accidentalmente)
+
+Error: 0x0074C8C0
+Problema: Relacionado con la ropa del jugador. Ya se ha informado, por ejemplo, en Amazing Player Female eyecat (ojo de gato) al intentar hacer una (o algunas) misiones.
+Solución: Identificar y no usar dicha prenda de ropa en dicha misión (o incluso en otros casos).
+
+Error: 0x004F1464
+Problema: Problema con los audios de GTA SA de Steam.
+Solución: Descargar e instalar la carpeta de audio. Exactamente qué archivo no se informó, pero si puedes, todos, o intenta descargar al menos de las radios. También se dijo que eliminar los siguientes archivos de la carpeta "steams" (aunque me pareció extraño): ADVERTS, CH, CO, CR, DS, HC, MH, MR, NJ, RE, NJ TK
+
+Error: 0x005D5CA2
+Problema 1: (ImVehFt) Relacionado con cargar la función de suciedad en vehículos.
+Solución 1: Posiblemente: Eliminar el gta_sa.set en tu carpeta de GTA y/o en la carpeta de Documentos/GTA San Andreas User Files, si no, verifica si la dirección completa de la carpeta de texturas de ImVehFt es menor a 200 caracteres, etc.
+Problema 2: (no estás usando ImVehFt) Relacionado con cargar la función de suciedad en vehículos.
+Solución 2: Posiblemente hayas agregado compresión ("comprimido") a la textura de suciedad del vehículo (o incluso otras texturas) dentro de models\generic\vehicle.txd, un error común que las personas cometen, por ejemplo, al aplicar mipmapping a todas las texturas automáticamente. No hagas esto, tales texturas no pueden contener "comprimido".
+
+Error: 0x015632B0
+Problema: Alcanzó el límite de archivos COL
+Solución 1: Hacer que los archivos COL se carguen por Mod Loader usando una línea de carga.
+Coloca el .col en una carpeta dentro del Modloader (por ejemplo "Modloader\alguna carpeta\test.col"), crea un .txt en esta misma carpeta y dentro del .txt coloca: "COLFILE 0 Modloader\alguna carpeta\test.col", haz esto con todos tus archivos .col (pueden estar todos en el mismo .txt). Si no entendiste, intenta leer lo mismo explicado de otra manera en el tutorial de Mod Loader en la sección "Instalando archivos COL".
+Solución 2: Usar el ajustador de límites de fastman92 para aumentar el límite de COL en FILE_TYPE_COL.
+Solución 3: Simplemente fusionar múltiples archivos .col en uno. Con Coll Editor es posible simplemente abrir uno y arrastrar otros para unirlos en uno, reduciendo así la cantidad de archivos .col en tu juego. Ten en cuenta que puede ser necesario aumentar otros límites relacionados con coll, pero son simples y usualmente Open Limit Adjuster los soluciona.
+
+Error: 0x49646550 (en el "Backtrace" al final del registro tendrá "0x005A3FDE")
+Solución 1: Esto ya se ha solucionado al eliminar Enterable Hidden Interiors.
+Solución 2: Esto ya se ha solucionado al usar Crack 1.0 US Compact.
+Acerca de: Este fallo puede variar mucho, puede ser causado por muchas cosas diferentes.
+
+Error: 0xE9F712A0 (en el "Backtrace" al final del registro tendrá "0x00440973")
+Problema: Renderización de la linterna del coche.
+Solución: Ya se ha solucionado al desinstalar vehlightsfix.asi. Posiblemente debe haber habido alguna incompatibilidad con otro mod.
+
+Error: 0x6F746163 (en el "Backtrace" al final del registro tendrá "0x00440973")
+Problema: Recargar el mapa del sitio. Se informó después de guardar el juego.
+Solución: Ya se ha solucionado al guardar el juego en otra ubicación.
+
+Error: 0x1BF1AFF3, 0x03C03981, 0x03A53981, 0x03BD3576 (en el "Backtrace" al final del registro tendrá "0x0040ED2B" o "0x00618ED6")
+Problema: Intentando cargar el modelo de alguna persona o coche dependiente de la zona en la que te encuentras. Esto ya se ha informado al usar Cop Bikers Overhaul y posiblemente una mala instalación del modelo, ya sea dff/txd o el propio .ide del mod. Si no usas este mod, lo mismo, puede ser la falta de dff/txd o .ide mal configurado, faltando así un peatón y (raramente) vehículo, usualmente el fallo ocurre en la ausencia de un peatón.
+Solución: Enviado por Luiz Felipe: Para solucionar este fallo de Cop Bikers Overhaul, simplemente NO guardes el juego fuera de la casa, entra al juego sin este mod activado, guarda dentro de alguna casa e instala el mod normalmente nuevamente. Si aún falla, intenta otra casa.
+
+Error: (en el "Backtrace" al final del registro tendrá "0x006E2BB7")
+Solución: Esto ya se ha solucionado al usar Crack 1.0 US Compact.
+
+Error: (en el "Backtrace" al final del registro tendrá "0x007FE8E7" y "SilentPatch.asi")
+Problema: Incompatibilidad de la versión antigua de SilentPatch con el mod Outfit (armas por cuerpo)
+Solución: Actualiza tu SilentPatch, el problema ya se ha solucionado en nuevas versiones.
+
+Error: 0x005D532A
+Problema: Inicialización de scripts del juego. Ya se ha informado al intentar iniciar SAMP.
+Solución: En SAMP, se solucionó de una manera, intenta: Ejecutar en modo administrador, ya sea SAMP o GTA apagado; Posiblemente el problema también estaba en el juego guardado, así como mods de efectos de agua y policías de revisión.
+
+Error: 0x004874EA
+Problema: Algún mod CLEO. Mira en tu SCRLog.log (instálalo si aún no lo tienes e intenta jugarlo nuevamente)
+Solución: Según AquaVXI, esto ya se ha solucionado incluyendo la desinstalación de los archivos smoke.dff/.txd y smokev.dff/.txd del Unofficial Patch.
+
+Error: 0x00411160
+Problema: Fue al agregar col (.col) al juego. Posiblemente alguna incompatibilidad entre mods? Algo mal con el .col.
+Solución: Ya se ha informado al usar: "PS2 Map + Fixes" + "Vertex Color Fix + 2DFX Effects" + "Farming Mod" (todos juntos) y en este caso la solución fue hacer que el archivo .col del mod de granja se cargue por línea como se muestra en la sección "Instalando archivos COL". Tu problema podría ser similar, es decir, alguna incompatibilidad, y podrías solucionarlo haciendo que .COL se cargue de esta manera, o desinstalando tales mods .col para no causar tal incompatibilidad.
+
+Error: 0x004C9239
+Problema: Algún problema con la línea de manejo. ¿No instalada? ¿Configurada incorrectamente? ¿Aumentaste o disminuiste el límite? Algo así. Más específicamente las banderas del modelo.
+Solución: Verificar en total, este fallo se ha informado al intentar agregar un coche sin reemplazar.
+
+Error: 0x0064F8C3
+Problema: Algún archivo .ifp (de anims) está defectuoso; faltan animaciones; mal convertido, etc.
+Solución: Identificar qué .ifp está causando esto y eliminarlo. Si fue justo al iniciar el juego, probablemente fue algún ped.ifp que hayas instalado.
+
+Error: 0x004C9691
+Problema 1: ¿Algún conflicto de límites? ¿Estás usando el ajustador de límites de Fastman92 con múltiples configuraciones editadas y Open Limit Adjuster juntos?
+Solución 1: Intenta desactivar (poniendo un "#" al principio de la línea) los "AtomicModels" dentro del .ini de Open Limit Adjuster. O si tienes paciencia, intenta averiguar qué configuración causó este problema en el ajustador de límites de Fastman92.
+Problema 2: ¿Fue un coche que instalaste o estás modelando/editando?
+Solución 2: En este caso, podría ser que el coche se guardó faltando dummies, usualmente ej. bump_front_ok. O exportaste el .dff como formato "GTA 3" o "GTA VC" en lugar de San Andreas. Mantén un ojo en la ventana de exportación de ZModeler, etc. También podría ser causado porque exportaste desde ZModeler con partes no visibles.
+Problema 3: SRT3 / RoSA Project (o tal vez cualquier otro mod de texturas, o cualquier cosa que use .txd).
+Solución 3: Leer fallo 0x00732924 o 0x00749B7B a continuación:
+
+Error: 0x004C9691 0x00732924 0x00749B7B
+Problema: SRT3 / RoSA Project (o tal vez cualquier otro mod de texturas, o cualquier cosa que use .txd). Aparentemente causado por usar texturas no power 2 en .txd. Como se enseña en el tutorial de Magic.TXD aquí en el blog, es necesario que la resolución de las texturas tenga un número de potencia de 2, como 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, etc.
+Solución: Si el fallo fue en el hospital de SF, descarga la solución encontrada aquí en MixMods en la publicación de SRT y/o RoSA Project. Si no en esta ubicación, háznoslo saber, si no usas tales mods, entonces este no es el problema, pero aún podría ser causado por otro mod que modifique .txd, y es corregible recreando el .txd (si identificas qué .txd dio el problema allí) — exportando todo con txd workshop y recreando el .txd con magic txd. La solución también puede ser simplemente cambiar la resolución de las texturas a potencia de 2, lo que además de corregir tal fallo, corrige otros errores visuales y mejora el procesamiento de la tarjeta gráfica.
+Problema 2: En el caso de 0x00749B7B, obtener los modelos dentro de un modelo. Puede ocurrir por muchas razones, como algún script intentando crear una persona cuyo modelo no se ha cargado aún.
+Solución 2: Si crees que esto fue causado por un script que alguien creó, elimina este script y contacta al autor, posiblemente el SCRLog.log mostrará qué script causó el problema.
+Problema 3: Podría deberse a un modelo (usualmente coches y skins?) mal adaptado, convertido o guardado en otro formato de GTA (ej. formato GTA VC)
+Solución 3: En este caso, identificar qué mod de modelo está dando este error (dará el error al cargar para aparecer en el juego), desinstalar, informar al autor, etc.
+Problema 4: ¿Al cargar el juego después de que ya se ha cargado?
+Solución 4: Desactivar la función VehLODdist y/o DelayToRead de MixSets (DelayToRead parece haberlo solucionado y prácticamente no hace daño desactivarlo). Si realmente lo soluciona y estás seguro, te pido que me lo hagas saber para intentar solucionarlo.
+Problema 5: Se ha informado al usar el mod "town_adjuster.asi", que es de Cops Bikers Overhaul. Aparentemente porque tenía el .asi instalado sin los archivos .dff y .txd de las skins de policías.
+Solución 5: Reinstalar el mod, asegurarse de que los .dff y .txd de los policías se estén cargando realmente, o simplemente eliminar el "town_adjuster.asi".
+
+Error: 0x006A4523
+Problema: Al cerrar la puerta de un coche, posiblemente inexistente.
+Solución: Si fue durante Tuning Mod, ten en cuenta que en la versión 1.5 o más reciente se ha solucionado. Si no estabas usando Tuning Mod, Scrlog.log podrá decirte el problema (o no), es muy posible que haya sido algún mod CLEO que controla las puertas del coche.
+
+Error: 0x0045C7D4
+Problema: Esto se ha informado al usar SkyGfx e intentar habilitar la repetición.
+Solución: No activar, o si accidentalmente presionas la tecla para activar la repetición, puedes usar MixSets activando "DisaReplays"
+
+Error: 0x00469FBC
+Problema: Inicialización de scripts del juego
+Solución: Eliminar la carpeta "cleo\cleo_saves"
+Acerca de: Se recomienda no guardar el juego con demasiados mods CLEO instalados (o incluso otros mods como mapas). Más información sobre cómo cuidar la "salud" de tu juego guardado AQUÍ.
+
+Error: 0x00822527
+Problema: shopping.dat con errores.
+Solución: Hacer una copia de seguridad del shopping.dat, eliminar este archivo de Mod Loader o reemplazarlo con el original en la carpeta Data.
+
+Error: 0x004C8F24
+Problema 1: Este fallo se ha informado al usar Stream Memory Fix 2.0, que es un mod extremadamente antiguo y en desuso.
+Solución 1: Deja de usarlo y usa MixSets y/o Open Limit Adjuster.
+Problema 2: Algún problema de límite de coche.
+Solución 2: Ya se ha solucionado al instalar Open Limit Adjuster.
+Problema 3: Relacionado con un modelo de coche.
+Solución 3: Encontrar y eliminar el coche (si puedes, notifica al creador del coche). Test Car Load ayudará a encontrar el coche defectuoso.
+
+Error: 0x00532B82
+Problema: Falta colisionador, lo más probable es que el juego intentó crear un objeto que ya no está instalado en tu juego.
+Solución: Verificar la instalación de los mods que tienes, especialmente scripts con modelos agregados sin reemplazar. RepairGTA puede eliminar automáticamente todos los objetos con modelo inexistente guardados en tu juego guardado, solucionando así este fallo.
+
+Error: 0x00486726
+Problema: Aparentemente alcanzó el límite de modelos para ser cargados al mismo tiempo por algún script CLEO.
+Solución: Necesitarás eliminar algunos mods CLEO que crean cosas como personas, etc. Esto usualmente ocurre al iniciar el juego cuando tienes muchos mods CLEO mal hechos (mods que cargan los modelos justo al iniciar el juego, lo cual es un gran error)
+
+Error: 0x004CE15C
+Problema: Error al cargar animaciones de peatones. Posiblemente el "data\peds.ide" esté mal configurado.
+Solución: Corregir la línea incorrecta en peds.ide, corrigiendo así la animación colocada en ese peatón. Si no sabes cómo hacer esto, pregunta al autor del mod. Si lo editaste tú mismo, revisa mejor lo que hiciste o haz una copia de seguridad.
+
+Error: 0x004CE15C
+Problema: Error al cargar animaciones de peatones. Posiblemente el "data\peds.ide" esté mal configurado.
+Solución: Corregir la línea incorrecta en peds.ide, corrigiendo así la animación colocada en ese peatón. Si no sabes cómo hacer esto, pregunta al autor del mod. Si lo editaste tú mismo, revisa mejor lo que hiciste o haz una copia de seguridad.
+
+Error: 0x0057FAAD
+Problema: Posiblemente causado por Widescreen Fix...
+
+Error: 0xC000007B
+Problema: Falta algún .dll, runtimes, etc.
+Solución: Verificar la carpeta raíz de tu GTA SA, si falta algún .dll allí, un buen consejo es copiar todos los .dll de una carpeta de respaldo de GTA SA y pegarlos en el GTA con problema, pero SIN REEMPLAZAR, así que solo pega los que faltan.
+Solución 2: Haz clic aquí para descargar los .dll y runtimes que posiblemente falten en tu PC.
+
+Error: 0x0054F3B3, 0x0054F3B6
+Problema: Probablemente algún mod de mapa (como agregar objetos), algún mod de objetos de mapa, o algún otro problema extraño...
+
+Error: 0x006FD525
+Problema: Vehicle.txd, más específicamente, texturas de placas de coche. También posible estar relacionado con ImVehFt, texturas de placas en la carpeta ImVehFt\Plates.
+Solución: Hacer una copia de seguridad o instalar otro mod que reemplace Vehicle.txd o reinstalar ImVehFt, hay un problema relacionado con cargar estas texturas.
+
+Error: 0x0046504E
+Problema: Relacionado con algún objeto, crearlo, obtenerlo mientras ya no existe, hacer algo con él. Posiblemente causado por algún script CLEO mal hecho o mal instalado, etc.
+
+Error: 0x0059F8B4
+Problema: No se pudo cargar la colisión desde .dff. El archivo .col posiblemente no esté instalado o el nombre dentro del archivo .COL es diferente del nombre del .dff relacionado con él, o simplemente no hay nombre de modelo .dff dentro del .COL
+Solución: Verificar si hay un archivo .COL para el .dff instalado correctamente y funcionando en el juego, así como buscar en modloader.log si el .COL se cargó, etc. O verificar tu archivo .COL para ver si todo está en orden.
+
+Error: 0x00734E5A
+Problema: TXD faltante o incompleto o defectuoso o algún mod intentó cargar alguna textura o algún modelo que no existe.
+
+Error: 0x007F0875
+Problema: Algún coche mal modelado.
+Solución: Encontrar y eliminar el coche (si puedes, notifica al creador del coche). Test Car Load ayudará a encontrar el coche defectuoso.
+
+Error: 0x006A65F6
+Problema: Relacionado con procesar la suspensión de un coche, problema con su colisión.
+Solución: Buscar qué coche tiene este problema y eliminarlo, notificar al creador.
+
+Error: 0x0070BDAC
+Solución: Desactivar HQ Shadows en .ini
+
+Error: 0x0156CD5C
+Problema: Relacionado con un script que intenta "atrapar" a alguien. Si el fallo no fue durante una guerra de pandillas, es 100% seguro que fue causado por algún mod CLEO.
+Solución 1: Si el SCRLog está vacío o termina en WAIT, entonces debes encontrar qué CLEO dio el problema manualmente. Posiblemente sea algún conflicto o realmente un mod defectuoso, se sabe poco al respecto.
+Solución 2: Ya se ha solucionado al aumentar el número de Vehículos en limit_adjuster_gta3vcsa.ini. Dejar al menos 110.
+Solución 3: Ya se ha solucionado al desinstalar el mod ManualDriveBy Remake.
+
+Error: 0x00811A2A
+Problema: Algún material de reflexión de vehículo.
+Solución: Intentar identificar qué vehículo, básicamente este tipo de error es: Si el coche defectuoso se carga, al cerrar el juego (o usar cargar juego?) fallará, siguiendo eso puedes intentar averiguar cuál fue el vehículo defectuoso. Recordando que solo entrar al juego e ir a la calle cargará varios coches refiriéndose al lugar. La función SkipShutdown de MixSets elimina el mensaje de error.
+
+Error: 0x007C94E7
+Problema: Algún modelo defectuoso o mod gráfico que se mete con los modelos. Modelos de personas/peatones.
+Solución: Ya se ha solucionado al eliminar Normal Map de DK22Pac mientras se usaba Insanity Peds e Insanity Weapons Items. Recordando que usar estos mods sin el mod Normal Map de DK funcionará, pero no tendrá el efecto de Normal Map. El mismo fallo ya ha ocurrido en otros mods que usan Normal Map, incluso sin tener SkyGfx instalado.
+
+Error: 0x006E18F6
+Problema: Textura de luz de linterna de coche. Se informó al instalar ImVehFt 2.0.2
+Solución: Verificar si está instalado correctamente, intentar no usar Mod Loader para instalarlo, instalarlo manualmente.
+
+Error: 0x004082B1
+Problema: Handle/referencia inválida de una persona desde el script.
+Solución: SCRLog puede ayudarte a encontrar exactamente qué script causó el problema.
+
+Error: 0x007C9119
+Problema: Relacionado con algún problema con el funcionamiento de una skin. Ya se ha informado al usar el mod Skin Selector o el mod de paracaídas siempre en la espalda junto con el Normal Mapping de Ryosuke839.
+Solución: Si usas el Normal Map de Ryosuke, desinstálalo.
+
+Error: 0x005A3280
+Problema: Cargando objetos en el archivo object.dat
+Solución: Identificar el mod y desinstalar, o si tienes 2 o más "object.dat" en ModLoader, toma los cambios de uno y ponlos en el otro. Este sitio puede ser útil. Hay varios mods que usan archivos object.dat, como Overdose Effects y algunos mods de mapa como INSANITY Construction Site de Ezekiel.
+
+Error: 0x006F7524
+Problema: Iniciando vías de tren, posiblemente problema con los archivos "tracks*.dat" en la carpeta data\paths
+
+Error: 0x007FFF12
+Problema: Obtener el formato de imagen (usualmente mods que cargan imágenes .png, .bmp, etc.). Este fallo se ha informado al intentar usar ImVehFt en Windows 10
+Solución: Ya se ha solucionado al reinstalar la carpeta del mod, pero el problema seguía volviendo.
+Problema 2: Similar al caso anterior, dicha imagen (.png, .bmp, etc.) no pudo ser cargada por alguna razón, incluida la falta de esta.
+Solución 2: Identificar y verificar que los mods que usan imágenes estén correctamente instalados, por ejemplo, el HUD de GTA V.
+
+Error: 0x006D867A
+Problema: Velocidad del viento. Posiblemente algún mod que controle el viento del juego? Como mods que editan la lluvia o el Wind Mod creado por mí (si se configura mal el .ini puede causar este fallo, creo).
+
+Error: 0x005725BF
+Problema: Capturar la distancia entre dos zonas (áreas del juego como barrios)
+Solución: ¿Cambiaste algún archivo que controle algo sobre las zonas? como archivos .zon o algún otro?
+
+Error: 0x42480000, 0x42480007, 0x42480008, 0x42480012 (en el "Backtrace" al final del registro tendrás 0x0056328C, de lo contrario, envíanoslo)
+Problema 1: Si hay algún "0x0040E92F" en el "Backtrace" fue causado por algún objeto en el lugar. Si no usas mods de ipl, modelos de mapa, etc., pero usas algún GTA no descargado de MixMods, envía el registro explicando sobre esto.
+Problema 2: Se informó y solucionó al actualizar Ginput (aunque no tiene mucho sentido).
+
+Error: 0x004946A4
+Problema: Informado al usar Skybox de GTA V
+Solución: Eliminarlo, muy mal hecho
+
+Error: 0x00757D6E
+Problema: Posiblemente algún modelado de algo (como un vehículo) o mods gráficos (como enb series). Ya se ha informado al seleccionar una parte en Tuning Mod, por lo tanto, el problema es con esa parte.
+
+Error: 0x007F5D85
+Problema: Posiblemente algún modelado de algo (como un vehículo).
+
+Error: 0x00611D99
+Problema: Frecuencia de aparición de un vehículo
+Solución: Es un número en la línea de vehicles.ide de ese vehículo, haz clic aquí para ver qué número, uno de tus coches debe tener este número configurado incorrectamente, verifica
+
+Error: 0x00416C0B
+Problema: Problema de colisión (modelo de colisión, coll) de algo.
+
+Error: 0x004AB7E7
+Problema: Posiblemente algún mod que se mete con peatones/personas o límite de personas en el juego.
+Solución: Puedes intentar eliminar algunos mods CLEO que controlan personas o usar el Open Limit Adjuster.
+
+Error: 0x00731C93
+Problema: Límite de archivos .TXD
+Solución: Descargar e instalar el ajustador de límites de Fastman92; Abrir fastman92limitAdjuster_GTASA.ini; En "FILE_TYPE_TXD" eliminar el "#" del principio de la línea y aumentar el valor. Puede aumentar mucho, 500 o 1000 más.
+
+Error: 0x0E0748C5 o 0x0E3E9AD1 o 0x0FE75A1F (en el "Backtrace" al final del registro tendrá 0x006A7770)
+Problema: Informado al usar el mod do not blow up car while overturned (creado por LINK/2012) (este mod también está incluido en MixSets)
+Solución: Eliminar el mod, en el caso de MixSets, desactivar la función "VehFlpDontBurn" dentro del Mix Sets.ini
+Solución 2: Usar NoDEP.asi puede no ayudar, pero si lo hace, háznoslo saber!
+
+Error: 0x08265E39, 0x0E2656F3 (en el "Backtrace" al final del registro tendrá 0x006ADB85)
+Problema: Informado al usar el mod de marcha atrás junto con MixSets, ya que MixSets ya tiene este mod incluido (BrakeReverseFix dentro del .ini).
+Solución: Eliminar el mod y dejar solo MixSets
+
+Error: 0x00553927
+Problema: Al mostrar el LOD (modelo de baja resolución que aparece lejos de la pantalla). Este problema se ha informado al usar un mod de columna vertebral.
+Solución: Verificar tus mods que cambian o agregan modelos, etc., como árboles o cualquier otra cosa que se meta con los LODs del juego o agregue nuevos modelos que no tienen registros. Como dije antes, si tienes algún mod de columna vertebral, elimínalo, está mal hecho y causa este fallo.
+
+Error: 0x006CAC47
+Problema: Se ha informado al usar Enhanced Functions con coches agregados sin reemplazar.
+Solución: Deja de usar Enhanced Functions, es un mod obsoleto, reemplazado por VehFuncs.
+
+Error: 0x004AA134
+Problema: Relacionado con partículas (efectos especiales)
+Solución: Intentar eliminar tus mods de efectos especiales. Este problema se ha informado al usar un mod de xenón (no xenón en CLEO ya que es solo un CLEO y no cambia los efectos de tu juego)
+
+Error: 0x004F02D3
+Problema: Relacionado con reproducir un sonido. Se ha informado en SAMP al disparar cerca de alguien
+Solución: Si no has cambiado los sonidos de tu juego, podría ser cualquier otro problema relacionado, incluidos los controladores de audio de tu PC
+
+Error: 0x004C53A6
+Acerca de: Usualmente causado por algún vehículo que tiene el nombre del nodo (básicamente, el nombre de la parte) con un nombre demasiado largo (el límite es de 23 caracteres, 25 o más causa problemas graves en tu juego). Con VehFuncs instalado, este fallo se corrige automáticamente. La información aún permanece en el .log en caso de que quieras saber qué vehículo está causando el problema. Sin VehFuncs, con o sin este fallo, el problema que lleva a este fallo también lleva a otros errores y fallos en el juego. Más información aquí.
+
+Error: 0x00571A10, 0x00571A00
+Acerca de: Esto puede ser causado por cientos de razones diferentes. Una común está relacionada con tareas en personas, pero también puede ocurrir por cosas completamente diferentes.
+Backtrace: 0x00490B77
+Problema: Algún mod aplicó demasiadas tareas a los peatones/NPCs del juego, excediendo así el límite.
+Solución 1: Identificar y eliminar este mod CLEO. Puedes usar SCRLog para esto, pero básicamente es algún mod que controla NPCs. Informa al autor del mod para que lo solucione.
+Solución 2: Aumentar el límite de tareas. Open Limit Adjuster aumenta uno de ellos, pero por alguna razón en este momento aún no resuelve este error específico, ya que podría ser otro límite más específico, pero aún relacionado con personas realizando una tarea, como animación con script.
+Solución 3: Muchos mods CLEO agregando animaciones a personas en el juego. Urbanize hace mucho de esto, pero tiene cuidado de no alcanzar límites, pero cuando se combina con otros mods, el límite puede alcanzarse, pero es poco probable ya que necesita alrededor de 100 personas realizando acciones, como animaciones, por lo que rara vez será el caso.
+
+Error: 0x909090C3
+Problema: Este fallo puede ocurrir por varias razones, pero usualmente es causado por un conflicto entre 2 mods que usaron el parche de memoria del sistema del juego.
+
+Error: 0x00536BE0
+Problema: Obteniendo la distancia del centro de masa de un modelo.
+Solución: Si fue al crear un coche, lo más probable es que sea el límite de vehículos. Puedes aumentar el límite en "Vehicles" en el archivo .ini de Open Limit Adjuster. Por defecto es "Vehicles = 110", intenta aumentarlo a "Vehicles = 500". Si fue durante el juego normal, probablemente algún mod CLEO mal hecho está rompiendo el límite de vehículos creados en tu juego, identificar y eliminar.
+
+Error: 0x005A5A47
+Problema: Relacionado con texturas (¿de player.img?). Este fallo ya se ha informado al usar mipmaps en texturas de player.img (ropa de CJ, etc.)
+Solución: Eliminar tales ediciones, si no hiciste nada de esto, intenta informar/averiguar qué hiciste para dar este problema también
+
+Error: 0x00650311
+Problema: Relacionado con crear un conductor de coche aleatorio (de la calle)
+Solución: ?... Yo mismo tuve este fallo y aún no he encontrado nada, si tú también lo tuviste ayuda contribuyendo
+
+Error: 0x0040F64C
+Problema: Posiblemente tus mods de efectos especiales (effects.fxp)
+Solución: Desinstalarlo. También puedes intentar usar los gráficos del juego en Bajo, lo que también puede solucionar el problema.
+
+Error: 0x004F0E1C
+Problema: Algo relacionado con sonidos.
+Solución: ¿Estás usando un paquete de sonidos? Intenta desinstalarlo para ver si funciona.
+
+Error: 0x0070AA31
+Problema: Algo relacionado con las sombras del juego.
+Solución: Si estás usando shadow extender, puedes intentar desinstalarlo.
+
+Error: 0x007F5A3A
+Problema 1: Si tienes "0x006A2C29" en el "Backtrace" al final del registro: Mal modelado de algún vehículo.
+Solución 1: Intentar averiguar qué vehículo y desinstalarlo.
+
+Error: 0x006A65EF
+Problema: Algún vehículo sin colisión
+Solución: Verificar tus vehículos, si no sabes cuál es, prueba para ver si están funcionando y deja de buscar cuál es defectuoso o desinstala manualmente, o todos, algunos de ellos tienen .dff con errores. Eso debería ayudarte a encontrar.
+
+Error: 0x0072837D
+Problema: Relacionado con sprites en pantalla (cualquier cosa agregada al hud, imágenes, textos)
+Solución: Intentar averiguar qué mod y eliminarlo, ya sea cualquier mod que haya agregado tales cosas a la pantalla durante el fallo. Este fallo se informó con la posible causa: "Aviation Hud", ¿confirmar?
+
+Error: 0x00405CB6
+Problema: Falta un archivo IPL o IPL mal escrito.
+Solución: Verificar si falta algún archivo IPL para ser cargado, ya sea original del juego o uno instalado. Usualmente los archivos gta.dat o en algún readme vienen con líneas de carga de IPL dentro, así que reinstala tales mods o elimínalos por completo.
+
+Error: 0x00801D58
+Problema: Usualmente algunos mods dan este error, no sé por qué y cuáles.
+
+Error: 0x004C678E
+Problema 1: Alcanzó el límite de modelos de vehículos.
+Solución 1: Este fallo ya se ha informado por el límite de vehículos y se solucionó al usar un ajustador de límites, también verificando si el ajustador de límites realmente está funcionando (necesitan algún c++ visual, como el ajustador de límites de Fastman92)
+Problema 2: Algún modelo de vehículo faltante, vehicles.ide incorrecto, líneas de límite más altas de lo necesario (usualmente causado por el ajustador de límites de fastman92 mal configurado).
+Solución 2: Verificar que tu vehicles.ide esté correcto, no solo este, sino también las líneas de vehículos instaladas por Mod Loader. También verifica que tengas todos los vehículos instalados en tu GTA correctamente y/o intenta desinstalar coches instalados previamente. Si usas el ajustador de límites de fastman92, si la configuración de "Modelos de Vehículos" está configurada correctamente. Recuerda que si usas Open Limit Adjuster debes poner un "#" al principio de esta línea en el .ini del ajustador de límites de fastman92, ya que el Open Limit Adjuster lo configura automáticamente para ti.
+
+Error: 0x006FEC20 o 0x0D3C1FA0 (0x006FECF5)
+Problema: Al renderizar el texto de señales de tráfico (esas que dicen nombres de ciudades, etc., roadsigntext).
+Solución: ¿Problema con la textura de las letras en particle.txd? ¿Usaste compresión en esta textura en particle.txd? ¿Estás usando .cs para aumentar la resolución de esas señales? Algunas de estas cosas pueden haber causado el problema y, por supuesto, debes verificar el particle.txd que estás usando, no agregar compresión ("comprimido") a la textura roadsignfont, dejando Raster Raw.
+
+Error: 0x004DD5A3
+Problema 1: Falta la carpeta "audio"
+Solución 1: A tu juego le falta la carpeta "audio", o faltan los archivos o están corruptos.
+Problema 2: Algún mod que requiere tener la carpeta "audio" completa (no RIP).
+Solución 2: Descargar la carpeta de audio para GTA SA RIP. O simplemente descargar el juego completo.
+Problema 3: Algo causó que el controlador de audio no se inicializara.
+Solución 3: Intenta actualizar y reinstalar los controladores de audio de tu PC. SilentPatch también soluciona algunas incompatibilidades con los controladores de audio.
+
+Error: 0x004D3FBC
+Problema: ¿Intentaste usar una animación de un IFP no cargado? ¿IFP defectuoso y no puede ser cargado por el juego?
+
+Error: 0x0065ED19
+Solución: Este fallo ya se ha solucionado al limpiar la carpeta de Mod Loader, eliminando archivos innecesarios. Pero creo que esto no tiene sentido y realmente no fue por eso
+
+Error: 0x0048C3A9
+Problema: Error al intentar cargar un IFP. Bastante posiblemente el IFP no esté instalado en tu GTA.
+Solución: Verificar la instalación de los IFPs. En SCRLog.log debería tener el nombre del script en el que solicitaste el IFP
+
+Error: 0x0057A065
+Problema 1: Ya se ha informado al usar coche defectuoso. Informado con el mod 90s AVP debido a Bandito, donde después de generarlo e ir al menú de visualización, fallará.
+Solución 1: Reemplazar el coche con uno que no tenga este error.
+Problema 2: Por alguna razón no fue posible identificar el modo de video.
+Solución 2: Esto ya se ha informado y simplemente dejó de dar el error, por sí solo, o algún mod que lo hizo imposible. También puedes intentar eliminar gta_sa.set en "Documentos/GTA San Andreas User Files".
+Acerca de: Si usas 90s AVP Reborn, también lee el fallo 718604
+
+Error: 0x006BF73B
+Problema: Relacionado con el modelo de colisión de alguna bicicleta, sin embargo, esto puede ser causado por otros factores como alcanzar límites.
+
+Error: 0x006999EF
+Problema: Relacionado con objetos (desde postes, hidrantes hasta puertas y otros objetos controlados por script), aparentemente algún problema al procesar la lista de estos objetos. ¿Tiene que ver con el juego guardado? ¿Objeto defectuoso?
+
+Error: 0x004C4576
+Problema 1: Al intentar cargar partes de tuning desde carmods.dat. Este fallo también se ha informado al intentar recargar coches en el juego a través de modloader.
+Solución 1: Verificar tus partes y/o carmods.dat, podría ser que accidentalmente eliminaste algún modelo de parte de tuning, configuración incorrecta de alguna línea de coche, etc.
+Problema 2: Falta el archivo data/gta.dat.
+Solución 2: Asegúrate de que esté allí.
+
+Error: 0x0071A190
+Problema: Fuente (letras), probablemente algún fonts.dat o letras corruptas de algún mod (.fxt) o traducción (.gxt).
+Solución: Ya se ha solucionado al desinstalar la traducción, pero no siempre ocurre, intenta identificar la causa, exactamente qué texto, si es un conflicto, etc.
+
+Error: 0x006F32C0
+Problema: Informado al intentar agregar un coche estacionado con un modelo de coche agregado (es decir, no nativo del juego, un coche instalado sin reemplazar). O algún límite o corrupción relacionada con coches estacionados.
+Solución 1: Para poder estacionar coches agregados en el juego sin reemplazar, es necesario abrir el .ini del ajustador de límites de Fastman92, buscar la línea "#Accept any ID for car generator = 0" eliminar el # y poner = 1.
+Solución 2: Usar el mod RepairGTA para corregir coches duplicados e incorrectos en tu juego.
+
+Error: 0x005A5781
+Problema: Relacionado con copiar texturas. Aparentemente hay una textura con compresión, y GTA no soportó compresión en ella. Este fallo se ha informado al comprimir la textura "vehiclegrunge256" de vehicle.txd sin tener ImVehFt instalado.
+Solución: Intentar averiguar qué .txd tiene este fallo, desinstalarlo o abrirlo con TXD Workshop, hacer doble clic en esa textura marcada "Comprimido" (puede haber varias, o todas) y desactivar su "Comprimido", guardar el TXD e intentar nuevamente (si lo soluciona, etc., informa al autor).
+
+Error: 0x00537D12
+Problema: Alcanzó el límite de modelos dentro de un archivo COL
+Solución: Usar Open Limit Adjuster
+
+Error: 0x00632D15
+Problema: Relacionado con colocar una secuencia de animación en un actor
+Solución 1: ¿Algún script CLEO? ver en SCRLog.log
+Solución 2: Posiblemente algún otro mod (usualmente CLEO) eliminó a esa persona y por lo tanto el juego falló al intentar agregar animación en alguien inexistente. Intentar averiguar manualmente qué mod hizo esto, ya que en estos casos SCRLog.log no debería ayudar.
+
+Error: 0x00668269
+Problema: Relacionado con hacer que alguien camine y se detenga en algún lugar
+Solución 1: ¿Algún script CLEO? ver en SCRLog.log
+Solución 2: Posiblemente algún otro mod (usualmente CLEO) eliminó a esa persona y por lo tanto el juego falló al intentar agregar animación en alguien inexistente. Intentar averiguar manualmente qué mod hizo esto, ya que en estos casos SCRLog.log no debería ayudar.
+
+Error: 0x006EB670
+Problema: Problema al intentar iniciar el agua del juego, posiblemente un problema con la textura "waterwake" de "models\particle.txd"
+Solución: Verificar esta textura, u otras texturas relacionadas con el agua
+
+Error: 0x006B4220
+Problema: Procesando la muerte de una persona. Este tipo de fallo es común y difícil de entender la razón de esto, si ya has logrado solucionar algo así, házmelo saber. Es complicado porque usualmente ocurre al azar, por lo que es difícil saber si lo has solucionado o no. Pero creo que podría tener que ver con algún mod CLEO mal hecho que controla personas.
+
+Error: 0x007F0C41
+Problema: Relacionado con algún modelo de vehículo (o en un caso determinado, construcción de la ropa de CJ)
+Solución: Ya se ha informado como incompatibilidad de SkyGfx con otro mod. Verifica si este es tu caso e identifica el mod y actualiza SkyGfx a la nueva versión. Pero probablemente sea algún problema extraño con modelos, usualmente vehículos.
+
+Error: 0x004D68BA
+Problema 1: Está relacionado con el procesamiento de animaciones. Si tienes 0x006BB8B0 en Backtrace al final del registro, entonces está relacionado con una animación de motocicleta.
+Solución 1: Ya se ha informado al correr MUY rápido, tal vez la velocidad causó un error. También puede ser cualquier otra cosa relacionada con animaciones de motocicletas.
+
+Error: 0x49646550 o 0x42480000 (pero lo que importa es que el backtrace al final del registro tendrá 0x004091E2 o 0x005641D2)
+Problema: ¿Después de cargar el juego después de cargar el primero o CJ muriendo o cerrando el juego? ¿Y has instalado/desinstalado algún mod de mapa en el juego a través de ModLoader?
+Solución: Hasta ahora, ModLoader tiene algunos problemas de instalación dentro del juego. El fallo ya se ha informado al instalar/desinstalar mods GTA IV Light poles, New poles in HD y debe haber otros del mismo tipo.
+
+Error: 0x00544BC8 o 0x00542721, también posiblemente 0x00542830
+Problema: Límite de vehículos en la piscina, o entidades físicas (que incluye vehículos entre otras cosas físicas)
+Solución: Descargar e instalar el Open Limit Adjuster, si ya lo has instalado y continúan los errores, ve al .ini de OLA, si la función "EntryInfoNode" está desactivada, actívala eliminando el "#" y deja "ilimitado"
+Solución 2: (Luiz Felipe) Si ya estás usando el Open Limit Adjuster y este fallo ocurre al usar el truco de explotar todos los vehículos (CPKTNWT), ve al .ini de OLA, busca la función "EntryInfoNode", elimina el "= ilimitado" y pon "=750" (o más). Si estás usando mods de mapa que agregan modelos o similares, deja "= 1500" para estar seguro.
+
+Error: 0x0059FE47
+Problema: En la pre-renderización de un objeto, después de agregar el tamaño a este, no sé si fue por el tamaño, pero GTA tiene un fallo original donde hace que el juego falle si mueves la cámara contra un objeto editado por script de tamaño. Este fallo ya se ha informado al morir con el mod Ground Weapon.
+Solución: Averiguar dónde ocurre el fallo, posiblemente el objeto esté atascado en el mapa del juego, por lo que en un nuevo juego u otro guardado no fallará, el problema está atascado en tu juego guardado (leer más aquí). Si no, algún script debe haber creado un objeto allí que causó este fallo, averiguar qué script.
+
+Error: 0x0072F4DE
+Problema: Relacionado con la asignación de memoria. Este fallo ya se ha informado por un coche defectuoso, pero es un problema muy genérico, puede haber muchos casos diferentes, el backtrace puede decir más información. Contacta a alguien experimentado.
+
+Error: 0x0040890A
+Problema: Algún mod CLEO intentó cargar un modelo existente.
+Solución: El mod SCRLog puede decirte exactamente qué script causó el problema. Asegúrate de que el mod esté instalado correcta y completamente.
+
+Error: 0x004C663B
+Problema: Alcanzó el límite de objetos del juego. Es un fallo que ocurre al instalar demasiados objetos nuevos o demasiadas partes de Tuning Mod.
+Solución: Usar Open Limit Adjuster (aumenta automáticamente a través del límite de modelos atómicos) o el ajustador de límites de fastman92 aumentando manualmente el límite de "IDE Objects Type 1".
+
+Error: 0x0040FB80
+Problema: Relacionado con colisión (coll), posiblemente alcanzando el límite de colisión del juego, u otro problema sobre .col.
+Solución 1: ¿Usar Open Limit Adjuster?
+Solución 2: Ya se ha solucionado debido a alguna configuración incorrecta del ajustador de límites de fastman92.
+Solución 3: Si estás intentando iniciar SAMP, probablemente samp.exe tiene un modo de compatibilidad diferente al de gta_sa.exe, o alguna otra razón por la que SAMP no puede abrir gta_sa.exe (configuración incorrecta, ya hay algún gta_sa.exe en el Administrador de Tareas, algún programa que impide el inicio (puedes intentar reiniciar la PC), etc.).
+
+Error: 0x004C67BB
+Problema: Límite de modelos de peatones en .ide
+Solución: Usar Open Limit Adjuster
+
+Error: 0x006D1080
+Problema: Fallo al manejar un vehículo, bastante posiblemente el vehículo desapareció del juego y algún mod defectuoso intentó manejar un coche inexistente
+Solución: Si usas el mod First Person, desactiva la cámara en primera persona antes de la misión OG Loc. Posiblemente fue un CLEO y posiblemente no generará SCRLog.log para que sepas qué CLEO... tendrás que buscar manualmente qué script dio este error, desafortunadamente. Si fue un mod de MixMods, házmelo saber.
+
+Error: 0x005B6B2F
+Problema 1: Dos IDs idénticos siendo usados en data/vehicles.ide
+Solución 1: Verificar tu vehicles.ide o líneas de este, debe haber una línea duplicada o ID ya usada, etc., cosas así. Incluso puede ser una línea con un modelo mal configurado, faltante, etc.
+Problema 2: Error en carcols.dat, número de variaciones de color, posiblemente algún coche tenga más de 16 colores en su línea de carcols o vehicles.ide esté mal configurado.
+Solución 2: Eliminar el número de variaciones de color del coche para que sea menos de 16, o usar algún mod que aumente el límite de variaciones de color. También es posible que hayas instalado los colores en los lugares incorrectos, colocando las líneas de 2 colores donde son para 4 o viceversa, si no sabes, instala por Mod Loader, instalará las líneas correctamente para ti.
+El problema también puede ser debido a vehicles.ide mal configurado, revisar los modelos y IDs si están todos correctos, etc.
+
+Error: 0x00563289
+Acerca de: Con VehFuncs instalado, en caso de que ocurra este fallo, el mod dará información sobre qué modelo de vehículo lo causó. Sin embargo, este fallo en particular usualmente no se trata de coches.
+Problema1: Error al eliminar un objeto del mapa, posiblemente un objeto atascado en el juego guardado
+Solución 1: Intentar ver si otro juego guardado o nuevo juego no falla en ese lugar, si no lo hizo, entonces debes haber guardado el juego con algún mod de script que agrega un objeto al mapa. Haz clic aquí para descargar un mod que te permitirá solucionar este fallo, solo busca el objeto defectuoso en el lugar y elimínalo. O haz clic aquí para descargar un nuevo juego guardado y ver algunos consejos.
+Problema2: También puede ser cualquier tipo de modelo, como vehículos mal hechos (aún hay una ligera posibilidad de ser skins y ropa).
+Solución2: Intentar desinstalar todos tus vehículos o intentar averiguar cuál. Si el fallo es mientras juegas, intenta usar Test Car Load para averiguar cuál de los vehículos causó el problema.
+Problema3: Faltan mods necesarios (¿relacionados con objetos?) en tu juego. Posiblemente tendrás este problema solo en un guardado, y justo después de desinstalar algunos mods.
+Solución 3: Reemplazar el mod que desinstalaste, posiblemente el juego lo necesite.
+
+Error: 0x004A2CF3
+Problema: Relacionado con efectos especiales, probablemente tengas un efecto instalado (.fxp o .fxs) pero estás usando un "effectsPC.txd" no compatible sin ninguna textura allí.
+Solución: Verificar tus archivos .fxp y effectsPC.txd en modloader, podría ser conflicto.
+
+Error: 0x007F120E
+Problema: No se encontró el marco. Puede ser causado por unas 40 razones como modelo defectuoso o script controlando algo, lo más probable de un coche (pero aún podría ser un arma o una persona). Esto también ocurre en la versión 4.0.5 o anterior de MixSets al explotar demasiados coches, se ha solucionado en las nuevas versiones. Si tienes "0x005670AB" en el Backtrace justo debajo, es causado por soltar una parte de un coche.
+Solución: Si usas MixSets 4.0.5 o anterior, actualízalo ya que este fallo se ha solucionado. Ya se ha informado al intentar tunear un coche no preparado para tuning. Posiblemente el fallo también puede ocurrir al acercarse a un garaje con un coche con partes no compatibles dentro. Verificar tus mods y modelos. En caso de un fallo debido a algún tuning en un coche que no tiene soporte, simplemente no lo tunees o intenta configurar correctamente su línea de carmods.dat porque aparentemente las líneas están incorrectas. También se ha informado al usar el mod Windshield Removal, en motocicletas, que no tenían parabrisas (como puede ser cualquier otro tipo de mod que elimine partes de vehículos)
+
+Error: 0x004D41C5
+Problema: Problema con la animación de entrar en un vehículo, podría haber sido tú o alguien en la calle (si el fallo fue durante el juego sin que tú entres en uno)
+Solución: Intentar averiguar qué vehículo (si no sabes) y verificar las líneas de vehicles.ide y/o .ifp (si editaste un .ifp, puede faltar alguna animación). Este fallo incluso se ha informado al usar el avión F-14, pero aparentemente debido a un problema con el propio avión, donde necesitas entrar desde el lado derecho, de lo contrario, este fallo ocurre aquí.
+
+Error: 0x007F3737
+Problema: Cargando texturas de un TXD (¿algún TXD tiene un problema?)
+Solución: Verificar tu TXD
+
+Error: 0x006F785F
+Problema: Creando un tren. Se ha informado al usar múltiples mods de script relacionados con trenes al mismo tiempo.
+Solución: Desinstalar algunos mods CLEO de trenes, evitar usar múltiples mods de script de trenes al mismo tiempo. Puede ser que otros mods del tipo también causen tales problemas, como dije, creando un tren, si alguien se mete con las creaciones de trenes, podría ser un conflicto.
+
+Error: 0x004F1464
+Problema: Relacionado con cargar alguna música (división por 0)
+Solución: ¿Eliminar canciones si agregaste alguna? ¿Edición incorrecta de GTA SA RIP? ¿El juego vino defectuoso? Si tienes fallos en misiones incluso sin mods, puede ser que tu GTA esté defectuoso, necesitas descargar otro (descargar GTA SA desde aquí). En el caso de GTA de Steam, se ha informado hacer un downgrade incorrecto (sin usar la herramienta de downgrade).
+
+Error: 0x007F39FB
+Problema 1: Tienes un archivo .img abierto.
+Solución 1: Ciérralo.
+Problema 2: Cargando una textura (dentro de TXD). Aparentemente un error original de ModLoader al tener un hud.txd instalado en él. Puede ocurrir al iniciar el juego, y la próxima vez funciona.
+Solución 2: Eliminar todos los hud.txd que estén instalados dentro de ModLoader. Si tienes más de 1, intenta desinstalar y dejar solo 1 de ellos.
+Problema 3: No se pudo cargar ninguna ropa .txd o vehicle.txd. O alguna pintura de un coche.
+Problema 4: Algún script CLEO intentó cargar una textura de sprite en algún .txd ("models/txd") pero no cargó el archivo .txd antes. Por ejemplo, en una versión antigua de ATP.
+Solución 4: Identificar el mod CLEO, ten en cuenta que el archivo .txd puede incluso existir (si el archivo .txd no existe pero CLEO intenta cargar, el problema es otro), el problema puede ser directamente como un error de algún mod CLEO que necesita .txd pero olvidó cargarlo.
+Acerca de: Podría ser cualquier cosa relacionada con "cargar una textura de un archivo .txd", por lo que podría ser causado por cientos de razones diferentes, pero una cosa es segura: Hay algún .txd incorrecto allí, posiblemente defectuoso o faltante alguna textura importante, cosas así.
+
+Error: 0x00745AA5
+Problema 1: Ya se ha informado al usar coche defectuoso. Informado con el mod 90s AVP debido a Bandito, donde después de generarlo e ir al menú de visualización, fallará.
+Solución 1: Reemplazar el coche con uno que no tenga este error.
+Problema 2: Por alguna razón no fue posible identificar el modo de video.
+Solución 2: Esto ya se ha informado y simplemente dejó de dar el error, por sí solo, o algún mod que lo hizo imposible. También puedes intentar eliminar gta_sa.set en "Documentos/GTA San Andreas User Files".
+
+Error: 0x005FD54D
+Problema: Creando un peatón.
+Solución: Averiguar qué skin de peatón tiene un problema y eliminarlo. Si quieres, contacta a su creador. Extrañamente ya se ha solucionado porque es incompatible con Trees Remove + Left 4 Theft.
+
+Error: 0x0074A4C0 o 0x0074A4C4
+Problema: Eliminando una entidad 3D, bastante posiblemente fallo de Tuning Mod en la selección de partes después de instalar una parte incorrecta o defectuosa
+Solución: Si fue una parte, eliminarla, contactar a su creador o verificar su instalación. Decir cuál fue la pieza aquí en los comentarios también debería ayudar
+
+Error: 0x004D464E
+Problema: Problema de animación en algún grupo de animación, ya sea armas o estilos de caminar.
+Solución: Podría haber sido causado por editar weapon.dat cambiando el archivo .ifp del arma, pero no también cambiando el archivo default.ide (que es el archivo donde se carga el arma y su .ifp). Solo como podría haber sido causado por un script que intentó poner el arma en alguien, pero el arma no estaba cargada, y así será este fallo. El mismo error puede ser causado por un grupo de animación mal configurado en la parte de ifp (animgrp.dat). Es mejor identificar qué mod está dando esto (siguiendo los detalles que acabo de decir) y contactar al autor de este mod para solucionarlo teniendo el archivo .ifp necesario cargado para esa arma (o el arma misma cargada) en la memoria del juego).
+Problema 2: Una nueva línea de weapon.dat sin tener el ajustador de límites de fastman92 instalado y configurado.
+Solución 2: Si este es tu caso, identificar, verificar si tienes alguna línea de arma instalada (ya sea weapon.dat o archivos .txt que contengan líneas de este), eliminar o instalar el ajustador de límites de fastman92, configurarlo correctamente, etc.
+
+Error: 0x0080D5EF
+Problema: Transformando un punto 3D
+Solución: Puede o no ser razones de modelos de coches o sistemas de explosión de algún mod (usualmente asi). Intenta iniciar el juego en modo administrador y con compatibilidad con Windows XP SP3 (esto ya ha solucionado el problema de una persona)
+
+Error: 0x00405CA4
+Problema: Error con IPLs binarios. ID incorrecto.
+Solución: Corregir o eliminar (si es nuevo) tus IPLs binarios (dentro de .img o Modloader)
+
+Error: 0x0053C1F5 o 0x0053E986
+Problema: Falta NewOpcodes.cleo? ¿Algún mod lo pide y no lo tienes?
+Acerca de: Intenta descargarlo e instalarlo en tu carpeta CLEO.
+
+Error: 0x007F18CF
+Problema: Relacionado con una matriz, posiblemente un modelo.
+En el Backtrace en la parte inferior, si tiene un 0x004AAFCC, 0x0053C1F5 y/o 0x0053E986 está relacionado con partículas/efectos especiales (también hay otras posibilidades). De lo contrario, o teniendo 0x0080981D, puede simplemente ser sobre un modelo 3D. En el caso de 0x008095FA también podría ser algún modelo, pero se informó al intentar eliminar un objeto (en la prueba, un árbol) usando el opcode 09A2, es decir, podría ser un CLEO que intentó eliminar un objeto del juego, pero esto también puede ocurrir raramente en un mod asi.
+Solución: Ya se ha informado debido a un coche mal hecho, solo identificar y desinstalar el coche, Vehicles Test puede ayudar.
+
+Error: 0x004F0E67
+Problema: Posiblemente problema de sonido de tu PC, DirectPlay, o estás usando el mod Mobile sounds.
+Solución: Leer Error: DSOUND.dll (ctrl+f)
+
+Error: 0x004AA4C8
+Problema: Efecto especial (effects.fxp) no encontrado o faltante.
+Solución: Verificar tus effects.fxp, posiblemente lo reemplazaste con uno que falta un efecto o estás usando algún mod que usa un efecto que falta dentro de tus effects.fxp.
+
+Error: 0x00705D48
+Problema: Relacionado con el procesamiento de sombras dinámicas.
+Solución: Desinstalar cualquier mod que se meta con ellas, o desactivarlas con MixSets o SkyGfx, o simplemente dejar el juego en configuración Baja.
+
+Error: 0x00826360
+Problema: Al intentar leer algún texto, el texto no existía. Podría ser por varias razones.
+Solución: Archivo timecyc.dat inválido, ocurre porque hay algún error (por ejemplo, falta alguna línea) en tu timecyc.dat o estás usando el mod Timecycle 24H con algún timecyc.dat instalado en el modloader (solo desinstala el timecyc.dat del modloader).
+
+Error: 0x008214E4
+Problema: Error al intentar cargar alguna línea de manejo. Posiblemente tu handling.cfg esté mal o alguna línea de manejo instalada en tu juego puede tener algún problema que causó que no se leyeran.
+Solución: Verificar las líneas, desinstalarlas para ver si se soluciona o algo.
+
+Error: 0x007F0BF7
+Problema: El marco no encontró al hijo, usualmente ocurre al intentar instalar una parte de tuning en un vehículo en el que no es compatible.
+Solución: Si el coche fue descargado, verifica la instalación de la línea de carmods.dat o evita tunearlo. Si el fallo fue cerca de un garaje en una casa, significa que el coche guardado previamente allí tiene partes que tu coche actual (reemplazado) no soporta, devuelve tu juego a su estado anterior (con el mismo modelo de coche en el que se guardó en el garaje) o edita tu juego guardado para eliminar coches de este, o evita pasar cerca de este garaje.
+
+Error: 0x004082C0
+Problema: Posiblemente el juego guardado no sea compatible con tu .exe o main.scm
+Solución: Si el guardado no fue hecho para Crack 1.0 US, recomiendo descargar otro guardado. También intenta hacer clic aquí y descargar el main.scm original.
+
+Error: 0x004C720C
+Problema: Esto ya se ha informado con Tuning Mod v2.
+Solución: Si usas Tuning Mod v2, sabe que el problema ya se ha solucionado en v2.1. También puedes volver a descargar el IndieVehHandlings.cs actualizado con la solución.
+
+Error: 0x004C7170
+Problema: Esto se ha informado con Tuning Mod v2, usualmente justo después
+Solución: Si usas Tuning Mod v2, sabe que el problema ya se ha solucionado en v2.1. También puedes volver a descargar el IndieVehHandlings.cs actualizado con la solución.
+
+Error: 0x005381A5
+Problema: IPL incorrecto o límite de instancia en .ipl como límite de "Edificios". Por informes, esto también tiene que ver con mods y guardados.
+Solución: Aumentar el límite de "Edificios". El ajustador de límites de fastman92 necesitas hacerlo manualmente, y por el Open Limit Adjuster ya viene con este límite aumentado, sin embargo, si usas Project2DFX, necesitas aumentarlo aún más (en la descarga de Project2DFX viene un .ini de Open Limit Adjuster ya configurado para esto).
+
+Error: 0x00465CC8
+Problema 1: Un script intentó agregar una tarea a algún actor inexistente.
+Solución 1: Posiblemente un script CLEO, intenta identificarlo. SCRLog.log puede ayudar con esto.
+Problema 2: Usaste Skin Selector mientras usabas DYOM.
+Solución 2: No usar.
+
+Error: 0x00553F71
+Problema: Relacionado con la renderización del mapa.
+
+Error: 0x00534134
+Problema 1: El mismo ID siendo cargado en diferentes modelos, muy común al instalar diferentes mods de mapa con autores que no se preocupan por la compatibilidad. Si tuviste este fallo después de instalar una parte en Tuning Mod, es porque dos partes (o algún otro mod diferente) están usando el mismo ID, informa al autor y/o sigue este tutorial para solucionar la incompatibilidad.
+Solución 1: Revisar tus nuevos archivos IDE, uno podría estar usando el mismo ID que el otro. En la mayoría de los mods (no scripts) puedes simplemente abrir y cambiar el ID a uno libre (haz clic aquí para la lista o usa este tutorial para solucionar la incompatibilidad).
+Problema 2: COL inapropiado (o faltante)
+Solución 2: COL: Revisar si el COL se está cargando en el IMG o Mod Loader, si es IMG, también revisar si el IMG se está cargando en gta.dat o Mod Loader. Para instalar un COL en Mod Loader correctamente, sigue el Tutorial de Mod Loader en la parte donde habla sobre instalar .COL
+Problema 3: Objeto con LOD fue eliminado.
+Solución 3: Eliminar un objeto de mapa que contiene LOD, es necesario usar tanto el archivo *_stream*.ipl (dentro de gta3.img) como el archivo .ipl de la carpeta data/maps. Si, por ejemplo, eliminas un objeto solo en el archivo *_stream*.ipl pero no también lo eliminas del .ipl de la carpeta data/maps, causará este fallo. Lo que también puede ocurrir al instalar un mod, por ejemplo, ya tienes un mod que cambia el mismo archivo .ipl, por lo que el archivo necesario no se cargará y causará este fallo. Tendrás que verificar que los archivos estén todos instalados y cargando (puedes verificar modloader.log para ver si se está cargando, si ya tienes otro archivo instalado, etc.). Alternativamente, si estás creando un mod de mapa, puedes mover el objeto bajo tierra en lugar de eliminarlo, así evitarás problemas como este, pero también tendrás que hacer lo mismo con el LOD (que está en el .ipl de la carpeta data).
+Problema 4: Tienes algún .img del juego abierto en algún programa, como Alci's IMG Editor.
+Solución 4: Ciérralo.
+
+Error: 0x0040E179
+Tipo: El juego se congela al mirar un objeto
+Problema: TXD (u otra característica (excepto DFF)?) no está presente en IMG.
+Solución: Agregar el TXD al IMG o eliminar el IDE/IPL del objeto relacionado.
+
+Error: 0x005B51F7
+Problema: Relacionado con IPL y sus conexiones entre objetos normales y LODs. Falta algún IDE. Posiblemente las líneas de carga no están instaladas o el archivo .IDE está mal escrito, o el enlace entre el objeto común y LOD está mal.
+Solución: Corregir gta.dat o verificar si gta.dat o la línea de carga está presente dentro de Mod Loader. También verificar si el archivo .IDE relacionado con dicho .IPL está configurado correctamente con los objetos necesarios para el .IPL dentro de la sección "objs...end".
+
+Error: 0x005BA12B
+Problema: Límite de resort de IPL roto (1000) - Máximas líneas en la sección "inst" dentro de algún archivo IPL.
+Solución: Aumentar el límite de resort de IPL con algún ajustador de límites o intentar dividir un IPL en otros.
+
+Error: 0x005DC425
+Problema 1: Material de colisión incorrecto (ID de material inapropiado).
+Solución 1: Corregir el ID de material dentro del archivo COL. Un consejo es, después de identificar exactamente qué modelo y qué archivo .col está causando el problema, abrir el .col en Coll Editor, seleccionar el modelo con el problema, o que crees que tiene el problema, ir a Edit Mode, en Face, y Select All para seleccionar todo, y ver en "Material" el número que aparece. Si acabas de crear el .col, entonces probablemente todo será "0", que es el valor predeterminado, pero si tienes algún ID inválido, estará con otro número de error y no mostrará ningún número allí. Cambiar el Material a 0 con todas las caras seleccionadas cambiará todo a 0, incluyendo la cara de error, y solucionará el problema. Esto probablemente es causado por Coll Editor al fusionar diferentes archivos .col, probablemente algún error de Coll Editor.
+Problema 2: Extrañamente, un problema relacionado con el ciclo de tiempo (timecyc.dat).
+Solución 2: Ocurrió en la versión "lite" de Real Linear Graphics, ya se ha solucionado. Extrañamente, la solución fue bajar el valor de intensidad de la línea de las 7 pm del clima de niebla de San Fierro, ya que el fallo fue en Los Santos, no se sabe con certeza cómo ocurrió esto.
+
+Error: 0x006E9248
+Problema: Relacionado con el agua (¿water.dat incorrecto?) (en la renderización del agua). División por 0.
+Solución: Corregir el water.dat.
+
+Error: 0x006F5702
+Problema: ¿Demasiados objetos? Algún límite desconocido.
+
+Error: 0x007ECABB
+Stack: 0x4CDCDE > Error
+Problema: Formato de textura corrupto (problema con texturas de baja resolución). Esto podría ser causado por la herramienta WTD2TXD.
+Solución: Corregir el TXD. Verificar si las texturas de baja resolución están marcadas con compresión (comprimido, DXT).
+
+Error: 0x00000000
+Problema: Algún script CLEO/SCM.
+Solución: Usar SCRLog.log para averiguar qué script causó el problema y contactar al autor.
+
+SCRLOG
+
+Por comandos:
+
+Último comando: [0001] WAIT
+Problema: El problema eres tú. Lee mejor la página de SCRLOG, ya hablaba sobre [0001].
+
+Último Comando: (Algún Bitwise): [0B10] o [0B11] o [0B12] o [0B13] o [0B14] o [0B15] o [0B16] | (Algún .ini): [0AF0] o [0AF1] o [0AF2] o [0AF3] o [0AF4] o [0AF5] | (Algún archivo): [0B00] o [0B01] o [0B02] o [0B03] o [0B04] o [0B05]
+Problema: Aparentemente tienes una instalación incompleta de la biblioteca CLEO
+Solución: Descargar e instalar usando este enlace
+
+Último comando: (NewOpcodes.cleo): [0D01] o [0D02] o [0D03] o [0D04] o [0D05] o [0D06] o [0D07] o [0D08] o [0D09] o [0D0A] o [0D0B] o [0D0C] o [0D0D] o [0D0E] o [0D0F] o [0D11] o [0D12] o [0D13] o [0D15] o [0D16] o [0D17] o [0D18] o [0D19] o [0D1A] o [0D1B] o [0D1C] o [0D1D] o [0D1E] o [0D1F] o [0D20] o [0D21] o [0D22] o [0D23] o [0D24] o [0D25] o [0D26] o [0D27] o [0D28] o [0D29] o [0D2A] o [0D2B] o [0D2D] o [0D2E] o [0D2E] o [0D2F] o [0D30] o [0D31] o [0D32] o [0D33] o [0D34] o [0D35] o [0D36] o [0D37] o [0D38] o [0D39] o [0D3A] o [0D3B] o [0D3C] o [0D3D] o [0D3E] o [0D3F] o [0D40] o [0D41] o [0D42] o [0D43] o [0D44] o [0D45] o [0D46] o [0D47] o [0D48] o [0D49] o [0D4A] o [0D4B] o [0D4C] o [0D4D] o [0D4E] o [0D4F] o [0D50] o [0D51] o [0D52] o [0D53] o [0D54] o [0D55] o [0D56] o [0D57] o [0D58] o [0D59] o [0D5A] o [0D5B] o [0D5C] o [0D5D] o [0D5E] o [0D5F] o [0D60] o [0D61] o [0D62] o [0D63] o [0D64] o [0D65] o [0D66] o [0D67] o [0D68] o [0D69] o [0D6A] o [0D6B] o [0D6C] o [0D6D] o [0D6E] o [0D6F] o [0D70] o [0D71] o [0D72] o [0D73]
+Problema1: NewOpcodes.cleo no instalado, verifica si este archivo está dentro de tu carpeta CLEO.
+Solución1: Descargar e instalar la última versión de NewOpcodes creada por DK22Pac. Haz clic aquí para descargar.
+Problema2: Incluso instalado puede causar problemas, fallos aparentemente sin razón.
+Solución2: O deja de usar mods o intenta encontrar el problema, quién sabe cómo instalar/reinstalar msvcp100d.dll y msvcr100d.dll? No sé mucho sobre tales soluciones, háznoslo saber si encuentras más soluciones!
+
+Último comando: [0B20] o [0B21]
+Problema: Aparentemente no tienes el archivo ClipboardCommands.cleo en la carpeta cleo o Modloader
+Solución: Descargar e instalar usando este enlace (si estás usando Tuning Mod, sabe que este archivo ya viene en la descarga, verifica la instalación del mod.)
+
+Último comando: [038B]
+Problema: Cargando un modelo
+Solución: Algún modelo que el mod CLEO usa falta o está defectuoso en tu GTA. Dentro de scrlog.log, sobre el último comando posiblemente verás un "REQUEST_MODEL" con un número delante, el número delante es el ID del modelo (ya sea coche, peatón u objeto). Verificar el problema, especialmente instalando el mod.
+
+Último comando: [0541]
+Problema: Aparentemente problema de Mod Shell
+Solución: Si fue en la misión Learning To Fly, instala la solución que viene con la descarga de Mod Shell aquí en MixMods (actualmente ya viene con la solución junto). Si no fue en la misión, posiblemente fue algún mod CLEO que controla/agrega armas a algún vehículo, por lo tanto, solo corrigiendo manualmente el CLEO o eliminándolo.
+
+Último comando: [0AA5] [0AA6] [0AA7] [0AA8]
+Problema: Alguna función fue llamada incorrectamente por el mod.
+Solución: Es muy posible que la razón fueran los argumentos pasados a la función y debes contratar al autor. Si eres experimentado y el autor, ve modloader.log para la dirección, así como las últimas (primeras en la lista) direcciones en Backtrace, leyendo el .exe en esas direcciones para intentar entender cuál de los argumentos tuvo el problema. El valor de "Access violation reading location" también es muy importante ya que literalmente muestra qué valor se leyó, por lo que puedes saber, por ejemplo, si pasaste algún argumento nulo.
+
+Último comando: [0AAA]
+Problema: Podría ser causado por algún mod de script que usó incorrectamente opcodes de función como 0AA5:
+Solución: Si es así, debes ignorar completamente qué script falló en 0AAA, podría ser que el error vino de un mod completamente diferente.
+
+Último comando: [04EE]
+Problema: No se encontró archivo .ifp.
+Solución: Justo delante del comando está el nombre del archivo, y esto puede ayudarte a identificar el mod o problema. Si es "SEX.ifp" (es decir, es "REQUEST_ANIMATION SEX") en el momento de hot coffee, es porque estás instalando GTA SA sin hot coffee (versión no 1.0). Se recomienda que descargues la instalación oficial de la versión 1.0 de GTA SA aquí. Hay un parche de descarga menor aquí (200MB). Si es la versión de Steam o RGL, haz un downgrade.
+
+Último comando: [00FE]
+Problema: Usualmente falla aquí ya que un mod CLEO no verificó tal persona antes de verificar su ubicación.
+Solución: Para aquellos que crean mods CLEO, es simple, solo verifica si esa persona existe antes de hacer cualquier cosa con ellos. Quien instale los mods necesita identificar cuál e informar al autor. El mod Car Dealership ha tenido y se ha solucionado, muchos mods pueden tener el mismo problema, es común.
+
+Último comando: [5101]
+Problema: Algún problema de variable.
+Solución: Si esto ocurrió en el mod Attach Vehicles (puede ser otro), actualízalo junto con CLEO+. Ya se ha corregido.
+
+Por scripts:
+
+nombre del script
+Mod: Ninguno
+Acerca de: Fue un error de main.scm (script original de GTA), si estás usando main.scm normal (con misiones del juego, etc.), los fallos pueden ocurrir, por ejemplo, en el gimnasio, fue un error de Rockstar (? o incompatibilidad con otro mod?), o tu juego guardado no es compatible con ese main.scm/script.img. Detalle que SilentPatch corrige algunos de estos errores. También podría ser algunos casos raros de mods, en cuyo caso no podrás identificarlo.
+
+script nebo
+Mod: Skybox
+Acerca de: Usualmente tiene un maldito fallo, script mal hecho, no recomiendo usarlo, usa Real Skybox.
+
+script newsvan
+Mod: Steering (Active Dashboard)
+Acerca de: Si mueres en el coche, es porque tienes una versión antigua de Steering. Descarga la última versión de Steering de MixMods.
+
+script suspens
+Mod: Air Suspension v1
+Acerca de: Usualmente el mod falla con el último comando: "[81F3]", fue mi propio error de cuando era un novato... para evitar este fallo, solo apaga la suspensión de aire al salir del coche.
+
+script tuning
+Mod: Tuning Mod, o posiblemente otro mod llamado "Tuning"
+Acerca de: ¿Realmente fue el Tuning Mod? Por favor, envíanos el SCRLog aquí en los comentarios poniéndolo en pastebin.com y enviándonos el enlace, intentaremos solucionarlo.
+
+script Horn An
+Mod: Horn Anim (animación de bocina)
+Acerca de: Ya se ha solucionado. Descarga nuevamente.
+
+script mydak
+Mod: No golpees a las mujeres v2
+Acerca de: Este mod falló en el último comando [051A] y realmente era incompatible con otro mod CLEO.
+
+script Djjr Ca
+Mod: Djjr Car Spawner
+Acerca de: ¿Intentando generar tren/barco? Esto se solucionará en Djjr Car Spawner v1.1. Por ahora, para solucionarlo, solo deja "PutOnVehicle = 1".
+
+script intro2
+Mod: En realidad, fue en el script de la segunda misión del juego donde usualmente es causado por incompatibilidades con mods CLEO.
+Acerca de: Leer "Problema 1" del fallo "0x00536BE0" (ctrl+f y buscarlo arriba en la lista)
+
+script nanava
+Mod: Arrancar / detener el motor. Ya se ha eliminado de MixMods, elimínalo de tu GTA, realmente está mal hecho.
+
+script attach
+Mod: Podría ser varios, probablemente Attach Vehicles. Falló pero ya se ha solucionado.
+
+script ehi ene
+Mod: Enterable Hidden Interiors, solo descárgalo nuevamente, está solucionado.
+
+Otros
+
+Error: CLEO.asi
+Problema: Algún script CLEO/SCM.
+Solución: El mod SCRLog puede decirte exactamente qué script causó el problema y contactar al autor.
+
+Error: CLEO+.cleo
+Problema: Algún script CLEO/SCM que use CLEO+.
+Solución: El mod SCRLog puede decirte exactamente qué script causó el problema y contactar al autor.
+
+Error: modloader.asi
+Problema 1: En casos extremos donde instalas cualquier archivo en modloader y ya causa varios fallos, incluyendo en modloader.asi solo al abrir el juego, probablemente todo tu modloader se metió en un lío y dejó de funcionar.
+Solución 1: Entonces, intenta reinstalar modloader y eliminar toda su caché en la carpeta AppData de tu usuario, es decir, en mi caso sería "C:\Users\JuniorDjjr\AppData\Local\modloader", ve allí y elimina todo e intenta nuevamente. Si tienes problemas para encontrar tu carpeta AppData, busca en Google.
+Acerca de 1: Si falla después de unos minutos de juego: Usualmente este problema no es causado por Mod Loader, sino por ImVehFt. El error no es Mod Loader, sino cómo se creó ImVehFt, intenta desinstalarlo o usar la versión 2.0.8 de IVF para ver si se soluciona, si no o no usas IVF, entonces el problema es realmente diferente...
+Acerca de 2: También puedes tener el Mod Loader incorrecto, mal configurado, etc., revisa estas preguntas si lo configuraste.
+Acerca de 3: Envía el modloader.log para ver, por el .dll mostrado al final de los códigos de fallo también puedes tener una idea de qué tipo de archivo falló el modloader al intentar cargar. Eso si tienes el .dll.... Entonces, envíalo, pero no hay promesa de que se solucione, el fallo de modloader puede ser por muchas y muchas razones que son difíciles de saber exactamente por qué...
+
+Error: std.stream.dll o STDSTR ~ 1.DLL
+Acerca de: Puede ser algún script que intentó cargar un modelo inexistente, por ejemplo, algún script que usa un modelo de animal y crea usando CLEO, si el modelo de animal no está instalado, fallará este dll. Este fallo también puede encontrarse fácilmente al usar Skin Selector con una instalación incorrecta de skins, como al instalar skins con nombres muy largos (advertido en el Readme para usar nombres con un máximo de 7 letras). No solo skins, de todos modos, este fallo es causado por modelos en general y no solo scripts, también puede ser causado por mods de mapa que faltan archivos .dff .txd y .col, etc., usualmente la falta de estos archivos en algún mod causa el fallo en este dll.
+
+Error: V_HUD_by_DK22Pac.asi
+Problema 1: ¿Iniciar el juego?
+Solución 1: Verificar la instalación, reinstalar el mod, verificar la resolución del juego, etc., incluso puedes intentar eliminar la carpeta GTA San Andreas User Files de los Documentos.
+Problema 2: ¿Al seleccionar el menú de ropa de Skin Selector?
+Solución 2: ...Posiblemente los mods son realmente incompatibles...
+
+Error: imvehft.asi
+Problema 1: ¿Fallo aleatorio mientras juegas? ¿Después de jugar unos minutos?
+Solución 1: Intenta instalar la versión antigua (al final de esta publicación).
+Problema 2: ¿Fallo al iniciar?
+Solución 2: No lo instales dentro de Mod Loader. Tener GTA SA instalado en alguna carpeta no muy larga, deja tu carpeta de GTA en Documentos o cualquier unidad que tengas, direcciones de carpetas muy largas pueden alcanzar el límite de carga de archivos para este mod.
+Problema 3: ¿Fallo en Windows 10?
+Solución 3: Intenta iniciar el GTA en modo de compatibilidad con Windows 7 o Windows 98, además de modo administrador. ¡Háznoslo saber si se soluciona!
+
+Error: std.bank.dll
+Problema 1: Algún sonido. Este DLL es de Mod Loader, pero no necesariamente puede ser problema de Mod Loader.
+Solución 1: Si has editado los sonidos de tu juego, de cualquier manera, haz una copia de seguridad, y como siempre, si no ayuda, mueve la carpeta de GTA a Documentos e intenta nuevamente.
+Problema 2: Posiblemente problema de sonido de tu PC, DirectPlay.
+Solución 2: Leer el Error: DSOUND.dll (ctrl + f)
+
+Error: D3DXAPI.asi
+Tipo: Error de carga o fallo
+Solución 1: Descargar e instalar DirectX End-User Web Installer (en esta descarga vendrá la actualización para todos los DirectX de tu PC, por lo que puede solucionar otros problemas también)
+Solución 2: Descargar e instalar Visual C ++ 2013 Redistributable
+Solución 3: Si tienes plugin.dll en tu GTA, elimínalo. Si dice que falta plugin.dll, actualiza los mods que lo necesitan, ya que se han actualizado y ya no deberías usar plugin.dll en tu GTA.
+
+Error: TM.asi
+Tipo: Error de carga
+Solución: Descargar e instalar Visual C++ 2013 Redistributable
+
+Error: KERNELBASE.dll
+Tipo 1: Fallo
+Acerca de: Es un dll general de Windows, por lo que puede ser causado por muchos problemas diferentes y genéricos, como la asignación de memoria. El "backtrace" al final del registro dice mejor la fuente del problema, contacta a alguien experimentado.
+Problema 1: Ya se ha informado al usar un paquete de peatones en HD
+Solución 1: Identificar y eliminar el peatón defectuoso.
+Tipo 2: Fallo al intentar abrir el juego junto con "Runtime Error!".
+Problema 2: Posiblemente problema de sonido de tu PC, DirectPlay. También podría ser un problema con la caché de ModLoader. Ve a la carpeta "C:\Users\(USUARIO)\AppData\Local\modloader" donde "(USUARIO)" es tu nombre de usuario, y elimina todo el contenido. La próxima vez tu juego tardará en abrirse, pero funcionará.
+Solución 2: Leer Error: DSOUND.dll (ctrl+f)
+Tipo 3: ¿Fallo al instalar un mod de césped con SkyGfx instalado?
+Problema 3: Incompatibilidad de modelos de césped.
+Solución 3: Desactivar "ps2grassFiles" de SkyGfx1.ini (y otros .ini de este)
+Problema 4: Límite de CLEO_CALL/SCM_FUNC de algún mod CLEO.
+Solución 4: Si es así, el SCRLog dirá exactamente eso, y qué script fue. Si te ocurre, contacta al autor para solucionarlo, probablemente CLEO_CALL se está llamando sin devolver.
+Problema 5: Archivo .ini mal configurado (letras o caracteres incorrectos en una opción de un archivo .ini).
+Solución 5: Identificar y corregirlo, ya ha ocurrido, por ejemplo, al usar "FFFFFF" en lugar de "0xFFFFFF" en MixSets.
+
+Error: bass.dll
+Tipo: Cualquier mensaje de error relacionado con este, o falta en tu GTA después de desinstalar SAMP.
+Solución: Descargar bass.dll haciendo clic aquí, instalar x86 (32 bits). Recomiendo descargarlo incluso si no tienes el problema, porque algunos mods que usan sonidos o el .dll de SAMP pueden tener problemas, etc.
+
+Error: quartz.dll
+Problema 1: Incompatibilidad con nuevas versiones de Windows.
+Solución 1: Habilitar el modo de compatibilidad con Windows XP (Service Pack 2) en las propiedades del .exe del juego.
+Problema 2: Relacionado con el Pluguin LAV Video
+Solución 2: (enviado por Guto Rocha) En el Menú de Inicio > Programas > K-Lite Codec Pack > Configuración. Haz clic en LAV Video. En la pestaña "Formats", desmarca las casillas correspondientes a los formatos MPEG1, MPEG2 y MPEG3. Aplica y ok. (probado en Windows XP y Windows 10).
+Problema 3: Se ha informado al instalar mods en la carpeta raíz de Mod Loader en lugar de instalar en carpetas dentro de esta, lo cual es un error.
+Solución 3: No instales archivos de mods dejando en "GTA San Andreas / modloader /", siempre instala los archivos en "GTA San Andreas / modloader / alguna carpeta". Hay más información justo en la publicación de descarga de Modloader.
+
+Error: colormod.asi
+Problema: Ya se ha informado como incompatibilidad con Project2DFX. Incluso si no tiene mucho sentido e incluso yo los usé juntos muchas veces y nunca vi un problema, pero puedes intentar desinstalar uno de ellos para ver si se soluciona. El fallo se informó justo al iniciar el juego con los dos juntos. Así como también puede ser incompatibilidad con algún otro mod, o incluso mala instalación de Color Mod.
+
+Error: igdumd32.dll
+Problema: Este .dll es de Intel Graphics (tu tarjeta de video). Podría ser un problema con los controladores gráficos de tu PC, o simplemente un conflicto entre mods gráficos, o un mod de modelo o textura defectuoso. Es difícil saber la razón exacta ya que se trata de gráficos en general.
+
+Error: DSOUND.dll
+Problema: DirectPlay
+Solución 1: Usar SilentPatch
+Solución 2: (enviado por Luiz Felipe): Instalar DirectPlay yendo a Panel de Control>Programas y características>Activar o desactivar las características de Windows (a la izquierda de la ventana)>ir a componentes heredados y marcar la casilla de DirectPlay>instalar y reiniciar la computadora (probado en Windows 8.1 y solucionado).
+
+Error: normalmap.asi o NORMAL~1.ASI
+Problema 1: ¿Tarjeta de video no compatible? Si tu tarjeta de video es muy antigua, esto es posiblemente el problema.
+Problema 2: ¿Instalación incorrecta? Evita Mod Loader para instalar mods de Ryosuke como este.
+
+Error: colormod.asi
+Problema: Incompatibilidad con Project2DFX
+Solución: Desinstalarlo a este o aProject2DFX.
+
+Error: msvcr100.dll msvcp100.dll msvcr110.dll msvcp110.dll msvcr120.dll msvcp120.dll msvcr100d.dll msvcp100d.dll msvcr110d.dll msvcp110d.dll msvcp120d.dll msvcp120d.dll msvcp120d.dll d3d_d3.dll_d3_26.dll
+Tipo: Solicitó el DLL o algún problema con este.
+Solución: Haz clic aquí para ir a la publicación con la descarga de todos ellos.
+
+Error: STREAM~1.ASI
+Acerca de: Verificar la publicación de ImprovedMove: https://www.mixmods.com.br/2019/10/Improved-Move.html
+
+Error: STREAM~1.ASI
+Acerca de: ¿Stream Memory Fix? Si usas esto, tu GTA está desactualizado. Como siempre digo, evita montar tu GTA en otros sitios fuera de MixMods, el Stream Memory Fix es algo de 2007, hoy en día es reemplazable por otras cosas mucho mejores como MixSets y Open Limit Adjuster. Haz clic aquí para la publicación sobre cómo armar un buen GTA.
+
+Error: d3d9.dll
+Problema 1: Es el .dll usado para muchas cosas, pero principalmente cosas relacionadas con la renderización gráfica. Puede ser algún error relacionado con efectos gráficos, modelos, o algún otro mod gráfico que use este dll, pero también hay mods que se hicieron usando este dll, mods súper antiguos del lanzamiento de GTA SA donde terminaron usando este .dll para crear el mod, completamente obsoleto ahora, deja de usar tales mods. Si no usas enb series u otros mods de este dll, debería ser corregible al actualizar tu DirectX Runtime, y luego, si tienes este dll instalado en tu juego, elimínalo (o no).
+Problema 2: Si falló en una misión, extrañamente este dll puede fallar y la solución enviada por Luiz Felipe dice que simplemente debes omitir la escena presionando Enter. Puede ser causado por algún subtítulo defectuoso u otro texto en la pantalla, usualmente por traducciones o mods, en este caso, es mejor contactar al creador y/o desactivar los subtítulos u omitir la escena si es posible. La traducción de Gamevicio tiene este fallo, nuestra traducción pt-br no.
+Problema 3: Si un fallo en el menú Avanzado de los gráficos del juego y estás usando 90s AVP Reborn, fue causado por su Super GT y la solución es simplemente cambiar este coche. De la misma manera, podrías no estar usando el 90s AVP, pero podrías tener este mismo coche, o algún otro coche con el mismo problema, es decir, si este dll falla en este menú, podría ser un coche instalado en tu GTA.
+Problema 4: ¿Durante una explosión? ¿Usando algún mod como Remastered Effects? Si tienes algún 0x007FDE14 y/o 0x007FE7DC y/o 0x004A140A en el "Backtrace" al final del registro, podría ser causado por IgnoreWater de MixSets (o incluso FreezeHour). Entonces, si está habilitado, configura estas funciones en -1 en MixSets.
+
+Error: ntdll.dll
+Problema: Difícil saber la razón exacta ya que es un dll muy común de Windows. Pero es más probable que tenga algo que ver con cargar archivos.
+Primero, si el fallo ocurrió al abrir el juego, simplemente intenta abrirlo una o dos veces más y debería funcionar. Es extraño y aún no sé por qué. Pero este mismo error puede ser causado por otras cosas:
+Solución 1: Al final de "modloader.log", en la línea superior de la dirección del fallo, tendrás el último archivo leído, por ejemplo: "Loading default object types "data\maps\veh_mods\veh_mods.ide"", en este ejemplo, posiblemente falló al intentar leer el archivo veh_mods.ide, verifícalo. Si el último archivo fue un .txd, probablemente no fue un problema con este. También a menudo no puede tener nada que ver, como por ejemplo, si entras a una tienda aparecerá que "shopping.dat" fue cargado por última vez, pero eso no significa que el fallo también fue en este archivo, así que ten cuidado de no estar seguro, pero aún intenta verificarlos, especialmente si el fallo fue al intentar abrir el juego.
+Solución 2: Verificar permisos de Windows y lecturas de archivos, puede ser cualquier archivo, ya sea de la carpeta data o de algún mod. Siempre recomiendo usar GTA en Documentos y no en Archivos de Programa, corrige esto y otros problemas.
+Solución 3: Si falló al seleccionar la radio "User Tracks", actualiza tu versión de CLEO, este error ya se ha solucionado, o elimina el archivo "sa-utrax.dat" de la carpeta "Documentos/GTA San Andreas User Files". También es posible que algún .mp3 allí tenga la codificación incorrecta, GTA SA solo acepta el formato MP3 LAME.
+Solución 4: Si SAMP falló, verifica si "SAMP Fix" está marcado en el .ini de ImVehFt. O si faltan archivos necesarios para que SAMP funcione (en este caso, reinstalar SAMP ayudará)
+Solución 5: Si ves seguido de una ventana de error "std.asi: translator.SteupASI failed to identify caller ASI", es porque fue incompatibilidad de un .asi con otro, mods .asi que modifican lo mismo que el otro. Creo que esto fue una vez debido a vehlightsfix.asi junto con silentpatch.asi, ya que ambos corrigen algunas de las mismas cosas, pero eso fue solo una suposición y también solo un ejemplo.
+Problema 6: Action_x86.dll incompatible con ntdll.dll.
+Solución 6: Cambiar a resolución de color de 32 bits.
+Problema 7: ¿Al entrar en un interior? Según Luiz Felipe, posiblemente uses el mod HiDefCam.asi, tomaste una foto con la memoria de transmisión (stream memory) al límite y luego entraste en un interior donde causó el fallo.
+Solución 7: Desinstalar HiDefCam.asi.
+Problema 8: ¿Después de minimizar el juego?
+Solución 8: Pausar el juego antes de minimizar, o si ya lo pausaste, podría ser el mod SAGrading (colorcycle).
+Solución 9: Intentar instalar Improved Fastloader.
+Solución 10: Falta el archivo stream.ini en la carpeta del juego.
+Solución 11: No uses caracteres especiales (sin puntuación, etc.) en el nombre de la carpeta del juego o en algún lugar a lo largo de la ruta. También no vayas demasiado largo. Ya se ha solucionado después de eliminar caracteres [ y . del nombre de la carpeta del juego, pero no se sabe exactamente si este fue el problema, o si la ruta era demasiado larga, o si fue algún error de Windows, etc.
+Solución 12: Si fue durante user tracks: Ve a "Documentos\GTA San Andreas User Files\User Tracks" y verifica archivos de música corruptos o cualquier otro archivo que no sea en formato mp3. También intenta instalar el Windows Media Player más nuevo desde "Agregar o quitar características" o el sitio web de Microsoft.
+Solución 13: Skin Selector puede causar aleatoriamente un error al leer el archivo .img al abrir el juego, solo ábrelo nuevamente y no causará el problema, aún no se sabe exactamente qué causa esto.
