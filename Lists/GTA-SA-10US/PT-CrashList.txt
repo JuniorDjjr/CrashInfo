@@ -1,4 +1,4 @@
-27/10/24 (DD/MM/YY)
+06/03/25 (DD/MM/YY)
 
 Erro: 0x0040998A
 Problema: Limite relacionado com o streaming de uma herança de arquivos .txd com texturas HD que atingem algum limite do jogo ainda não exatamente entendido, carregado de maneira forçada.
@@ -1255,7 +1255,7 @@ Erro: 0x00553F71
 Problema: Relacionado a renderização do mapa.
 
 Erro: 0x00534134
-Problema 1: O mesmo ID sendo carregado em modelos diferentes, muito comum em instalar diferentes mods de mapa com autores que não se importam com compatibilidades. Se você teve esse crash depois de instalar uma peça no Tuning Mod, foi por que duas peças (ou mais algum outro mod diferente) estão usando o mesmo ID, informe ao autor e/ou siga este tutorial para corrigir a incompatibilidade.
+Problema 1: O mesmo ID sendo carregado em modelos diferentes, muito comum em instalar diferentes mods de mapa com autores que não se importam com compatibilidades. Se você teve esse crash depois de instalar uma peça no Tuning Mod, foi por que duas peças (ou mais algum outro mod diferente) estão usando o mesmo ID, informe ao autor ou corrija incompatibilidade.
 Solução 1: Reveja seus novos arquivos IDE, algum pode estar usando o mesmo ID do outro. Na maioria dos mods (não scripts) você pode simplesmente abrir e trocar o ID por algum outro livre (clique aqui para ver a lista ou use este tutorial para corrigir a incompatibilidade).
 Problema 2: COL impróprio (ou faltando)
 Solução 2: COL: Reveja se o COL está sendo carregado no IMG ou Mod Loader, caso IMG, reveja também se o IMG está sendo carregado no gta.dat ou Mod Loader. Para instalar um COL no Mod Loader de maneira correta, siga o Tutorial de Mod Loader na parte onde fala sobre instalação de .COL
@@ -1263,6 +1263,10 @@ Problema 3: Objeto com LOD foi removido.
 Solução 3: Remover um objeto do mapa que contenha LOD, é necessário o uso tanto do arquivo *_stream*.ipl (dentro do gta3.img) quanto o .ipl da pasta data/maps. Se você por exemplo remover um objeto somente no arquivo *_stream*.ipl mas não remover também do .ipl da pasta data/maps, causará este crash. O que também pode ocorrer na instalação de algum mod, por exemplo você já tem um mod que altera o mesmo arquivo .ipl, assim o tal arquivo necessário não será carregado e causará este crash. Você terá que verificar se os arquivos estão todos instalados e carregando (você pode consultar o modloader.log para ver se está sendo carregado, se já tem outro mesmo arquivo instalado etc). Alternativamente, se você está criando um mod de mapa, você pode mover o objeto para o subsolo ao invés de deletá-lo, assim evitará problemas como este mas também terá que fazer o mesmo com o LOD (que fica no .ipl da pasta data/maps).
 Problema 4: Você está com algum .img do jogo aberto em algum programa, como Alci's IMG Editor.
 Solução 4: Feche-o.
+Problema 5: Falta de colisor, provavelmente o jogo tentou criar um objeto que não está mais instalado em seu jogo ou não foi adicionado o colisor de algum modelo.
+Solução 5: Verifique a instalação dos mods que você tem, especialmente scripts com modelos adicionados sem substituir. RepairGTA pode remover automaticamente todos os objetos com modelo inexistente salvo em seu jogo salvo e assim corrigir este crash.
+Problema 6: Falta de arquivo .txd referente á uma linha TXDP.
+Solução 6: Identifique qual mod está causando o problema e verifique os arquivos .ide, removendo a linha TXDP responsável por carregar o txd faltante. Foi relatado ao remover o mod Proper Fixes ou SA Optimized Map e possuir algum outro mod que tenha uma linha TXDP com o nome de algum arquivo txd pertencente a eles.
 
 Erro: 0x0040E179
 Tipo: O jogo freeza ao olhar para um objeto
