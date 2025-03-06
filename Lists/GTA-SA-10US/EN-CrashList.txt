@@ -1,4 +1,4 @@
-27/10/24 (DD/MM/YY)
+06/03/25 (DD/MM/YY)
 
 Error: 0x0040998A
 Problem: Limit related to streaming a inheritance of .txd files with HD textures that reach some limit of the game that is not yet fully understood, loaded in a forced manner.
@@ -1267,6 +1267,10 @@ Problem 3: Object with LOD was removed.
 Solution 3: Remove a map object that contains LOD, it is necessary to use both the *_stream*.ipl file (inside gta3.img) and the .ipl file from the data/maps folder. If you for example remove an object only in the *_stream*.ipl file but not also remove it from the .ipl from the data/maps folder, it will cause this crash. What can also happen when installing a mod, for example you already have a mod that changes the same .ipl file, so the necessary file will not be loaded and will cause this crash. You will have to check that the files are all installed and loading (you can check modloader.log to see if it is loading, if you already have another file installed etc). Alternatively, if you're creating a map mod, you can move the object underground instead of deleting it, so you'll avoid problems like this but you'll also have to do the same with the LOD (which is in the .ipl of the data folder / maps).
 Problem 4: You have some game .img open in some program, like Alci's IMG Editor.
 Solution 4: Close it.
+Problem 5: Missing collider, probably the game tried to create an object that is no longer installed in your game or the collider for some model was not added.
+Solution 5: Check the installation of the mods you have, especially scripts with models added without replacing. RepairGTA can automatically remove all objects with a non-existent model saved in your saved game and thus fix this crash.
+Problem 6: Missing .txd file referring to a TXDP line.
+Solution 6: Identify which mod is causing the problem and check the .ide files, removing the TXDP line responsible for loading the missing txd. It has been reported when removing the Proper Fixes or SA Optimized Map mod and having another mod that has a TXDP line with the name of a txd file belonging to them.
 
 Error: 0x0040E179
 Type: The game freezes when looking at an object
