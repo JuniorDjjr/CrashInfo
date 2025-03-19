@@ -1,4 +1,4 @@
-06/03/25 (DD/MM/YY)
+19/03/25 (DD/MM/YY)
 
 Error: 0x0040998A
 Problem: Limit related to streaming a inheritance of .txd files with HD textures that reach some limit of the game that is not yet fully understood, loaded in a forced manner.
@@ -1020,8 +1020,10 @@ Error: 0x0065ED19
 Solution: This crash has already been solved by cleaning the Mod Loader folder, removing unnecessary files. But I believe this doesn't make sense and it wasn't really because of that
 
 Error: 0x0048C3A9
-Problem: Error trying to load an IFP. Quite possibly the IFP is not installed on your GTA.
-Solution: Check the installation of the IFPs. In SCRLog.log it should have the name of the script in which you requested the IFP
+Problem 1: Error when trying to load an IFP. Possibly the .IFP file is not installed in your game.
+Solution 1: Check the installation of the IFP. The SCRLog.log should contain the name of the script that requested the IFP.
+Problem 2: Some limit in the game caused by the "PreLoadAnims = 1" option in the Improved Streaming .ini file.
+Solution 1: Disable "PreLoadAnims" by setting it to "0".
 
 Error: 0x0057A065
 Problem 1: It has already been reported when using buggy car. Reported with mod 90s AVP because of Bandito, where after spawning him and going to display menu, it will crash.
