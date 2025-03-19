@@ -1,4 +1,4 @@
-06/03/25 (DD/MM/AA)
+19/03/25 (DD/MM/AA)
 
 Error: 0x0040998A
 Problema: Límite relacionado con la transmisión de una herencia de archivos .txd con texturas HD que alcanzan algún límite del juego que aún no se comprende completamente, cargado de manera forzada.
@@ -1020,8 +1020,10 @@ Error: 0x0065ED19
 Solución: Este fallo ya se ha solucionado al limpiar la carpeta de Mod Loader, eliminando archivos innecesarios. Pero creo que esto no tiene sentido y realmente no fue por eso
 
 Error: 0x0048C3A9
-Problema: Error al intentar cargar un IFP. Bastante posiblemente el IFP no esté instalado en tu GTA.
-Solución: Verificar la instalación de los IFPs. En SCRLog.log debería tener el nombre del script en el que solicitaste el IFP
+Problema 1: Error al intentar cargar un IFP. Es posible que el archivo .IFP no esté instalado en tu juego.
+Solución 1: Verifique la instalación del IFP. En SCRLog.log debe tener el nombre del script en el que solicitó el IFP.
+Problema 2: Algunos límites del juego causados ​​por la opción "PreLoadAnims=1" en el archivo .ini de Improved Streaming.
+Solución 1: Deshabilite “PreLoadAnims” configurándolo en "0".
 
 Error: 0x0057A065
 Problema 1: Ya se ha informado al usar coche defectuoso. Informado con el mod 90s AVP debido a Bandito, donde después de generarlo e ir al menú de visualización, fallará.
