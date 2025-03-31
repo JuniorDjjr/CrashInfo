@@ -1,4 +1,4 @@
-29/03/25 (DD/MM/AA)
+31/03/25 (DD/MM/AA)
 
 Error: 0x0040998A
 Problema: Límite relacionado con la transmisión de una herencia de archivos .txd con texturas HD que alcanzan algún límite del juego que aún no se comprende completamente, cargado de manera forzada.
@@ -1537,3 +1537,4 @@ Solución 10: Falta el archivo stream.ini en la carpeta del juego.
 Solución 11: No uses caracteres especiales (sin puntuación, etc.) en el nombre de la carpeta del juego o en algún lugar a lo largo de la ruta. También no vayas demasiado largo. Ya se ha solucionado después de eliminar caracteres [ y . del nombre de la carpeta del juego, pero no se sabe exactamente si este fue el problema, o si la ruta era demasiado larga, o si fue algún error de Windows, etc.
 Solución 12: Si fue durante user tracks: Ve a "Documentos\GTA San Andreas User Files\User Tracks" y verifica archivos de música corruptos o cualquier otro archivo que no sea en formato mp3. También intenta instalar el Windows Media Player más nuevo desde "Agregar o quitar características" o el sitio web de Microsoft.
 Solución 13: Skin Selector puede causar aleatoriamente un error al leer el archivo .img al abrir el juego, solo ábrelo nuevamente y no causará el problema, aún no se sabe exactamente qué causa esto.
+Solución 14: Tiene alguno de los siguientes archivos en ModLoader que no siguen la dirección tal como está en la carpeta original (¿problema original de ModLoader?): data/gridref.dat; datos/Decisión/PedEvent.txt; datos/Rutas/ROADBLOX.DAT; modelos/coll/peds.col
