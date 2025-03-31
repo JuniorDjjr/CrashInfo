@@ -1,4 +1,4 @@
-29/03/25 (DD/MM/YY)
+31/03/25 (DD/MM/YY)
 
 Erro: 0x0040998A
 Problema: Limite relacionado com o streaming de uma herança de arquivos .txd com texturas HD que atingem algum limite do jogo ainda não exatamente entendido, carregado de maneira forçada.
@@ -1542,6 +1542,7 @@ Solução 10: Falta o arquivo stream.ini na pasta do jogo.
 Solução 11: Não use caracteres especiais (nem pontuações etc) no nome da pasta do jogo ou em algum local do caminho. Também não use caminho longo demais. Já foi solucionado após remover caracteres [ e . do nome da pasta do jogo, mas não se sabe exatamente se era isto o problema, ou se o caminho era longo demais, ou se era algum bug do Windows etc.
 Solução 12: Se foi durante a rádio de usuário: Vá em "Documents\GTA San Andreas User Files\User Tracks" e verifique se há arquivos de música corrompidos ou qualquer outro arquivo que não seja o formato mp3. Também tente instalar o mais novo Windows Media Player pelo "Adicionar ou remover programas" ou site da Microsoft.
 Solução 13: Skin Selector aleatoriamente pode causar erro ao ler o arquivo .img ao abrir o jogo, basta abrir de novo que não causará o problema, ainda não se sabe ao certo o que faz causar isto.
+Solução 14: Você tem algum dos seguintes arquivos no ModLoader que não seguem o endereço como é na pasta original (problema original do ModLoader?): data/gridref.dat; data/Decision/PedEvent.txt; data/Paths/ROADBLOX.DAT; models/coll/peds.col
 
 
 Outros problemas:
@@ -1554,8 +1555,7 @@ Sobre: Tentando usar o instalador mas ele já identifica que o jogo está instal
 Solução: Abra o menu iniciar, digite regedit e abra o regedit.exe. Vá em HKEY_LOCAL_MACHINE -> SOFTWARE, lá terá uma "pasta" Rockstar Games, e dentro GTA San Andreas com uma "chave" dentro dela. Delete a chave ou a própria pasta "GTA San Andreas".
 Se não encontrou, procure dentro da HKEY_CURRENT_USER.
 
-Erro: Mensagem "Runtime Error!" "This application has requested the Runtime to terminate it in
-an unusual way."
+Erro: Mensagem "Runtime Error!" "This application has requested the Runtime to terminate it in an unusual way."
 Sobre: Pode ser causado por algum erro em algum mod .asi. O "modloader.log" ou outro crash dump pode dar uma dica de qual foi o mod (mesmo que não 100% correto).
 Durante o gameplay: Além de .asi, pode ter sido causado por alto uso de memória caso você tenha configurado o jogo para usar 2 GB de stream memory sem usar largeaddress.
 Ao tentar iniciar o jogo: Além de .asi, pode ser problema do cachê do ModLoader. Vá na pasta "C:\Users\JuniorDjjr\AppData\Local\modloader" onde "JuniorDjjr" é o seu nome de usuário, e delete todo o conteúdo. Da próxima vez seu jogo demorará um pouco para abrir, mas funcionará.
