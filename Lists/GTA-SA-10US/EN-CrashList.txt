@@ -1,4 +1,4 @@
-29/03/25 (DD/MM/YY)
+31/03/25 (DD/MM/YY)
 
 Error: 0x0040998A
 Problem: Limit related to streaming a inheritance of .txd files with HD textures that reach some limit of the game that is not yet fully understood, loaded in a forced manner.
@@ -1543,6 +1543,7 @@ Solution 10: The stream.ini file is missing from the game folder.
 Solution 11: Don't use special characters (no punctuation etc) in the game folder name or somewhere along the path. Also don't go too long. Has already been fixed after removing characters [ and . of the game folder name, but it is not exactly known if this was the problem, or if the path was too long, or if it was some Windows bug etc.
 Solution 12: If it was during user tracks: Go to "Documents\GTA San Andreas User Files\User Tracks" and check for corrupted music files or any other file other than mp3 format. Also try installing the newest Windows Media Player from "Add or Remove Features" or Microsoft's website.
 Solution 13: Skin Selector may randomly cause an error reading the .img file when opening the game, just open it again and it will not cause the problem, it is not yet known exactly what causes this.
+Solution 14: You have any of the following files in ModLoader that do not follow the address as it is in the original folder (original ModLoader problem?): data/gridref.dat; data/Decision/PedEvent.txt; data/Paths/ROADBLOX.DAT; models/coll/peds.col
 
 
 Other problems:
@@ -1555,8 +1556,7 @@ About: Trying to use the installer but it already identifies that the game is in
 Solution: Open the start menu, type regedit and open regedit.exe. Go to HKEY_LOCAL_MACHINE -> SOFTWARE, there will be a "folder" Rockstar Games, and inside GTA San Andreas with a "key" inside it. Delete the key or the "GTA San Andreas" folder itself.
 If not, look inside HKEY_CURRENT_USER.
 
-Error: Message "Runtime Error!" "This application has requested the Runtime to terminate it in
-an unusual way."
+Error: Message "Runtime Error!" "This application has requested the Runtime to terminate it in an unusual way."
 About: It could be caused by an error in some .asi mod. The "modloader.log" or other crash dump can give a hint of what the mod was (even if not 100% correct).
 During gameplay: In addition to .asi, it may have been caused by high memory usage if you configured the game to use 2GB of stream memory without using largeaddress.
 When trying to start the game: In addition to .asi, it may be ModLoader's cache problem. Go to the folder "C:\Users\JuniorDjjr\AppData\Local\modloader" where "JuniorDjjr" is your username, and delete all content. Next time your game will take a while to open, but it will work.
