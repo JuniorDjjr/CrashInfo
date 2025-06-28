@@ -1,4 +1,4 @@
-31/03/25 (DD/MM/AA)
+27/06/25 (DD/MM/AA)
 
 Error: 0x0040998A
 Problema: Límite relacionado con la transmisión de una herencia de archivos .txd con texturas HD que alcanzan algún límite del juego que aún no se comprende completamente, cargado de manera forzada.
@@ -1261,18 +1261,18 @@ Error: 0x00553F71
 Problema: Relacionado con la renderización del mapa.
 
 Error: 0x00534134
-Problema 1: El mismo ID siendo cargado en diferentes modelos, muy común al instalar diferentes mods de mapa con autores que no se preocupan por la compatibilidad. Si tuviste este fallo después de instalar una parte en Tuning Mod, es porque dos partes (o algún otro mod diferente) están usando el mismo ID, informa al autor o arreglar la incompatibilidad.
-Solución 1: Revisar tus nuevos archivos IDE, uno podría estar usando el mismo ID que el otro. En la mayoría de los mods (no scripts) puedes simplemente abrir y cambiar el ID a uno libre (haz clic aquí para la lista o usa este tutorial para solucionar la incompatibilidad).
-Problema 2: COL inapropiado (o faltante)
-Solución 2: COL: Revisar si el COL se está cargando en el IMG o Mod Loader, si es IMG, también revisar si el IMG se está cargando en gta.dat o Mod Loader. Para instalar un COL en Mod Loader correctamente, sigue el Tutorial de Mod Loader en la parte donde habla sobre instalar .COL
-Problema 3: Objeto con LOD fue eliminado.
-Solución 3: Eliminar un objeto de mapa que contiene LOD, es necesario usar tanto el archivo *_stream*.ipl (dentro de gta3.img) como el archivo .ipl de la carpeta data/maps. Si, por ejemplo, eliminas un objeto solo en el archivo *_stream*.ipl pero no también lo eliminas del .ipl de la carpeta data/maps, causará este fallo. Lo que también puede ocurrir al instalar un mod, por ejemplo, ya tienes un mod que cambia el mismo archivo .ipl, por lo que el archivo necesario no se cargará y causará este fallo. Tendrás que verificar que los archivos estén todos instalados y cargando (puedes verificar modloader.log para ver si se está cargando, si ya tienes otro archivo instalado, etc.). Alternativamente, si estás creando un mod de mapa, puedes mover el objeto bajo tierra en lugar de eliminarlo, así evitarás problemas como este, pero también tendrás que hacer lo mismo con el LOD (que está en el .ipl de la carpeta data).
-Problema 4: Tienes algún .img del juego abierto en algún programa, como Alci's IMG Editor.
-Solución 4: Ciérralo.
-Problema 5: Falta el colisionador, probablemente el juego intentó crear un objeto que ya no está instalado en el juego o no se agregó el colisionador de algún modelo.
-Solución 5: Revisa la instalación de mods que tengas, especialmente scripts con modelos añadidos sin reemplazar. RepairGTA puede eliminar automáticamente todos los objetos con modelos inexistentes guardados en tu juego guardado y así solucionar este fallo.
-Problema 6: Falta el archivo .txd que hace referencia a una línea TXDP.
-Solución 6: Identifique qué mod está causando el problema y verifique los archivos .ide, eliminando la línea TXDP responsable de cargar el txd faltante. Se ha informado al eliminar el mod Proper Fixes o SA Optimized Map y tener algún otro mod que tiene una línea TXDP con el nombre de algún archivo txd que les pertenece.
+Problema 1: Se carga el mismo número de ID en diferentes modelos, algo muy común al instalar diferentes mods de mapas, objetos o piezas para Tuning Mod con autores a quienes no les importa la compatibilidad.
+Solución 1: Revisa tus archivos IDE. Si identificas un mod, notifica al autor. Es posible que algún mod esté usando el mismo número de ID que otro que hayas instalado. En la mayoría de los mods (no scripts), puedes simplemente abrir y cambiar el ID por uno gratuito: https://tuningmod.mixmods.com.br/p/ids.html
+Problema 2: Estás usando Proper Fixes con RoSA Evolved y olvidaste aumentar la prioridad de Proper Fixes en "modloader.ini".
+Solución 2: Aumenta la prioridad de Proper Fixes o reduce la de RoSA. Consulta cómo en: https://www.mixmods.com.br/2015/07/tutorial-dicas-tudo-sobre-modloader-gta/#Priority o: https://github.com/jessicanataliagta/tutorials_for_gta/wiki/GTA-SA-‐-How-to-Install-RoSA-Evolved
+Problema 3: COL incorrecto (o faltante)
+Solución 3: Comprueba si el archivo COL se carga en el IMG o en el cargador de mods. Si es un IMG, comprueba también si se carga en gta.dat o en el cargador de mods. Para instalar un COL correctamente en el cargador de mods, sigue el tutorial del cargador de mods en la sección sobre la instalación de .COL.
+Problema 4: Se eliminó un objeto con LOD. Solución 4: Para eliminar un objeto del mapa que contiene LOD, debes usar tanto el archivo *_stream*.ipl (dentro del archivo .img) como el archivo de texto .ipl de la carpeta data/maps (que puede causar otros problemas en las partidas guardadas al cambiar el orden de las líneas; se recomienda simplemente ocultarlo). Esto puede ocurrir al instalar un mod; por ejemplo, si ya tienes un mod que modifica el mismo archivo .ipl, búscalo en ModLoader.
+Problema 5: Tienes un archivo .img del juego abierto en algún programa, como el editor IMG de Alci.
+Solución 5: Ciérralo.
+Problema 6: Falta el colisionador; probablemente el juego intentó crear un objeto que ya no está instalado o no se agregó el colisionador de un modelo.
+Solución 6: Revisa la instalación de tus mods, especialmente los scripts con modelos agregados sin reemplazar. El mod RepairGTA puede eliminar automáticamente todos los objetos con un modelo inexistente guardado en tu partida guardada y, por lo tanto, solucionar este fallo. Problema 7: Falta el archivo .txd que hace referencia a una línea TXDP.
+Solución 7: Identifica el mod que causa el problema y revisa los archivos .ide, eliminando la línea TXDP responsable de cargar el txd faltante. Se ha reportado al eliminar el mod Proper Fixes o SA Optimized Map y tener otro mod con una línea TXDP con el nombre de un archivo txd que les pertenece.
 
 Error: 0x0040E179
 Tipo: El juego se congela al mirar un objeto
