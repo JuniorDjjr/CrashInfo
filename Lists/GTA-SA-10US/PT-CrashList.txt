@@ -1,4 +1,4 @@
-27/06/25 (DD/MM/YY)
+01/07/25 (DD/MM/YY)
 
 Erro: 0x0040998A
 Problema: Limite relacionado com o streaming de uma herança de arquivos .txd com texturas HD que atingem algum limite do jogo ainda não exatamente entendido, carregado de maneira forçada.
@@ -623,7 +623,7 @@ Erro: 0xE8AC1250 (em "Backtrace" no fim do log terá vários "unknown" e um shel
 Problema: Algum tipo de incompatibilidade do vehlightsfix.asi
 Solução: Corrigido ao aumentar a prioridade dele no modloader.ini, ou seja, coloque ele numa pasta e deixe esta pasta numa prioridade grande, como "100". Clique aqui para saber como.
 
-Erro: 0x00406034, 0x00406035, 0x00406036, 0x00406037, 0x00406038, 0x004F243E, 0x00405FDC, 0x004F2442, 0x00552A07
+Erro: 0x00406034, 0x00406035, 0x00406036, 0x00406037, 0x00406038, 0x004F243E, 0x00405FDC, 0x004F2442, 0x00552A07, 0x008369B0
 Problema: Limites de arquivos .ipl que contém objetos na section "inst".
 Solução 1: Instale Open Limit Adjuster (versão 1.5.9 ou mais nova) que aumentará os limites automaticamente.
 Solução 2: Instale fastman92 limit adjuster, aumentando o limite "Entity index array".
