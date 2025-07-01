@@ -1,4 +1,4 @@
-27/06/25 (DD/MM/YY)
+01/07/25 (DD/MM/YY)
 
 Error: 0x0040998A
 Problem: Limit related to streaming a inheritance of .txd files with HD textures that reach some limit of the game that is not yet fully understood, loaded in a forced manner.
@@ -627,7 +627,7 @@ Error: 0xE8AC1250 (in "Backtrace" at the end of the log you will have several "u
 Problem: Some kind of incompatibility from vehlightsfix.asi
 Solution: Fixed increasing its priority in modloader.ini, ie put it in a folder and leave this folder at a high priority, like "100". Click here to learn how.
 
-Error: 0x00406034, 0x00406035, 0x00406036, 0x00406037, 0x00406038, 0x004F243E, 0x00405FDC, 0x004F2442, 0x00552A07
+Error: 0x00406034, 0x00406035, 0x00406036, 0x00406037, 0x00406038, 0x004F243E, 0x00405FDC, 0x004F2442, 0x00552A07, 0x008369B0
 Problem: Limits on .ipl files that contain objects in the "inst" section.
 Solution 1: Install Open Limit Adjuster (version 1.5.9 or newer) which will automatically increase the limits.
 Solution 2: Install fastman92 limit adjuster, increasing the "Entity index array" limit.
