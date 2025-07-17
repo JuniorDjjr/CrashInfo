@@ -1,5 +1,9 @@
-31/12/24 (DD/MM/AA)
+16/07/25 (DD/MM/AA)
 
 Error: std.stream.dll o STDSTR~1.DLL
 Problema: Carga de archivo por Streaming.
 Solución 1: Si usas Open Limit Adjuster, puede haber un conflicto con algo, desactiva la línea "StreamingInfo" bajo "GTA3Limits" colocando un ";" o eliminando la línea.
+
+Error: 0x00407F84
+Problema: El modelo del vehículo no existe
+Solución: Identificar y verificar que el vehículo que se intenta crear esté realmente instalado.
