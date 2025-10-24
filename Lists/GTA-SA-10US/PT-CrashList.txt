@@ -1,8 +1,8 @@
-01/07/25 (DD/MM/YY)
+24/10/25 (DD/MM/YY)
 
 Erro: 0x0040998A
-Problema: Limite relacionado com o streaming de uma herança de arquivos .txd com texturas HD que atingem algum limite do jogo ainda não exatamente entendido, carregado de maneira forçada.
-Solução: Foi notado com o novo RoSA Evolved junto com o novo Proper Fixes, pois ambos atingem o tal limite quando junta toda a herança de "txdp", no carregamento forçado (que acontece num frame no Load Game do CJ na Grove causado pelo Improved Fastloader, se ignorar o loading automático do Save não dá o problema, também pode depender do jogo salvo estar ou não salvo na Grove). A nova versão do RoSA Evolved será atualizada para que o limite não seja atingido e iremos atrás de entender e resolver esse limite do jogo.
+Problema: Limite relacionado com o streaming de uma herança de arquivos .txd (txdp). Aparentemente acontece ao tentar abrir o jogo com um limite de stream memory baixo demais.
+Solução: Use algum mod que possa ajustar o limite de streaming memory (isto é, Open Limit Adjuster, MixSets ou Improved Streaming), se você já usa, tente aumentar o limite. Recomendado instalar nosso mod Improved Streaming, nele há boas pré-configurações e sempre força a usar aquele limite, substituindo o limite definido por outros mods.
 
 Erro: 0x015691EE
 Problema: Limite de modelos de veículos com paintjob.
