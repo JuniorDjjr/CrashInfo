@@ -1,4 +1,4 @@
-24/10/25 (DD/MM/AA)
+23/12/25 (DD/MM/AA)
 
 Error: 0x0040998A
 Problema: Límite relacionado con la streaming desde un archivo .txd (txdp) de herencia. Esto parece ocurrir al intentar iniciar el juego con un límite de memoria de streaming demasiado bajo.
@@ -402,7 +402,8 @@ Solución: Podría haber sido algún mod de efectos especiales que hayas instala
 
 Error: 0x0156A2A7
 Problema: Alcanzó el límite de scripts (CRunningScripts) (no .cs).
-Solución: Usar el ajustador de límites de fastman92. Buscar "Running scripts" dentro del .ini, eliminar el "#" al principio de la línea y aumentar el número a como 200... o 300...... "Running scripts = 200".
+Solución 1: Usar el ajustador de límites de fastman92. Buscar "Running scripts" dentro del .ini, eliminar el "#" al principio de la línea y aumentar el número a como 200... o 300...... "Running scripts = 200".
+Solución 2: Si el problema ocurrió en interiores tras causar caos (como un tiroteo), podría tratarse de un problema común: el juego se ejecuta con el número máximo de personas permitido en un interior, y al causar caos se activa un script que afecta a todos random. En otras palabras, un mod añadió más personas al interior, lo que provocó que se alcanzara el límite. Urbanize tenía este problema y se solucionó en 2026.
 
 Error: 0x0040AB3B
 Problema: Línea(s) vacía(s) de data\pedgrp.dat o nombre de peatón incorrecto, etc.
