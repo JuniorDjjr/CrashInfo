@@ -1,4 +1,4 @@
-24/10/25 (DD/MM/YY)
+23/12/25 (DD/MM/YY)
 
 Error: 0x0040998A
 Problem: Limit related to streaming of inheritance of .txd (txdp) file archive. Apparently, this happens when trying to open the game with a streaming memory limit that is too low.
@@ -402,7 +402,8 @@ Solution: It could have been some special effect mod you have installed. Identif
 
 Error: 0x0156A2A7
 Problem: Hit the script limit (CRunningScripts) (not .cs).
-Solution: Use fastman92 limit adjuster. Look for "Running scripts" inside the .ini, remove the "#" at the beginning of the line and increase the number to like 200... or 300...... "Running scripts = 200".
+Solution 1: Use fastman92 limit adjuster. Look for "Running scripts" inside the .ini, remove the "#" at the beginning of the line and increase the number to like 200... or 300...... "Running scripts = 200".
+Solution 2: If the problem occurred indoors after causing chaos (such as shooting), it may be a common issue where the game originally runs at the maximum number of people allowed indoors, and causing chaos triggers a script that affects everyone random (not script controlled). In other words, a mod added extra people to the interior, causing it to reach the limit. Urbanize had this problem, and it was fixed in 2026.
 
 Error: 0x0040AB3B
 Problem: Empty data\pedgrp.dat line(s) or pedestrian name is wrong etc.
