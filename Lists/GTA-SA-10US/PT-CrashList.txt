@@ -1,4 +1,4 @@
-24/10/25 (DD/MM/YY)
+23/12/25 (DD/MM/YY)
 
 Erro: 0x0040998A
 Problema: Limite relacionado com o streaming de uma herança de arquivos .txd (txdp). Aparentemente acontece ao tentar abrir o jogo com um limite de stream memory baixo demais.
@@ -398,7 +398,8 @@ Solução: Pode ter sido algum mod de efeito especial que você tenha instalado.
 
 Erro: 0x0156A2A7
 Problema: Bateu o limite de scripts (CRunningScripts) (não os .cs).
-Solução: Use fastman92 limit adjuster. Procure por "Running scripts" dentro do .ini, remova o "#" no início da linha e aumente o número para uns 200... ou 300..... "Running scripts = 200".
+Solução 1: Use fastman92 limit adjuster. Procure por "Running scripts" dentro do .ini, remova o "#" no início da linha e aumente o número para uns 200... ou 300..... "Running scripts = 200".
+Solução 2: Se o problema aconteceu em um interior após causar confusão (como atirar), pode ser um problema comum onde o jogo originalmente roda no limite de pessoas num interior e ao causar confusão, aplica um script em todas as pessoas random (não controlado por script), ou seja, algum mod adicionou pessoas a mais no interior fazendo atingir o limite. Urbanize havia esse problema e foi corrigido em 2026.
 
 Erro: 0x0040AB3B
 Problema: Linha(s) do data\pedgrp.dat vazia(s) ou nome de algum pedestre estar errado etc.
