@@ -1,4 +1,8 @@
-23/12/25 (DD/MM/YY)
+04/01/26 (DD/MM/YY)
+
+Error: 0x004C666A
+Problem: Atomic damage limit.
+Solution: Install Open Limit Adjuster, or if you prefer, configure f92la.
 
 Error: 0x0040998A
 Problem: Limit related to streaming of inheritance of .txd (txdp) file archive. Apparently, this happens when trying to open the game with a streaming memory limit that is too low.
