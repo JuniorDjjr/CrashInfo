@@ -1,4 +1,8 @@
-04/01/26 (DD/MM/YY)
+09/01/26 (DD/MM/YY)
+
+Erro: 0x007570C7
+Problema: Renderização de um vertex shader de uma mesh.
+Solução: Algum .dff corrompido, identifique e remova. Pode ser que o problema ocorra em determinado local do mapa que tenha tal modelo de objeto.
 
 Erro: 0x004C666A
 Problema: Limite de damage atomic.
