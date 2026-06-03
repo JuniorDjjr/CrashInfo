@@ -862,8 +862,8 @@ Problem 1: PedSpec mod incompatibility with Proper Shaders.
 Solution 1: It's not compatible, but technically it does the same thing and better. If any mod you downloaded needs PedSpec, ask the author to fix their mod (because PedSpec "unintentionally" corrects skin models using more than 4 weights on the vertices, which is not supported by the game, and modern games usually don't accept this for optimization reasons).
 Problem 2: Some buggy model or graphics mod that messes with the models. People/pedestrian models.
 Solution 2: This has already been solved by removing the Normal Map from DK22Pac while using Insanity Peds and Insanity Weapons Items. Remember that using these mods without the DK Normal Map mod will work, it just won't have the Normal Map effect. The same crash has occurred even in other mods that use Normal Map, even without having SkyGfx installed.
-Problem 3: Brave.
-Solution 3: Close the Brave browser. There are some solutions that have no logical explanation; we just accept them and don't sleep at night.
+Problem 3: Some RAM issue.
+Solution 3: Solved closing something, e.g. Brave browser. There are some solutions that have no logical explanation; we just accept them and don't sleep at night.
 
 Error: 0x006E18F6
 Problem: Texture of car flashlight light. It was reported when installing ImVehFt 2.0.2
