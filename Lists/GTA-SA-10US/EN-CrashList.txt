@@ -1,4 +1,4 @@
-09/01/26 (DD/MM/YY)
+02/06/26 (DD/MM/YY)
 
 Error: 0x007570C7
 Problem: Rendering a vertex shader of a mesh.
@@ -858,8 +858,12 @@ Problem: Some vehicle reflection material.
 Solution: Try to identify which vehicle, basically this type of error is: If the buggy car loads, when you close the game (or use load game?) it will crash, following that you can try to find out which was the buggy vehicle. Remembering that just entering the game and going to the street will load several cars referring to the place. The SkipShutdown function of MixSets removes the error message.
 
 Error: 0x007C94E7
-Problem: Some buggy model or graphic mod that messes with the models. Models of people/pedestrians.
-Solution: Has already been fixed by removing Normal Map from DK22Pac while using Insanity Peds and Insanity Weapons Items. Remembering that using these mods without DK's Normal Map mod will work, but it won't have the effect of Normal Map. The same crash has already occurred in other mods that use Normal Map, even without having SkyGfx installed.
+Problem 1: PedSpec mod incompatibility with Proper Shaders.
+Solution 1: It's not compatible, but technically it does the same thing and better. If any mod you downloaded needs PedSpec, ask the author to fix their mod (because PedSpec "unintentionally" corrects skin models using more than 4 weights on the vertices, which is not supported by the game, and modern games usually don't accept this for optimization reasons).
+Problem 2: Some buggy model or graphics mod that messes with the models. People/pedestrian models.
+Solution 2: This has already been solved by removing the Normal Map from DK22Pac while using Insanity Peds and Insanity Weapons Items. Remember that using these mods without the DK Normal Map mod will work, it just won't have the Normal Map effect. The same crash has occurred even in other mods that use Normal Map, even without having SkyGfx installed.
+Problem 3: Brave.
+Solution 3: Close the Brave browser. There are some solutions that have no logical explanation; we just accept them and don't sleep at night.
 
 Error: 0x006E18F6
 Problem: Texture of car flashlight light. It was reported when installing ImVehFt 2.0.2
