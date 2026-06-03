@@ -1,4 +1,4 @@
-09/01/26 (DD/MM/YY)
+02/06/26 (DD/MM/YY)
 
 Erro: 0x007570C7
 Problema: Renderização de um vertex shader de uma mesh.
@@ -854,8 +854,12 @@ Problema: Algum material de reflexo de algum veículo.
 Solução: Tente identificar qual veículo., basicamente esse tipo de erro é: Se o carro bugado carregar, quando fechar o jogo (ou usar load game?) irá crashar, seguindo isso vc pode tentar descobrir qual foi o veículo com bug. Lembrando que só de entrar no jogo e ir pra rua já irá carregar vários carros referente ao local. A função SkipShutdown do MixSets remove a mensagem deste erro.
 
 Erro: 0x007C94E7
-Problema: Algum modelo bugado ou mod gráfico que mexe com os modelos. Modelos de pessoas/pedestres.
-Solução: Já foi solucionado ao remover o Normal Map do DK22Pac enquanto usava Insanity Peds e Insanity Weapons Items. Lembrando que usar estes mods sem o mod de Normal Map do DK funcionará sim, só não terá o efeito do Normal Map. O mesmo crash já ocorreu mesmo em outros mods que utilizam Normal Map, mesmo sem ter SkyGfx instalado.
+Problema 1: Incompatibilidade do mod PedSpec com Proper Shaders. 
+Solução 1: Não é compatível mas tecnicamente faz o mesmo e melhor. Se algum mod que você baixou precisa do PedSpec, peça para o autor corrigir o mod dele (pois o PedSpec "sem querer" corrige modelos de skins usando mais de 4 weights nas vértices, não é suportado pelo jogo, nem jogos modernos normalmente aceitam isto por questões de otimização).
+Problema 2: Algum modelo bugado ou mod gráfico que mexe com os modelos. Modelos de pessoas/pedestres.
+Solução 2: Já foi solucionado ao remover o Normal Map do DK22Pac enquanto usava Insanity Peds e Insanity Weapons Items. Lembrando que usar estes mods sem o mod de Normal Map do DK funcionará sim, só não terá o efeito do Normal Map. O mesmo crash já ocorreu mesmo em outros mods que utilizam Normal Map, mesmo sem ter SkyGfx instalado.
+Problema 3: Brave.
+Solução 3: Feche o navegador Brave. Existe algumas soluções que não existem explicações lógicas, só aceitamos e não dormimos de noite.
 
 Erro: 0x006E18F6
 Problema: Textura da luz da lanterna do carro. Foi relatado ao instalar o ImVehFt 2.0.2
