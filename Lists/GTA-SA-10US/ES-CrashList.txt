@@ -1,4 +1,8 @@
-02/06/26 (DD/MM/AA)
+02/09/26 (DD/MM/AA)
+
+Error: 0x00456809
+Problema: Creación de una camioneta con un modelo que ya no existe.
+Solución: Algún mod creó un pickup con un modelo personalizado, y si el mod no la elimina al guardar la partida, lo pickup quedará bloqueada permanentemente en tu partida guardada. Lo más probable es que el ID del modelo de lo pickup aparezca en el registro de errores junto a "EAX" (convierte el número hexadecimal a decimal para leerlo). Deberás identificar el mod, eliminarlo o lo pickup bloqueado en el juego, o reemplazarlo con un ID de modelo que falte.
 
 Error: 0x007570C7
 Problema: Renderizando el vertex shader de una mesh.
