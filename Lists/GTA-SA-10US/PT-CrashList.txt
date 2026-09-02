@@ -1,4 +1,8 @@
-02/06/26 (DD/MM/YY)
+02/09/26 (DD/MM/YY)
+
+Erro: 0x00456809
+Problema: Criação de um pickup com um modelo que não existe mais.
+Solução: Algum mod criou um pickup de um modelo personalizado, e caso o mod não remove o pickup ao salvar o jogo, vai prender o pickup pra sempre no seu jogo salvo. Muito provavelmente o número ID do modelo do pickup aparecerá no crash log na frente de "EAX" (converta hexadecimal para decimal para ler o número). Você precisará, de alguma forma, identificar o mod, remover o mod ou pickup preso no jogo, ou recolocar ummodelo de ID faltando.
 
 Erro: 0x007570C7
 Problema: Renderização de um vertex shader de uma mesh.
