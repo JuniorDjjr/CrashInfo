@@ -1,4 +1,8 @@
-02/09/26 (DD/MM/YY)
+02/10/26 (DD/MM/YY)
+
+Error: 0x0068A7C3
+Issue: Swimming processing.
+Solution: Update Framerate Vigilante.
 
 Error: 0x00456809
 Problem: Creation of a pickup using a model that no longer exists.
